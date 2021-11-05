@@ -1,0 +1,13 @@
+diff --git a/po/git.pot b/po/git.pot
+index 94d1a98..e0ef6dd 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -5221,7 +5221,7 @@ msgid   "Refusing to create empty bundle."
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Refusing to fetch into current branch %s of non-bare repository"
++msgid   "Refusing to fetch into branch '%s' checked out at '%s'"
+ msgstr  ""
+ #
+ #, c-format
