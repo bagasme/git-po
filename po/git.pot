@@ -1196,7 +1196,7 @@ msgstr[1] ""
 msgid "truncating .rej filename to %.*s.rej"
 msgstr ""
 
-#: apply.c:4600 builtin/fetch.c:997 builtin/fetch.c:1404
+#: apply.c:4600 builtin/fetch.c:1000 builtin/fetch.c:1407
 #, c-format
 msgid "cannot open %s"
 msgstr ""
@@ -5438,7 +5438,7 @@ msgstr ""
 msgid "%s: unsupported file type"
 msgstr ""
 
-#: object-file.c:2339 builtin/fetch.c:1441
+#: object-file.c:2339 builtin/fetch.c:1444
 #, c-format
 msgid "%s is not a valid object"
 msgstr ""
@@ -10151,7 +10151,7 @@ msgstr ""
 #: builtin/rebase.c:1072 builtin/repack.c:653 builtin/repack.c:657
 #: builtin/repack.c:659 builtin/show-branch.c:649 builtin/show-ref.c:172
 #: builtin/tag.c:445 parse-options.h:154 parse-options.h:175
-#: parse-options.h:318
+#: parse-options.h:317
 msgid "n"
 msgstr ""
 
@@ -11874,7 +11874,7 @@ msgstr ""
 msgid "perform a 3-way merge with the new branch"
 msgstr ""
 
-#: builtin/checkout.c:1520 builtin/log.c:1824 parse-options.h:324
+#: builtin/checkout.c:1520 builtin/log.c:1824 parse-options.h:323
 msgid "style"
 msgstr ""
 
@@ -12455,7 +12455,7 @@ msgstr ""
 msgid "repository '%s' does not exist"
 msgstr ""
 
-#: builtin/clone.c:925 builtin/fetch.c:2029
+#: builtin/clone.c:925 builtin/fetch.c:2032
 #, c-format
 msgid "depth %s is not a positive number"
 msgstr ""
@@ -13089,7 +13089,7 @@ msgstr ""
 
 #: builtin/commit.c:1501 builtin/commit.c:1505 builtin/commit.c:1668
 #: builtin/fast-export.c:1199 builtin/fast-export.c:1202
-#: builtin/fast-export.c:1205 builtin/rebase.c:1137 parse-options.h:338
+#: builtin/fast-export.c:1205 builtin/rebase.c:1137 parse-options.h:337
 msgid "mode"
 msgstr ""
 
@@ -13162,7 +13162,7 @@ msgid "override date for commit"
 msgstr ""
 
 #: builtin/commit.c:1627 builtin/commit.c:1628 builtin/commit.c:1634
-#: parse-options.h:330 ref-filter.h:89
+#: parse-options.h:329 ref-filter.h:89
 msgid "commit"
 msgstr ""
 
@@ -14281,64 +14281,68 @@ msgstr ""
 msgid "configuration fetch.output contains invalid value %s"
 msgstr ""
 
-#: builtin/fetch.c:862
+#: builtin/fetch.c:863
 #, c-format
 msgid "object %s not found"
 msgstr ""
 
-#: builtin/fetch.c:866
+#: builtin/fetch.c:867
 msgid "[up to date]"
 msgstr ""
 
-#: builtin/fetch.c:878 builtin/fetch.c:894 builtin/fetch.c:966
+#: builtin/fetch.c:879 builtin/fetch.c:897 builtin/fetch.c:969
 msgid "[rejected]"
 msgstr ""
 
-#: builtin/fetch.c:879
+#: builtin/fetch.c:881
 msgid "can't fetch in current branch"
 msgstr ""
 
-#: builtin/fetch.c:889
+#: builtin/fetch.c:882
+msgid "branch checked out in worktree"
+msgstr ""
+
+#: builtin/fetch.c:892
 msgid "[tag update]"
 msgstr ""
 
-#: builtin/fetch.c:890 builtin/fetch.c:927 builtin/fetch.c:949
-#: builtin/fetch.c:961
+#: builtin/fetch.c:893 builtin/fetch.c:930 builtin/fetch.c:952
+#: builtin/fetch.c:964
 msgid "unable to update local ref"
 msgstr ""
 
-#: builtin/fetch.c:894
+#: builtin/fetch.c:897
 msgid "would clobber existing tag"
 msgstr ""
 
-#: builtin/fetch.c:916
+#: builtin/fetch.c:919
 msgid "[new tag]"
 msgstr ""
 
-#: builtin/fetch.c:919
+#: builtin/fetch.c:922
 msgid "[new branch]"
 msgstr ""
 
-#: builtin/fetch.c:922
+#: builtin/fetch.c:925
 msgid "[new ref]"
 msgstr ""
 
-#: builtin/fetch.c:961
+#: builtin/fetch.c:964
 msgid "forced update"
 msgstr ""
 
-#: builtin/fetch.c:966
+#: builtin/fetch.c:969
 msgid "non-fast-forward"
 msgstr ""
 
-#: builtin/fetch.c:1069
+#: builtin/fetch.c:1072
 msgid ""
 "Fetch normally indicates which branches had a forced update,\n"
 "but that check has been disabled. To re-enable, use '--show-forced-updates'\n"
 "flag or run 'git config fetch.showForcedUpdates true'."
 msgstr ""
 
-#: builtin/fetch.c:1073
+#: builtin/fetch.c:1076
 #, c-format
 msgid ""
 "It took %.2f seconds to check forced updates. You can use\n"
@@ -14347,173 +14351,173 @@ msgid ""
 " to avoid this check.\n"
 msgstr ""
 
-#: builtin/fetch.c:1104
+#: builtin/fetch.c:1107
 #, c-format
 msgid "%s did not send all necessary objects\n"
 msgstr ""
 
-#: builtin/fetch.c:1133
+#: builtin/fetch.c:1136
 #, c-format
 msgid "rejected %s because shallow roots are not allowed to be updated"
 msgstr ""
 
-#: builtin/fetch.c:1222 builtin/fetch.c:1370
+#: builtin/fetch.c:1225 builtin/fetch.c:1373
 #, c-format
 msgid "From %.*s\n"
 msgstr ""
 
-#: builtin/fetch.c:1243
+#: builtin/fetch.c:1246
 #, c-format
 msgid ""
 "some local refs could not be updated; try running\n"
 " 'git remote prune %s' to remove any old, conflicting branches"
 msgstr ""
 
-#: builtin/fetch.c:1340
+#: builtin/fetch.c:1343
 #, c-format
 msgid "   (%s will become dangling)"
 msgstr ""
 
-#: builtin/fetch.c:1341
+#: builtin/fetch.c:1344
 #, c-format
 msgid "   (%s has become dangling)"
 msgstr ""
 
-#: builtin/fetch.c:1373
+#: builtin/fetch.c:1376
 msgid "[deleted]"
 msgstr ""
 
-#: builtin/fetch.c:1374 builtin/remote.c:1128
+#: builtin/fetch.c:1377 builtin/remote.c:1128
 msgid "(none)"
 msgstr ""
 
-#: builtin/fetch.c:1393
+#: builtin/fetch.c:1396
 #, c-format
 msgid "Refusing to fetch into branch '%s' checked out at '%s'"
 msgstr ""
 
-#: builtin/fetch.c:1413
+#: builtin/fetch.c:1416
 #, c-format
 msgid "Option \"%s\" value \"%s\" is not valid for %s"
 msgstr ""
 
-#: builtin/fetch.c:1416
+#: builtin/fetch.c:1419
 #, c-format
 msgid "Option \"%s\" is ignored for %s\n"
 msgstr ""
 
-#: builtin/fetch.c:1443
+#: builtin/fetch.c:1446
 #, c-format
 msgid "the object %s does not exist"
 msgstr ""
 
-#: builtin/fetch.c:1617
+#: builtin/fetch.c:1620
 msgid "not on a branch to use --set-upstream with"
 msgstr ""
 
-#: builtin/fetch.c:1633
+#: builtin/fetch.c:1636
 msgid "multiple branches detected, incompatible with --set-upstream"
 msgstr ""
 
-#: builtin/fetch.c:1648
+#: builtin/fetch.c:1651
 msgid "not setting upstream for a remote remote-tracking branch"
 msgstr ""
 
-#: builtin/fetch.c:1650
+#: builtin/fetch.c:1653
 msgid "not setting upstream for a remote tag"
 msgstr ""
 
-#: builtin/fetch.c:1652
+#: builtin/fetch.c:1655
 msgid "unknown branch type"
 msgstr ""
 
-#: builtin/fetch.c:1654
+#: builtin/fetch.c:1657
 msgid ""
 "no source branch found.\n"
 "you need to specify exactly one branch with the --set-upstream option."
 msgstr ""
 
-#: builtin/fetch.c:1783 builtin/fetch.c:1846
+#: builtin/fetch.c:1786 builtin/fetch.c:1849
 #, c-format
 msgid "Fetching %s\n"
 msgstr ""
 
-#: builtin/fetch.c:1793 builtin/fetch.c:1848 builtin/remote.c:101
+#: builtin/fetch.c:1796 builtin/fetch.c:1851 builtin/remote.c:101
 #, c-format
 msgid "Could not fetch %s"
 msgstr ""
 
-#: builtin/fetch.c:1805
+#: builtin/fetch.c:1808
 #, c-format
 msgid "could not fetch '%s' (exit code: %d)\n"
 msgstr ""
 
-#: builtin/fetch.c:1909
+#: builtin/fetch.c:1912
 msgid ""
 "No remote repository specified.  Please, specify either a URL or a\n"
 "remote name from which new revisions should be fetched."
 msgstr ""
 
-#: builtin/fetch.c:1945
+#: builtin/fetch.c:1948
 msgid "You need to specify a tag name."
 msgstr ""
 
-#: builtin/fetch.c:2009
+#: builtin/fetch.c:2012
 msgid "--negotiate-only needs one or more --negotiate-tip=*"
 msgstr ""
 
-#: builtin/fetch.c:2013
+#: builtin/fetch.c:2016
 msgid "Negative depth in --deepen is not supported"
 msgstr ""
 
-#: builtin/fetch.c:2015
+#: builtin/fetch.c:2018
 msgid "--deepen and --depth are mutually exclusive"
 msgstr ""
 
-#: builtin/fetch.c:2020
+#: builtin/fetch.c:2023
 msgid "--depth and --unshallow cannot be used together"
 msgstr ""
 
-#: builtin/fetch.c:2022
+#: builtin/fetch.c:2025
 msgid "--unshallow on a complete repository does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2039
+#: builtin/fetch.c:2042
 msgid "fetch --all does not take a repository argument"
 msgstr ""
 
-#: builtin/fetch.c:2041
+#: builtin/fetch.c:2044
 msgid "fetch --all does not make sense with refspecs"
 msgstr ""
 
-#: builtin/fetch.c:2050
+#: builtin/fetch.c:2053
 #, c-format
 msgid "No such remote or remote group: %s"
 msgstr ""
 
-#: builtin/fetch.c:2057
+#: builtin/fetch.c:2060
 msgid "Fetching a group and specifying refspecs does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2073
+#: builtin/fetch.c:2076
 msgid "must supply remote when using --negotiate-only"
 msgstr ""
 
-#: builtin/fetch.c:2078
+#: builtin/fetch.c:2081
 msgid "Protocol does not support --negotiate-only, exiting."
 msgstr ""
 
-#: builtin/fetch.c:2097
+#: builtin/fetch.c:2100
 msgid ""
 "--filter can only be used with the remote configured in extensions."
 "partialclone"
 msgstr ""
 
-#: builtin/fetch.c:2101
+#: builtin/fetch.c:2104
 msgid "--atomic can only be used when fetching from one remote"
 msgstr ""
 
-#: builtin/fetch.c:2105
+#: builtin/fetch.c:2108
 msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
 
@@ -18421,7 +18425,7 @@ msgstr ""
 msgid "control use of pre-merge-commit and commit-msg hooks"
 msgstr ""
 
-#: builtin/pull.c:171 parse-options.h:341
+#: builtin/pull.c:171 parse-options.h:340
 msgid "automatically stash/stash pop before and after"
 msgstr ""
 
@@ -23621,27 +23625,27 @@ msgstr ""
 msgid "no-op (backward compatibility)"
 msgstr ""
 
-#: parse-options.h:311
+#: parse-options.h:310
 msgid "be more verbose"
 msgstr ""
 
-#: parse-options.h:313
+#: parse-options.h:312
 msgid "be more quiet"
 msgstr ""
 
-#: parse-options.h:319
+#: parse-options.h:318
 msgid "use <n> digits to display object names"
 msgstr ""
 
-#: parse-options.h:338
+#: parse-options.h:337
 msgid "how to strip spaces and #comments from message"
 msgstr ""
 
-#: parse-options.h:339
+#: parse-options.h:338
 msgid "read pathspec from file"
 msgstr ""
 
-#: parse-options.h:340
+#: parse-options.h:339
 msgid ""
 "with --pathspec-from-file, pathspec elements are separated with NUL character"
 msgstr ""
@@ -24247,91 +24251,91 @@ msgid "Create a tree object from the current index"
 msgstr ""
 
 #: command-list.h:197
-msgid "The Git repository browser"
-msgstr ""
-
-#: command-list.h:198
-msgid "Git web interface (web frontend to Git repositories)"
-msgstr ""
-
-#: command-list.h:199
 msgid "Defining attributes per path"
 msgstr ""
 
-#: command-list.h:200
+#: command-list.h:198
 msgid "Git command-line interface and conventions"
 msgstr ""
 
-#: command-list.h:201
+#: command-list.h:199
 msgid "A Git core tutorial for developers"
 msgstr ""
 
-#: command-list.h:202
+#: command-list.h:200
 msgid "Providing usernames and passwords to Git"
 msgstr ""
 
-#: command-list.h:203
+#: command-list.h:201
 msgid "Git for CVS users"
 msgstr ""
 
-#: command-list.h:204
+#: command-list.h:202
 msgid "Tweaking diff output"
 msgstr ""
 
-#: command-list.h:205
+#: command-list.h:203
 msgid "A useful minimum set of commands for Everyday Git"
 msgstr ""
 
-#: command-list.h:206
+#: command-list.h:204
 msgid "Frequently asked questions about using Git"
 msgstr ""
 
-#: command-list.h:207
+#: command-list.h:205
 msgid "A Git Glossary"
 msgstr ""
 
-#: command-list.h:208
+#: command-list.h:206
 msgid "Hooks used by Git"
 msgstr ""
 
-#: command-list.h:209
+#: command-list.h:207
 msgid "Specifies intentionally untracked files to ignore"
 msgstr ""
 
-#: command-list.h:210
+#: command-list.h:208
+msgid "The Git repository browser"
+msgstr ""
+
+#: command-list.h:209
 msgid "Map author/committer names and/or E-Mail addresses"
 msgstr ""
 
-#: command-list.h:211
+#: command-list.h:210
 msgid "Defining submodule properties"
 msgstr ""
 
-#: command-list.h:212
+#: command-list.h:211
 msgid "Git namespaces"
 msgstr ""
 
-#: command-list.h:213
+#: command-list.h:212
 msgid "Helper programs to interact with remote repositories"
 msgstr ""
 
-#: command-list.h:214
+#: command-list.h:213
 msgid "Git Repository Layout"
 msgstr ""
 
-#: command-list.h:215
+#: command-list.h:214
 msgid "Specifying revisions and ranges for Git"
 msgstr ""
 
-#: command-list.h:216
+#: command-list.h:215
 msgid "Mounting one repository inside another"
 msgstr ""
 
-#: command-list.h:217
+#: command-list.h:216
 msgid "A tutorial introduction to Git"
 msgstr ""
 
-#: command-list.h:218
+#: command-list.h:217
 msgid "A tutorial introduction to Git: part two"
+msgstr ""
+
+#: command-list.h:218
+msgid "Git web interface (web frontend to Git repositories)"
 msgstr ""
 
 #: command-list.h:219

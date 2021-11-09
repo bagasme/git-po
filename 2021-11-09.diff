@@ -1,0 +1,14 @@
+diff --git a/po/git.pot b/po/git.pot
+index e0ef6dd..c3861bc 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -7899,6 +7899,9 @@ msgstr  ""
+ msgid   "branch '%s' not found."
+ msgstr  ""
+ #
++msgid   "branch checked out in worktree"
++msgstr  ""
++#
+ msgid   "branch name required"
+ msgstr  ""
+ #
