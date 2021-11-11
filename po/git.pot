@@ -1358,7 +1358,7 @@ msgid "allow overlapping hunks"
 msgstr ""
 
 #: apply.c:5074 builtin/add.c:372 builtin/check-ignore.c:22
-#: builtin/commit.c:1483 builtin/count-objects.c:98 builtin/fsck.c:788
+#: builtin/commit.c:1483 builtin/count-objects.c:98 builtin/fsck.c:789
 #: builtin/log.c:2313 builtin/mv.c:123 builtin/read-tree.c:120
 msgid "be verbose"
 msgstr ""
@@ -2799,15 +2799,15 @@ msgstr ""
 msgid "Checking connectivity"
 msgstr ""
 
-#: connected.c:122
+#: connected.c:121
 msgid "Could not run 'git rev-list'"
 msgstr ""
 
-#: connected.c:146
+#: connected.c:145
 msgid "failed write to rev-list"
 msgstr ""
 
-#: connected.c:151
+#: connected.c:150
 msgid "failed to close rev-list's stdin"
 msgstr ""
 
@@ -3934,7 +3934,7 @@ msgstr ""
 msgid "source repository is shallow, reject to clone."
 msgstr ""
 
-#: fetch-pack.c:1139 fetch-pack.c:1675
+#: fetch-pack.c:1139 fetch-pack.c:1676
 msgid "git fetch-pack: fetch failed."
 msgstr ""
 
@@ -3956,7 +3956,7 @@ msgstr ""
 msgid "Server supports filter"
 msgstr ""
 
-#: fetch-pack.c:1340 fetch-pack.c:2057
+#: fetch-pack.c:1340 fetch-pack.c:2058
 msgid "unable to write request to remote"
 msgstr ""
 
@@ -4012,24 +4012,24 @@ msgstr ""
 msgid "git fetch-pack: expected response end packet"
 msgstr ""
 
-#: fetch-pack.c:1953
+#: fetch-pack.c:1954
 msgid "no matching remote head"
 msgstr ""
 
-#: fetch-pack.c:1976 builtin/clone.c:582
+#: fetch-pack.c:1977 builtin/clone.c:582
 msgid "remote did not send all necessary objects"
 msgstr ""
 
-#: fetch-pack.c:2079
+#: fetch-pack.c:2080
 msgid "unexpected 'ready' from remote"
 msgstr ""
 
-#: fetch-pack.c:2102
+#: fetch-pack.c:2103
 #, c-format
 msgid "no such remote ref %s"
 msgstr ""
 
-#: fetch-pack.c:2105
+#: fetch-pack.c:2106
 #, c-format
 msgid "Server does not allow request for unadvertised object %s"
 msgstr ""
@@ -5732,36 +5732,36 @@ msgstr ""
 msgid "ambiguous option: %s (could be --%s%s or --%s%s)"
 msgstr ""
 
-#: parse-options.c:427 parse-options.c:435
+#: parse-options.c:428 parse-options.c:436
 #, c-format
 msgid "did you mean `--%s` (with two dashes)?"
 msgstr ""
 
-#: parse-options.c:677 parse-options.c:1053
+#: parse-options.c:678 parse-options.c:1054
 #, c-format
 msgid "alias of --%s"
 msgstr ""
 
-#: parse-options.c:891
+#: parse-options.c:892
 #, c-format
 msgid "unknown option `%s'"
 msgstr ""
 
-#: parse-options.c:893
+#: parse-options.c:894
 #, c-format
 msgid "unknown switch `%c'"
 msgstr ""
 
-#: parse-options.c:895
+#: parse-options.c:896
 #, c-format
 msgid "unknown non-ascii option in string: `%s'"
 msgstr ""
 
-#: parse-options.c:919
+#: parse-options.c:920
 msgid "..."
 msgstr ""
 
-#: parse-options.c:933
+#: parse-options.c:934
 #, c-format
 msgid "usage: %s"
 msgstr ""
@@ -5769,7 +5769,7 @@ msgstr ""
 #. TRANSLATORS: the colon here should align with the
 #. one in "usage: %s" translation.
 #.
-#: parse-options.c:948
+#: parse-options.c:949
 #, c-format
 msgid "   or: %s"
 msgstr ""
@@ -5793,17 +5793,17 @@ msgstr ""
 #. translated) N_() usage string, which contained embedded
 #. newlines before we split it up.
 #.
-#: parse-options.c:969
+#: parse-options.c:970
 #, c-format
 msgid "%*s%s"
 msgstr ""
 
-#: parse-options.c:992
+#: parse-options.c:993
 #, c-format
 msgid "    %s"
 msgstr ""
 
-#: parse-options.c:1039
+#: parse-options.c:1040
 msgid "-NUM"
 msgstr ""
 
@@ -5929,17 +5929,17 @@ msgstr ""
 msgid "the remote end hung up unexpectedly"
 msgstr ""
 
-#: pkt-line.c:416 pkt-line.c:418
+#: pkt-line.c:417 pkt-line.c:419
 #, c-format
 msgid "protocol error: bad line length character: %.4s"
 msgstr ""
 
-#: pkt-line.c:433 pkt-line.c:435 pkt-line.c:441 pkt-line.c:443
+#: pkt-line.c:434 pkt-line.c:436 pkt-line.c:442 pkt-line.c:444
 #, c-format
 msgid "protocol error: bad line length %d"
 msgstr ""
 
-#: pkt-line.c:471 sideband.c:165
+#: pkt-line.c:472 sideband.c:165
 #, c-format
 msgid "remote error: %s"
 msgstr ""
@@ -7068,28 +7068,20 @@ msgstr ""
 msgid "failed to find tree of %s"
 msgstr ""
 
-#: revision.c:2259
-msgid "--unsorted-input is incompatible with --no-walk"
-msgstr ""
-
-#: revision.c:2346
+#: revision.c:2342
 msgid "--unpacked=<packfile> no longer supported"
 msgstr ""
 
-#: revision.c:2655 revision.c:2659
-msgid "--no-walk is incompatible with --unsorted-input"
-msgstr ""
-
-#: revision.c:2690
+#: revision.c:2681
 msgid "your current branch appears to be broken"
 msgstr ""
 
-#: revision.c:2693
+#: revision.c:2684
 #, c-format
 msgid "your current branch '%s' does not have any commits yet"
 msgstr ""
 
-#: revision.c:2895
+#: revision.c:2886
 msgid "-L does not yet support diff formats besides -p and -s"
 msgstr ""
 
@@ -14752,124 +14744,124 @@ msgstr ""
 msgid "%s: object is of unknown type '%s': %s"
 msgstr ""
 
-#: builtin/fsck.c:644
+#: builtin/fsck.c:645
 #, c-format
 msgid "%s: object could not be parsed: %s"
 msgstr ""
 
-#: builtin/fsck.c:664
+#: builtin/fsck.c:665
 #, c-format
 msgid "bad sha1 file: %s"
 msgstr ""
 
-#: builtin/fsck.c:685
+#: builtin/fsck.c:686
 msgid "Checking object directory"
 msgstr ""
 
-#: builtin/fsck.c:688
+#: builtin/fsck.c:689
 msgid "Checking object directories"
 msgstr ""
 
-#: builtin/fsck.c:704
+#: builtin/fsck.c:705
 #, c-format
 msgid "Checking %s link"
 msgstr ""
 
-#: builtin/fsck.c:709 builtin/index-pack.c:859
+#: builtin/fsck.c:710 builtin/index-pack.c:859
 #, c-format
 msgid "invalid %s"
 msgstr ""
 
-#: builtin/fsck.c:716
+#: builtin/fsck.c:717
 #, c-format
 msgid "%s points to something strange (%s)"
 msgstr ""
 
-#: builtin/fsck.c:722
+#: builtin/fsck.c:723
 #, c-format
 msgid "%s: detached HEAD points at nothing"
 msgstr ""
 
-#: builtin/fsck.c:726
+#: builtin/fsck.c:727
 #, c-format
 msgid "notice: %s points to an unborn branch (%s)"
 msgstr ""
 
-#: builtin/fsck.c:738
+#: builtin/fsck.c:739
 msgid "Checking cache tree"
 msgstr ""
 
-#: builtin/fsck.c:743
+#: builtin/fsck.c:744
 #, c-format
 msgid "%s: invalid sha1 pointer in cache-tree"
 msgstr ""
 
-#: builtin/fsck.c:752
+#: builtin/fsck.c:753
 msgid "non-tree in cache-tree"
 msgstr ""
 
-#: builtin/fsck.c:783
+#: builtin/fsck.c:784
 msgid "git fsck [<options>] [<object>...]"
 msgstr ""
 
-#: builtin/fsck.c:789
+#: builtin/fsck.c:790
 msgid "show unreachable objects"
 msgstr ""
 
-#: builtin/fsck.c:790
+#: builtin/fsck.c:791
 msgid "show dangling objects"
 msgstr ""
 
-#: builtin/fsck.c:791
+#: builtin/fsck.c:792
 msgid "report tags"
 msgstr ""
 
-#: builtin/fsck.c:792
+#: builtin/fsck.c:793
 msgid "report root nodes"
 msgstr ""
 
-#: builtin/fsck.c:793
+#: builtin/fsck.c:794
 msgid "make index objects head nodes"
 msgstr ""
 
-#: builtin/fsck.c:794
+#: builtin/fsck.c:795
 msgid "make reflogs head nodes (default)"
 msgstr ""
 
-#: builtin/fsck.c:795
+#: builtin/fsck.c:796
 msgid "also consider packs and alternate objects"
 msgstr ""
 
-#: builtin/fsck.c:796
+#: builtin/fsck.c:797
 msgid "check only connectivity"
 msgstr ""
 
-#: builtin/fsck.c:797 builtin/mktag.c:76
+#: builtin/fsck.c:798 builtin/mktag.c:76
 msgid "enable more strict checking"
 msgstr ""
 
-#: builtin/fsck.c:799
+#: builtin/fsck.c:800
 msgid "write dangling objects in .git/lost-found"
 msgstr ""
 
-#: builtin/fsck.c:800 builtin/prune.c:148
+#: builtin/fsck.c:801 builtin/prune.c:148
 msgid "show progress"
 msgstr ""
 
-#: builtin/fsck.c:801
+#: builtin/fsck.c:802
 msgid "show verbose names for reachable objects"
 msgstr ""
 
-#: builtin/fsck.c:861 builtin/index-pack.c:261
+#: builtin/fsck.c:862 builtin/index-pack.c:261
 msgid "Checking objects"
 msgstr ""
 
-#: builtin/fsck.c:889
+#: builtin/fsck.c:890
 #, c-format
 msgid "%s: object missing"
 msgstr ""
 
-#: builtin/fsck.c:900
+#: builtin/fsck.c:901
 #, c-format
 msgid "invalid parameter: expected sha1, got '%s'"
 msgstr ""
