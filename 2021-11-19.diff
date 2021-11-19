@@ -1,0 +1,531 @@
+diff --git a/po/git.pot b/po/git.pot
+index 85b4af3..20268df 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1242,7 +1242,7 @@ msgid   "'%s' is not a stash-like commit"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "'%s' is not a valid branch name."
++msgid   "'%s' is not a valid branch name"
+ msgstr  ""
+ #
+ #, c-format
+@@ -2013,9 +2013,6 @@ msgstr  ""
+ msgid   "-A and -u are mutually incompatible"
+ msgstr  ""
+ #
+-msgid   "-C requires a <directory>"
+-msgstr  ""
+-#
+ msgid   "-G and --pickaxe-regex are mutually exclusive, use --pickaxe-regex "
+         "with -S"
+ msgstr  ""
+@@ -2042,9 +2039,6 @@ msgstr  ""
+ msgid   "-c expects a configuration string\n"
+ msgstr  ""
+ #
+-msgid   "-c requires a <key>=<value> argument"
+-msgstr  ""
+-#
+ msgid   "-d needs at least one argument"
+ msgstr  ""
+ #
+@@ -2210,10 +2204,6 @@ msgid   "A Git core tutorial for developers"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "A branch named '%s' already exists."
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "A git directory for '%s' is found locally with remote(s):\n"
+ msgstr  ""
+ #
+@@ -2328,10 +2318,6 @@ msgstr  ""
+ msgid   "Already up to date. (nothing to squash)"
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "Ambiguous object name: '%s'."
+-msgstr  ""
+-#
+ msgid   "An alternate computed from a superproject's alternate is invalid.\n"
+         "To allow Git to clone without an alternate in such a case, set\n"
+         "submodule.alternateErrorStrategy to 'info' or, equivalently, clone "
+@@ -2898,10 +2884,6 @@ msgstr  ""
+ msgid   "Cannot fetch both %s and %s to %s"
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "Cannot force update the branch '%s'checked out at '%s'."
+-msgstr  ""
+-#
+ msgid   "Cannot give description to detached HEAD"
+ msgstr  ""
+ #
+@@ -2966,11 +2948,6 @@ msgid   "Cannot save the untracked files"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Cannot setup tracking information; starting point '%s' is not a "
+-        "branch."
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "Cannot switch branch to a non-commit '%s'"
+ msgstr  ""
+ #
+@@ -3359,9 +3336,6 @@ msgstr  ""
+ msgid   "Could not write patch"
+ msgstr  ""
+ #
+-msgid   "Couldn't find remote ref HEAD"
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "Couldn't look up commit object for '%s'"
+ msgstr  ""
+@@ -3826,12 +3800,6 @@ msgstr  ""
+ msgid   "Fetch from and integrate with another repository or a local branch"
+ msgstr  ""
+ #
+-msgid   "Fetch normally indicates which branches had a forced update,\n"
+-        "but that check has been disabled. To re-enable, use '--show-forced-"
+-        "updates'\n"
+-        "flag or run 'git config fetch.showForcedUpdates true'."
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "Fetched in submodule path '%s', but it did not contain %s. Direct "
+         "fetching of that commit failed."
+@@ -3841,9 +3809,6 @@ msgstr  ""
+ msgid   "Fetching %s\n"
+ msgstr  ""
+ #
+-msgid   "Fetching a group and specifying refspecs does not make sense"
+-msgstr  ""
+-#
+ msgid   "Fetching objects"
+ msgstr  ""
+ #
+@@ -4295,6 +4260,10 @@ msgid   "Invalid value for %s: %s"
+ msgstr  ""
+ #
+ #, c-format
++msgid   "Invalid value for --empty: %s"
++msgstr  ""
++#
++#, c-format
+ msgid   "Invalid value for --patch-format: %s"
+ msgstr  ""
+ #
+@@ -4326,13 +4295,6 @@ msgid   "It seems that there is already a %s directory, and\n"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "It took %.2f seconds to check forced updates. You can use\n"
+-        "'--no-show-forced-updates' or run 'git config fetch."
+-        "showForcedUpdates false'\n"
+-        " to avoid this check.\n"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "It took %.2f seconds to enumerate untracked files. 'status -uno'\n"
+         "may speed it up, but you have to be careful not to forget to add\n"
+         "new files yourself (see 'git help status')."
+@@ -4539,9 +4501,6 @@ msgstr  ""
+ msgid   "Needed a single revision"
+ msgstr  ""
+ #
+-msgid   "Negative depth in --deepen is not supported"
+-msgstr  ""
+-#
+ msgid   "Negative patterns are ignored in git attributes\n"
+         "Use '\\!' for literal leading exclamation."
+ msgstr  ""
+@@ -4691,10 +4650,6 @@ msgstr  ""
+ msgid   "No remote for the current branch."
+ msgstr  ""
+ #
+-msgid   "No remote repository specified.  Please, specify either a URL or a\n"
+-        "remote name from which new revisions should be fetched."
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "No remote-tracking branch for %s from %s"
+ msgstr  ""
+@@ -4726,10 +4681,6 @@ msgid   "No such remote '%s'"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "No such remote or remote group: %s"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "No such remote: '%s'"
+ msgstr  ""
+ #
+@@ -4770,10 +4721,6 @@ msgid   "Not a regular file: %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Not a valid branch point: '%s'."
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "Not a valid commit name %s"
+ msgstr  ""
+ #
+@@ -4782,10 +4729,6 @@ msgid   "Not a valid object name %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Not a valid object name: '%s'."
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "Not a valid ref: %s"
+ msgstr  ""
+ #
+@@ -4811,10 +4754,6 @@ msgid   "Not setting branch %s as its own upstream."
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Not tracking: ambiguous information for ref %s"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "Not updating non-default fetch refspec\n"
+         "\t%s\n"
+         "\tPlease update the configuration manually if necessary."
+@@ -4903,14 +4842,6 @@ msgstr  ""
+ msgid   "Only one of -c/-C/-F/--fixup can be used."
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "Option \"%s\" is ignored for %s\n"
+-msgstr  ""
+-#
+-#, c-format
+-msgid   "Option \"%s\" value \"%s\" is not valid for %s"
+-msgstr  ""
+-#
+ msgid   "Option --exec can only be used together with --remote"
+ msgstr  ""
+ #
+@@ -5110,9 +5041,6 @@ msgstr  ""
+ msgid   "Propagating island marks"
+ msgstr  ""
+ #
+-msgid   "Protocol does not support --negotiate-only, exiting."
+-msgstr  ""
+-#
+ msgid   "Provide content or type and size information for repository objects"
+ msgstr  ""
+ #
+@@ -5216,10 +5144,6 @@ msgid   "Refusing to create empty bundle."
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Refusing to fetch into branch '%s' checked out at '%s'"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "Refusing to lose dirty file at %s"
+ msgstr  ""
+ #
+@@ -6840,7 +6764,7 @@ msgid   "You have divergent branches and need to specify how to reconcile "
+         "before\n"
+         "your next pull:\n"
+         "\n"
+-        "  git config pull.rebase false  # merge (the default strategy)\n"
++        "  git config pull.rebase false  # merge\n"
+         "  git config pull.rebase true   # rebase\n"
+         "  git config pull.ff only       # fast-forward only\n"
+         "\n"
+@@ -6905,9 +6829,6 @@ msgstr  ""
+ msgid   "You need to run this command from the toplevel of the working tree."
+ msgstr  ""
+ #
+-msgid   "You need to specify a tag name."
+-msgstr  ""
+-#
+ msgid   "You need to start by \"git bisect start\"\n"
+ msgstr  ""
+ #
+@@ -7151,6 +7072,10 @@ msgid   "a branch is expected, got tag '%s'"
+ msgstr  ""
+ #
+ #, c-format
++msgid   "a branch named '%s' already exists"
++msgstr  ""
++#
++#, c-format
+ msgid   "a notes merge into %s is already in-progress at %s"
+ msgstr  ""
+ #
+@@ -7448,6 +7373,10 @@ msgid   "ambiguous argument '%s': unknown revision or path not in the working "
+ msgstr  ""
+ #
+ #, c-format
++msgid   "ambiguous object name: '%s'"
++msgstr  ""
++#
++#, c-format
+ msgid   "ambiguous option: %s (could be --%s%s or --%s%s)"
+ msgstr  ""
+ #
+@@ -7537,7 +7466,11 @@ msgid   "argument to --packfile must be a valid hash (got '%s')"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "asked to inherit tracking from %s, but could not find %s"
++msgid   "asked to inherit tracking from %s, but no merge configuration is set"
++msgstr  ""
++#
++#, c-format
++msgid   "asked to inherit tracking from %s, but no remote is set"
+ msgstr  ""
+ #
+ msgid   "attach the patch"
+@@ -8162,6 +8095,10 @@ msgid   "cannot fixup root commit"
+ msgstr  ""
+ #
+ #, c-format
++msgid   "cannot force update the branch '%s'checked out at '%s'"
++msgstr  ""
++#
++#, c-format
+ msgid   "cannot fork to run external filter '%s'"
+ msgstr  ""
+ #
+@@ -8380,6 +8317,11 @@ msgstr  ""
+ msgid   "cannot send message as 7bit"
+ msgstr  ""
+ #
++#, c-format
++msgid   "cannot set up tracking information; starting point '%s' is not a "
++        "branch"
++msgstr  ""
++#
+ msgid   "cannot specify pathnames with --stdin"
+ msgstr  ""
+ #
+@@ -8928,10 +8870,6 @@ msgid   "could not apply %s... %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "could not change to '%s'"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "could not check out original HEAD '%s'. Try 'git bisect reset "
+         "<commit>'."
+ msgstr  ""
+@@ -9647,6 +9585,9 @@ msgstr  ""
+ msgid   "couldn't find remote ref %s"
+ msgstr  ""
+ #
++msgid   "couldn't find remote ref HEAD"
++msgstr  ""
++#
+ #, c-format
+ msgid   "couldn't get the oid of the rev '%s'"
+ msgstr  ""
+@@ -11137,6 +11078,12 @@ msgstr  ""
+ msgid   "fetch from multiple remotes"
+ msgstr  ""
+ #
++msgid   "fetch normally indicates which branches had a forced update,\n"
++        "but that check has been disabled; to re-enable, use '--show-forced-"
++        "updates'\n"
++        "flag or run 'git config fetch.showForcedUpdates true'"
++msgstr  ""
++#
+ msgid   "fetch the remote branches"
+ msgstr  ""
+ #
+@@ -11159,6 +11106,9 @@ msgstr  ""
+ msgid   "fetch.parallel cannot be negative"
+ msgstr  ""
+ #
++msgid   "fetching a group and specifying refspecs does not make sense"
++msgstr  ""
++#
+ msgid   "field"
+ msgstr  ""
+ #
+@@ -12671,6 +12621,9 @@ msgstr  ""
+ msgid   "how to handle commits that become empty"
+ msgstr  ""
+ #
++msgid   "how to handle empty patches"
++msgstr  ""
++#
+ msgid   "how to strip spaces and #comments from message"
+ msgstr  ""
+ #
+@@ -13363,6 +13316,13 @@ msgstr  ""
+ msgid   "island regex from config has too many capture groups (max=%d)"
+ msgstr  ""
+ #
++#, c-format
++msgid   "it took %.2f seconds to check forced updates; you can use\n"
++        "'--no-show-forced-updates' or run 'git config fetch."
++        "showForcedUpdates false'\n"
++        " to avoid this check\n"
++msgstr  ""
++#
+ msgid   "j - leave this hunk undecided, see next undecided hunk\n"
+         "J - leave this hunk undecided, see next hunk\n"
+         "k - leave this hunk undecided, see previous undecided hunk\n"
+@@ -14072,6 +14032,9 @@ msgstr  ""
+ msgid   "need two commit ranges"
+ msgstr  ""
+ #
++msgid   "negative depth in --deepen is not supported"
++msgstr  ""
++#
+ #, c-format
+ msgid   "negative value for http.postbuffer; defaulting to %d"
+ msgstr  ""
+@@ -14257,6 +14220,10 @@ msgstr  ""
+ msgid   "no remembered resolution for '%s'"
+ msgstr  ""
+ #
++msgid   "no remote repository specified; please specify either a URL or a\n"
++        "remote name from which new revisions should be fetched"
++msgstr  ""
++#
+ msgid   "no remote specified"
+ msgstr  ""
+ #
+@@ -14267,9 +14234,8 @@ msgstr  ""
+ msgid   "no shallow found: %s"
+ msgstr  ""
+ #
+-msgid   "no source branch found.\n"
+-        "you need to specify exactly one branch with the --set-upstream "
+-        "option."
++msgid   "no source branch found;\n"
++        "you need to specify exactly one branch with the --set-upstream option"
+ msgstr  ""
+ #
+ #, c-format
+@@ -14301,6 +14267,10 @@ msgid   "no such ref: %.*s"
+ msgstr  ""
+ #
+ #, c-format
++msgid   "no such remote or remote group: %s"
++msgstr  ""
++#
++#, c-format
+ msgid   "no such remote ref %s"
+ msgstr  ""
+ #
+@@ -14410,6 +14380,10 @@ msgstr  ""
+ msgid   "not a tree object: %s"
+ msgstr  ""
+ #
++#, c-format
++msgid   "not a valid branch point: '%s'"
++msgstr  ""
++#
+ msgid   "not a valid directory"
+ msgstr  ""
+ #
+@@ -14474,6 +14448,10 @@ msgstr  ""
+ msgid   "not something we can merge in %s: %s"
+ msgstr  ""
+ #
++#, c-format
++msgid   "not tracking: ambiguous information for ref %s"
++msgstr  ""
++#
+ msgid   "not under version control"
+ msgstr  ""
+ #
+@@ -14774,15 +14752,19 @@ msgid   "option"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "option '%s' must come before non-option arguments"
++msgid   "option \"%s\" is ignored for %s\n"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "option `%s' expects \"always\", \"auto\", or \"never\""
++msgid   "option \"%s\" value \"%s\" is not valid for %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "option `%s' expects \"direct\" or \"inherit\""
++msgid   "option '%s' must come before non-option arguments"
++msgstr  ""
++#
++#, c-format
++msgid   "option `%s' expects \"always\", \"auto\", or \"never\""
+ msgstr  ""
+ #
+ #, c-format
+@@ -14811,6 +14793,9 @@ msgid   "option `--default' expects an unsigned long value with `--"
+         "type=ulong`, not `%s`"
+ msgstr  ""
+ #
++msgid   "option `--track' expects \"direct\" or \"inherit\""
++msgstr  ""
++#
+ msgid   "option diff-algorithm accepts \"myers\", \"minimal\", \"patience\" "
+         "and \"histogram\""
+ msgstr  ""
+@@ -15432,6 +15417,9 @@ msgstr  ""
+ msgid   "protocol '%s' is not supported"
+ msgstr  ""
+ #
++msgid   "protocol does not support --negotiate-only, exiting"
++msgstr  ""
++#
+ #, c-format
+ msgid   "protocol error: bad line length %d"
+ msgstr  ""
+@@ -15794,6 +15782,10 @@ msgid   "refusing to delete current working directory"
+ msgstr  ""
+ #
+ #, c-format
++msgid   "refusing to fetch into branch '%s' checked out at '%s'"
++msgstr  ""
++#
++#, c-format
+ msgid   "refusing to lose untracked file at '%s'"
+ msgstr  ""
+ #
+@@ -16259,7 +16251,7 @@ msgstr  ""
+ msgid   "same as the above, but limit memory size instead of entries count"
+ msgstr  ""
+ #
+-msgid   "scalar [-C <directory>] [-c <key>=<value>] <command> [<options>]\n"
++msgid   "scalar <command> [<options>]\n"
+         "\n"
+         "Commands:\n"
+ msgstr  ""
+@@ -16727,6 +16719,9 @@ msgstr  ""
+ msgid   "show source"
+ msgstr  ""
+ #
++msgid   "show sparse directories in the presence of a sparse index"
++msgstr  ""
++#
+ msgid   "show staged contents' object name in the output"
+ msgstr  ""
+ #
+@@ -19273,6 +19268,9 @@ msgstr  ""
+ msgid   "you need to resolve your current index first"
+ msgstr  ""
+ #
++msgid   "you need to specify a tag name"
++msgstr  ""
++#
+ #, c-format
+ msgid   "your current branch '%s' does not have any commits yet"
+ msgstr  ""
