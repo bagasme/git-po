@@ -1,0 +1,29 @@
+diff --git a/po/git.pot b/po/git.pot
+index 20268df..f39f573 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -5507,6 +5507,10 @@ msgid   "Skipping unmerged submodule %s"
+ msgstr  ""
+ #
+ #, c-format
++msgid   "Skipping: %.*s"
++msgstr  ""
++#
++#, c-format
+ msgid   "Some %s revs are not ancestors of the %s rev.\n"
+         "git bisect cannot work properly in this case.\n"
+         "Maybe you mistook %s and %s revs?\n"
+@@ -5667,13 +5671,6 @@ msgid   "Submodule path '%s': rebased into '%s'\n"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "Submodule work tree '%s' contains a .git directory.\n"
+-        "Use --force if you want to move its contents to superproject's "
+-        "module directory and convert .git to a file and then proceed with "
+-        "deinit."
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "Submodule work tree '%s' contains a .git directory. This will be "
+         "replaced with a .git file by using absorbgitdirs."
+ msgstr  ""
