@@ -192,11 +192,11 @@ msgstr ""
 msgid "(empty) select nothing"
 msgstr ""
 
-#: add-interactive.c:1095 builtin/clean.c:813 git-add--interactive.perl:1896
+#: add-interactive.c:1095 builtin/clean.c:824 git-add--interactive.perl:1896
 msgid "*** Commands ***"
 msgstr ""
 
-#: add-interactive.c:1096 builtin/clean.c:814 git-add--interactive.perl:1893
+#: add-interactive.c:1096 builtin/clean.c:825 git-add--interactive.perl:1893
 msgid "What now"
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 msgid "could not refresh index"
 msgstr ""
 
-#: add-interactive.c:1169 builtin/clean.c:778 git-add--interactive.perl:1803
+#: add-interactive.c:1169 builtin/clean.c:789 git-add--interactive.perl:1803
 #, c-format
 msgid "Bye.\n"
 msgstr ""
@@ -3746,17 +3746,17 @@ msgid ""
 "Please specify a directory on the command line"
 msgstr ""
 
-#: dir.c:3837
+#: dir.c:3842
 #, c-format
 msgid "index file corrupt in repo %s"
 msgstr ""
 
-#: dir.c:3884 dir.c:3889
+#: dir.c:3889 dir.c:3894
 #, c-format
 msgid "could not create directories for %s"
 msgstr ""
 
-#: dir.c:3918
+#: dir.c:3923
 #, c-format
 msgid "could not migrate git directory from '%s' to '%s'"
 msgstr ""
@@ -6132,7 +6132,7 @@ msgstr ""
 
 #: read-cache.c:2079 read-cache.c:2385 rerere.c:549 rerere.c:583 rerere.c:1095
 #: submodule.c:1662 builtin/add.c:603 builtin/check-ignore.c:183
-#: builtin/checkout.c:528 builtin/checkout.c:720 builtin/clean.c:987
+#: builtin/checkout.c:528 builtin/checkout.c:720 builtin/clean.c:998
 #: builtin/commit.c:378 builtin/diff-tree.c:122 builtin/grep.c:519
 #: builtin/mv.c:148 builtin/reset.c:490 builtin/rm.c:293
 #: builtin/submodule--helper.c:327 builtin/submodule--helper.c:3213
@@ -8111,48 +8111,48 @@ msgstr ""
 msgid "cannot chdir to '%s'"
 msgstr ""
 
-#: setup.c:861 setup.c:917 setup.c:927 setup.c:966 setup.c:974
+#: setup.c:861 setup.c:918 setup.c:928 setup.c:968 setup.c:976
 msgid "cannot come back to cwd"
 msgstr ""
 
-#: setup.c:988
+#: setup.c:990
 #, c-format
 msgid "failed to stat '%*s%s%s'"
 msgstr ""
 
-#: setup.c:1231
+#: setup.c:1233
 msgid "Unable to read current working directory"
 msgstr ""
 
-#: setup.c:1240 setup.c:1246
+#: setup.c:1242 setup.c:1248
 #, c-format
 msgid "cannot change to '%s'"
 msgstr ""
 
-#: setup.c:1251
+#: setup.c:1253
 #, c-format
 msgid "not a git repository (or any of the parent directories): %s"
 msgstr ""
 
-#: setup.c:1257
+#: setup.c:1259
 #, c-format
 msgid ""
 "not a git repository (or any parent up to mount point %s)\n"
 "Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set)."
 msgstr ""
 
-#: setup.c:1381
+#: setup.c:1383
 #, c-format
 msgid ""
 "problem with core.sharedRepository filemode value (0%.3o).\n"
 "The owner of files must always have read and write permissions."
 msgstr ""
 
-#: setup.c:1443
+#: setup.c:1445
 msgid "fork failed"
 msgstr ""
 
-#: setup.c:1448
+#: setup.c:1450
 msgid "setsid failed"
 msgstr ""
 
@@ -8774,106 +8774,113 @@ msgstr ""
 msgid "too-short tree file"
 msgstr ""
 
-#: unpack-trees.c:115
+#: unpack-trees.c:118
 #, c-format
 msgid ""
 "Your local changes to the following files would be overwritten by checkout:\n"
 "%%sPlease commit your changes or stash them before you switch branches."
 msgstr ""
 
-#: unpack-trees.c:117
+#: unpack-trees.c:120
 #, c-format
 msgid ""
 "Your local changes to the following files would be overwritten by checkout:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:120
+#: unpack-trees.c:123
 #, c-format
 msgid ""
 "Your local changes to the following files would be overwritten by merge:\n"
 "%%sPlease commit your changes or stash them before you merge."
 msgstr ""
 
-#: unpack-trees.c:122
+#: unpack-trees.c:125
 #, c-format
 msgid ""
 "Your local changes to the following files would be overwritten by merge:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:125
+#: unpack-trees.c:128
 #, c-format
 msgid ""
 "Your local changes to the following files would be overwritten by %s:\n"
 "%%sPlease commit your changes or stash them before you %s."
 msgstr ""
 
-#: unpack-trees.c:127
+#: unpack-trees.c:130
 #, c-format
 msgid ""
 "Your local changes to the following files would be overwritten by %s:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:132
+#: unpack-trees.c:135
 #, c-format
 msgid ""
 "Updating the following directories would lose untracked files in them:\n"
 "%s"
 msgstr ""
 
-#: unpack-trees.c:136
+#: unpack-trees.c:138
+#, c-format
+msgid ""
+"Refusing to remove the current working directory:\n"
+"%s"
+msgstr ""
+
+#: unpack-trees.c:142
 #, c-format
 msgid ""
 "The following untracked working tree files would be removed by checkout:\n"
 "%%sPlease move or remove them before you switch branches."
 msgstr ""
 
-#: unpack-trees.c:138
+#: unpack-trees.c:144
 #, c-format
 msgid ""
 "The following untracked working tree files would be removed by checkout:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:141
+#: unpack-trees.c:147
 #, c-format
 msgid ""
 "The following untracked working tree files would be removed by merge:\n"
 "%%sPlease move or remove them before you merge."
 msgstr ""
 
-#: unpack-trees.c:143
+#: unpack-trees.c:149
 #, c-format
 msgid ""
 "The following untracked working tree files would be removed by merge:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:146
+#: unpack-trees.c:152
 #, c-format
 msgid ""
 "The following untracked working tree files would be removed by %s:\n"
 "%%sPlease move or remove them before you %s."
-msgstr ""
-
-#: unpack-trees.c:148
-#, c-format
-msgid ""
-"The following untracked working tree files would be removed by %s:\n"
-"%%s"
 msgstr ""
 
 #: unpack-trees.c:154
 #, c-format
 msgid ""
+"The following untracked working tree files would be removed by %s:\n"
+"%%s"
+msgstr ""
+
+#: unpack-trees.c:160
+#, c-format
+msgid ""
 "The following untracked working tree files would be overwritten by "
 "checkout:\n"
 "%%sPlease move or remove them before you switch branches."
 msgstr ""
 
-#: unpack-trees.c:156
+#: unpack-trees.c:162
 #, c-format
 msgid ""
 "The following untracked working tree files would be overwritten by "
@@ -8881,47 +8888,47 @@ msgid ""
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:159
+#: unpack-trees.c:165
 #, c-format
 msgid ""
 "The following untracked working tree files would be overwritten by merge:\n"
 "%%sPlease move or remove them before you merge."
 msgstr ""
 
-#: unpack-trees.c:161
+#: unpack-trees.c:167
 #, c-format
 msgid ""
 "The following untracked working tree files would be overwritten by merge:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:164
+#: unpack-trees.c:170
 #, c-format
 msgid ""
 "The following untracked working tree files would be overwritten by %s:\n"
 "%%sPlease move or remove them before you %s."
 msgstr ""
 
-#: unpack-trees.c:166
+#: unpack-trees.c:172
 #, c-format
 msgid ""
 "The following untracked working tree files would be overwritten by %s:\n"
 "%%s"
 msgstr ""
 
-#: unpack-trees.c:174
+#: unpack-trees.c:180
 #, c-format
 msgid "Entry '%s' overlaps with '%s'.  Cannot bind."
 msgstr ""
 
-#: unpack-trees.c:177
+#: unpack-trees.c:183
 #, c-format
 msgid ""
 "Cannot update submodule:\n"
 "%s"
 msgstr ""
 
-#: unpack-trees.c:180
+#: unpack-trees.c:186
 #, c-format
 msgid ""
 "The following paths are not up to date and were left despite sparse "
@@ -8929,14 +8936,14 @@ msgid ""
 "%s"
 msgstr ""
 
-#: unpack-trees.c:182
+#: unpack-trees.c:188
 #, c-format
 msgid ""
 "The following paths are unmerged and were left despite sparse patterns:\n"
 "%s"
 msgstr ""
 
-#: unpack-trees.c:184
+#: unpack-trees.c:190
 #, c-format
 msgid ""
 "The following paths were already present and thus not updated despite sparse "
@@ -8944,34 +8951,34 @@ msgid ""
 "%s"
 msgstr ""
 
-#: unpack-trees.c:264
+#: unpack-trees.c:270
 #, c-format
 msgid "Aborting\n"
 msgstr ""
 
-#: unpack-trees.c:291
+#: unpack-trees.c:297
 #, c-format
 msgid ""
 "After fixing the above paths, you may want to run `git sparse-checkout "
 "reapply`.\n"
 msgstr ""
 
-#: unpack-trees.c:352
+#: unpack-trees.c:358
 msgid "Updating files"
 msgstr ""
 
-#: unpack-trees.c:384
+#: unpack-trees.c:390
 msgid ""
 "the following paths have collided (e.g. case-sensitive paths\n"
 "on a case-insensitive filesystem) and only one from the same\n"
 "colliding group is in the working tree:\n"
 msgstr ""
 
-#: unpack-trees.c:1628
+#: unpack-trees.c:1634
 msgid "Updating index flags"
 msgstr ""
 
-#: unpack-trees.c:2783
+#: unpack-trees.c:2799
 #, c-format
 msgid "worktree and untracked commit have duplicate entries: %s"
 msgstr ""
@@ -9718,7 +9725,7 @@ msgstr ""
 msgid "The following paths are ignored by one of your .gitignore files:\n"
 msgstr ""
 
-#: builtin/add.c:371 builtin/clean.c:901 builtin/fetch.c:174 builtin/mv.c:124
+#: builtin/add.c:371 builtin/clean.c:912 builtin/fetch.c:174 builtin/mv.c:124
 #: builtin/prune-packed.c:14 builtin/pull.c:208 builtin/push.c:550
 #: builtin/remote.c:1429 builtin/rm.c:244 builtin/send-pack.c:194
 msgid "dry run"
@@ -9848,12 +9855,12 @@ msgid "--chmod param '%s' must be either -x or +x"
 msgstr ""
 
 #: builtin/add.c:572 builtin/checkout.c:1752 builtin/commit.c:364
-#: builtin/reset.c:420 builtin/rm.c:275 builtin/stash.c:1709
+#: builtin/reset.c:420 builtin/rm.c:275 builtin/stash.c:1713
 msgid "--pathspec-from-file is incompatible with pathspec arguments"
 msgstr ""
 
 #: builtin/add.c:579 builtin/checkout.c:1764 builtin/commit.c:370
-#: builtin/reset.c:426 builtin/rm.c:281 builtin/stash.c:1715
+#: builtin/reset.c:426 builtin/rm.c:281 builtin/stash.c:1719
 msgid "--pathspec-file-nul requires --pathspec-from-file"
 msgstr ""
 
@@ -11971,7 +11978,7 @@ msgstr ""
 msgid "--pathspec-from-file is incompatible with --detach"
 msgstr ""
 
-#: builtin/checkout.c:1758 builtin/reset.c:417 builtin/stash.c:1703
+#: builtin/checkout.c:1758 builtin/reset.c:417 builtin/stash.c:1707
 msgid "--pathspec-from-file is incompatible with --patch"
 msgstr ""
 
@@ -12079,7 +12086,15 @@ msgstr ""
 msgid "could not lstat %s\n"
 msgstr ""
 
-#: builtin/clean.c:300 git-add--interactive.perl:593
+#: builtin/clean.c:39
+msgid "Refusing to remove current working directory\n"
+msgstr ""
+
+#: builtin/clean.c:40
+msgid "Would refuse to remove current working directory\n"
+msgstr ""
+
+#: builtin/clean.c:311 git-add--interactive.perl:593
 #, c-format
 msgid ""
 "Prompt help:\n"
@@ -12088,7 +12103,7 @@ msgid ""
 "           - (empty) select nothing\n"
 msgstr ""
 
-#: builtin/clean.c:304 git-add--interactive.perl:602
+#: builtin/clean.c:315 git-add--interactive.perl:602
 #, c-format
 msgid ""
 "Prompt help:\n"
@@ -12101,33 +12116,33 @@ msgid ""
 "           - (empty) finish selecting\n"
 msgstr ""
 
-#: builtin/clean.c:519 git-add--interactive.perl:568
+#: builtin/clean.c:530 git-add--interactive.perl:568
 #: git-add--interactive.perl:573
 #, c-format, perl-format
 msgid "Huh (%s)?\n"
 msgstr ""
 
-#: builtin/clean.c:659
+#: builtin/clean.c:670
 #, c-format
 msgid "Input ignore patterns>> "
 msgstr ""
 
-#: builtin/clean.c:693
+#: builtin/clean.c:704
 #, c-format
 msgid "WARNING: Cannot find items matched by: %s"
 msgstr ""
 
-#: builtin/clean.c:714
+#: builtin/clean.c:725
 msgid "Select items to delete"
 msgstr ""
 
 #. TRANSLATORS: Make sure to keep [y/N] as is
-#: builtin/clean.c:755
+#: builtin/clean.c:766
 #, c-format
 msgid "Remove %s [y/N]? "
 msgstr ""
 
-#: builtin/clean.c:786
+#: builtin/clean.c:797
 msgid ""
 "clean               - start cleaning\n"
 "filter by pattern   - exclude items from deletion\n"
@@ -12138,64 +12153,64 @@ msgid ""
 "?                   - help for prompt selection"
 msgstr ""
 
-#: builtin/clean.c:822
+#: builtin/clean.c:833
 msgid "Would remove the following item:"
 msgid_plural "Would remove the following items:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/clean.c:838
+#: builtin/clean.c:849
 msgid "No more files to clean, exiting."
 msgstr ""
 
-#: builtin/clean.c:900
+#: builtin/clean.c:911
 msgid "do not print names of files removed"
 msgstr ""
 
-#: builtin/clean.c:902
+#: builtin/clean.c:913
 msgid "force"
 msgstr ""
 
-#: builtin/clean.c:903
+#: builtin/clean.c:914
 msgid "interactive cleaning"
 msgstr ""
 
-#: builtin/clean.c:905
+#: builtin/clean.c:916
 msgid "remove whole directories"
 msgstr ""
 
-#: builtin/clean.c:906 builtin/describe.c:565 builtin/describe.c:567
+#: builtin/clean.c:917 builtin/describe.c:565 builtin/describe.c:567
 #: builtin/grep.c:937 builtin/log.c:186 builtin/log.c:188
 #: builtin/ls-files.c:651 builtin/name-rev.c:526 builtin/name-rev.c:528
 #: builtin/show-ref.c:179
 msgid "pattern"
 msgstr ""
 
-#: builtin/clean.c:907
+#: builtin/clean.c:918
 msgid "add <pattern> to ignore rules"
 msgstr ""
 
-#: builtin/clean.c:908
+#: builtin/clean.c:919
 msgid "remove ignored files, too"
 msgstr ""
 
-#: builtin/clean.c:910
+#: builtin/clean.c:921
 msgid "remove only ignored files"
 msgstr ""
 
-#: builtin/clean.c:925
+#: builtin/clean.c:936
 msgid ""
 "clean.requireForce set to true and neither -i, -n, nor -f given; refusing to "
 "clean"
 msgstr ""
 
-#: builtin/clean.c:928
+#: builtin/clean.c:939
 msgid ""
 "clean.requireForce defaults to true and neither -i, -n, nor -f given; "
 "refusing to clean"
 msgstr ""
 
-#: builtin/clean.c:940
+#: builtin/clean.c:951
 msgid "-x and -X cannot be used together"
 msgstr ""
 
@@ -12720,7 +12735,7 @@ msgid "id of a parent commit object"
 msgstr ""
 
 #: builtin/commit-tree.c:112 builtin/commit.c:1626 builtin/merge.c:283
-#: builtin/notes.c:407 builtin/notes.c:573 builtin/stash.c:1674
+#: builtin/notes.c:407 builtin/notes.c:573 builtin/stash.c:1678
 #: builtin/tag.c:454
 msgid "message"
 msgstr ""
@@ -17958,7 +17973,7 @@ msgstr ""
 msgid "use notes from <notes-ref>"
 msgstr ""
 
-#: builtin/notes.c:1036 builtin/stash.c:1814
+#: builtin/notes.c:1036 builtin/stash.c:1818
 #, c-format
 msgid "unknown subcommand: %s"
 msgstr ""
@@ -21342,7 +21357,7 @@ msgstr ""
 msgid "Cannot update %s with %s"
 msgstr ""
 
-#: builtin/stash.c:963 builtin/stash.c:1675 builtin/stash.c:1746
+#: builtin/stash.c:963 builtin/stash.c:1679 builtin/stash.c:1750
 msgid "stash message"
 msgstr ""
 
@@ -21382,68 +21397,68 @@ msgstr ""
 msgid "Cannot record working tree state"
 msgstr ""
 
-#: builtin/stash.c:1462
+#: builtin/stash.c:1464
 msgid "Can't use --patch and --include-untracked or --all at the same time"
 msgstr ""
 
-#: builtin/stash.c:1473
+#: builtin/stash.c:1475
 msgid "Can't use --staged and --include-untracked or --all at the same time"
 msgstr ""
 
-#: builtin/stash.c:1491
+#: builtin/stash.c:1493
 msgid "Did you forget to 'git add'?"
 msgstr ""
 
-#: builtin/stash.c:1506
+#: builtin/stash.c:1508
 msgid "No local changes to save"
 msgstr ""
 
-#: builtin/stash.c:1513
+#: builtin/stash.c:1515
 msgid "Cannot initialize stash"
 msgstr ""
 
-#: builtin/stash.c:1528
+#: builtin/stash.c:1530
 msgid "Cannot save the current status"
 msgstr ""
 
-#: builtin/stash.c:1533
+#: builtin/stash.c:1535
 #, c-format
 msgid "Saved working directory and index state %s"
 msgstr ""
 
-#: builtin/stash.c:1624
+#: builtin/stash.c:1628
 msgid "Cannot remove worktree changes"
 msgstr ""
 
-#: builtin/stash.c:1664 builtin/stash.c:1735
+#: builtin/stash.c:1668 builtin/stash.c:1739
 msgid "keep index"
 msgstr ""
 
-#: builtin/stash.c:1666 builtin/stash.c:1737
+#: builtin/stash.c:1670 builtin/stash.c:1741
 msgid "stash staged changes only"
 msgstr ""
 
-#: builtin/stash.c:1668 builtin/stash.c:1739
+#: builtin/stash.c:1672 builtin/stash.c:1743
 msgid "stash in patch mode"
 msgstr ""
 
-#: builtin/stash.c:1669 builtin/stash.c:1740
+#: builtin/stash.c:1673 builtin/stash.c:1744
 msgid "quiet mode"
 msgstr ""
 
-#: builtin/stash.c:1671 builtin/stash.c:1742
+#: builtin/stash.c:1675 builtin/stash.c:1746
 msgid "include untracked files in stash"
 msgstr ""
 
-#: builtin/stash.c:1673 builtin/stash.c:1744
+#: builtin/stash.c:1677 builtin/stash.c:1748
 msgid "include ignore files"
 msgstr ""
 
-#: builtin/stash.c:1706
+#: builtin/stash.c:1710
 msgid "--pathspec-from-file is incompatible with --staged"
 msgstr ""
 
-#: builtin/stash.c:1779
+#: builtin/stash.c:1783
 msgid ""
 "the stash.useBuiltin support has been removed!\n"
 "See its entry in 'git help config' for details."

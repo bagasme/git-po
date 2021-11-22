@@ -1,0 +1,29 @@
+diff --git a/po/git.pot b/po/git.pot
+index f39f573..d2d8523 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -5155,6 +5155,14 @@ msgstr  ""
+ msgid   "Refusing to lose untracked file at %s; adding as %s instead"
+ msgstr  ""
+ #
++msgid   "Refusing to remove current working directory\n"
++msgstr  ""
++#
++#, c-format
++msgid   "Refusing to remove the current working directory:\n"
++        "%s"
++msgstr  ""
++#
+ #, c-format
+ msgid   "Refusing to rewrite notes in %s (outside of refs/notes/)"
+ msgstr  ""
+@@ -6576,6 +6584,9 @@ msgstr  ""
+ msgid   "Wonderful.\n"
+ msgstr  ""
+ #
++msgid   "Would refuse to remove current working directory\n"
++msgstr  ""
++#
+ #, c-format
+ msgid   "Would remove %s\n"
+ msgstr  ""
