@@ -1,0 +1,299 @@
+diff --git a/po/git.pot b/po/git.pot
+index d2d8523..567b27d 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1587,9 +1587,6 @@ msgstr  ""
+ msgid   "--all can't be combined with refspecs"
+ msgstr  ""
+ #
+-msgid   "--all or <enlistment>, but not both"
+-msgstr  ""
+-#
+ msgid   "--anonymize-map token cannot be empty"
+ msgstr  ""
+ #
+@@ -5358,9 +5355,6 @@ msgstr  ""
+ msgid   "Saved working directory and index state %s"
+ msgstr  ""
+ #
+-msgid   "Scalar enlistments require a worktree"
+-msgstr  ""
+-#
+ msgid   "Scanning merged commits"
+ msgstr  ""
+ #
+@@ -7050,9 +7044,6 @@ msgid   "`batch-size` and `relogin` must be specified together (via command-"
+         "line or configuration option)\n"
+ msgstr  ""
+ #
+-msgid   "`scalar list` does not take arguments"
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "a %s revision is needed"
+ msgstr  ""
+@@ -7841,9 +7832,6 @@ msgstr  ""
+ msgid   "branch of repository to add as submodule"
+ msgstr  ""
+ #
+-msgid   "branch to checkout after clone"
+-msgstr  ""
+-#
+ msgid   "branch(es) to track"
+ msgstr  ""
+ #
+@@ -8048,10 +8036,6 @@ msgid   "cannot create configuration file %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "cannot deduce worktree name from '%s'"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "cannot deflate request; zlib deflate error %d"
+ msgstr  ""
+ #
+@@ -8893,24 +8877,6 @@ msgid   "could not commit staged changes."
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "could not configure %s=%s"
+-msgstr  ""
+-#
+-#, c-format
+-msgid   "could not configure '%s'"
+-msgstr  ""
+-#
+-msgid   "could not configure for full clone"
+-msgstr  ""
+-#
+-msgid   "could not configure log.excludeDecoration"
+-msgstr  ""
+-#
+-#, c-format
+-msgid   "could not configure remote in '%s'"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "could not convert the following graft(s):\n"
+         "%s"
+ msgstr  ""
+@@ -9024,9 +8990,6 @@ msgstr  ""
+ msgid   "could not find commit from NOTES_MERGE_PARTIAL."
+ msgstr  ""
+ #
+-msgid   "could not find enlistment root"
+-msgstr  ""
+-#
+ msgid   "could not find exact merge base"
+ msgstr  ""
+ #
+@@ -9514,10 +9477,6 @@ msgid   "could not switch to %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "could not switch to '%s'"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "could not unlink: %s"
+ msgstr  ""
+ #
+@@ -9888,10 +9847,6 @@ msgid   "directory '%s' contains untracked files, but is not in the sparse-"
+         "checkout cone"
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "directory '%s' exists already"
+-msgstr  ""
+-#
+ msgid   "directory from which templates will be used"
+ msgstr  ""
+ #
+@@ -10628,9 +10583,6 @@ msgstr  ""
+ msgid   "failed to delete directory %s"
+ msgstr  ""
+ #
+-msgid   "failed to delete enlistment directory"
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "failed to delete file %s"
+ msgstr  ""
+@@ -10689,16 +10641,6 @@ msgstr  ""
+ msgid   "failed to generate diff"
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "failed to get default branch for '%s'"
+-msgstr  ""
+-#
+-msgid   "failed to get default branch name"
+-msgstr  ""
+-#
+-msgid   "failed to get default branch name from remote; using local default"
+-msgstr  ""
+-#
+ msgid   "failed to get kernel name and information"
+ msgstr  ""
+ #
+@@ -10969,9 +10911,6 @@ msgstr  ""
+ msgid   "failed to unpack trees"
+ msgstr  ""
+ #
+-msgid   "failed to unregister repository"
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "failed to update conflicted state in '%s'"
+ msgstr  ""
+@@ -12136,10 +12075,6 @@ msgstr  ""
+ msgid   "git replace [-f] <object> <replacement>"
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "git repository gone in '%s'"
+-msgstr  ""
+-#
+ msgid   "git rerere [clear | forget <path>... | status | remaining | diff | "
+         "gc]"
+ msgstr  ""
+@@ -12828,12 +12763,6 @@ msgstr  ""
+ msgid   "in unpopulated submodule '%s'"
+ msgstr  ""
+ #
+-msgid   "include Git version"
+-msgstr  ""
+-#
+-msgid   "include Git's build options"
+-msgstr  ""
+-#
+ msgid   "include all commits already in the commit-graph file"
+ msgstr  ""
+ #
+@@ -13485,6 +13414,9 @@ msgstr  ""
+ msgid   "list only filenames"
+ msgstr  ""
+ #
++msgid   "list only oids"
++msgstr  ""
++#
+ msgid   "list replace refs"
+ msgstr  ""
+ #
+@@ -14031,9 +13963,6 @@ msgstr  ""
+ msgid   "need a repository to verify a bundle"
+ msgstr  ""
+ #
+-msgid   "need a working directory"
+-msgstr  ""
+-#
+ msgid   "need exactly one range"
+ msgstr  ""
+ #
+@@ -14287,10 +14216,6 @@ msgid   "no such section: %s"
+ msgstr  ""
+ #
+ #, c-format
+-msgid   "no such task: '%s'"
+-msgstr  ""
+-#
+-#, c-format
+ msgid   "no tag exactly matches '%s'"
+ msgstr  ""
+ #
+@@ -14667,9 +14592,6 @@ msgstr  ""
+ msgid   "only decorate refs that match <pattern>"
+ msgstr  ""
+ #
+-msgid   "only download metadata for the branch that will be checked out"
+-msgstr  ""
+-#
+ msgid   "only emit output related to the first range"
+ msgstr  ""
+ #
+@@ -14994,9 +14916,6 @@ msgstr  ""
+ msgid   "parse_object_buffer failed on %s for %s"
+ msgstr  ""
+ #
+-msgid   "partial clone failed; attempting full clone"
+-msgstr  ""
+-#
+ msgid   "pass --delta-islands to git-pack-objects"
+ msgstr  ""
+ #
+@@ -15677,9 +15596,6 @@ msgstr  ""
+ msgid   "recode into utf8 (default)"
+ msgstr  ""
+ #
+-msgid   "reconfigure all registered enlistments"
+-msgstr  ""
+-#
+ msgid   "record only the fact that removed paths will be added later"
+ msgstr  ""
+ #
+@@ -15786,9 +15702,6 @@ msgstr  ""
+ msgid   "refusing to create/use '%s' in another submodule's git dir"
+ msgstr  ""
+ #
+-msgid   "refusing to delete current working directory"
+-msgstr  ""
+-#
+ #, c-format
+ msgid   "refusing to fetch into branch '%s' checked out at '%s'"
+ msgstr  ""
+@@ -15843,10 +15756,6 @@ msgstr  ""
+ msgid   "remote %s already exists."
+ msgstr  ""
+ #
+-#, c-format
+-msgid   "remote HEAD is not a branch: '%.*s'"
+-msgstr  ""
+-#
+ msgid   "remote HEAD refers to nonexistent ref, unable to checkout.\n"
+ msgstr  ""
+ #
+@@ -16259,33 +16168,6 @@ msgstr  ""
+ msgid   "same as the above, but limit memory size instead of entries count"
+ msgstr  ""
+ #
+-msgid   "scalar <command> [<options>]\n"
+-        "\n"
+-        "Commands:\n"
+-msgstr  ""
+-#
+-msgid   "scalar clone [<options>] [--] <repo> [<dir>]"
+-msgstr  ""
+-#
+-msgid   "scalar delete <enlistment>"
+-msgstr  ""
+-#
+-msgid   "scalar reconfigure [--all | <enlistment>]"
+-msgstr  ""
+-#
+-msgid   "scalar register [<enlistment>]"
+-msgstr  ""
+-#
+-msgid   "scalar run <task> [<enlistment>]\n"
+-        "Tasks:\n"
+-msgstr  ""
+-#
+-msgid   "scalar unregister [<enlistment>]"
+-msgstr  ""
+-#
+-msgid   "scalar verbose [-v | --verbose] [--build-options]"
+-msgstr  ""
+-#
+ msgid   "scan pack-indexes listed by stdin for commits"
+ msgstr  ""
+ #
+@@ -18964,9 +18846,6 @@ msgstr  ""
+ msgid   "when"
+ msgstr  ""
+ #
+-msgid   "when cloning, create full working directory"
+-msgstr  ""
+-#
+ msgid   "when creating files, prepend <string>"
+ msgstr  ""
+ #
