@@ -12464,7 +12464,7 @@ msgstr ""
 msgid "Too many arguments."
 msgstr ""
 
-#: builtin/clone.c:891
+#: builtin/clone.c:891 contrib/scalar/scalar.c:414
 msgid "You must specify a repository to clone."
 msgstr ""
 
@@ -18528,6 +18528,7 @@ msgid "<remote>"
 msgstr ""
 
 #: builtin/pull.c:467 builtin/pull.c:482 builtin/pull.c:487
+#: contrib/scalar/scalar.c:375
 msgid "<branch>"
 msgstr ""
 
@@ -23442,6 +23443,170 @@ msgstr ""
 #: remote-curl.c:1558
 #, c-format
 msgid "remote-curl: unknown command '%s' from git"
+msgstr ""
+
+#: contrib/scalar/scalar.c:49
+msgid "need a working directory"
+msgstr ""
+
+#: contrib/scalar/scalar.c:86
+msgid "could not find enlistment root"
+msgstr ""
+
+#: contrib/scalar/scalar.c:89 contrib/scalar/scalar.c:351
+#: contrib/scalar/scalar.c:436 contrib/scalar/scalar.c:579
+#, c-format
+msgid "could not switch to '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:180
+#, c-format
+msgid "could not configure %s=%s"
+msgstr ""
+
+#: contrib/scalar/scalar.c:198
+msgid "could not configure log.excludeDecoration"
+msgstr ""
+
+#: contrib/scalar/scalar.c:219
+msgid "Scalar enlistments require a worktree"
+msgstr ""
+
+#: contrib/scalar/scalar.c:311
+#, c-format
+msgid "remote HEAD is not a branch: '%.*s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:317
+msgid "failed to get default branch name from remote; using local default"
+msgstr ""
+
+#: contrib/scalar/scalar.c:330
+msgid "failed to get default branch name"
+msgstr ""
+
+#: contrib/scalar/scalar.c:341
+msgid "failed to unregister repository"
+msgstr ""
+
+#: contrib/scalar/scalar.c:356
+msgid "failed to delete enlistment directory"
+msgstr ""
+
+#: contrib/scalar/scalar.c:376
+msgid "branch to checkout after clone"
+msgstr ""
+
+#: contrib/scalar/scalar.c:378
+msgid "when cloning, create full working directory"
+msgstr ""
+
+#: contrib/scalar/scalar.c:380
+msgid "only download metadata for the branch that will be checked out"
+msgstr ""
+
+#: contrib/scalar/scalar.c:385
+msgid "scalar clone [<options>] [--] <repo> [<dir>]"
+msgstr ""
+
+#: contrib/scalar/scalar.c:410
+#, c-format
+msgid "cannot deduce worktree name from '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:419
+#, c-format
+msgid "directory '%s' exists already"
+msgstr ""
+
+#: contrib/scalar/scalar.c:446
+#, c-format
+msgid "failed to get default branch for '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:457
+#, c-format
+msgid "could not configure remote in '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:466
+#, c-format
+msgid "could not configure '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:469
+msgid "partial clone failed; attempting full clone"
+msgstr ""
+
+#: contrib/scalar/scalar.c:473
+msgid "could not configure for full clone"
+msgstr ""
+
+#: contrib/scalar/scalar.c:505
+msgid "`scalar list` does not take arguments"
+msgstr ""
+
+#: contrib/scalar/scalar.c:518
+msgid "scalar register [<enlistment>]"
+msgstr ""
+
+#: contrib/scalar/scalar.c:545
+msgid "reconfigure all registered enlistments"
+msgstr ""
+
+#: contrib/scalar/scalar.c:549
+msgid "scalar reconfigure [--all | <enlistment>]"
+msgstr ""
+
+#: contrib/scalar/scalar.c:567
+msgid "--all or <enlistment>, but not both"
+msgstr ""
+
+#: contrib/scalar/scalar.c:582
+#, c-format
+msgid "git repository gone in '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:622
+msgid ""
+"scalar run <task> [<enlistment>]\n"
+"Tasks:\n"
+msgstr ""
+
+#: contrib/scalar/scalar.c:640
+#, c-format
+msgid "no such task: '%s'"
+msgstr ""
+
+#: contrib/scalar/scalar.c:690
+msgid "scalar unregister [<enlistment>]"
+msgstr ""
+
+#: contrib/scalar/scalar.c:737
+msgid "scalar delete <enlistment>"
+msgstr ""
+
+#: contrib/scalar/scalar.c:752
+msgid "refusing to delete current working directory"
+msgstr ""
+
+#: contrib/scalar/scalar.c:767
+msgid "include Git version"
+msgstr ""
+
+#: contrib/scalar/scalar.c:769
+msgid "include Git's build options"
+msgstr ""
+
+#: contrib/scalar/scalar.c:773
+msgid "scalar verbose [-v | --verbose] [--build-options]"
+msgstr ""
+
+#: contrib/scalar/scalar.c:821
+msgid ""
+"scalar <command> [<options>]\n"
+"\n"
+"Commands:\n"
 msgstr ""
 
 #: compat/compiler.h:26
