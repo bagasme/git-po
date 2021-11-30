@@ -1860,11 +1860,6 @@ msgstr ""
 msgid "HEAD of working tree %s is not updated"
 msgstr ""
 
-#: bulk-checkin.c:351
-msgid ""
-"Could not create temporary object directory for core.fsyncobjectfiles=batch"
-msgstr ""
-
 #: bundle.c:44
 #, c-format
 msgid "unrecognized bundle hash algorithm: %s"
@@ -2478,149 +2473,149 @@ msgstr ""
 msgid "core.commentChar should only be one character"
 msgstr ""
 
-#: config.c:1514
+#: config.c:1509
 #, c-format
 msgid "invalid mode for object creation: %s"
 msgstr ""
 
-#: config.c:1586
+#: config.c:1581
 #, c-format
 msgid "malformed value for %s"
 msgstr ""
 
-#: config.c:1612
+#: config.c:1607
 #, c-format
 msgid "malformed value for %s: %s"
 msgstr ""
 
-#: config.c:1613
+#: config.c:1608
 msgid "must be one of nothing, matching, simple, upstream or current"
 msgstr ""
 
-#: config.c:1674 builtin/pack-objects.c:4053
+#: config.c:1669 builtin/pack-objects.c:4053
 #, c-format
 msgid "bad pack compression level %d"
 msgstr ""
 
-#: config.c:1797
+#: config.c:1792
 #, c-format
 msgid "unable to load config blob object '%s'"
 msgstr ""
 
-#: config.c:1800
+#: config.c:1795
 #, c-format
 msgid "reference '%s' does not point to a blob"
 msgstr ""
 
-#: config.c:1818
+#: config.c:1813
 #, c-format
 msgid "unable to resolve config blob '%s'"
 msgstr ""
 
-#: config.c:1863
+#: config.c:1858
 #, c-format
 msgid "failed to parse %s"
 msgstr ""
 
-#: config.c:1919
+#: config.c:1914
 msgid "unable to parse command-line config"
 msgstr ""
 
-#: config.c:2287
+#: config.c:2282
 msgid "unknown error occurred while reading the configuration files"
 msgstr ""
 
-#: config.c:2461
+#: config.c:2456
 #, c-format
 msgid "Invalid %s: '%s'"
 msgstr ""
 
-#: config.c:2506
+#: config.c:2501
 #, c-format
 msgid "splitIndex.maxPercentChange value '%d' should be between 0 and 100"
 msgstr ""
 
-#: config.c:2552
+#: config.c:2547
 #, c-format
 msgid "unable to parse '%s' from command-line config"
 msgstr ""
 
-#: config.c:2554
+#: config.c:2549
 #, c-format
 msgid "bad config variable '%s' in file '%s' at line %d"
 msgstr ""
 
-#: config.c:2638
+#: config.c:2633
 #, c-format
 msgid "invalid section name '%s'"
 msgstr ""
 
-#: config.c:2670
+#: config.c:2665
 #, c-format
 msgid "%s has multiple values"
 msgstr ""
 
-#: config.c:2699
+#: config.c:2694
 #, c-format
 msgid "failed to write new configuration file %s"
 msgstr ""
 
-#: config.c:2951 config.c:3278
+#: config.c:2946 config.c:3273
 #, c-format
 msgid "could not lock config file %s"
 msgstr ""
 
-#: config.c:2962
+#: config.c:2957
 #, c-format
 msgid "opening %s"
 msgstr ""
 
-#: config.c:2999 builtin/config.c:361
+#: config.c:2994 builtin/config.c:361
 #, c-format
 msgid "invalid pattern: %s"
 msgstr ""
 
-#: config.c:3024
+#: config.c:3019
 #, c-format
 msgid "invalid config file %s"
 msgstr ""
 
-#: config.c:3037 config.c:3291
+#: config.c:3032 config.c:3286
 #, c-format
 msgid "fstat on %s failed"
 msgstr ""
 
-#: config.c:3048
+#: config.c:3043
 #, c-format
 msgid "unable to mmap '%s'%s"
 msgstr ""
 
-#: config.c:3058 config.c:3296
+#: config.c:3053 config.c:3291
 #, c-format
 msgid "chmod on %s failed"
 msgstr ""
 
-#: config.c:3143 config.c:3393
+#: config.c:3138 config.c:3388
 #, c-format
 msgid "could not write config file %s"
 msgstr ""
 
-#: config.c:3177
+#: config.c:3172
 #, c-format
 msgid "could not set '%s' to '%s'"
 msgstr ""
 
-#: config.c:3179 builtin/remote.c:662 builtin/remote.c:860 builtin/remote.c:868
+#: config.c:3174 builtin/remote.c:662 builtin/remote.c:860 builtin/remote.c:868
 #, c-format
 msgid "could not unset '%s'"
 msgstr ""
 
-#: config.c:3269
+#: config.c:3264
 #, c-format
 msgid "invalid section name: %s"
 msgstr ""
 
-#: config.c:3436
+#: config.c:3431
 #, c-format
 msgid "missing value for '%s'"
 msgstr ""
@@ -2789,7 +2784,7 @@ msgstr ""
 msgid "unable to fork"
 msgstr ""
 
-#: connected.c:109 builtin/fsck.c:189 builtin/prune.c:56
+#: connected.c:109 builtin/fsck.c:189 builtin/prune.c:45
 msgid "Checking connectivity"
 msgstr ""
 
@@ -3715,41 +3710,41 @@ msgstr ""
 msgid "cannot use %s as an exclude file"
 msgstr ""
 
-#: dir.c:2464
+#: dir.c:2420
 #, c-format
 msgid "could not open directory '%s'"
 msgstr ""
 
-#: dir.c:2766
+#: dir.c:2722
 msgid "failed to get kernel name and information"
 msgstr ""
 
-#: dir.c:2890
+#: dir.c:2846
 msgid "untracked cache is disabled on this system or location"
 msgstr ""
 
-#: dir.c:3158
+#: dir.c:3114
 msgid ""
 "No directory name could be guessed.\n"
 "Please specify a directory on the command line"
 msgstr ""
 
-#: dir.c:3837
+#: dir.c:3793
 #, c-format
 msgid "index file corrupt in repo %s"
 msgstr ""
 
-#: dir.c:3884 dir.c:3889
+#: dir.c:3840 dir.c:3845
 #, c-format
 msgid "could not create directories for %s"
 msgstr ""
 
-#: dir.c:3918
+#: dir.c:3874
 #, c-format
 msgid "could not migrate git directory from '%s' to '%s'"
 msgstr ""
 
-#: editor.c:77
+#: editor.c:74
 #, c-format
 msgid "hint: Waiting for your editor to close the file...%c"
 msgstr ""
@@ -3763,7 +3758,7 @@ msgstr ""
 msgid "could not stat file '%s'"
 msgstr ""
 
-#: environment.c:144
+#: environment.c:143
 #, c-format
 msgid "bad git namespace path \"%s\""
 msgstr ""
@@ -4114,24 +4109,24 @@ msgstr ""
 msgid "ignored invalid color '%.*s' in log.graphColors"
 msgstr ""
 
-#: grep.c:533
+#: grep.c:531
 msgid ""
 "given pattern contains NULL byte (via -f <file>). This is only supported "
 "with -P under PCRE v2"
 msgstr ""
 
-#: grep.c:1928
+#: grep.c:1926
 #, c-format
 msgid "'%s': unable to read %s"
 msgstr ""
 
-#: grep.c:1945 setup.c:176 builtin/clone.c:302 builtin/diff.c:90
+#: grep.c:1943 setup.c:176 builtin/clone.c:302 builtin/diff.c:90
 #: builtin/rm.c:136
 #, c-format
 msgid "failed to stat '%s'"
 msgstr ""
 
-#: grep.c:1956
+#: grep.c:1954
 #, c-format
 msgid "'%s': short read"
 msgstr ""
@@ -5235,225 +5230,225 @@ msgstr ""
 msgid "unable to move new alternates file into place"
 msgstr ""
 
-#: object-file.c:744
+#: object-file.c:701
 #, c-format
 msgid "path '%s' does not exist"
 msgstr ""
 
-#: object-file.c:765
+#: object-file.c:722
 #, c-format
 msgid "reference repository '%s' as a linked checkout is not supported yet."
 msgstr ""
 
-#: object-file.c:771
+#: object-file.c:728
 #, c-format
 msgid "reference repository '%s' is not a local repository."
 msgstr ""
 
-#: object-file.c:777
+#: object-file.c:734
 #, c-format
 msgid "reference repository '%s' is shallow"
 msgstr ""
 
-#: object-file.c:785
+#: object-file.c:742
 #, c-format
 msgid "reference repository '%s' is grafted"
 msgstr ""
 
-#: object-file.c:816
+#: object-file.c:773
 #, c-format
 msgid "could not find object directory matching %s"
 msgstr ""
 
-#: object-file.c:866
+#: object-file.c:823
 #, c-format
 msgid "invalid line while parsing alternate refs: %s"
 msgstr ""
 
-#: object-file.c:1016
+#: object-file.c:973
 #, c-format
 msgid "attempting to mmap %<PRIuMAX> over limit %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:1051
+#: object-file.c:1008
 #, c-format
 msgid "mmap failed%s"
 msgstr ""
 
-#: object-file.c:1217
+#: object-file.c:1174
 #, c-format
 msgid "object file %s is empty"
 msgstr ""
 
-#: object-file.c:1336 object-file.c:2555
+#: object-file.c:1293 object-file.c:2499
 #, c-format
 msgid "corrupt loose object '%s'"
 msgstr ""
 
-#: object-file.c:1338 object-file.c:2559
+#: object-file.c:1295 object-file.c:2503
 #, c-format
 msgid "garbage at end of loose object '%s'"
 msgstr ""
 
-#: object-file.c:1460
+#: object-file.c:1417
 #, c-format
 msgid "unable to parse %s header"
 msgstr ""
 
-#: object-file.c:1462
+#: object-file.c:1419
 msgid "invalid object type"
 msgstr ""
 
-#: object-file.c:1473
+#: object-file.c:1430
 #, c-format
 msgid "unable to unpack %s header"
 msgstr ""
 
-#: object-file.c:1477
+#: object-file.c:1434
 #, c-format
 msgid "header for %s too long, exceeds %d bytes"
 msgstr ""
 
-#: object-file.c:1707
+#: object-file.c:1664
 #, c-format
 msgid "failed to read object %s"
 msgstr ""
 
-#: object-file.c:1711
+#: object-file.c:1668
 #, c-format
 msgid "replacement %s not found for %s"
 msgstr ""
 
-#: object-file.c:1715
+#: object-file.c:1672
 #, c-format
 msgid "loose object %s (stored in %s) is corrupt"
 msgstr ""
 
-#: object-file.c:1719
+#: object-file.c:1676
 #, c-format
 msgid "packed object %s (stored in %s) is corrupt"
 msgstr ""
 
-#: object-file.c:1824
+#: object-file.c:1781
 #, c-format
 msgid "unable to write file %s"
 msgstr ""
 
-#: object-file.c:1831
+#: object-file.c:1788
 #, c-format
 msgid "unable to set permission to '%s'"
 msgstr ""
 
-#: object-file.c:1838
+#: object-file.c:1795
 msgid "file write error"
 msgstr ""
 
-#: object-file.c:1871
+#: object-file.c:1815
 msgid "error when closing loose object file"
 msgstr ""
 
-#: object-file.c:1938
+#: object-file.c:1882
 #, c-format
 msgid "insufficient permission for adding an object to repository database %s"
 msgstr ""
 
-#: object-file.c:1940
+#: object-file.c:1884
 msgid "unable to create temporary file"
 msgstr ""
 
-#: object-file.c:1964
+#: object-file.c:1908
 msgid "unable to write loose object file"
 msgstr ""
 
-#: object-file.c:1970
+#: object-file.c:1914
 #, c-format
 msgid "unable to deflate new object %s (%d)"
 msgstr ""
 
-#: object-file.c:1974
+#: object-file.c:1918
 #, c-format
 msgid "deflateEnd on object %s failed (%d)"
 msgstr ""
 
-#: object-file.c:1978
+#: object-file.c:1922
 #, c-format
 msgid "confused by unstable object source data for %s"
 msgstr ""
 
-#: object-file.c:1989 builtin/pack-objects.c:1243
+#: object-file.c:1933 builtin/pack-objects.c:1243
 #, c-format
 msgid "failed utime() on %s"
 msgstr ""
 
-#: object-file.c:2067
+#: object-file.c:2011
 #, c-format
 msgid "cannot read object for %s"
 msgstr ""
 
-#: object-file.c:2118
+#: object-file.c:2062
 msgid "corrupt commit"
 msgstr ""
 
-#: object-file.c:2126
+#: object-file.c:2070
 msgid "corrupt tag"
 msgstr ""
 
-#: object-file.c:2226
+#: object-file.c:2170
 #, c-format
 msgid "read error while indexing %s"
 msgstr ""
 
-#: object-file.c:2229
+#: object-file.c:2173
 #, c-format
 msgid "short read while indexing %s"
 msgstr ""
 
-#: object-file.c:2302 object-file.c:2312
+#: object-file.c:2246 object-file.c:2256
 #, c-format
 msgid "%s: failed to insert into database"
 msgstr ""
 
-#: object-file.c:2318
+#: object-file.c:2262
 #, c-format
 msgid "%s: unsupported file type"
 msgstr ""
 
-#: object-file.c:2342 builtin/fetch.c:1445
+#: object-file.c:2286 builtin/fetch.c:1445
 #, c-format
 msgid "%s is not a valid object"
 msgstr ""
 
-#: object-file.c:2344
+#: object-file.c:2288
 #, c-format
 msgid "%s is not a valid '%s' object"
 msgstr ""
 
-#: object-file.c:2371
+#: object-file.c:2315
 #, c-format
 msgid "unable to open %s"
 msgstr ""
 
-#: object-file.c:2566
+#: object-file.c:2510
 #, c-format
 msgid "hash mismatch for %s (expected %s)"
 msgstr ""
 
-#: object-file.c:2589
+#: object-file.c:2533
 #, c-format
 msgid "unable to mmap %s"
 msgstr ""
 
-#: object-file.c:2595
+#: object-file.c:2539
 #, c-format
 msgid "unable to unpack header of %s"
 msgstr ""
 
-#: object-file.c:2600
+#: object-file.c:2544
 #, c-format
 msgid "unable to parse header of %s"
 msgstr ""
 
-#: object-file.c:2611
+#: object-file.c:2555
 #, c-format
 msgid "unable to unpack contents of %s"
 msgstr ""
@@ -6158,7 +6153,7 @@ msgstr ""
 msgid "broken index, expect %s in %s, got %s"
 msgstr ""
 
-#: read-cache.c:3065 strbuf.c:1179 wrapper.c:689 builtin/merge.c:1147
+#: read-cache.c:3065 strbuf.c:1179 wrapper.c:641 builtin/merge.c:1147
 #, c-format
 msgid "could not close '%s'"
 msgstr ""
@@ -7177,7 +7172,7 @@ msgid "could not lock '%s'"
 msgstr ""
 
 #: sequencer.c:450 sequencer.c:3095 sequencer.c:3300 sequencer.c:3314
-#: sequencer.c:3572 sequencer.c:5627 strbuf.c:1176 wrapper.c:687
+#: sequencer.c:3572 sequencer.c:5627 strbuf.c:1176 wrapper.c:639
 #, c-format
 msgid "could not write to '%s'"
 msgstr ""
@@ -8428,7 +8423,7 @@ msgstr ""
 msgid "could not read from stdin"
 msgstr ""
 
-#: trailer.c:1024 wrapper.c:732
+#: trailer.c:1024 wrapper.c:684
 #, c-format
 msgid "could not stat %s"
 msgstr ""
@@ -9088,12 +9083,12 @@ msgstr ""
 msgid "could not open '%s' for reading and writing"
 msgstr ""
 
-#: wrapper.c:406 wrapper.c:655
+#: wrapper.c:406 wrapper.c:607
 #, c-format
 msgid "unable to access '%s'"
 msgstr ""
 
-#: wrapper.c:663
+#: wrapper.c:615
 msgid "unable to get current working directory"
 msgstr ""
 
@@ -9740,7 +9735,7 @@ msgstr ""
 msgid "allow updating entries outside of the sparse-checkout cone"
 msgstr ""
 
-#: builtin/add.c:391 builtin/update-index.c:1005
+#: builtin/add.c:391 builtin/update-index.c:1004
 msgid "override the executable bit of the listed files"
 msgstr ""
 
@@ -14809,7 +14804,7 @@ msgstr ""
 msgid "write dangling objects in .git/lost-found"
 msgstr ""
 
-#: builtin/fsck.c:801 builtin/prune.c:148
+#: builtin/fsck.c:801 builtin/prune.c:134
 msgid "show progress"
 msgstr ""
 
@@ -15585,7 +15580,7 @@ msgstr ""
 msgid "pack too large for current definition of off_t"
 msgstr ""
 
-#: builtin/index-pack.c:327 builtin/unpack-objects.c:96
+#: builtin/index-pack.c:327 builtin/unpack-objects.c:95
 msgid "pack exceeds maximum allowed size"
 msgstr ""
 
@@ -15826,7 +15821,7 @@ msgstr ""
 msgid "--verify with no packfile name given"
 msgstr ""
 
-#: builtin/index-pack.c:1933 builtin/unpack-objects.c:587
+#: builtin/index-pack.c:1933 builtin/unpack-objects.c:584
 msgid "fsck error in pack objects"
 msgstr ""
 
@@ -17774,7 +17769,7 @@ msgstr ""
 msgid "read object names from the standard input"
 msgstr ""
 
-#: builtin/notes.c:952 builtin/prune.c:146 builtin/worktree.c:147
+#: builtin/notes.c:952 builtin/prune.c:132 builtin/worktree.c:147
 msgid "do not remove, show only"
 msgstr ""
 
@@ -17845,7 +17840,7 @@ msgstr ""
 msgid "Writing objects"
 msgstr ""
 
-#: builtin/pack-objects.c:1235 builtin/update-index.c:91
+#: builtin/pack-objects.c:1235 builtin/update-index.c:90
 #, c-format
 msgid "failed to stat %s"
 msgstr ""
@@ -18228,19 +18223,19 @@ msgstr ""
 msgid "git prune [-n] [-v] [--progress] [--expire <time>] [--] [<head>...]"
 msgstr ""
 
-#: builtin/prune.c:147
+#: builtin/prune.c:133
 msgid "report pruned objects"
 msgstr ""
 
-#: builtin/prune.c:150
+#: builtin/prune.c:136
 msgid "expire objects older than <time>"
 msgstr ""
 
-#: builtin/prune.c:152
+#: builtin/prune.c:138
 msgid "limit traversal to objects outside promisor packfiles"
 msgstr ""
 
-#: builtin/prune.c:165
+#: builtin/prune.c:151
 msgid "cannot prune in a precious-objects repo"
 msgstr ""
 
@@ -18386,19 +18381,19 @@ msgid ""
 "invocation.\n"
 msgstr ""
 
-#: builtin/pull.c:1043
+#: builtin/pull.c:1044
 msgid "Updating an unborn branch with changes added to the index."
 msgstr ""
 
-#: builtin/pull.c:1047
+#: builtin/pull.c:1048
 msgid "pull with rebase"
 msgstr ""
 
-#: builtin/pull.c:1048
+#: builtin/pull.c:1049
 msgid "please commit or stash them."
 msgstr ""
 
-#: builtin/pull.c:1073
+#: builtin/pull.c:1074
 #, c-format
 msgid ""
 "fetch updated the current branch head.\n"
@@ -18406,7 +18401,7 @@ msgid ""
 "commit %s."
 msgstr ""
 
-#: builtin/pull.c:1079
+#: builtin/pull.c:1080
 #, c-format
 msgid ""
 "Cannot fast-forward your working tree.\n"
@@ -18417,23 +18412,23 @@ msgid ""
 "to recover."
 msgstr ""
 
-#: builtin/pull.c:1094
+#: builtin/pull.c:1095
 msgid "Cannot merge multiple branches into empty head."
 msgstr ""
 
-#: builtin/pull.c:1099
+#: builtin/pull.c:1100
 msgid "Cannot rebase onto multiple branches."
 msgstr ""
 
-#: builtin/pull.c:1101
+#: builtin/pull.c:1102
 msgid "Cannot fast-forward to multiple branches."
 msgstr ""
 
-#: builtin/pull.c:1115
+#: builtin/pull.c:1117
 msgid "Need to specify how to reconcile divergent branches."
 msgstr ""
 
-#: builtin/pull.c:1129
+#: builtin/pull.c:1131
 msgid "cannot rebase with locally recorded submodule modifications"
 msgstr ""
 
@@ -22215,245 +22210,245 @@ msgstr ""
 msgid "Updated tag '%s' (was %s)\n"
 msgstr ""
 
-#: builtin/unpack-objects.c:505
+#: builtin/unpack-objects.c:504
 msgid "Unpacking objects"
 msgstr ""
 
-#: builtin/update-index.c:85
+#: builtin/update-index.c:84
 #, c-format
 msgid "failed to create directory %s"
 msgstr ""
 
-#: builtin/update-index.c:107
+#: builtin/update-index.c:106
 #, c-format
 msgid "failed to delete file %s"
 msgstr ""
 
-#: builtin/update-index.c:114 builtin/update-index.c:220
+#: builtin/update-index.c:113 builtin/update-index.c:219
 #, c-format
 msgid "failed to delete directory %s"
 msgstr ""
 
-#: builtin/update-index.c:139
+#: builtin/update-index.c:138
 #, c-format
 msgid "Testing mtime in '%s' "
 msgstr ""
 
-#: builtin/update-index.c:153
+#: builtin/update-index.c:152
 msgid "directory stat info does not change after adding a new file"
 msgstr ""
 
-#: builtin/update-index.c:166
+#: builtin/update-index.c:165
 msgid "directory stat info does not change after adding a new directory"
 msgstr ""
 
-#: builtin/update-index.c:179
+#: builtin/update-index.c:178
 msgid "directory stat info changes after updating a file"
 msgstr ""
 
-#: builtin/update-index.c:190
+#: builtin/update-index.c:189
 msgid "directory stat info changes after adding a file inside subdirectory"
 msgstr ""
 
-#: builtin/update-index.c:201
+#: builtin/update-index.c:200
 msgid "directory stat info does not change after deleting a file"
 msgstr ""
 
-#: builtin/update-index.c:214
+#: builtin/update-index.c:213
 msgid "directory stat info does not change after deleting a directory"
 msgstr ""
 
-#: builtin/update-index.c:221
+#: builtin/update-index.c:220
 msgid " OK"
 msgstr ""
 
-#: builtin/update-index.c:590
+#: builtin/update-index.c:589
 msgid "git update-index [<options>] [--] [<file>...]"
 msgstr ""
 
-#: builtin/update-index.c:975
+#: builtin/update-index.c:974
 msgid "continue refresh even when index needs update"
 msgstr ""
 
-#: builtin/update-index.c:978
+#: builtin/update-index.c:977
 msgid "refresh: ignore submodules"
 msgstr ""
 
-#: builtin/update-index.c:981
+#: builtin/update-index.c:980
 msgid "do not ignore new files"
 msgstr ""
 
-#: builtin/update-index.c:983
+#: builtin/update-index.c:982
 msgid "let files replace directories and vice-versa"
 msgstr ""
 
-#: builtin/update-index.c:985
+#: builtin/update-index.c:984
 msgid "notice files missing from worktree"
 msgstr ""
 
-#: builtin/update-index.c:987
+#: builtin/update-index.c:986
 msgid "refresh even if index contains unmerged entries"
 msgstr ""
 
-#: builtin/update-index.c:990
+#: builtin/update-index.c:989
 msgid "refresh stat information"
 msgstr ""
 
-#: builtin/update-index.c:994
+#: builtin/update-index.c:993
 msgid "like --refresh, but ignore assume-unchanged setting"
 msgstr ""
 
-#: builtin/update-index.c:998
+#: builtin/update-index.c:997
 msgid "<mode>,<object>,<path>"
 msgstr ""
 
-#: builtin/update-index.c:999
+#: builtin/update-index.c:998
 msgid "add the specified entry to the index"
 msgstr ""
 
-#: builtin/update-index.c:1009
+#: builtin/update-index.c:1008
 msgid "mark files as \"not changing\""
 msgstr ""
 
-#: builtin/update-index.c:1012
+#: builtin/update-index.c:1011
 msgid "clear assumed-unchanged bit"
 msgstr ""
 
-#: builtin/update-index.c:1015
+#: builtin/update-index.c:1014
 msgid "mark files as \"index-only\""
 msgstr ""
 
-#: builtin/update-index.c:1018
+#: builtin/update-index.c:1017
 msgid "clear skip-worktree bit"
 msgstr ""
 
-#: builtin/update-index.c:1021
+#: builtin/update-index.c:1020
 msgid "do not touch index-only entries"
 msgstr ""
 
-#: builtin/update-index.c:1023
+#: builtin/update-index.c:1022
 msgid "add to index only; do not add content to object database"
 msgstr ""
 
-#: builtin/update-index.c:1025
+#: builtin/update-index.c:1024
 msgid "remove named paths even if present in worktree"
 msgstr ""
 
-#: builtin/update-index.c:1027
+#: builtin/update-index.c:1026
 msgid "with --stdin: input lines are terminated by null bytes"
 msgstr ""
 
-#: builtin/update-index.c:1029
+#: builtin/update-index.c:1028
 msgid "read list of paths to be updated from standard input"
 msgstr ""
 
-#: builtin/update-index.c:1033
+#: builtin/update-index.c:1032
 msgid "add entries from standard input to the index"
 msgstr ""
 
-#: builtin/update-index.c:1037
+#: builtin/update-index.c:1036
 msgid "repopulate stages #2 and #3 for the listed paths"
 msgstr ""
 
-#: builtin/update-index.c:1041
+#: builtin/update-index.c:1040
 msgid "only update entries that differ from HEAD"
 msgstr ""
 
-#: builtin/update-index.c:1045
+#: builtin/update-index.c:1044
 msgid "ignore files missing from worktree"
 msgstr ""
 
-#: builtin/update-index.c:1048
+#: builtin/update-index.c:1047
 msgid "report actions to standard output"
 msgstr ""
 
-#: builtin/update-index.c:1050
+#: builtin/update-index.c:1049
 msgid "(for porcelains) forget saved unresolved conflicts"
 msgstr ""
 
-#: builtin/update-index.c:1054
+#: builtin/update-index.c:1053
 msgid "write index in this format"
 msgstr ""
 
-#: builtin/update-index.c:1056
+#: builtin/update-index.c:1055
 msgid "enable or disable split index"
 msgstr ""
 
-#: builtin/update-index.c:1058
+#: builtin/update-index.c:1057
 msgid "enable/disable untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1060
+#: builtin/update-index.c:1059
 msgid "test if the filesystem supports untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1062
+#: builtin/update-index.c:1061
 msgid "enable untracked cache without testing the filesystem"
 msgstr ""
 
-#: builtin/update-index.c:1064
+#: builtin/update-index.c:1063
 msgid "write out the index even if is not flagged as changed"
 msgstr ""
 
-#: builtin/update-index.c:1066
+#: builtin/update-index.c:1065
 msgid "enable or disable file system monitor"
 msgstr ""
 
-#: builtin/update-index.c:1068
+#: builtin/update-index.c:1067
 msgid "mark files as fsmonitor valid"
 msgstr ""
 
-#: builtin/update-index.c:1071
+#: builtin/update-index.c:1070
 msgid "clear fsmonitor valid bit"
 msgstr ""
 
-#: builtin/update-index.c:1179
+#: builtin/update-index.c:1173
 msgid ""
 "core.splitIndex is set to false; remove or change it, if you really want to "
 "enable split index"
 msgstr ""
 
-#: builtin/update-index.c:1188
+#: builtin/update-index.c:1182
 msgid ""
 "core.splitIndex is set to true; remove or change it, if you really want to "
 "disable split index"
 msgstr ""
 
-#: builtin/update-index.c:1200
+#: builtin/update-index.c:1194
 msgid ""
 "core.untrackedCache is set to true; remove or change it, if you really want "
 "to disable the untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1204
+#: builtin/update-index.c:1198
 msgid "Untracked cache disabled"
 msgstr ""
 
-#: builtin/update-index.c:1212
+#: builtin/update-index.c:1206
 msgid ""
 "core.untrackedCache is set to false; remove or change it, if you really want "
 "to enable the untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1216
+#: builtin/update-index.c:1210
 #, c-format
 msgid "Untracked cache enabled for '%s'"
 msgstr ""
 
-#: builtin/update-index.c:1224
+#: builtin/update-index.c:1218
 msgid "core.fsmonitor is unset; set it if you really want to enable fsmonitor"
 msgstr ""
 
-#: builtin/update-index.c:1228
+#: builtin/update-index.c:1222
 msgid "fsmonitor enabled"
 msgstr ""
 
-#: builtin/update-index.c:1231
+#: builtin/update-index.c:1225
 msgid ""
 "core.fsmonitor is set; remove it if you really want to disable fsmonitor"
 msgstr ""
 
-#: builtin/update-index.c:1235
+#: builtin/update-index.c:1229
 msgid "fsmonitor disabled"
 msgstr ""
 

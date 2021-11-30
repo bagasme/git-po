@@ -1,0 +1,14 @@
+diff --git a/po/git.pot b/po/git.pot
+index 0de74dd..b393c93 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -3129,9 +3129,6 @@ msgstr  ""
+ msgid   "Could not create new root commit"
+ msgstr  ""
+ 
+-msgid   "Could not create temporary object directory for core.fsyncobjectfiles=batch"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Could not delete %s"
+ msgstr  ""
