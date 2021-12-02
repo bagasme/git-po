@@ -1,0 +1,542 @@
+diff --git a/po/git.pot b/po/git.pot
+index 2ef7dfe..6985b31 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -312,6 +312,9 @@ msgstr  ""
+ msgid   "  (use \"git am --abort\" to restore the original branch)"
+ msgstr  ""
+ 
++msgid   "  (use \"git am --allow-empty\" to keep recording this empty patch)"
++msgstr  ""
++
+ msgid   "  (use \"git am --skip\" to skip this patch)"
+ msgstr  ""
+ 
+@@ -1345,6 +1348,10 @@ msgstr  ""
+ msgid   "'%s' or '%s' cannot be used with %s"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'%s' requires a batch mode"
++msgstr  ""
++
+ #, c-format
+ msgid   "'%s' was deleted by the applypatch-msg hook"
+ msgstr  ""
+@@ -1391,9 +1398,17 @@ msgstr  ""
+ msgid   "'%s.final' contains the composed email.\n"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'%s=<%s> needs '%s' or '%s'"
++msgstr  ""
++
+ msgid   "'' is not a valid term"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'-%c' is incompatible with batch mode"
++msgstr  ""
++
+ msgid   "'GIT_AUTHOR_DATE' already given"
+ msgstr  ""
+ 
+@@ -1706,6 +1721,15 @@ msgstr  ""
+ msgid   "--creation-factor requires --range-diff"
+ msgstr  ""
+ 
++msgid   "--cruft and -A are incompatible"
++msgstr  ""
++
++msgid   "--cruft and -k are incompatible"
++msgstr  ""
++
++msgid   "--cruft must be combined with all-into-one"
++msgstr  ""
++
+ msgid   "--deepen and --depth are mutually exclusive"
+ msgstr  ""
+ 
+@@ -2167,6 +2191,14 @@ msgstr  ""
+ msgid   "<object-id>"
+ msgstr  ""
+ 
++#, c-format
++msgid   "<object> required with '-%c'"
++msgstr  ""
++
++#, c-format
++msgid   "<object>:<path> required, only <object> '%s' given"
++msgstr  ""
++
+ msgid   "<param1,param2>..."
+ msgstr  ""
+ 
+@@ -2191,6 +2223,10 @@ msgstr  ""
+ msgid   "<rev-opts> are documented in git-rev-list(1)"
+ msgstr  ""
+ 
++#, c-format
++msgid   "<rev> required with '%s'"
++msgstr  ""
++
+ msgid   "<string>"
+ msgstr  ""
+ 
+@@ -2200,9 +2236,6 @@ msgstr  ""
+ msgid   "<text>"
+ msgstr  ""
+ 
+-msgid   "<type> can be one of: blob, tree, commit, tag"
+-msgstr  ""
+-
+ msgid   "<version>[,<offset>]"
+ msgstr  ""
+ 
+@@ -2570,6 +2603,9 @@ msgstr  ""
+ msgid   "Badly quoted content in file '%s': %s"
+ msgstr  ""
+ 
++msgid   "Batch objects requested on stdin (or --batch-all-objects)"
++msgstr  ""
++
+ msgid   "Bidirectional operation between a Subversion repository and Git"
+ msgstr  ""
+ 
+@@ -2956,6 +2992,9 @@ msgid   "Cannot update submodule:\n"
+         "%s"
+ msgstr  ""
+ 
++msgid   "Change or optimize batch output"
++msgstr  ""
++
+ #, c-format
+ msgid   "Changes from %s to %s:\n"
+ msgstr  ""
+@@ -2970,6 +3009,9 @@ msgstr  ""
+ msgid   "Changes to be committed:"
+ msgstr  ""
+ 
++msgid   "Check object existence or emit object contents"
++msgstr  ""
++
+ msgid   "Check the GPG signature of commits"
+ msgstr  ""
+ 
+@@ -3524,6 +3566,12 @@ msgstr  ""
+ msgid   "Dry-Sent %s\n"
+ msgstr  ""
+ 
++msgid   "Emit [broken] object attributes"
++msgstr  ""
++
++msgid   "Emit object (blob or tree) with conversion or filter (stand-alone, or with batch)"
++msgstr  ""
++
+ msgid   "Empty commit message."
+ msgstr  ""
+ 
+@@ -3544,6 +3592,9 @@ msgstr  ""
+ msgid   "Entry '%s' overlaps with '%s'.  Cannot bind."
+ msgstr  ""
+ 
++msgid   "Enumerating cruft objects"
++msgstr  ""
++
+ msgid   "Enumerating objects"
+ msgstr  ""
+ 
+@@ -4854,7 +4905,8 @@ msgstr  ""
+ msgid   "Patch format detection failed."
+ msgstr  ""
+ 
+-msgid   "Patch is empty."
++msgid   "Patch is empty.\n"
++        "If you want to keep recording it, run \"git am --allow-empty\"."
+ msgstr  ""
+ 
+ msgid   "Patch sent with format=flowed; space at the end of lines might be lost."
+@@ -6062,6 +6114,9 @@ msgstr  ""
+ msgid   "Total %<PRIu32> (delta %<PRIu32>), reused %<PRIu32> (delta %<PRIu32>), pack-reused %<PRIu32>"
+ msgstr  ""
+ 
++msgid   "Traversing cruft objects"
++msgstr  ""
++
+ #, c-format
+ msgid   "Trying merge strategy %s...\n"
+ msgstr  ""
+@@ -7577,6 +7632,9 @@ msgstr  ""
+ msgid   "base-commit"
+ msgstr  ""
+ 
++msgid   "batch modes take no arguments"
++msgstr  ""
++
+ msgid   "be more quiet"
+ msgstr  ""
+ 
+@@ -7648,9 +7706,6 @@ msgstr  ""
+ msgid   "bisecting only with a %s commit"
+ msgstr  ""
+ 
+-msgid   "blob"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "blob expected for %s '%s'"
+ msgstr  ""
+@@ -7658,6 +7713,9 @@ msgstr  ""
+ msgid   "blob-id"
+ msgstr  ""
+ 
++msgid   "blob|tree"
++msgstr  ""
++
+ #, c-format
+ msgid   "bogus config parameter: %s"
+ msgstr  ""
+@@ -8279,9 +8337,18 @@ msgstr  ""
+ msgid   "cannot use --filter without --stdout"
+ msgstr  ""
+ 
++msgid   "cannot use --max-pack-size with --cruft"
++msgstr  ""
++
++msgid   "cannot use --stdin-packs with --cruft"
++msgstr  ""
++
+ msgid   "cannot use -a with -d"
+ msgstr  ""
+ 
++msgid   "cannot use internal rev list with --cruft"
++msgstr  ""
++
+ msgid   "cannot use internal rev list with --stdin-packs"
+ msgstr  ""
+ 
+@@ -8321,6 +8388,9 @@ msgstr  ""
+ msgid   "check if - even missing - files are ignored in dry run"
+ msgstr  ""
+ 
++msgid   "check if <object> exists"
++msgstr  ""
++
+ msgid   "check if it is safe to write to the .gitmodules file"
+ msgstr  ""
+ 
+@@ -8937,6 +9007,9 @@ msgstr  ""
+ msgid   "could not initialize listener thread"
+ msgstr  ""
+ 
++msgid   "could not load cruft pack .mtimes"
++msgstr  ""
++
+ msgid   "could not load pack"
+ msgstr  ""
+ 
+@@ -9480,6 +9553,9 @@ msgstr  ""
+ msgid   "create a bare repository"
+ msgstr  ""
+ 
++msgid   "create a cruft pack"
++msgstr  ""
++
+ msgid   "create a mirror repository (implies bare)"
+ msgstr  ""
+ 
+@@ -9836,7 +9912,7 @@ msgstr  ""
+ msgid   "do not munge pathnames and use NULs as output field terminators in --raw or --numstat"
+ msgstr  ""
+ 
+-msgid   "do not order --batch-all-objects output"
++msgid   "do not order objects before emitting them"
+ msgstr  ""
+ 
+ msgid   "do not pack objects in promisor packfiles"
+@@ -10284,9 +10360,6 @@ msgstr  ""
+ msgid   "exit with exit code 2 if no matching refs are found"
+ msgstr  ""
+ 
+-msgid   "exit with zero when there's no error"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "expansion of alias '%s' failed; '%s' is not a git command\n"
+ msgstr  ""
+@@ -10369,6 +10442,9 @@ msgstr  ""
+ msgid   "expecting a color: %s"
+ msgstr  ""
+ 
++msgid   "expire cruft objects older than <time>"
++msgstr  ""
++
+ msgid   "expire objects older than <time>"
+ msgstr  ""
+ 
+@@ -11037,13 +11113,7 @@ msgstr  ""
+ msgid   "fmt"
+ msgstr  ""
+ 
+-msgid   "follow in-tree symlinks (used with --batch or --batch-check)"
+-msgstr  ""
+-
+-msgid   "for blob objects, run filters on object's content"
+-msgstr  ""
+-
+-msgid   "for blob objects, run textconv on object's content"
++msgid   "follow in-tree symlinks"
+ msgstr  ""
+ 
+ msgid   "for conflicts, use a union version"
+@@ -11434,10 +11504,22 @@ msgstr  ""
+ msgid   "git bundle verify [<options>] <file>"
+ msgstr  ""
+ 
+-msgid   "git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-symlinks] [--textconv | --filters]"
++msgid   "git cat-file ( -t | -s ) [--allow-unknown-type] <object>"
++msgstr  ""
++
++msgid   "git cat-file (--batch | --batch-check) [--batch-all-objects]\n"
++        "             [--buffer] [--follow-symlinks] [--unordered]\n"
++        "             [--textconv | --filters]"
++msgstr  ""
++
++msgid   "git cat-file (--textconv | --filters )\n"
++        "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
++msgstr  ""
++
++msgid   "git cat-file (-e | -p) <object>"
+ msgstr  ""
+ 
+-msgid   "git cat-file (-t [--allow-unknown-type] | -s [--allow-unknown-type] | -e | -p | <type> | --textconv | --filters) [--path=<path>] <object>"
++msgid   "git cat-file <type> <object>"
+ msgstr  ""
+ 
+ msgid   "git check-attr --stdin [-z] [-a | --all | <attr>...]"
+@@ -13138,6 +13220,9 @@ msgstr  ""
+ msgid   "keep non patch brackets in subject"
+ msgstr  ""
+ 
++msgid   "keep recording the empty patch as empty commits"
++msgstr  ""
++
+ msgid   "keep redundant, empty commits"
+ msgstr  ""
+ 
+@@ -13198,6 +13283,9 @@ msgstr  ""
+ msgid   "lightweight"
+ msgstr  ""
+ 
++msgid   "like --batch, but don't emit <contents>"
++msgstr  ""
++
+ msgid   "like --refresh, but ignore assume-unchanged setting"
+ msgstr  ""
+ 
+@@ -13690,6 +13778,26 @@ msgstr  ""
+ msgid   "moved lines of code are colored differently"
+ msgstr  ""
+ 
++#, c-format
++msgid   "mtimes file %s has unknown signature"
++msgstr  ""
++
++#, c-format
++msgid   "mtimes file %s has unsupported hash id %<PRIu32>"
++msgstr  ""
++
++#, c-format
++msgid   "mtimes file %s has unsupported version %<PRIu32>"
++msgstr  ""
++
++#, c-format
++msgid   "mtimes file %s is corrupt"
++msgstr  ""
++
++#, c-format
++msgid   "mtimes file %s is too small"
++msgstr  ""
++
+ msgid   "multi-pack bitmap is missing required reverse index"
+ msgstr  ""
+ 
+@@ -14496,6 +14604,10 @@ msgstr  ""
+ msgid   "only show untracked files in the stash"
+ msgstr  ""
+ 
++#, c-format
++msgid   "only two arguments allowed in <type> <object> mode, not %d"
++msgstr  ""
++
+ msgid   "only update entries that differ from HEAD"
+ msgstr  ""
+ 
+@@ -14687,12 +14799,19 @@ msgstr  ""
+ msgid   "pack loose unreachable objects"
+ msgstr  ""
+ 
++#, c-format
++msgid   "pack prefix %s does not begin with objdir %s"
++msgstr  ""
++
+ msgid   "pack signature mismatch"
+ msgstr  ""
+ 
+ msgid   "pack too large for current definition of off_t"
+ msgstr  ""
+ 
++msgid   "pack unreferenced objects separately"
++msgstr  ""
++
+ #, c-format
+ msgid   "pack version %<PRIu32> unsupported"
+ msgstr  ""
+@@ -14928,6 +15047,9 @@ msgstr  ""
+ msgid   "pathspec '%s' is beyond a symbolic link"
+ msgstr  ""
+ 
++msgid   "path|tree-ish"
++msgstr  ""
++
+ msgid   "pattern"
+ msgstr  ""
+ 
+@@ -15028,7 +15150,7 @@ msgstr  ""
+ msgid   "pretend that paths removed since <tree-ish> are still present"
+ msgstr  ""
+ 
+-msgid   "pretty-print object's content"
++msgid   "pretty-print <object> content"
+ msgstr  ""
+ 
+ msgid   "prevent rename/copy detection if the number of rename/copy targets exceeds given limit"
+@@ -15605,6 +15727,9 @@ msgstr  ""
+ msgid   "remote HEAD refers to nonexistent ref, unable to checkout.\n"
+ msgstr  ""
+ 
++msgid   "remote URLs cannot be configured in file directly or indirectly included by includeIf.hasremoteurl"
++msgstr  ""
++
+ msgid   "remote did not send all necessary objects"
+ msgstr  ""
+ 
+@@ -15971,6 +16096,9 @@ msgstr  ""
+ msgid   "run external text conversion filters when comparing binary files"
+ msgstr  ""
+ 
++msgid   "run filters on object's content"
++msgstr  ""
++
+ msgid   "run interactively"
+ msgstr  ""
+ 
+@@ -15980,6 +16108,9 @@ msgstr  ""
+ msgid   "run tasks based on the state of the repository"
+ msgstr  ""
+ 
++msgid   "run textconv on object's content"
++msgstr  ""
++
+ #, c-format
+ msgid   "run_command returned non-zero status for %s\n"
+         "."
+@@ -16005,6 +16136,9 @@ msgstr  ""
+ msgid   "same as -a, and turn unreachable objects loose"
+ msgstr  ""
+ 
++msgid   "same as -a, pack unreachable cruft objects separately"
++msgstr  ""
++
+ msgid   "same as -m, but discard unmerged entries"
+ msgstr  ""
+ 
+@@ -16258,9 +16392,6 @@ msgstr  ""
+ msgid   "show all changes in the changeset with -S or -G"
+ msgstr  ""
+ 
+-msgid   "show all objects with --batch or --batch-check"
+-msgstr  ""
+-
+ msgid   "show author email instead of name (Default: off)"
+ msgstr  ""
+ 
+@@ -16321,6 +16452,9 @@ msgstr  ""
+ msgid   "show files on the filesystem that need to be removed"
+ msgstr  ""
+ 
++msgid   "show full <object> or <rev> contents"
++msgstr  ""
++
+ msgid   "show full pre- and post-image object names on the \"index\" lines"
+ msgstr  ""
+ 
+@@ -16336,12 +16470,6 @@ msgstr  ""
+ msgid   "show in a format designed for machine consumption"
+ msgstr  ""
+ 
+-msgid   "show info about objects fed from the standard input"
+-msgstr  ""
+-
+-msgid   "show info and content of objects fed from the standard input"
+-msgstr  ""
+-
+ msgid   "show info page"
+ msgstr  ""
+ 
+@@ -16381,7 +16509,7 @@ msgstr  ""
+ msgid   "show object size"
+ msgstr  ""
+ 
+-msgid   "show object type"
++msgid   "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)"
+ msgstr  ""
+ 
+ msgid   "show only <n> matched refs"
+@@ -17334,6 +17462,9 @@ msgstr  ""
+ msgid   "unable to add cache entry for %s"
+ msgstr  ""
+ 
++msgid   "unable to add cruft objects"
++msgstr  ""
++
+ msgid   "unable to add recent objects"
+ msgstr  ""
+ 
+@@ -18423,13 +18554,13 @@ msgstr  ""
+ msgid   "use `diff.guitool` instead of `diff.tool`"
+ msgstr  ""
+ 
+-msgid   "use a bitmap index if available to speed up counting objects"
++msgid   "use a <path> for (--textconv | --filters ); Not with 'batch'"
+ msgstr  ""
+ 
+-msgid   "use a diff3 based merge"
++msgid   "use a bitmap index if available to speed up counting objects"
+ msgstr  ""
+ 
+-msgid   "use a specific path for --textconv/--filters"
++msgid   "use a diff3 based merge"
+ msgstr  ""
+ 
+ msgid   "use a zealous diff3 based merge"
+@@ -18729,6 +18860,9 @@ msgstr  ""
+ msgid   "will not add file alias '%s' ('%s' already exists in index)"
+ msgstr  ""
+ 
++msgid   "with --batch[-check]: ignores stdin, batches all known objects"
++msgstr  ""
++
+ msgid   "with --get, use default value when missing entry"
+ msgstr  ""
+ 
+@@ -18741,6 +18875,9 @@ msgstr  ""
+ msgid   "with -A, do not loosen objects older than this"
+ msgstr  ""
+ 
++msgid   "with -C, expire objects older than this"
++msgstr  ""
++
+ msgid   "with -a, repack unreachable objects"
+ msgstr  ""
+ 
