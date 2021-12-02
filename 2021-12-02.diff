@@ -1,0 +1,13 @@
+diff --git a/po/git.pot b/po/git.pot
+index b393c93..b57fae7 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -6636,7 +6636,7 @@ msgid   "You have divergent branches and need to specify how to reconcile them.\
+         "You can do so by running one of the following commands sometime before\n"
+         "your next pull:\n"
+         "\n"
+-        "  git config pull.rebase false  # merge (the default strategy)\n"
++        "  git config pull.rebase false  # merge\n"
+         "  git config pull.rebase true   # rebase\n"
+         "  git config pull.ff only       # fast-forward only\n"
+         "\n"
