@@ -540,3 +540,137 @@ index 2ef7dfe..6985b31 100644
  msgid   "with -a, repack unreachable objects"
  msgstr  ""
  
+diff --git a/po/git.pot b/po/git.pot
+index 6985b31..1e91c25 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -312,7 +312,7 @@ msgstr  ""
+ msgid   "  (use \"git am --abort\" to restore the original branch)"
+ msgstr  ""
+ 
+-msgid   "  (use \"git am --allow-empty\" to keep recording this empty patch)"
++msgid   "  (use \"git am --allow-empty\" to record this patch as an empty commit)"
+ msgstr  ""
+ 
+ msgid   "  (use \"git am --skip\" to skip this patch)"
+@@ -4547,6 +4547,9 @@ msgid   "No changes - did you forget to use 'git add'?\n"
+         "already introduced the same changes; you might want to skip this patch."
+ msgstr  ""
+ 
++msgid   "No changes - record it as an empty commit."
++msgstr  ""
++
+ msgid   "No changes -- Patch already applied."
+ msgstr  ""
+ 
+@@ -4762,10 +4765,6 @@ msgstr  ""
+ msgid   "Not possible to fast-forward, aborting."
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "Not setting branch %s as its own upstream."
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Not updating non-default fetch refspec\n"
+         "\t%s\n"
+@@ -4906,7 +4905,7 @@ msgid   "Patch format detection failed."
+ msgstr  ""
+ 
+ msgid   "Patch is empty.\n"
+-        "If you want to keep recording it, run \"git am --allow-empty\"."
++        "If you want to record it as an empty commit, run \"git am --allow-empty\"."
+ msgstr  ""
+ 
+ msgid   "Patch sent with format=flowed; space at the end of lines might be lost."
+@@ -6215,9 +6214,6 @@ msgstr  ""
+ msgid   "Unable to write new index file"
+ msgstr  ""
+ 
+-msgid   "Unable to write upstream branch configuration"
+-msgstr  ""
+-
+ msgid   "Unbundling objects"
+ msgstr  ""
+ 
+@@ -6766,9 +6762,6 @@ msgid   "You must edit all merge conflicts and then\n"
+         "mark them as resolved using git add"
+ msgstr  ""
+ 
+-msgid   "You must specify a directory."
+-msgstr  ""
+-
+ msgid   "You must specify a repository to clone."
+ msgstr  ""
+ 
+@@ -8927,6 +8920,10 @@ msgstr  ""
+ msgid   "could not expand include path '%s'"
+ msgstr  ""
+ 
++#, c-format
++msgid   "could not fetch %s"
++msgstr  ""
++
+ #, c-format
+ msgid   "could not fetch '%s' (exit code: %d)\n"
+ msgstr  ""
+@@ -13182,7 +13179,7 @@ msgstr  ""
+ #, c-format
+ msgid   "it took %.2f seconds to check forced updates; you can use\n"
+         "'--no-show-forced-updates' or run 'git config fetch.showForcedUpdates false'\n"
+-        " to avoid this check\n"
++        "to avoid this check\n"
+ msgstr  ""
+ 
+ msgid   "j - leave this hunk undecided, see next undecided hunk\n"
+@@ -13220,9 +13217,6 @@ msgstr  ""
+ msgid   "keep non patch brackets in subject"
+ msgstr  ""
+ 
+-msgid   "keep recording the empty patch as empty commits"
+-msgstr  ""
+-
+ msgid   "keep redundant, empty commits"
+ msgstr  ""
+ 
+@@ -14317,6 +14311,10 @@ msgstr  ""
+ msgid   "not sending a push certificate since the receiving end does not support --signed push"
+ msgstr  ""
+ 
++#, c-format
++msgid   "not setting branch %s as its own upstream"
++msgstr  ""
++
+ msgid   "not setting upstream for a remote remote-tracking branch"
+ msgstr  ""
+ 
+@@ -15564,6 +15562,9 @@ msgstr  ""
+ msgid   "record only the fact that the path will be added later"
+ msgstr  ""
+ 
++msgid   "record the empty patch as an empty commit"
++msgstr  ""
++
+ #, c-format
+ msgid   "recount: unexpected line: %.*s"
+ msgstr  ""
+@@ -17995,6 +17996,9 @@ msgstr  ""
+ msgid   "unable to write to remote"
+ msgstr  ""
+ 
++msgid   "unable to write upstream branch configuration"
++msgstr  ""
++
+ #, c-format
+ msgid   "uname() failed with error '%s' (%d)\n"
+ msgstr  ""
+@@ -19134,6 +19138,9 @@ msgstr  ""
+ msgid   "you may want to set your %s variable to at least %d and retry the command."
+ msgstr  ""
+ 
++msgid   "you must specify a directory"
++msgstr  ""
++
+ msgid   "you must specify path(s) to restore"
+ msgstr  ""
+ 
