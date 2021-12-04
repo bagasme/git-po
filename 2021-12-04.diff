@@ -1,0 +1,13 @@
+diff --git a/po/git.pot b/po/git.pot
+index b57fae7..674c195 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -5605,7 +5605,7 @@ msgid   "Submodule path '%s': rebased into '%s'\n"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "Submodule work tree '%s' contains a .git directory (use 'rm -rf' if you really want to remove it including all of its history)"
++msgid   "Submodule work tree '%s' contains a .git directory. This will be replaced with a .git file by using absorbgitdirs."
+ msgstr  ""
+ 
+ #, c-format
