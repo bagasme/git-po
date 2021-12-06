@@ -599,3 +599,27 @@ index 1e91c25..64889e8 100644
  #, c-format
  msgid   "unrecognized --schedule argument '%s'"
  msgstr  ""
+diff --git a/po/git.pot b/po/git.pot
+index 64889e8..3915198 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -4111,6 +4111,9 @@ msgstr  ""
+ msgid   "Invalid pathspec magic '%.*s' in '%s'"
+ msgstr  ""
+ 
++msgid   "Invalid resume value."
++msgstr  ""
++
+ #, c-format
+ msgid   "Invalid untracked files mode '%s'"
+ msgstr  ""
+@@ -4744,6 +4747,9 @@ msgstr  ""
+ msgid   "Patch format detection failed."
+ msgstr  ""
+ 
++msgid   "Patch is empty."
++msgstr  ""
++
+ msgid   "Patch is empty.\n"
+         "If you want to record it as an empty commit, run \"git am --allow-empty\"."
+ msgstr  ""
