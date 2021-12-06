@@ -1,0 +1,601 @@
+diff --git a/po/git.pot b/po/git.pot
+index 1e91c25..64889e8 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -675,6 +675,10 @@ msgstr  ""
+ msgid   "%s also locked %s"
+ msgstr  ""
+ 
++#, c-format
++msgid   "%s and %s are mutually exclusive"
++msgstr  ""
++
+ #. TRANSLATORS: This is a line of ambiguous <type>
+ #. object output. E.g. "deadbeef blob".
+ #.
+@@ -779,6 +783,14 @@ msgstr  ""
+ msgid   "%s not allowed: %s:%d"
+ msgstr  ""
+ 
++#, c-format
++msgid   "%s option is only allowed in list mode"
++msgstr  ""
++
++#, c-format
++msgid   "%s outside a repository"
++msgstr  ""
++
+ #, c-format
+ msgid   "%s points nowhere!"
+ msgstr  ""
+@@ -795,6 +807,10 @@ msgstr  ""
+ msgid   "%s process failed to wait"
+ msgstr  ""
+ 
++#, c-format
++msgid   "%s requires %s"
++msgstr  ""
++
+ #, c-format
+ msgid   "%s requires a value"
+ msgstr  ""
+@@ -866,6 +882,10 @@ msgid_plural    "%s, %<PRIuMAX> months ago"
+ msgstr[0]       ""
+ msgstr[1]       ""
+ 
++#, c-format
++msgid   "%s, %s and %s are mutually exclusive"
++msgstr  ""
++
+ #, c-format
+ msgid   "%s, source=%s, destination=%s"
+ msgstr  ""
+@@ -1607,9 +1627,6 @@ msgid   "---\n"
+         "Lines starting with %s will be removed.\n"
+ msgstr  ""
+ 
+-msgid   "--3way outside a repository"
+-msgstr  ""
+-
+ msgid   "--[no-]exclude-standard cannot be used for tracked contents"
+ msgstr  ""
+ 
+@@ -1625,12 +1642,6 @@ msgstr  ""
+ msgid   "--add --delete doesn't make sense"
+ msgstr  ""
+ 
+-msgid   "--all and --mirror are incompatible"
+-msgstr  ""
+-
+-msgid   "--all and --tags are incompatible"
+-msgstr  ""
+-
+ msgid   "--all can't be combined with refspecs"
+ msgstr  ""
+ 
+@@ -1640,9 +1651,6 @@ msgstr  ""
+ msgid   "--anonymize-map token cannot be empty"
+ msgstr  ""
+ 
+-msgid   "--anonymize-map without --anonymize does not make sense"
+-msgstr  ""
+-
+ msgid   "--atomic can only be used when fetching from one remote"
+ msgstr  ""
+ 
+@@ -1654,9 +1662,6 @@ msgstr  ""
+ msgid   "--bare and --origin %s options are incompatible."
+ msgstr  ""
+ 
+-msgid   "--bare and --separate-git-dir are incompatible."
+-msgstr  ""
+-
+ msgid   "--bisect-log requires 0 arguments"
+ msgstr  ""
+ 
+@@ -1672,24 +1677,15 @@ msgstr  ""
+ msgid   "--blob can only be used inside a git repository"
+ msgstr  ""
+ 
+-msgid   "--branch and --default are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--branch or --default required"
+ msgstr  ""
+ 
+ msgid   "--broken is incompatible with commit-ishes"
+ msgstr  ""
+ 
+-msgid   "--cached and --files are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--cached or --untracked cannot be used with --no-index"
+ msgstr  ""
+ 
+-msgid   "--cached outside a repository"
+-msgstr  ""
+-
+ msgid   "--check does not make sense"
+ msgstr  ""
+ 
+@@ -1697,18 +1693,9 @@ msgstr  ""
+ msgid   "--chmod param '%s' must be either -x or +x"
+ msgstr  ""
+ 
+-msgid   "--column and --verbose are incompatible"
+-msgstr  ""
+-
+-msgid   "--column and -n are incompatible"
+-msgstr  ""
+-
+ msgid   "--command must be the first argument"
+ msgstr  ""
+ 
+-msgid   "--contains option is only allowed in list mode"
+-msgstr  ""
+-
+ msgid   "--contents and --reverse do not blend well."
+ msgstr  ""
+ 
+@@ -1718,21 +1705,9 @@ msgstr  ""
+ msgid   "--convert-graft-file takes no argument"
+ msgstr  ""
+ 
+-msgid   "--creation-factor requires --range-diff"
+-msgstr  ""
+-
+-msgid   "--cruft and -A are incompatible"
+-msgstr  ""
+-
+-msgid   "--cruft and -k are incompatible"
+-msgstr  ""
+-
+ msgid   "--cruft must be combined with all-into-one"
+ msgstr  ""
+ 
+-msgid   "--deepen and --depth are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--default is only applicable to --get"
+ msgstr  ""
+ 
+@@ -1742,9 +1717,6 @@ msgstr  ""
+ msgid   "--delete doesn't make sense without any refs"
+ msgstr  ""
+ 
+-msgid   "--delete is incompatible with --all, --mirror and --tags"
+-msgstr  ""
+-
+ msgid   "--delete only accepts plain target ref names"
+ msgstr  ""
+ 
+@@ -1754,15 +1726,9 @@ msgstr  ""
+ msgid   "--depth is ignored in local clones; use file:// instead."
+ msgstr  ""
+ 
+-msgid   "--dir-diff is incompatible with --no-index"
+-msgstr  ""
+-
+ msgid   "--dirty is incompatible with commit-ishes"
+ msgstr  ""
+ 
+-msgid   "--dry-run is incompatible with --interactive/--patch"
+-msgstr  ""
+-
+ msgid   "--dump-aliases incompatible with other options\n"
+ msgstr  ""
+ 
+@@ -1772,9 +1738,6 @@ msgstr  ""
+ msgid   "--filter is ignored in local clones; use file:// instead."
+ msgstr  ""
+ 
+-msgid   "--fix-thin cannot be used without --stdin"
+-msgstr  ""
+-
+ msgid   "--fixed-value only applies with 'value-pattern'"
+ msgstr  ""
+ 
+@@ -1788,48 +1751,21 @@ msgstr  ""
+ msgid   "--format=%.*s cannot be used with --python, --shell, --tcl"
+ msgstr  ""
+ 
+-msgid   "--geometric is incompatible with -A, -a"
+-msgstr  ""
+-
+ msgid   "--get-color and variable type are incoherent"
+ msgstr  ""
+ 
+ msgid   "--git-path requires an argument"
+ msgstr  ""
+ 
+-msgid   "--gui, --tool and --extcmd are mutually exclusive"
+-msgstr  ""
+-
+-msgid   "--index outside a repository"
+-msgstr  ""
+-
+-msgid   "--index-pack-args can only be used with --packfile"
+-msgstr  ""
+-
+ msgid   "--interdiff requires --cover-letter or single patch"
+ msgstr  ""
+ 
+-msgid   "--keep-unreachable and --unpack-unreachable are incompatible"
+-msgstr  ""
+-
+-msgid   "--keep-unreachable and -A are incompatible"
+-msgstr  ""
+-
+-msgid   "--left-only and --right-only are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--local can only be used inside a git repository"
+ msgstr  ""
+ 
+ msgid   "--local is ignored"
+ msgstr  ""
+ 
+-msgid   "--long and -z are incompatible"
+-msgstr  ""
+-
+-msgid   "--long is incompatible with --abbrev=0"
+-msgstr  ""
+-
+ msgid   "--max-pack-size cannot be used to build a pack for transfer"
+ msgstr  ""
+ 
+@@ -1845,9 +1781,6 @@ msgstr  ""
+ msgid   "--merged and --no-merged options are only allowed in list mode"
+ msgstr  ""
+ 
+-msgid   "--mirror and --tags are incompatible"
+-msgstr  ""
+-
+ msgid   "--mirror can't be combined with refspecs"
+ msgstr  ""
+ 
+@@ -1876,9 +1809,6 @@ msgstr  ""
+ msgid   "--negotiate-only requires protocol v2"
+ msgstr  ""
+ 
+-msgid   "--no-contains option is only allowed in list mode"
+-msgstr  ""
+-
+ msgid   "--no-index or --untracked cannot be used with revs"
+ msgstr  ""
+ 
+@@ -1888,36 +1818,12 @@ msgstr  ""
+ msgid   "--non-matching is only valid with --verbose"
+ msgstr  ""
+ 
+-msgid   "--object-format cannot be used with --stdin"
+-msgstr  ""
+-
+ msgid   "--open-files-in-pager only works on the worktree"
+ msgstr  ""
+ 
+-msgid   "--packfile requires --index-pack-args"
+-msgstr  ""
+-
+-msgid   "--patch is incompatible with --{hard,mixed,soft}"
+-msgstr  ""
+-
+ msgid   "--path-format requires an argument"
+ msgstr  ""
+ 
+-msgid   "--pathspec-file-nul requires --pathspec-from-file"
+-msgstr  ""
+-
+-msgid   "--pathspec-from-file is incompatible with --detach"
+-msgstr  ""
+-
+-msgid   "--pathspec-from-file is incompatible with --edit"
+-msgstr  ""
+-
+-msgid   "--pathspec-from-file is incompatible with --interactive/--patch"
+-msgstr  ""
+-
+-msgid   "--pathspec-from-file is incompatible with --patch"
+-msgstr  ""
+-
+ msgid   "--pathspec-from-file is incompatible with --staged"
+ msgstr  ""
+ 
+@@ -1930,9 +1836,6 @@ msgstr  ""
+ msgid   "--pickaxe-all and --find-object are mutually exclusive, use --pickaxe-all with -G and -S"
+ msgstr  ""
+ 
+-msgid   "--points-at option is only allowed in list mode"
+-msgstr  ""
+-
+ msgid   "--prefix requires an argument"
+ msgstr  ""
+ 
+@@ -1954,21 +1857,12 @@ msgstr  ""
+ msgid   "--raw only makes sense with --edit"
+ msgstr  ""
+ 
+-msgid   "--reason requires --lock"
+-msgstr  ""
+-
+ msgid   "--reflog is incompatible with --all, --remotes, --independent or --merge-base"
+ msgstr  ""
+ 
+ msgid   "--reflog option needs one branch name"
+ msgstr  ""
+ 
+-msgid   "--reject and --3way cannot be used together."
+-msgstr  ""
+-
+-msgid   "--remerge_diff does not make sense"
+-msgstr  ""
+-
+ msgid   "--reschedule-failed-exec requires --exec or --interactive"
+ msgstr  ""
+ 
+@@ -1984,9 +1878,6 @@ msgstr  ""
+ msgid   "--reverse and --first-parent together require specified latest commit"
+ msgstr  ""
+ 
+-msgid   "--separate-git-dir and --bare are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--separate-git-dir incompatible with bare repository"
+ msgstr  ""
+ 
+@@ -2003,27 +1894,15 @@ msgstr  ""
+ msgid   "--show-origin is only applicable to --get, --get-all, --get-regexp, and --list"
+ msgstr  ""
+ 
+-msgid   "--stateless-rpc requires multi_ack_detailed"
+-msgstr  ""
+-
+-msgid   "--stdin and --merge-base are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--stdin can only be used when fetching from one remote"
+ msgstr  ""
+ 
+ msgid   "--stdin requires a git repository"
+ msgstr  ""
+ 
+-msgid   "--stdout, --output, and --output-directory are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--strategy requires --merge or --interactive"
+ msgstr  ""
+ 
+-msgid   "--subject-prefix/--rfc and -k are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--thin cannot be used to build an indexable pack"
+ msgstr  ""
+ 
+@@ -2045,9 +1924,6 @@ msgstr  ""
+ msgid   "--untracked not supported with --recurse-submodules"
+ msgstr  ""
+ 
+-msgid   "--verbose and --porcelain are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--verify with no packfile name given"
+ msgstr  ""
+ 
+@@ -2059,30 +1935,18 @@ msgid   "--worktree cannot be used with multiple working trees unless the config
+         "section in \"git help worktree\" for details"
+ msgstr  ""
+ 
+-msgid   "-A and -u are mutually incompatible"
+-msgstr  ""
+-
+ msgid   "-G and --pickaxe-regex are mutually exclusive, use --pickaxe-regex with -S"
+ msgstr  ""
+ 
+-msgid   "-G, -S and --find-object are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "-L does not yet support diff formats besides -p and -s"
+ msgstr  ""
+ 
+ msgid   "-L<range>:<file> cannot be used with pathspec"
+ msgstr  ""
+ 
+-msgid   "-N can only be used with --mixed"
+-msgstr  ""
+-
+ msgid   "-NUM"
+ msgstr  ""
+ 
+-msgid   "-b, -B, and --detach are mutually exclusive"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "-c expects a configuration string\n"
+ msgstr  ""
+@@ -2099,18 +1963,9 @@ msgstr  ""
+ msgid   "-g needs at least one argument"
+ msgstr  ""
+ 
+-msgid   "-n and -k are mutually exclusive"
+-msgstr  ""
+-
+-msgid   "-n option is only allowed in list mode"
+-msgstr  ""
+-
+ msgid   "-n requires an argument"
+ msgstr  ""
+ 
+-msgid   "-p and --overlay are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "-x and -X cannot be used together"
+ msgstr  ""
+ 
+@@ -2932,9 +2787,6 @@ msgstr  ""
+ msgid   "Cannot overwrite"
+ msgstr  ""
+ 
+-msgid   "Cannot pass both --import-marks and --import-marks-if-exists"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Cannot prepare timestamp regexp %s"
+ msgstr  ""
+@@ -3213,9 +3065,6 @@ msgstr  ""
+ msgid   "Could not create new root commit"
+ msgstr  ""
+ 
+-msgid   "Could not create temporary object directory for core.fsyncobjectfiles=batch"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Could not delete %s"
+ msgstr  ""
+@@ -4848,18 +4697,9 @@ msgstr  ""
+ msgid   "Only one of -c/-C/-F/--fixup can be used."
+ msgstr  ""
+ 
+-msgid   "Option --exec can only be used together with --remote"
+-msgstr  ""
+-
+-msgid   "Option --ignore-missing can only be used together with --dry-run"
+-msgstr  ""
+-
+ msgid   "Option -m cannot be combined with -c/-C/-F."
+ msgstr  ""
+ 
+-msgid   "Options --add-file and --remote cannot be used together"
+-msgstr  ""
+-
+ msgid   "Options --squash and --fixup cannot be used together"
+ msgstr  ""
+ 
+@@ -8145,10 +7985,6 @@ msgstr  ""
+ msgid   "cannot prune in a precious-objects repo"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "cannot read %s"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "cannot read '%s'"
+ msgstr  ""
+@@ -9276,10 +9112,6 @@ msgstr  ""
+ msgid   "could not read tagged object '%s'"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "could not recreate objdir %s"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "could not recurse into submodule '%s'"
+ msgstr  ""
+@@ -11192,15 +11024,11 @@ msgid   "format.headers without value"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "format: %%(else) atom used more than once"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "format: %%(else) atom used without a %%(then) atom"
++msgid   "format: %%(%s) atom used without a %%(%s) atom"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "format: %%(else) atom used without an %%(if) atom"
++msgid   "format: %%(else) atom used more than once"
+ msgstr  ""
+ 
+ #, c-format
+@@ -11211,10 +11039,6 @@ msgstr  ""
+ msgid   "format: %%(end) atom used without corresponding atom"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "format: %%(if) atom used without a %%(then) atom"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "format: %%(then) atom used after %%(else)"
+ msgstr  ""
+@@ -11223,10 +11047,6 @@ msgstr  ""
+ msgid   "format: %%(then) atom used more than once"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "format: %%(then) atom used without an %%(if) atom"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "found %u common ancestor:"
+ msgid_plural    "found %u common ancestors:"
+@@ -14011,15 +13831,7 @@ msgid   "no contacts specified"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "no directory given for --git-dir\n"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "no directory given for --work-tree\n"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "no directory given for -C\n"
++msgid   "no directory given for %s\n"
+ msgstr  ""
+ 
+ msgid   "no email was given and auto-detection is disabled"
+@@ -15728,7 +15540,7 @@ msgstr  ""
+ msgid   "remote HEAD refers to nonexistent ref, unable to checkout.\n"
+ msgstr  ""
+ 
+-msgid   "remote URLs cannot be configured in file directly or indirectly included by includeIf.hasremoteurl"
++msgid   "remote URLs cannot be configured in file directly or indirectly included by includeIf.hasconfig:remote.*.url"
+ msgstr  ""
+ 
+ msgid   "remote did not send all necessary objects"
+@@ -17534,9 +17346,6 @@ msgstr  ""
+ msgid   "unable to create temporary index"
+ msgstr  ""
+ 
+-msgid   "unable to create temporary object directory"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unable to create thread: %s"
+ msgstr  ""
+@@ -18253,30 +18062,6 @@ msgstr  ""
+ msgid   "unrecognized %%(%s) argument: %s"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "unrecognized %%(align) argument: %s"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "unrecognized %%(contents) argument: %s"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "unrecognized %%(if) argument: %s"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "unrecognized %%(objectsize) argument: %s"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "unrecognized %%(raw) argument: %s"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "unrecognized %%(subject) argument: %s"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unrecognized --schedule argument '%s'"
+ msgstr  ""
