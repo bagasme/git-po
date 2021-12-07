@@ -43,3 +43,52 @@ index 3915198..0b5d22f 100644
  #, c-format
  msgid   "unable to create thread: %s"
  msgstr  ""
+diff --git a/po/git.pot b/po/git.pot
+index 0b5d22f..74737e2 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -4753,9 +4753,6 @@ msgstr  ""
+ msgid   "Patch format detection failed."
+ msgstr  ""
+ 
+-msgid   "Patch is empty."
+-msgstr  ""
+-
+ msgid   "Patch is empty.\n"
+         "If you want to record it as an empty commit, run \"git am --allow-empty\"."
+ msgstr  ""
+@@ -7247,14 +7244,6 @@ msgstr  ""
+ msgid   "argument to --packfile must be a valid hash (got '%s')"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "asked to inherit tracking from %s, but no merge configuration is set"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "asked to inherit tracking from %s, but no remote is set"
+-msgstr  ""
+-
+ msgid   "attach the patch"
+ msgstr  ""
+ 
+@@ -14499,9 +14488,6 @@ msgstr  ""
+ msgid   "option `--default' expects an unsigned long value with `--type=ulong`, not `%s`"
+ msgstr  ""
+ 
+-msgid   "option `--track' expects \"direct\" or \"inherit\""
+-msgstr  ""
+-
+ msgid   "option diff-algorithm accepts \"myers\", \"minimal\", \"patience\" and \"histogram\""
+ msgstr  ""
+ 
+@@ -16144,6 +16130,9 @@ msgstr  ""
+ msgid   "set upstream for git pull/status"
+ msgstr  ""
+ 
++msgid   "set upstream info for new branch"
++msgstr  ""
++
+ msgid   "sets the submodule’s name to the given string instead of defaulting to its path"
+ msgstr  ""
+ 
