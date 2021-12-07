@@ -1,0 +1,45 @@
+diff --git a/po/git.pot b/po/git.pot
+index 3915198..0b5d22f 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1863,6 +1863,9 @@ msgstr  ""
+ msgid   "--reflog option needs one branch name"
+ msgstr  ""
+ 
++msgid   "--remerge_diff does not make sense"
++msgstr  ""
++
+ msgid   "--reschedule-failed-exec requires --exec or --interactive"
+ msgstr  ""
+ 
+@@ -3065,6 +3068,9 @@ msgstr  ""
+ msgid   "Could not create new root commit"
+ msgstr  ""
+ 
++msgid   "Could not create temporary object directory for core.fsyncobjectfiles=batch"
++msgstr  ""
++
+ #, c-format
+ msgid   "Could not delete %s"
+ msgstr  ""
+@@ -9118,6 +9124,10 @@ msgstr  ""
+ msgid   "could not read tagged object '%s'"
+ msgstr  ""
+ 
++#, c-format
++msgid   "could not recreate objdir %s"
++msgstr  ""
++
+ #, c-format
+ msgid   "could not recurse into submodule '%s'"
+ msgstr  ""
+@@ -17352,6 +17362,9 @@ msgstr  ""
+ msgid   "unable to create temporary index"
+ msgstr  ""
+ 
++msgid   "unable to create temporary object directory"
++msgstr  ""
++
+ #, c-format
+ msgid   "unable to create thread: %s"
+ msgstr  ""
