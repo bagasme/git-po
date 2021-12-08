@@ -1,0 +1,25 @@
+diff --git a/po/git.pot b/po/git.pot
+index 74737e2..de89653 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -9210,6 +9210,10 @@ msgstr  ""
+ msgid   "could not set upstream of HEAD to %s when it does not point to any branch."
+ msgstr  ""
+ 
++#, c-format
++msgid   "could not set upstream of HEAD to '%s' from '%s' when it does not point to any branch."
++msgstr  ""
++
+ #, c-format
+ msgid   "could not setenv '%s'"
+ msgstr  ""
+@@ -14115,9 +14119,6 @@ msgstr  ""
+ msgid   "not in a git directory"
+ msgstr  ""
+ 
+-msgid   "not on a branch to use --set-upstream with"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "not removing '%s' recursively without -r"
+ msgstr  ""
