@@ -208,8 +208,8 @@ msgstr ""
 msgid "unstaged"
 msgstr ""
 
-#: add-interactive.c:1148 apply.c:5016 apply.c:5019 builtin/am.c:2368
-#: builtin/am.c:2371 builtin/bugreport.c:107 builtin/clone.c:129
+#: add-interactive.c:1148 apply.c:5016 apply.c:5019 builtin/am.c:2374
+#: builtin/am.c:2377 builtin/bugreport.c:107 builtin/clone.c:129
 #: builtin/fetch.c:153 builtin/merge.c:286 builtin/pull.c:194
 #: builtin/submodule--helper.c:404 builtin/submodule--helper.c:1869
 #: builtin/submodule--helper.c:1872 builtin/submodule--helper.c:2515
@@ -1270,7 +1270,7 @@ msgstr ""
 msgid "apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5022 builtin/am.c:2377
+#: apply.c:5022 builtin/am.c:2383
 msgid "num"
 msgstr ""
 
@@ -1334,7 +1334,7 @@ msgstr ""
 msgid "ensure at least <n> lines of context match"
 msgstr ""
 
-#: apply.c:5057 builtin/am.c:2353 builtin/am.c:2356
+#: apply.c:5057 builtin/am.c:2359 builtin/am.c:2362
 #: builtin/interpret-trailers.c:98 builtin/interpret-trailers.c:100
 #: builtin/interpret-trailers.c:102 builtin/pack-objects.c:4227
 #: builtin/rebase.c:1077
@@ -1379,7 +1379,7 @@ msgstr ""
 msgid "do not trust the line counts in the hunk headers"
 msgstr ""
 
-#: apply.c:5081 builtin/am.c:2365
+#: apply.c:5081 builtin/am.c:2371
 msgid "root"
 msgstr ""
 
@@ -2050,7 +2050,7 @@ msgstr ""
 msgid "commit-graph requires overflow generation data but has none"
 msgstr ""
 
-#: commit-graph.c:1096 builtin/am.c:1363
+#: commit-graph.c:1096 builtin/am.c:1369
 #, c-format
 msgid "unable to parse commit %s"
 msgstr ""
@@ -2237,7 +2237,7 @@ msgid "commit date for commit %s in commit-graph is %<PRIuMAX> != %<PRIuMAX>"
 msgstr ""
 
 #: commit.c:54 sequencer.c:3109 builtin/am.c:399 builtin/am.c:444
-#: builtin/am.c:449 builtin/am.c:1442 builtin/am.c:2124 builtin/replace.c:456
+#: builtin/am.c:449 builtin/am.c:1448 builtin/am.c:2130 builtin/replace.c:456
 #, c-format
 msgid "could not parse %s"
 msgstr ""
@@ -4958,7 +4958,7 @@ msgstr ""
 msgid "failed to read the cache"
 msgstr ""
 
-#: merge.c:102 rerere.c:704 builtin/am.c:1989 builtin/am.c:2023
+#: merge.c:102 rerere.c:704 builtin/am.c:1995 builtin/am.c:2029
 #: builtin/checkout.c:599 builtin/checkout.c:854 builtin/clone.c:707
 #: builtin/stash.c:269
 msgid "unable to write new index file"
@@ -6423,7 +6423,7 @@ msgstr ""
 msgid "%s: 'preserve' superseded by 'merges'"
 msgstr ""
 
-#: ref-filter.c:42 wt-status.c:2045
+#: ref-filter.c:42 wt-status.c:2048
 msgid "gone"
 msgstr ""
 
@@ -7445,7 +7445,7 @@ msgstr ""
 msgid "unable to parse commit author"
 msgstr ""
 
-#: sequencer.c:1440 builtin/am.c:1637 builtin/merge.c:707
+#: sequencer.c:1440 builtin/am.c:1643 builtin/merge.c:707
 msgid "git write-tree failed to write a tree"
 msgstr ""
 
@@ -7463,7 +7463,7 @@ msgstr ""
 msgid "corrupt author: missing date information"
 msgstr ""
 
-#: sequencer.c:1549 builtin/am.c:1664 builtin/commit.c:1821 builtin/merge.c:912
+#: sequencer.c:1549 builtin/am.c:1670 builtin/commit.c:1821 builtin/merge.c:912
 #: builtin/merge.c:937 t/helper/test-fast-rebase.c:78
 msgid "failed to write commit object"
 msgstr ""
@@ -9069,7 +9069,7 @@ msgstr ""
 msgid "Fetching objects"
 msgstr ""
 
-#: worktree.c:238 builtin/am.c:2210 builtin/bisect--helper.c:156
+#: worktree.c:238 builtin/am.c:2216 builtin/bisect--helper.c:156
 #, c-format
 msgid "failed to read '%s'"
 msgstr ""
@@ -9369,244 +9369,244 @@ msgstr ""
 msgid "  (use \"git commit\" to conclude merge)"
 msgstr ""
 
-#: wt-status.c:1222
+#: wt-status.c:1224
 msgid "You are in the middle of an am session."
 msgstr ""
 
-#: wt-status.c:1225
+#: wt-status.c:1227
 msgid "The current patch is empty."
 msgstr ""
 
-#: wt-status.c:1229
-msgid "  (fix conflicts and then run \"git am --continue\")"
-msgstr ""
-
 #: wt-status.c:1232
-msgid ""
-"  (use \"git am --allow-empty\" to record this patch as an empty commit)"
+msgid "  (fix conflicts and then run \"git am --continue\")"
 msgstr ""
 
 #: wt-status.c:1234
 msgid "  (use \"git am --skip\" to skip this patch)"
 msgstr ""
 
-#: wt-status.c:1236
+#: wt-status.c:1237
+msgid ""
+"  (use \"git am --allow-empty\" to record this patch as an empty commit)"
+msgstr ""
+
+#: wt-status.c:1239
 msgid "  (use \"git am --abort\" to restore the original branch)"
 msgstr ""
 
-#: wt-status.c:1369
+#: wt-status.c:1372
 msgid "git-rebase-todo is missing."
 msgstr ""
 
-#: wt-status.c:1371
+#: wt-status.c:1374
 msgid "No commands done."
 msgstr ""
 
-#: wt-status.c:1374
+#: wt-status.c:1377
 #, c-format
 msgid "Last command done (%d command done):"
 msgid_plural "Last commands done (%d commands done):"
 msgstr[0] ""
 msgstr[1] ""
 
-#: wt-status.c:1385
+#: wt-status.c:1388
 #, c-format
 msgid "  (see more in file %s)"
 msgstr ""
 
-#: wt-status.c:1390
+#: wt-status.c:1393
 msgid "No commands remaining."
 msgstr ""
 
-#: wt-status.c:1393
+#: wt-status.c:1396
 #, c-format
 msgid "Next command to do (%d remaining command):"
 msgid_plural "Next commands to do (%d remaining commands):"
 msgstr[0] ""
 msgstr[1] ""
 
-#: wt-status.c:1401
+#: wt-status.c:1404
 msgid "  (use \"git rebase --edit-todo\" to view and edit)"
 msgstr ""
 
-#: wt-status.c:1413
+#: wt-status.c:1416
 #, c-format
 msgid "You are currently rebasing branch '%s' on '%s'."
 msgstr ""
 
-#: wt-status.c:1418
+#: wt-status.c:1421
 msgid "You are currently rebasing."
 msgstr ""
 
-#: wt-status.c:1431
+#: wt-status.c:1434
 msgid "  (fix conflicts and then run \"git rebase --continue\")"
 msgstr ""
 
-#: wt-status.c:1433
+#: wt-status.c:1436
 msgid "  (use \"git rebase --skip\" to skip this patch)"
 msgstr ""
 
-#: wt-status.c:1435
+#: wt-status.c:1438
 msgid "  (use \"git rebase --abort\" to check out the original branch)"
 msgstr ""
 
-#: wt-status.c:1442
+#: wt-status.c:1445
 msgid "  (all conflicts fixed: run \"git rebase --continue\")"
 msgstr ""
 
-#: wt-status.c:1446
+#: wt-status.c:1449
 #, c-format
 msgid ""
 "You are currently splitting a commit while rebasing branch '%s' on '%s'."
 msgstr ""
 
-#: wt-status.c:1451
+#: wt-status.c:1454
 msgid "You are currently splitting a commit during a rebase."
 msgstr ""
 
-#: wt-status.c:1454
+#: wt-status.c:1457
 msgid "  (Once your working directory is clean, run \"git rebase --continue\")"
 msgstr ""
 
-#: wt-status.c:1458
+#: wt-status.c:1461
 #, c-format
 msgid "You are currently editing a commit while rebasing branch '%s' on '%s'."
 msgstr ""
 
-#: wt-status.c:1463
+#: wt-status.c:1466
 msgid "You are currently editing a commit during a rebase."
 msgstr ""
 
-#: wt-status.c:1466
+#: wt-status.c:1469
 msgid "  (use \"git commit --amend\" to amend the current commit)"
 msgstr ""
 
-#: wt-status.c:1468
+#: wt-status.c:1471
 msgid ""
 "  (use \"git rebase --continue\" once you are satisfied with your changes)"
 msgstr ""
 
-#: wt-status.c:1479
+#: wt-status.c:1482
 msgid "Cherry-pick currently in progress."
 msgstr ""
 
-#: wt-status.c:1482
+#: wt-status.c:1485
 #, c-format
 msgid "You are currently cherry-picking commit %s."
 msgstr ""
 
-#: wt-status.c:1489
+#: wt-status.c:1492
 msgid "  (fix conflicts and run \"git cherry-pick --continue\")"
 msgstr ""
 
-#: wt-status.c:1492
+#: wt-status.c:1495
 msgid "  (run \"git cherry-pick --continue\" to continue)"
 msgstr ""
 
-#: wt-status.c:1495
+#: wt-status.c:1498
 msgid "  (all conflicts fixed: run \"git cherry-pick --continue\")"
 msgstr ""
 
-#: wt-status.c:1497
+#: wt-status.c:1500
 msgid "  (use \"git cherry-pick --skip\" to skip this patch)"
 msgstr ""
 
-#: wt-status.c:1499
+#: wt-status.c:1502
 msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
 msgstr ""
 
-#: wt-status.c:1509
+#: wt-status.c:1512
 msgid "Revert currently in progress."
 msgstr ""
 
-#: wt-status.c:1512
+#: wt-status.c:1515
 #, c-format
 msgid "You are currently reverting commit %s."
 msgstr ""
 
-#: wt-status.c:1518
+#: wt-status.c:1521
 msgid "  (fix conflicts and run \"git revert --continue\")"
 msgstr ""
 
-#: wt-status.c:1521
+#: wt-status.c:1524
 msgid "  (run \"git revert --continue\" to continue)"
 msgstr ""
 
-#: wt-status.c:1524
+#: wt-status.c:1527
 msgid "  (all conflicts fixed: run \"git revert --continue\")"
 msgstr ""
 
-#: wt-status.c:1526
+#: wt-status.c:1529
 msgid "  (use \"git revert --skip\" to skip this patch)"
 msgstr ""
 
-#: wt-status.c:1528
+#: wt-status.c:1531
 msgid "  (use \"git revert --abort\" to cancel the revert operation)"
 msgstr ""
 
-#: wt-status.c:1538
+#: wt-status.c:1541
 #, c-format
 msgid "You are currently bisecting, started from branch '%s'."
 msgstr ""
 
-#: wt-status.c:1542
+#: wt-status.c:1545
 msgid "You are currently bisecting."
 msgstr ""
 
-#: wt-status.c:1545
+#: wt-status.c:1548
 msgid "  (use \"git bisect reset\" to get back to the original branch)"
 msgstr ""
 
-#: wt-status.c:1556
+#: wt-status.c:1559
 msgid "You are in a sparse checkout."
 msgstr ""
 
-#: wt-status.c:1559
+#: wt-status.c:1562
 #, c-format
 msgid "You are in a sparse checkout with %d%% of tracked files present."
 msgstr ""
 
-#: wt-status.c:1803
+#: wt-status.c:1806
 msgid "On branch "
 msgstr ""
 
-#: wt-status.c:1810
+#: wt-status.c:1813
 msgid "interactive rebase in progress; onto "
 msgstr ""
 
-#: wt-status.c:1812
+#: wt-status.c:1815
 msgid "rebase in progress; onto "
 msgstr ""
 
-#: wt-status.c:1817
+#: wt-status.c:1820
 msgid "HEAD detached at "
 msgstr ""
 
-#: wt-status.c:1819
+#: wt-status.c:1822
 msgid "HEAD detached from "
 msgstr ""
 
-#: wt-status.c:1822
+#: wt-status.c:1825
 msgid "Not currently on any branch."
 msgstr ""
 
-#: wt-status.c:1839
+#: wt-status.c:1842
 msgid "Initial commit"
 msgstr ""
 
-#: wt-status.c:1840
+#: wt-status.c:1843
 msgid "No commits yet"
 msgstr ""
 
-#: wt-status.c:1854
+#: wt-status.c:1857
 msgid "Untracked files"
 msgstr ""
 
-#: wt-status.c:1856
+#: wt-status.c:1859
 msgid "Ignored files"
 msgstr ""
 
-#: wt-status.c:1860
+#: wt-status.c:1863
 #, c-format
 msgid ""
 "It took %.2f seconds to enumerate untracked files. 'status -uno'\n"
@@ -9614,92 +9614,92 @@ msgid ""
 "new files yourself (see 'git help status')."
 msgstr ""
 
-#: wt-status.c:1866
+#: wt-status.c:1869
 #, c-format
 msgid "Untracked files not listed%s"
 msgstr ""
 
-#: wt-status.c:1868
+#: wt-status.c:1871
 msgid " (use -u option to show untracked files)"
 msgstr ""
 
-#: wt-status.c:1874
+#: wt-status.c:1877
 msgid "No changes"
 msgstr ""
 
-#: wt-status.c:1879
+#: wt-status.c:1882
 #, c-format
 msgid "no changes added to commit (use \"git add\" and/or \"git commit -a\")\n"
 msgstr ""
 
-#: wt-status.c:1883
+#: wt-status.c:1886
 #, c-format
 msgid "no changes added to commit\n"
 msgstr ""
 
-#: wt-status.c:1887
+#: wt-status.c:1890
 #, c-format
 msgid ""
 "nothing added to commit but untracked files present (use \"git add\" to "
 "track)\n"
 msgstr ""
 
-#: wt-status.c:1891
+#: wt-status.c:1894
 #, c-format
 msgid "nothing added to commit but untracked files present\n"
 msgstr ""
 
-#: wt-status.c:1895
+#: wt-status.c:1898
 #, c-format
 msgid "nothing to commit (create/copy files and use \"git add\" to track)\n"
 msgstr ""
 
-#: wt-status.c:1899 wt-status.c:1905
+#: wt-status.c:1902 wt-status.c:1908
 #, c-format
 msgid "nothing to commit\n"
 msgstr ""
 
-#: wt-status.c:1902
+#: wt-status.c:1905
 #, c-format
 msgid "nothing to commit (use -u to show untracked files)\n"
 msgstr ""
 
-#: wt-status.c:1907
+#: wt-status.c:1910
 #, c-format
 msgid "nothing to commit, working tree clean\n"
 msgstr ""
 
-#: wt-status.c:2012
+#: wt-status.c:2015
 msgid "No commits yet on "
 msgstr ""
 
-#: wt-status.c:2016
+#: wt-status.c:2019
 msgid "HEAD (no branch)"
 msgstr ""
 
-#: wt-status.c:2047
+#: wt-status.c:2050
 msgid "different"
 msgstr ""
 
-#: wt-status.c:2049 wt-status.c:2057
+#: wt-status.c:2052 wt-status.c:2060
 msgid "behind "
 msgstr ""
 
-#: wt-status.c:2052 wt-status.c:2055
+#: wt-status.c:2055 wt-status.c:2058
 msgid "ahead "
 msgstr ""
 
 #. TRANSLATORS: the action is e.g. "pull with rebase"
-#: wt-status.c:2593
+#: wt-status.c:2596
 #, c-format
 msgid "cannot %s: You have unstaged changes."
 msgstr ""
 
-#: wt-status.c:2599
+#: wt-status.c:2602
 msgid "additionally, your index contains uncommitted changes."
 msgstr ""
 
-#: wt-status.c:2601
+#: wt-status.c:2604
 #, c-format
 msgid "cannot %s: Your index contains uncommitted changes."
 msgstr ""
@@ -9977,57 +9977,62 @@ msgstr ""
 msgid "If you prefer to skip this patch, run \"%s --skip\" instead."
 msgstr ""
 
-#: builtin/am.c:1155
+#: builtin/am.c:1159
+#, c-format
+msgid "To record the empty patch as an empty commit, run \"%s --allow-empty\"."
+msgstr ""
+
+#: builtin/am.c:1161
 #, c-format
 msgid "To restore the original branch and stop patching, run \"%s --abort\"."
 msgstr ""
 
-#: builtin/am.c:1250
+#: builtin/am.c:1256
 msgid "Patch sent with format=flowed; space at the end of lines might be lost."
 msgstr ""
 
-#: builtin/am.c:1338
+#: builtin/am.c:1344
 #, c-format
 msgid "missing author line in commit %s"
 msgstr ""
 
-#: builtin/am.c:1341
+#: builtin/am.c:1347
 #, c-format
 msgid "invalid ident line: %.*s"
 msgstr ""
 
-#: builtin/am.c:1560
+#: builtin/am.c:1566
 msgid "Repository lacks necessary blobs to fall back on 3-way merge."
 msgstr ""
 
-#: builtin/am.c:1562
+#: builtin/am.c:1568
 msgid "Using index info to reconstruct a base tree..."
 msgstr ""
 
-#: builtin/am.c:1581
+#: builtin/am.c:1587
 msgid ""
 "Did you hand edit your patch?\n"
 "It does not apply to blobs recorded in its index."
 msgstr ""
 
-#: builtin/am.c:1587
+#: builtin/am.c:1593
 msgid "Falling back to patching base and 3-way merge..."
 msgstr ""
 
-#: builtin/am.c:1613
+#: builtin/am.c:1619
 msgid "Failed to merge in the changes."
 msgstr ""
 
-#: builtin/am.c:1645
+#: builtin/am.c:1651
 msgid "applying to an empty history"
 msgstr ""
 
-#: builtin/am.c:1697 builtin/am.c:1701
+#: builtin/am.c:1703 builtin/am.c:1707
 #, c-format
 msgid "cannot resume: %s does not exist."
 msgstr ""
 
-#: builtin/am.c:1719
+#: builtin/am.c:1725
 msgid "Commit Body is:"
 msgstr ""
 
@@ -10035,65 +10040,64 @@ msgstr ""
 #. in your translation. The program will only accept English
 #. input at this point.
 #.
-#: builtin/am.c:1729
+#: builtin/am.c:1735
 #, c-format
 msgid "Apply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all: "
 msgstr ""
 
-#: builtin/am.c:1775 builtin/commit.c:409
+#: builtin/am.c:1781 builtin/commit.c:409
 msgid "unable to write index file"
 msgstr ""
 
-#: builtin/am.c:1779
+#: builtin/am.c:1785
 #, c-format
 msgid "Dirty index: cannot apply patches (dirty: %s)"
 msgstr ""
 
-#: builtin/am.c:1821
+#: builtin/am.c:1827
 #, c-format
 msgid "Skipping: %.*s"
 msgstr ""
 
-#: builtin/am.c:1828
-msgid ""
-"Patch is empty.\n"
-"If you want to record it as an empty commit, run \"git am --allow-empty\"."
+#: builtin/am.c:1832
+#, c-format
+msgid "Creating an empty commit: %.*s"
 msgstr ""
 
-#: builtin/am.c:1840 builtin/am.c:1911
+#: builtin/am.c:1836
+msgid "Patch is empty."
+msgstr ""
+
+#: builtin/am.c:1847 builtin/am.c:1918
 #, c-format
 msgid "Applying: %.*s"
 msgstr ""
 
-#: builtin/am.c:1857
+#: builtin/am.c:1864
 msgid "No changes -- Patch already applied."
 msgstr ""
 
-#: builtin/am.c:1863
+#: builtin/am.c:1870
 #, c-format
 msgid "Patch failed at %s %.*s"
 msgstr ""
 
-#: builtin/am.c:1867
+#: builtin/am.c:1874
 msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
 msgstr ""
 
-#: builtin/am.c:1915
-msgid "Invalid resume value."
+#: builtin/am.c:1927
+msgid "No changes - recorded it as an empty commit."
 msgstr ""
 
-#: builtin/am.c:1921
-msgid "No changes - record it as an empty commit."
-msgstr ""
-
-#: builtin/am.c:1923
+#: builtin/am.c:1929
 msgid ""
 "No changes - did you forget to use 'git add'?\n"
 "If there is nothing left to stage, chances are that something else\n"
 "already introduced the same changes; you might want to skip this patch."
 msgstr ""
 
-#: builtin/am.c:1931
+#: builtin/am.c:1937
 msgid ""
 "You still have unmerged paths in your index.\n"
 "You should 'git add' each file with resolved conflicts to mark them as "
@@ -10101,105 +10105,105 @@ msgid ""
 "You might run `git rm` on a file to accept \"deleted by them\" for it."
 msgstr ""
 
-#: builtin/am.c:2039 builtin/am.c:2043 builtin/am.c:2055 builtin/reset.c:448
+#: builtin/am.c:2045 builtin/am.c:2049 builtin/am.c:2061 builtin/reset.c:448
 #: builtin/reset.c:456
 #, c-format
 msgid "Could not parse object '%s'."
 msgstr ""
 
-#: builtin/am.c:2091 builtin/am.c:2167
+#: builtin/am.c:2097 builtin/am.c:2173
 msgid "failed to clean index"
 msgstr ""
 
-#: builtin/am.c:2135
+#: builtin/am.c:2141
 msgid ""
 "You seem to have moved HEAD since the last 'am' failure.\n"
 "Not rewinding to ORIG_HEAD"
 msgstr ""
 
-#: builtin/am.c:2243
+#: builtin/am.c:2249
 #, c-format
 msgid "Invalid value for --patch-format: %s"
 msgstr ""
 
-#: builtin/am.c:2286
+#: builtin/am.c:2292
 #, c-format
 msgid "Invalid value for --show-current-patch: %s"
 msgstr ""
 
-#: builtin/am.c:2290
+#: builtin/am.c:2296
 #, c-format
 msgid "--show-current-patch=%s is incompatible with --show-current-patch=%s"
 msgstr ""
 
-#: builtin/am.c:2321
+#: builtin/am.c:2327
 msgid "git am [<options>] [(<mbox> | <Maildir>)...]"
 msgstr ""
 
-#: builtin/am.c:2322
+#: builtin/am.c:2328
 msgid "git am [<options>] (--continue | --skip | --abort)"
 msgstr ""
 
-#: builtin/am.c:2328
+#: builtin/am.c:2334
 msgid "run interactively"
 msgstr ""
 
-#: builtin/am.c:2330
+#: builtin/am.c:2336
 msgid "historical option -- no-op"
 msgstr ""
 
-#: builtin/am.c:2332
+#: builtin/am.c:2338
 msgid "allow fall back on 3way merging if needed"
 msgstr ""
 
-#: builtin/am.c:2333 builtin/init-db.c:547 builtin/prune-packed.c:16
+#: builtin/am.c:2339 builtin/init-db.c:547 builtin/prune-packed.c:16
 #: builtin/repack.c:741 builtin/stash.c:961
 msgid "be quiet"
 msgstr ""
 
-#: builtin/am.c:2335
+#: builtin/am.c:2341
 msgid "add a Signed-off-by trailer to the commit message"
 msgstr ""
 
-#: builtin/am.c:2338
+#: builtin/am.c:2344
 msgid "recode into utf8 (default)"
 msgstr ""
 
-#: builtin/am.c:2340
+#: builtin/am.c:2346
 msgid "pass -k flag to git-mailinfo"
 msgstr ""
 
-#: builtin/am.c:2342
+#: builtin/am.c:2348
 msgid "pass -b flag to git-mailinfo"
 msgstr ""
 
-#: builtin/am.c:2344
+#: builtin/am.c:2350
 msgid "pass -m flag to git-mailinfo"
 msgstr ""
 
-#: builtin/am.c:2346
+#: builtin/am.c:2352
 msgid "pass --keep-cr flag to git-mailsplit for mbox format"
 msgstr ""
 
-#: builtin/am.c:2349
+#: builtin/am.c:2355
 msgid "do not pass --keep-cr flag to git-mailsplit independent of am.keepcr"
 msgstr ""
 
-#: builtin/am.c:2352
+#: builtin/am.c:2358
 msgid "strip everything before a scissors line"
 msgstr ""
 
-#: builtin/am.c:2354
+#: builtin/am.c:2360
 msgid "pass it through git-mailinfo"
 msgstr ""
 
-#: builtin/am.c:2357 builtin/am.c:2360 builtin/am.c:2363 builtin/am.c:2366
-#: builtin/am.c:2369 builtin/am.c:2372 builtin/am.c:2375 builtin/am.c:2378
-#: builtin/am.c:2384
+#: builtin/am.c:2363 builtin/am.c:2366 builtin/am.c:2369 builtin/am.c:2372
+#: builtin/am.c:2375 builtin/am.c:2378 builtin/am.c:2381 builtin/am.c:2384
+#: builtin/am.c:2390
 msgid "pass it through git-apply"
 msgstr ""
 
-#: builtin/am.c:2374 builtin/commit.c:1514 builtin/fmt-merge-msg.c:17
+#: builtin/am.c:2380 builtin/commit.c:1514 builtin/fmt-merge-msg.c:17
 #: builtin/fmt-merge-msg.c:20 builtin/grep.c:920 builtin/merge.c:262
 #: builtin/pull.c:142 builtin/pull.c:204 builtin/pull.c:221
 #: builtin/rebase.c:1072 builtin/repack.c:752 builtin/repack.c:756
@@ -10209,101 +10213,101 @@ msgstr ""
 msgid "n"
 msgstr ""
 
-#: builtin/am.c:2380 builtin/branch.c:678 builtin/bugreport.c:109
+#: builtin/am.c:2386 builtin/branch.c:678 builtin/bugreport.c:109
 #: builtin/cat-file.c:677 builtin/cat-file.c:681 builtin/for-each-ref.c:41
 #: builtin/replace.c:555 builtin/tag.c:479 builtin/verify-tag.c:38
 msgid "format"
 msgstr ""
 
-#: builtin/am.c:2381
+#: builtin/am.c:2387
 msgid "format the patch(es) are in"
 msgstr ""
 
-#: builtin/am.c:2387
+#: builtin/am.c:2393
 msgid "override error message when patch failure occurs"
 msgstr ""
 
-#: builtin/am.c:2389
+#: builtin/am.c:2395
 msgid "continue applying patches after resolving a conflict"
 msgstr ""
 
-#: builtin/am.c:2392
+#: builtin/am.c:2398
 msgid "synonyms for --continue"
 msgstr ""
 
-#: builtin/am.c:2395
+#: builtin/am.c:2401
 msgid "skip the current patch"
 msgstr ""
 
-#: builtin/am.c:2398
+#: builtin/am.c:2404
 msgid "restore the original branch and abort the patching operation"
 msgstr ""
 
-#: builtin/am.c:2401
+#: builtin/am.c:2407
 msgid "abort the patching operation but keep HEAD where it is"
 msgstr ""
 
-#: builtin/am.c:2405
+#: builtin/am.c:2411
 msgid "show the patch being applied"
 msgstr ""
 
-#: builtin/am.c:2409
+#: builtin/am.c:2415
 msgid "record the empty patch as an empty commit"
 msgstr ""
 
-#: builtin/am.c:2413
+#: builtin/am.c:2419
 msgid "lie about committer date"
 msgstr ""
 
-#: builtin/am.c:2415
+#: builtin/am.c:2421
 msgid "use current timestamp for author date"
 msgstr ""
 
-#: builtin/am.c:2417 builtin/commit-tree.c:118 builtin/commit.c:1642
+#: builtin/am.c:2423 builtin/commit-tree.c:118 builtin/commit.c:1642
 #: builtin/merge.c:299 builtin/pull.c:179 builtin/rebase.c:1125
 #: builtin/revert.c:117 builtin/tag.c:460
 msgid "key-id"
 msgstr ""
 
-#: builtin/am.c:2418 builtin/rebase.c:1126
+#: builtin/am.c:2424 builtin/rebase.c:1126
 msgid "GPG-sign commits"
 msgstr ""
 
-#: builtin/am.c:2421
+#: builtin/am.c:2427
 msgid "how to handle empty patches"
 msgstr ""
 
-#: builtin/am.c:2424
+#: builtin/am.c:2430
 msgid "(internal use for git-rebase)"
 msgstr ""
 
-#: builtin/am.c:2442
+#: builtin/am.c:2448
 msgid ""
 "The -b/--binary option has been a no-op for long time, and\n"
 "it will be removed. Please do not use it anymore."
 msgstr ""
 
-#: builtin/am.c:2449
+#: builtin/am.c:2455
 msgid "failed to read the index"
 msgstr ""
 
-#: builtin/am.c:2464
+#: builtin/am.c:2470
 #, c-format
 msgid "previous rebase directory %s still exists but mbox given."
 msgstr ""
 
-#: builtin/am.c:2488
+#: builtin/am.c:2494
 #, c-format
 msgid ""
 "Stray %s directory found.\n"
 "Use \"git am --abort\" to remove it."
 msgstr ""
 
-#: builtin/am.c:2494
+#: builtin/am.c:2500
 msgid "Resolve operation not in progress, we are not resuming."
 msgstr ""
 
-#: builtin/am.c:2504
+#: builtin/am.c:2510
 msgid "interactive mode requires patches on the command line"
 msgstr ""
 

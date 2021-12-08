@@ -23,3 +23,58 @@ index 74737e2..de89653 100644
  #, c-format
  msgid   "not removing '%s' recursively without -r"
  msgstr  ""
+diff --git a/po/git.pot b/po/git.pot
+index de89653..2a82453 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -3279,6 +3279,10 @@ msgstr  ""
+ msgid   "Creates a temporary file with a blob's contents"
+ msgstr  ""
+ 
++#, c-format
++msgid   "Creating an empty commit: %.*s"
++msgstr  ""
++
+ #, c-format
+ msgid   "Current branch %s is up to date, rebase forced.\n"
+ msgstr  ""
+@@ -4117,9 +4121,6 @@ msgstr  ""
+ msgid   "Invalid pathspec magic '%.*s' in '%s'"
+ msgstr  ""
+ 
+-msgid   "Invalid resume value."
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Invalid untracked files mode '%s'"
+ msgstr  ""
+@@ -4405,7 +4406,7 @@ msgid   "No changes - did you forget to use 'git add'?\n"
+         "already introduced the same changes; you might want to skip this patch."
+ msgstr  ""
+ 
+-msgid   "No changes - record it as an empty commit."
++msgid   "No changes - recorded it as an empty commit."
+ msgstr  ""
+ 
+ msgid   "No changes -- Patch already applied."
+@@ -4753,8 +4754,7 @@ msgstr  ""
+ msgid   "Patch format detection failed."
+ msgstr  ""
+ 
+-msgid   "Patch is empty.\n"
+-        "If you want to record it as an empty commit, run \"git am --allow-empty\"."
++msgid   "Patch is empty."
+ msgstr  ""
+ 
+ msgid   "Patch sent with format=flowed; space at the end of lines might be lost."
+@@ -5944,6 +5944,10 @@ msgid   "To avoid this message, use \"drop\" to explicitly remove a commit.\n"
+         "\n"
+ msgstr  ""
+ 
++#, c-format
++msgid   "To record the empty patch as an empty commit, run \"%s --allow-empty\"."
++msgstr  ""
++
+ #, c-format
+ msgid   "To restore the original branch and stop patching, run \"%s --abort\"."
+ msgstr  ""
