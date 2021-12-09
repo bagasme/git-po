@@ -22,8 +22,8 @@ msgstr ""
 msgid "Huh (%s)?"
 msgstr ""
 
-#: add-interactive.c:533 add-interactive.c:834 reset.c:134 sequencer.c:3509
-#: sequencer.c:3974 sequencer.c:4134 builtin/rebase.c:1259
+#: add-interactive.c:533 add-interactive.c:834 reset.c:136 sequencer.c:3509
+#: sequencer.c:3974 sequencer.c:4133 builtin/rebase.c:1259
 #: builtin/rebase.c:1669
 msgid "could not read index"
 msgstr ""
@@ -52,7 +52,7 @@ msgstr ""
 msgid "could not stage '%s'"
 msgstr ""
 
-#: add-interactive.c:707 add-interactive.c:896 reset.c:158 sequencer.c:3713
+#: add-interactive.c:707 add-interactive.c:896 reset.c:160 sequencer.c:3713
 msgid "could not write index"
 msgstr ""
 
@@ -1002,7 +1002,7 @@ msgstr ""
 msgid "cannot checkout %s"
 msgstr ""
 
-#: apply.c:3405 apply.c:3416 apply.c:3462 midx.c:92 pack-mtimes.c:55
+#: apply.c:3405 apply.c:3416 apply.c:3462 midx.c:93 pack-mtimes.c:55
 #: pack-revindex.c:214 setup.c:309
 #, c-format
 msgid "failed to read %s"
@@ -1716,8 +1716,8 @@ msgstr ""
 msgid "--reverse and --first-parent together require specified latest commit"
 msgstr ""
 
-#: blame.c:2820 bundle.c:224 midx.c:1030 ref-filter.c:2370 remote.c:2158
-#: sequencer.c:2352 sequencer.c:4879 submodule.c:883 builtin/commit.c:1114
+#: blame.c:2820 bundle.c:224 midx.c:1043 ref-filter.c:2370 remote.c:2158
+#: sequencer.c:2352 sequencer.c:4878 submodule.c:883 builtin/commit.c:1114
 #: builtin/log.c:438 builtin/log.c:1056 builtin/log.c:1664 builtin/log.c:2096
 #: builtin/log.c:2386 builtin/merge.c:428 builtin/pack-objects.c:3382
 #: builtin/pack-objects.c:3540 builtin/pack-objects.c:4024
@@ -2117,7 +2117,7 @@ msgstr ""
 msgid "failed to write correct number of base graph ids"
 msgstr ""
 
-#: commit-graph.c:1833 midx.c:1137
+#: commit-graph.c:1833 midx.c:1150
 #, c-format
 msgid "unable to create leading directories of %s"
 msgstr ""
@@ -4964,215 +4964,215 @@ msgstr ""
 msgid "unable to write new index file"
 msgstr ""
 
-#: midx.c:66
+#: midx.c:67
 msgid "multi-pack-index OID fanout is of the wrong size"
 msgstr ""
 
-#: midx.c:99
+#: midx.c:100
 #, c-format
 msgid "multi-pack-index file %s is too small"
 msgstr ""
 
-#: midx.c:115
+#: midx.c:116
 #, c-format
 msgid "multi-pack-index signature 0x%08x does not match signature 0x%08x"
 msgstr ""
 
-#: midx.c:120
+#: midx.c:121
 #, c-format
 msgid "multi-pack-index version %d not recognized"
 msgstr ""
 
-#: midx.c:125
+#: midx.c:126
 #, c-format
 msgid "multi-pack-index hash version %u does not match version %u"
 msgstr ""
 
-#: midx.c:142
+#: midx.c:143
 msgid "multi-pack-index missing required pack-name chunk"
 msgstr ""
 
-#: midx.c:144
+#: midx.c:145
 msgid "multi-pack-index missing required OID fanout chunk"
 msgstr ""
 
-#: midx.c:146
+#: midx.c:147
 msgid "multi-pack-index missing required OID lookup chunk"
 msgstr ""
 
-#: midx.c:148
+#: midx.c:149
 msgid "multi-pack-index missing required object offsets chunk"
 msgstr ""
 
-#: midx.c:164
+#: midx.c:165
 #, c-format
 msgid "multi-pack-index pack names out of order: '%s' before '%s'"
 msgstr ""
 
-#: midx.c:212
+#: midx.c:213
 #, c-format
 msgid "bad pack-int-id: %u (%u total packs)"
 msgstr ""
 
-#: midx.c:262
+#: midx.c:263
 msgid "multi-pack-index stores a 64-bit offset, but off_t is too small"
 msgstr ""
 
-#: midx.c:493
+#: midx.c:494
 #, c-format
 msgid "failed to add packfile '%s'"
 msgstr ""
 
-#: midx.c:499
+#: midx.c:500
 #, c-format
 msgid "failed to open pack-index '%s'"
 msgstr ""
 
-#: midx.c:567
+#: midx.c:568
 #, c-format
 msgid "failed to locate object %d in packfile"
 msgstr ""
 
-#: midx.c:883
+#: midx.c:896
 msgid "cannot store reverse index file"
 msgstr ""
 
-#: midx.c:981
+#: midx.c:994
 #, c-format
 msgid "could not parse line: %s"
 msgstr ""
 
-#: midx.c:983
+#: midx.c:996
 #, c-format
 msgid "malformed line: %s"
 msgstr ""
 
-#: midx.c:1150
+#: midx.c:1163
 msgid "ignoring existing multi-pack-index; checksum mismatch"
 msgstr ""
 
-#: midx.c:1175
+#: midx.c:1188
 msgid "could not load pack"
 msgstr ""
 
-#: midx.c:1181
+#: midx.c:1194
 #, c-format
 msgid "could not open index for %s"
 msgstr ""
 
-#: midx.c:1192
+#: midx.c:1205
 msgid "Adding packfiles to multi-pack-index"
 msgstr ""
 
-#: midx.c:1235
+#: midx.c:1248
 #, c-format
 msgid "unknown preferred pack: '%s'"
 msgstr ""
 
-#: midx.c:1280
+#: midx.c:1293
 #, c-format
 msgid "cannot select preferred pack %s with no objects"
 msgstr ""
 
-#: midx.c:1312
+#: midx.c:1325
 #, c-format
 msgid "did not see pack-file %s to drop"
 msgstr ""
 
-#: midx.c:1358
+#: midx.c:1371
 #, c-format
 msgid "preferred pack '%s' is expired"
 msgstr ""
 
-#: midx.c:1371
+#: midx.c:1384
 msgid "no pack files to index."
 msgstr ""
 
-#: midx.c:1408
+#: midx.c:1425
 msgid "could not write multi-pack bitmap"
 msgstr ""
 
-#: midx.c:1418
+#: midx.c:1435
 msgid "could not write multi-pack-index"
 msgstr ""
 
-#: midx.c:1477 builtin/clean.c:37
+#: midx.c:1494 builtin/clean.c:37
 #, c-format
 msgid "failed to remove %s"
 msgstr ""
 
-#: midx.c:1510
+#: midx.c:1527
 #, c-format
 msgid "failed to clear multi-pack-index at %s"
 msgstr ""
 
-#: midx.c:1573
+#: midx.c:1590
 msgid "multi-pack-index file exists, but failed to parse"
 msgstr ""
 
-#: midx.c:1581
+#: midx.c:1598
 msgid "incorrect checksum"
 msgstr ""
 
-#: midx.c:1584
+#: midx.c:1601
 msgid "Looking for referenced packfiles"
 msgstr ""
 
-#: midx.c:1599
+#: midx.c:1616
 #, c-format
 msgid ""
 "oid fanout out of order: fanout[%d] = %<PRIx32> > %<PRIx32> = fanout[%d]"
 msgstr ""
 
-#: midx.c:1604
+#: midx.c:1621
 msgid "the midx contains no oid"
 msgstr ""
 
-#: midx.c:1613
+#: midx.c:1630
 msgid "Verifying OID order in multi-pack-index"
 msgstr ""
 
-#: midx.c:1622
+#: midx.c:1639
 #, c-format
 msgid "oid lookup out of order: oid[%d] = %s >= %s = oid[%d]"
 msgstr ""
 
-#: midx.c:1642
+#: midx.c:1659
 msgid "Sorting objects by packfile"
 msgstr ""
 
-#: midx.c:1649
+#: midx.c:1666
 msgid "Verifying object offsets"
 msgstr ""
 
-#: midx.c:1665
+#: midx.c:1682
 #, c-format
 msgid "failed to load pack entry for oid[%d] = %s"
 msgstr ""
 
-#: midx.c:1671
+#: midx.c:1688
 #, c-format
 msgid "failed to load pack-index for packfile %s"
 msgstr ""
 
-#: midx.c:1680
+#: midx.c:1697
 #, c-format
 msgid "incorrect object offset for oid[%d] = %s: %<PRIx64> != %<PRIx64>"
 msgstr ""
 
-#: midx.c:1707
+#: midx.c:1724
 msgid "Counting referenced objects"
 msgstr ""
 
-#: midx.c:1717
+#: midx.c:1734
 msgid "Finding and deleting unreferenced packfiles"
 msgstr ""
 
-#: midx.c:1909
+#: midx.c:1926
 msgid "could not start pack-objects"
 msgstr ""
 
-#: midx.c:1929
+#: midx.c:1946
 msgid "could not finish pack-objects"
 msgstr ""
 
@@ -5623,12 +5623,12 @@ msgstr ""
 msgid "relative path syntax can't be used outside working tree"
 msgstr ""
 
-#: object-name.c:1891
+#: object-name.c:1890
 #, c-format
 msgid "<object>:<path> required, only <object> '%s' given"
 msgstr ""
 
-#: object-name.c:2004
+#: object-name.c:2003
 #, c-format
 msgid "invalid object name '%.*s'."
 msgstr ""
@@ -6087,7 +6087,7 @@ msgstr ""
 msgid "could not read `log` output"
 msgstr ""
 
-#: range-diff.c:97 sequencer.c:5582
+#: range-diff.c:97 sequencer.c:5581
 #, c-format
 msgid "could not parse commit '%s'"
 msgstr ""
@@ -6389,7 +6389,7 @@ msgid ""
 msgstr ""
 
 #: rebase-interactive.c:113 rerere.c:469 rerere.c:676 sequencer.c:3883
-#: sequencer.c:3909 sequencer.c:5688 builtin/fsck.c:328 builtin/gc.c:1800
+#: sequencer.c:3909 sequencer.c:5687 builtin/fsck.c:328 builtin/gc.c:1800
 #: builtin/rebase.c:191
 #, c-format
 msgid "could not write '%s'"
@@ -7112,11 +7112,11 @@ msgstr ""
 msgid "unable to open rr-cache directory"
 msgstr ""
 
-#: reset.c:110
+#: reset.c:112
 msgid "could not determine HEAD revision"
 msgstr ""
 
-#: reset.c:139 reset.c:145 sequencer.c:3700
+#: reset.c:141 reset.c:147 sequencer.c:3700
 #, c-format
 msgid "failed to find tree of %s"
 msgstr ""
@@ -7201,7 +7201,7 @@ msgstr ""
 msgid "could not delete '%s'"
 msgstr ""
 
-#: sequencer.c:345 sequencer.c:4731 builtin/rebase.c:564 builtin/rebase.c:1324
+#: sequencer.c:345 sequencer.c:4730 builtin/rebase.c:564 builtin/rebase.c:1324
 #: builtin/rm.c:409
 #, c-format
 msgid "could not remove '%s'"
@@ -7256,7 +7256,7 @@ msgid "could not lock '%s'"
 msgstr ""
 
 #: sequencer.c:450 sequencer.c:3091 sequencer.c:3296 sequencer.c:3310
-#: sequencer.c:3561 sequencer.c:5598 strbuf.c:1188 wrapper.c:687
+#: sequencer.c:3561 sequencer.c:5597 strbuf.c:1188 wrapper.c:687
 #, c-format
 msgid "could not write to '%s'"
 msgstr ""
@@ -7468,7 +7468,7 @@ msgstr ""
 msgid "failed to write commit object"
 msgstr ""
 
-#: sequencer.c:1576 sequencer.c:4503 t/helper/test-fast-rebase.c:199
+#: sequencer.c:1576 sequencer.c:4502 t/helper/test-fast-rebase.c:199
 #: t/helper/test-fast-rebase.c:217
 #, c-format
 msgid "could not update %s"
@@ -7667,7 +7667,7 @@ msgstr ""
 msgid "malformed options sheet: '%s'"
 msgstr ""
 
-#: sequencer.c:3033 sequencer.c:4882
+#: sequencer.c:3033 sequencer.c:4881
 msgid "empty commit set passed"
 msgstr ""
 
@@ -7698,7 +7698,7 @@ msgstr ""
 msgid "could not lock HEAD"
 msgstr ""
 
-#: sequencer.c:3146 sequencer.c:4592
+#: sequencer.c:3146 sequencer.c:4591
 msgid "no cherry-pick or revert in progress"
 msgstr ""
 
@@ -7756,7 +7756,7 @@ msgid ""
 "try \"git %s --continue\""
 msgstr ""
 
-#: sequencer.c:3432 sequencer.c:4483
+#: sequencer.c:3432 sequencer.c:4482
 msgid "cannot read HEAD"
 msgstr ""
 
@@ -7872,40 +7872,40 @@ msgstr ""
 msgid "merge: Unable to write new index file"
 msgstr ""
 
-#: sequencer.c:4117
+#: sequencer.c:4116
 msgid "Cannot autostash"
 msgstr ""
 
-#: sequencer.c:4120
+#: sequencer.c:4119
 #, c-format
 msgid "Unexpected stash response: '%s'"
 msgstr ""
 
-#: sequencer.c:4126
+#: sequencer.c:4125
 #, c-format
 msgid "Could not create directory for '%s'"
 msgstr ""
 
-#: sequencer.c:4129
+#: sequencer.c:4128
 #, c-format
 msgid "Created autostash: %s\n"
 msgstr ""
 
-#: sequencer.c:4131
+#: sequencer.c:4130
 msgid "could not reset --hard"
 msgstr ""
 
-#: sequencer.c:4155
+#: sequencer.c:4154
 #, c-format
 msgid "Applied autostash.\n"
 msgstr ""
 
-#: sequencer.c:4167
+#: sequencer.c:4166
 #, c-format
 msgid "cannot store %s"
 msgstr ""
 
-#: sequencer.c:4170
+#: sequencer.c:4169
 #, c-format
 msgid ""
 "%s\n"
@@ -7913,29 +7913,29 @@ msgid ""
 "You can run \"git stash pop\" or \"git stash drop\" at any time.\n"
 msgstr ""
 
-#: sequencer.c:4175
+#: sequencer.c:4174
 msgid "Applying autostash resulted in conflicts."
 msgstr ""
 
-#: sequencer.c:4176
+#: sequencer.c:4175
 msgid "Autostash exists; creating a new stash entry."
 msgstr ""
 
-#: sequencer.c:4232
+#: sequencer.c:4231
 msgid "could not detach HEAD"
 msgstr ""
 
-#: sequencer.c:4247
+#: sequencer.c:4246
 #, c-format
 msgid "Stopped at HEAD\n"
 msgstr ""
 
-#: sequencer.c:4249
+#: sequencer.c:4248
 #, c-format
 msgid "Stopped at %s\n"
 msgstr ""
 
-#: sequencer.c:4281
+#: sequencer.c:4280
 #, c-format
 msgid ""
 "Could not execute the todo command\n"
@@ -7948,117 +7948,117 @@ msgid ""
 "    git rebase --continue\n"
 msgstr ""
 
-#: sequencer.c:4327
+#: sequencer.c:4326
 #, c-format
 msgid "Rebasing (%d/%d)%s"
 msgstr ""
 
-#: sequencer.c:4373
+#: sequencer.c:4372
 #, c-format
 msgid "Stopped at %s...  %.*s\n"
 msgstr ""
 
-#: sequencer.c:4443
+#: sequencer.c:4442
 #, c-format
 msgid "unknown command %d"
 msgstr ""
 
-#: sequencer.c:4491
+#: sequencer.c:4490
 msgid "could not read orig-head"
 msgstr ""
 
-#: sequencer.c:4496
+#: sequencer.c:4495
 msgid "could not read 'onto'"
 msgstr ""
 
-#: sequencer.c:4510
+#: sequencer.c:4509
 #, c-format
 msgid "could not update HEAD to %s"
 msgstr ""
 
-#: sequencer.c:4570
+#: sequencer.c:4569
 #, c-format
 msgid "Successfully rebased and updated %s.\n"
 msgstr ""
 
-#: sequencer.c:4622
+#: sequencer.c:4621
 msgid "cannot rebase: You have unstaged changes."
 msgstr ""
 
-#: sequencer.c:4631
+#: sequencer.c:4630
 msgid "cannot amend non-existing commit"
 msgstr ""
 
-#: sequencer.c:4633
+#: sequencer.c:4632
 #, c-format
 msgid "invalid file: '%s'"
 msgstr ""
 
-#: sequencer.c:4635
+#: sequencer.c:4634
 #, c-format
 msgid "invalid contents: '%s'"
 msgstr ""
 
-#: sequencer.c:4638
+#: sequencer.c:4637
 msgid ""
 "\n"
 "You have uncommitted changes in your working tree. Please, commit them\n"
 "first and then run 'git rebase --continue' again."
 msgstr ""
 
-#: sequencer.c:4674 sequencer.c:4713
+#: sequencer.c:4673 sequencer.c:4712
 #, c-format
 msgid "could not write file: '%s'"
 msgstr ""
 
-#: sequencer.c:4729
+#: sequencer.c:4728
 msgid "could not remove CHERRY_PICK_HEAD"
 msgstr ""
 
-#: sequencer.c:4739
+#: sequencer.c:4738
 msgid "could not commit staged changes."
 msgstr ""
 
-#: sequencer.c:4859
+#: sequencer.c:4858
 #, c-format
 msgid "%s: can't cherry-pick a %s"
 msgstr ""
 
-#: sequencer.c:4863
+#: sequencer.c:4862
 #, c-format
 msgid "%s: bad revision"
 msgstr ""
 
-#: sequencer.c:4898
+#: sequencer.c:4897
 msgid "can't revert as initial commit"
 msgstr ""
 
-#: sequencer.c:5169 sequencer.c:5398
+#: sequencer.c:5168 sequencer.c:5397
 #, c-format
 msgid "skipped previously applied commit %s"
 msgstr ""
 
-#: sequencer.c:5239 sequencer.c:5414
+#: sequencer.c:5238 sequencer.c:5413
 msgid "use --reapply-cherry-picks to include skipped commits"
 msgstr ""
 
-#: sequencer.c:5385
+#: sequencer.c:5384
 msgid "make_script: unhandled options"
 msgstr ""
 
-#: sequencer.c:5388
+#: sequencer.c:5387
 msgid "make_script: error preparing revisions"
 msgstr ""
 
-#: sequencer.c:5646 sequencer.c:5663
+#: sequencer.c:5645 sequencer.c:5662
 msgid "nothing to do"
 msgstr ""
 
-#: sequencer.c:5682
+#: sequencer.c:5681
 msgid "could not skip unnecessary pick commands"
 msgstr ""
 
-#: sequencer.c:5782
+#: sequencer.c:5781
 msgid "the script was already rearranged."
 msgstr ""
 
@@ -10214,7 +10214,7 @@ msgid "n"
 msgstr ""
 
 #: builtin/am.c:2386 builtin/branch.c:678 builtin/bugreport.c:109
-#: builtin/cat-file.c:677 builtin/cat-file.c:681 builtin/for-each-ref.c:41
+#: builtin/cat-file.c:678 builtin/cat-file.c:682 builtin/for-each-ref.c:41
 #: builtin/replace.c:555 builtin/tag.c:479 builtin/verify-tag.c:38
 msgid "format"
 msgstr ""
@@ -11391,151 +11391,151 @@ msgstr ""
 msgid "Unknown subcommand: %s"
 msgstr ""
 
-#: builtin/cat-file.c:633
+#: builtin/cat-file.c:634
 msgid "only one batch option may be specified"
 msgstr ""
 
-#: builtin/cat-file.c:653
+#: builtin/cat-file.c:654
 msgid "git cat-file <type> <object>"
 msgstr ""
 
-#: builtin/cat-file.c:654
+#: builtin/cat-file.c:655
 msgid "git cat-file (-e | -p) <object>"
 msgstr ""
 
-#: builtin/cat-file.c:655
+#: builtin/cat-file.c:656
 msgid "git cat-file ( -t | -s ) [--allow-unknown-type] <object>"
 msgstr ""
 
-#: builtin/cat-file.c:656
+#: builtin/cat-file.c:657
 msgid ""
 "git cat-file (--batch | --batch-check) [--batch-all-objects]\n"
 "             [--buffer] [--follow-symlinks] [--unordered]\n"
 "             [--textconv | --filters]"
 msgstr ""
 
-#: builtin/cat-file.c:659
+#: builtin/cat-file.c:660
 msgid ""
 "git cat-file (--textconv | --filters )\n"
 "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
 msgstr ""
 
-#: builtin/cat-file.c:665
+#: builtin/cat-file.c:666
 msgid "Check object existence or emit object contents"
 msgstr ""
 
-#: builtin/cat-file.c:667
+#: builtin/cat-file.c:668
 msgid "check if <object> exists"
 msgstr ""
 
-#: builtin/cat-file.c:668
+#: builtin/cat-file.c:669
 msgid "pretty-print <object> content"
 msgstr ""
 
-#: builtin/cat-file.c:670
+#: builtin/cat-file.c:671
 msgid "Emit [broken] object attributes"
 msgstr ""
 
-#: builtin/cat-file.c:671
+#: builtin/cat-file.c:672
 msgid "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)"
 msgstr ""
 
-#: builtin/cat-file.c:672
+#: builtin/cat-file.c:673
 msgid "show object size"
 msgstr ""
 
-#: builtin/cat-file.c:674
+#: builtin/cat-file.c:675
 msgid "allow -s and -t to work with broken/corrupt objects"
 msgstr ""
 
-#: builtin/cat-file.c:676
+#: builtin/cat-file.c:677
 msgid "Batch objects requested on stdin (or --batch-all-objects)"
 msgstr ""
 
-#: builtin/cat-file.c:678
+#: builtin/cat-file.c:679
 msgid "show full <object> or <rev> contents"
 msgstr ""
 
-#: builtin/cat-file.c:682
+#: builtin/cat-file.c:683
 msgid "like --batch, but don't emit <contents>"
 msgstr ""
 
-#: builtin/cat-file.c:686
+#: builtin/cat-file.c:687
 msgid "with --batch[-check]: ignores stdin, batches all known objects"
 msgstr ""
 
-#: builtin/cat-file.c:688
+#: builtin/cat-file.c:689
 msgid "Change or optimize batch output"
 msgstr ""
 
-#: builtin/cat-file.c:689
+#: builtin/cat-file.c:690
 msgid "buffer --batch output"
 msgstr ""
 
-#: builtin/cat-file.c:691
+#: builtin/cat-file.c:692
 msgid "follow in-tree symlinks"
 msgstr ""
 
-#: builtin/cat-file.c:693
+#: builtin/cat-file.c:694
 msgid "do not order objects before emitting them"
 msgstr ""
 
-#: builtin/cat-file.c:695
+#: builtin/cat-file.c:696
 msgid ""
 "Emit object (blob or tree) with conversion or filter (stand-alone, or with "
 "batch)"
 msgstr ""
 
-#: builtin/cat-file.c:697
+#: builtin/cat-file.c:698
 msgid "run textconv on object's content"
 msgstr ""
 
-#: builtin/cat-file.c:699
+#: builtin/cat-file.c:700
 msgid "run filters on object's content"
 msgstr ""
 
-#: builtin/cat-file.c:700
+#: builtin/cat-file.c:701
 msgid "blob|tree"
 msgstr ""
 
-#: builtin/cat-file.c:701
+#: builtin/cat-file.c:702
 msgid "use a <path> for (--textconv | --filters ); Not with 'batch'"
 msgstr ""
 
-#: builtin/cat-file.c:719
+#: builtin/cat-file.c:720
 #, c-format
-msgid "'%s=<%s> needs '%s' or '%s'"
+msgid "'%s=<%s>' needs '%s' or '%s'"
 msgstr ""
 
-#: builtin/cat-file.c:721
+#: builtin/cat-file.c:722
 msgid "path|tree-ish"
 msgstr ""
 
-#: builtin/cat-file.c:728 builtin/cat-file.c:731 builtin/cat-file.c:734
+#: builtin/cat-file.c:729 builtin/cat-file.c:732 builtin/cat-file.c:735
 #, c-format
 msgid "'%s' requires a batch mode"
 msgstr ""
 
-#: builtin/cat-file.c:746
+#: builtin/cat-file.c:747
 #, c-format
 msgid "'-%c' is incompatible with batch mode"
 msgstr ""
 
-#: builtin/cat-file.c:749
+#: builtin/cat-file.c:750
 msgid "batch modes take no arguments"
 msgstr ""
 
-#: builtin/cat-file.c:757 builtin/cat-file.c:760
+#: builtin/cat-file.c:758 builtin/cat-file.c:761
 #, c-format
 msgid "<rev> required with '%s'"
 msgstr ""
 
-#: builtin/cat-file.c:763
+#: builtin/cat-file.c:764
 #, c-format
 msgid "<object> required with '-%c'"
 msgstr ""
 
-#: builtin/cat-file.c:768 builtin/notes.c:374 builtin/notes.c:429
+#: builtin/cat-file.c:769 builtin/notes.c:374 builtin/notes.c:429
 #: builtin/notes.c:507 builtin/notes.c:519 builtin/notes.c:596
 #: builtin/notes.c:663 builtin/notes.c:813 builtin/notes.c:965
 #: builtin/notes.c:987 builtin/prune-packed.c:25 builtin/receive-pack.c:2490
@@ -11543,7 +11543,7 @@ msgstr ""
 msgid "too many arguments"
 msgstr ""
 
-#: builtin/cat-file.c:772
+#: builtin/cat-file.c:773
 #, c-format
 msgid "only two arguments allowed in <type> <object> mode, not %d"
 msgstr ""
@@ -21169,86 +21169,110 @@ msgstr ""
 msgid "git sparse-checkout list"
 msgstr ""
 
-#: builtin/sparse-checkout.c:72
+#: builtin/sparse-checkout.c:60
+msgid "this worktree is not sparse"
+msgstr ""
+
+#: builtin/sparse-checkout.c:75
 msgid "this worktree is not sparse (sparse-checkout file may not exist)"
 msgstr ""
 
-#: builtin/sparse-checkout.c:173
+#: builtin/sparse-checkout.c:176
 #, c-format
 msgid ""
 "directory '%s' contains untracked files, but is not in the sparse-checkout "
 "cone"
 msgstr ""
 
-#: builtin/sparse-checkout.c:181
+#: builtin/sparse-checkout.c:184
 #, c-format
 msgid "failed to remove directory '%s'"
 msgstr ""
 
-#: builtin/sparse-checkout.c:321
+#: builtin/sparse-checkout.c:324
 msgid "failed to create directory for sparse-checkout file"
 msgstr ""
 
-#: builtin/sparse-checkout.c:362
+#: builtin/sparse-checkout.c:365
 msgid "unable to upgrade repository format to enable worktreeConfig"
 msgstr ""
 
-#: builtin/sparse-checkout.c:364
+#: builtin/sparse-checkout.c:367
 msgid "failed to set extensions.worktreeConfig setting"
 msgstr ""
 
-#: builtin/sparse-checkout.c:384
-msgid "git sparse-checkout init [--cone] [--[no-]sparse-index]"
-msgstr ""
-
-#: builtin/sparse-checkout.c:404
-msgid "initialize the sparse-checkout in cone mode"
-msgstr ""
-
-#: builtin/sparse-checkout.c:406
-msgid "toggle the use of a sparse index"
-msgstr ""
-
-#: builtin/sparse-checkout.c:434
+#: builtin/sparse-checkout.c:411
 msgid "failed to modify sparse-index config"
 msgstr ""
 
-#: builtin/sparse-checkout.c:455
+#: builtin/sparse-checkout.c:422
+msgid "git sparse-checkout init [--cone] [--[no-]sparse-index]"
+msgstr ""
+
+#: builtin/sparse-checkout.c:441 builtin/sparse-checkout.c:726
+#: builtin/sparse-checkout.c:775
+msgid "initialize the sparse-checkout in cone mode"
+msgstr ""
+
+#: builtin/sparse-checkout.c:443 builtin/sparse-checkout.c:728
+#: builtin/sparse-checkout.c:777
+msgid "toggle the use of a sparse index"
+msgstr ""
+
+#: builtin/sparse-checkout.c:476
 #, c-format
 msgid "failed to open '%s'"
 msgstr ""
 
-#: builtin/sparse-checkout.c:507
+#: builtin/sparse-checkout.c:528
 #, c-format
 msgid "could not normalize path %s"
 msgstr ""
 
-#: builtin/sparse-checkout.c:519
-msgid "git sparse-checkout (set|add) (--stdin | <patterns>)"
-msgstr ""
-
-#: builtin/sparse-checkout.c:544
+#: builtin/sparse-checkout.c:557
 #, c-format
 msgid "unable to unquote C-style string '%s'"
 msgstr ""
 
-#: builtin/sparse-checkout.c:598 builtin/sparse-checkout.c:622
+#: builtin/sparse-checkout.c:612 builtin/sparse-checkout.c:637
 msgid "unable to load existing sparse-checkout patterns"
 msgstr ""
 
-#: builtin/sparse-checkout.c:667
+#: builtin/sparse-checkout.c:679
+msgid "git sparse-checkout add (--stdin | <patterns>)"
+msgstr ""
+
+#: builtin/sparse-checkout.c:691 builtin/sparse-checkout.c:730
 msgid "read patterns from standard in"
 msgstr ""
 
-#: builtin/sparse-checkout.c:682
-msgid "git sparse-checkout reapply"
+#: builtin/sparse-checkout.c:696
+msgid "no sparse-checkout to add to"
 msgstr ""
 
-#: builtin/sparse-checkout.c:701
+#: builtin/sparse-checkout.c:709
+msgid ""
+"git sparse-checkout set [--[no-]cone] [--[no-]sparse-index] (--stdin | "
+"<patterns>)"
+msgstr ""
+
+#: builtin/sparse-checkout.c:762
+msgid "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index] "
+msgstr ""
+
+#: builtin/sparse-checkout.c:782
+msgid "must be in a sparse-checkout to reapply sparsity patterns"
+msgstr ""
+
+#: builtin/sparse-checkout.c:800
 msgid "git sparse-checkout disable"
 msgstr ""
 
-#: builtin/sparse-checkout.c:732
+#: builtin/sparse-checkout.c:813
+msgid "no active sparse-checkout to disable"
+msgstr ""
+
+#: builtin/sparse-checkout.c:834
 msgid "error while refreshing working directory"
 msgstr ""
 
