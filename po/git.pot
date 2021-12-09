@@ -786,7 +786,7 @@ msgstr ""
 #: builtin/branch.c:725 builtin/checkout.c:1643 builtin/checkout.c:1753
 #: builtin/checkout.c:1756 builtin/clone.c:907 builtin/commit.c:358
 #: builtin/commit.c:1196 builtin/describe.c:593 builtin/diff-tree.c:155
-#: builtin/difftool.c:733 builtin/fast-export.c:1272 builtin/fetch.c:2033
+#: builtin/difftool.c:733 builtin/fast-export.c:1272 builtin/fetch.c:2031
 #: builtin/index-pack.c:1852 builtin/init-db.c:560 builtin/log.c:1969
 #: builtin/log.c:1971 builtin/pack-objects.c:4340 builtin/push.c:592
 #: builtin/push.c:630 builtin/push.c:636 builtin/push.c:641
@@ -1508,7 +1508,7 @@ msgstr ""
 #: builtin/blame.c:885 builtin/commit-tree.c:115 builtin/config.c:135
 #: builtin/fast-export.c:1208 builtin/fast-export.c:1210
 #: builtin/fast-export.c:1214 builtin/grep.c:936 builtin/hash-object.c:103
-#: builtin/ls-files.c:654 builtin/ls-files.c:657 builtin/notes.c:410
+#: builtin/ls-files.c:651 builtin/ls-files.c:654 builtin/notes.c:410
 #: builtin/notes.c:576 builtin/read-tree.c:115 parse-options.h:190
 msgid "file"
 msgstr ""
@@ -12293,7 +12293,7 @@ msgstr ""
 
 #: builtin/clean.c:932 builtin/describe.c:565 builtin/describe.c:567
 #: builtin/grep.c:938 builtin/log.c:186 builtin/log.c:188
-#: builtin/ls-files.c:651 builtin/name-rev.c:535 builtin/name-rev.c:537
+#: builtin/ls-files.c:648 builtin/name-rev.c:535 builtin/name-rev.c:537
 #: builtin/show-ref.c:179
 msgid "pattern"
 msgstr ""
@@ -12590,7 +12590,7 @@ msgstr ""
 msgid "repository '%s' does not exist"
 msgstr ""
 
-#: builtin/clone.c:925 builtin/fetch.c:2047
+#: builtin/clone.c:925 builtin/fetch.c:2045
 #, c-format
 msgid "depth %s is not a positive number"
 msgstr ""
@@ -14572,58 +14572,58 @@ msgstr ""
 msgid "you need to specify a tag name"
 msgstr ""
 
-#: builtin/fetch.c:2027
+#: builtin/fetch.c:2025
 msgid "--negotiate-only needs one or more --negotiate-tip=*"
 msgstr ""
 
-#: builtin/fetch.c:2031
+#: builtin/fetch.c:2029
 msgid "negative depth in --deepen is not supported"
 msgstr ""
 
-#: builtin/fetch.c:2038
+#: builtin/fetch.c:2036
 msgid "--depth and --unshallow cannot be used together"
 msgstr ""
 
-#: builtin/fetch.c:2040
+#: builtin/fetch.c:2038
 msgid "--unshallow on a complete repository does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2057
+#: builtin/fetch.c:2055
 msgid "fetch --all does not take a repository argument"
 msgstr ""
 
-#: builtin/fetch.c:2059
+#: builtin/fetch.c:2057
 msgid "fetch --all does not make sense with refspecs"
 msgstr ""
 
-#: builtin/fetch.c:2068
+#: builtin/fetch.c:2066
 #, c-format
 msgid "no such remote or remote group: %s"
 msgstr ""
 
-#: builtin/fetch.c:2076
+#: builtin/fetch.c:2074
 msgid "fetching a group and specifying refspecs does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2092
+#: builtin/fetch.c:2090
 msgid "must supply remote when using --negotiate-only"
 msgstr ""
 
-#: builtin/fetch.c:2097
+#: builtin/fetch.c:2095
 msgid "protocol does not support --negotiate-only, exiting"
 msgstr ""
 
-#: builtin/fetch.c:2116
+#: builtin/fetch.c:2114
 msgid ""
 "--filter can only be used with the remote configured in extensions."
 "partialclone"
 msgstr ""
 
-#: builtin/fetch.c:2120
+#: builtin/fetch.c:2118
 msgid "--atomic can only be used when fetching from one remote"
 msgstr ""
 
-#: builtin/fetch.c:2124
+#: builtin/fetch.c:2122
 msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
 
@@ -16673,120 +16673,116 @@ msgid ""
 "Could not find a tracked remote branch, please specify <upstream> manually.\n"
 msgstr ""
 
-#: builtin/ls-files.c:564
+#: builtin/ls-files.c:561
 msgid "git ls-files [<options>] [<file>...]"
 msgstr ""
 
-#: builtin/ls-files.c:618
+#: builtin/ls-files.c:615
 msgid "separate paths with the NUL character"
 msgstr ""
 
-#: builtin/ls-files.c:620
+#: builtin/ls-files.c:617
 msgid "identify the file status with tags"
 msgstr ""
 
-#: builtin/ls-files.c:622
+#: builtin/ls-files.c:619
 msgid "use lowercase letters for 'assume unchanged' files"
 msgstr ""
 
-#: builtin/ls-files.c:624
+#: builtin/ls-files.c:621
 msgid "use lowercase letters for 'fsmonitor clean' files"
 msgstr ""
 
-#: builtin/ls-files.c:626
+#: builtin/ls-files.c:623
 msgid "show cached files in the output (default)"
 msgstr ""
 
-#: builtin/ls-files.c:628
+#: builtin/ls-files.c:625
 msgid "show deleted files in the output"
 msgstr ""
 
-#: builtin/ls-files.c:630
+#: builtin/ls-files.c:627
 msgid "show modified files in the output"
 msgstr ""
 
-#: builtin/ls-files.c:632
+#: builtin/ls-files.c:629
 msgid "show other files in the output"
 msgstr ""
 
-#: builtin/ls-files.c:634
+#: builtin/ls-files.c:631
 msgid "show ignored files in the output"
 msgstr ""
 
-#: builtin/ls-files.c:637
+#: builtin/ls-files.c:634
 msgid "show staged contents' object name in the output"
 msgstr ""
 
-#: builtin/ls-files.c:639
+#: builtin/ls-files.c:636
 msgid "show files on the filesystem that need to be removed"
 msgstr ""
 
-#: builtin/ls-files.c:641
+#: builtin/ls-files.c:638
 msgid "show 'other' directories' names only"
 msgstr ""
 
-#: builtin/ls-files.c:643
+#: builtin/ls-files.c:640
 msgid "show line endings of files"
 msgstr ""
 
-#: builtin/ls-files.c:645
+#: builtin/ls-files.c:642
 msgid "don't show empty directories"
 msgstr ""
 
-#: builtin/ls-files.c:648
+#: builtin/ls-files.c:645
 msgid "show unmerged files in the output"
 msgstr ""
 
-#: builtin/ls-files.c:650
+#: builtin/ls-files.c:647
 msgid "show resolve-undo information"
 msgstr ""
 
-#: builtin/ls-files.c:652
+#: builtin/ls-files.c:649
 msgid "skip files matching pattern"
 msgstr ""
 
-#: builtin/ls-files.c:655
+#: builtin/ls-files.c:652
 msgid "read exclude patterns from <file>"
 msgstr ""
 
-#: builtin/ls-files.c:658
+#: builtin/ls-files.c:655
 msgid "read additional per-directory exclude patterns in <file>"
 msgstr ""
 
-#: builtin/ls-files.c:660
+#: builtin/ls-files.c:657
 msgid "add the standard git exclusions"
 msgstr ""
 
-#: builtin/ls-files.c:664
+#: builtin/ls-files.c:661
 msgid "make the output relative to the project top directory"
 msgstr ""
 
-#: builtin/ls-files.c:667
+#: builtin/ls-files.c:664
 msgid "recurse through submodules"
 msgstr ""
 
-#: builtin/ls-files.c:669
+#: builtin/ls-files.c:666
 msgid "if any <file> is not in the index, treat this as an error"
 msgstr ""
 
-#: builtin/ls-files.c:670
+#: builtin/ls-files.c:667
 msgid "tree-ish"
 msgstr ""
 
-#: builtin/ls-files.c:671
+#: builtin/ls-files.c:668
 msgid "pretend that paths removed since <tree-ish> are still present"
 msgstr ""
 
-#: builtin/ls-files.c:673
+#: builtin/ls-files.c:670
 msgid "show debugging data"
 msgstr ""
 
-#: builtin/ls-files.c:675
+#: builtin/ls-files.c:672
 msgid "suppress duplicate entries"
-msgstr ""
-
-#: builtin/ls-files.c:677
-msgid "show sparse directories in the presence of a sparse index"
 msgstr ""
 
 #: builtin/ls-remote.c:9
@@ -18645,19 +18641,19 @@ msgid ""
 "invocation.\n"
 msgstr ""
 
-#: builtin/pull.c:1046
+#: builtin/pull.c:1044
 msgid "Updating an unborn branch with changes added to the index."
 msgstr ""
 
-#: builtin/pull.c:1050
+#: builtin/pull.c:1048
 msgid "pull with rebase"
 msgstr ""
 
-#: builtin/pull.c:1051
+#: builtin/pull.c:1049
 msgid "please commit or stash them."
 msgstr ""
 
-#: builtin/pull.c:1076
+#: builtin/pull.c:1074
 #, c-format
 msgid ""
 "fetch updated the current branch head.\n"
@@ -18665,7 +18661,7 @@ msgid ""
 "commit %s."
 msgstr ""
 
-#: builtin/pull.c:1082
+#: builtin/pull.c:1080
 #, c-format
 msgid ""
 "Cannot fast-forward your working tree.\n"
@@ -18676,23 +18672,23 @@ msgid ""
 "to recover."
 msgstr ""
 
-#: builtin/pull.c:1097
+#: builtin/pull.c:1095
 msgid "Cannot merge multiple branches into empty head."
 msgstr ""
 
-#: builtin/pull.c:1102
+#: builtin/pull.c:1100
 msgid "Cannot rebase onto multiple branches."
 msgstr ""
 
-#: builtin/pull.c:1104
+#: builtin/pull.c:1102
 msgid "Cannot fast-forward to multiple branches."
 msgstr ""
 
-#: builtin/pull.c:1119
+#: builtin/pull.c:1117
 msgid "Need to specify how to reconcile divergent branches."
 msgstr ""
 
-#: builtin/pull.c:1133
+#: builtin/pull.c:1131
 msgid "cannot rebase with locally recorded submodule modifications"
 msgstr ""
 

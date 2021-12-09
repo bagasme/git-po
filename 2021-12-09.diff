@@ -72,3 +72,17 @@ index 2a82453..086bbfc 100644
  msgid   "this worktree is not sparse (sparse-checkout file may not exist)"
  msgstr  ""
  
+diff --git a/po/git.pot b/po/git.pot
+index 086bbfc..ae4cf0a 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -16440,9 +16440,6 @@ msgstr  ""
+ msgid   "show source"
+ msgstr  ""
+ 
+-msgid   "show sparse directories in the presence of a sparse index"
+-msgstr  ""
+-
+ msgid   "show staged contents' object name in the output"
+ msgstr  ""
+ 
