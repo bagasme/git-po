@@ -1,0 +1,75 @@
+diff --git a/po/git.pot b/po/git.pot
+index ae4cf0a..5dd7812 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1863,9 +1863,6 @@ msgstr  ""
+ msgid   "--reflog option needs one branch name"
+ msgstr  ""
+ 
+-msgid   "--remerge_diff does not make sense"
+-msgstr  ""
+-
+ msgid   "--reschedule-failed-exec requires --exec or --interactive"
+ msgstr  ""
+ 
+@@ -3068,9 +3065,6 @@ msgstr  ""
+ msgid   "Could not create new root commit"
+ msgstr  ""
+ 
+-msgid   "Could not create temporary object directory for core.fsyncobjectfiles=batch"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Could not delete %s"
+ msgstr  ""
+@@ -4578,6 +4572,9 @@ msgstr  ""
+ msgid   "No url found for submodule path '%s' in .gitmodules"
+ msgstr  ""
+ 
++msgid   "No valid patches in input (allow with \"--allow-empty\")"
++msgstr  ""
++
+ msgid   "Non-fast-forward commit does not make sense into an empty head"
+ msgstr  ""
+ 
+@@ -9117,10 +9114,6 @@ msgstr  ""
+ msgid   "could not read tagged object '%s'"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "could not recreate objdir %s"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "could not recurse into submodule '%s'"
+ msgstr  ""
+@@ -9880,6 +9873,9 @@ msgstr  ""
+ msgid   "don't print the patch filenames"
+ msgstr  ""
+ 
++msgid   "don't return error for empty patches"
++msgstr  ""
++
+ msgid   "don't show empty directories"
+ msgstr  ""
+ 
+@@ -17368,9 +17364,6 @@ msgstr  ""
+ msgid   "unable to create temporary index"
+ msgstr  ""
+ 
+-msgid   "unable to create temporary object directory"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unable to create thread: %s"
+ msgstr  ""
+@@ -18139,9 +18132,6 @@ msgstr  ""
+ msgid   "unrecognized help format '%s'"
+ msgstr  ""
+ 
+-msgid   "unrecognized input"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unrecognized negative pattern: '%s'"
+ msgstr  ""
