@@ -270,3 +270,16 @@ index 5dd7812..92f7bbc 100644
  #, c-format
  msgid   "submodule entry '%s' (%s) is a %s, not a commit"
  msgstr  ""
+diff --git a/po/git.pot b/po/git.pot
+index 92f7bbc..87a5b44 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -5129,7 +5129,7 @@ msgid   "Rewrite branches"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "Run '%s' instead? (y/N)"
++msgid   "Run '%s' instead [y/N]? "
+ msgstr  ""
+ 
+ msgid   "Run a Git command on a list of repositories"

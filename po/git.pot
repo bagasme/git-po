@@ -786,13 +786,13 @@ msgstr ""
 #: builtin/branch.c:755 builtin/checkout.c:1646 builtin/checkout.c:1756
 #: builtin/checkout.c:1759 builtin/clone.c:907 builtin/commit.c:358
 #: builtin/commit.c:1196 builtin/describe.c:593 builtin/diff-tree.c:155
-#: builtin/difftool.c:733 builtin/fast-export.c:1272 builtin/fetch.c:2031
+#: builtin/difftool.c:733 builtin/fast-export.c:1245 builtin/fetch.c:2031
 #: builtin/index-pack.c:1852 builtin/init-db.c:560 builtin/log.c:1955
 #: builtin/log.c:1957 builtin/pack-objects.c:4340 builtin/push.c:592
 #: builtin/push.c:630 builtin/push.c:636 builtin/push.c:641
 #: builtin/repack.c:783 builtin/repack.c:786 builtin/repack.c:789
 #: builtin/repack.c:824 builtin/reset.c:426 builtin/reset.c:462
-#: builtin/stash.c:1705 builtin/submodule--helper.c:1317
+#: builtin/stash.c:1706 builtin/submodule--helper.c:1317
 #: builtin/submodule--helper.c:2987 builtin/tag.c:525 builtin/worktree.c:698
 #, c-format
 msgid "%s and %s are mutually exclusive"
@@ -1504,8 +1504,8 @@ msgstr ""
 
 #: archive.c:554 archive.c:557 builtin/blame.c:880 builtin/blame.c:884
 #: builtin/blame.c:885 builtin/commit-tree.c:115 builtin/config.c:135
-#: builtin/fast-export.c:1208 builtin/fast-export.c:1210
-#: builtin/fast-export.c:1214 builtin/grep.c:936 builtin/hash-object.c:103
+#: builtin/fast-export.c:1181 builtin/fast-export.c:1183
+#: builtin/fast-export.c:1187 builtin/grep.c:936 builtin/hash-object.c:103
 #: builtin/ls-files.c:651 builtin/ls-files.c:654 builtin/notes.c:410
 #: builtin/notes.c:576 builtin/read-tree.c:115 parse-options.h:190
 msgid "file"
@@ -1559,9 +1559,9 @@ msgstr ""
 
 #: archive.c:580 fetch-pack.c:300 revision.c:2885 builtin/add.c:539
 #: builtin/add.c:571 builtin/checkout.c:1765 builtin/commit.c:370
-#: builtin/fast-export.c:1257 builtin/index-pack.c:1848 builtin/log.c:2124
+#: builtin/fast-export.c:1230 builtin/index-pack.c:1848 builtin/log.c:2124
 #: builtin/reset.c:435 builtin/reset.c:493 builtin/rm.c:281
-#: builtin/stash.c:1717 builtin/worktree.c:504 http-fetch.c:144
+#: builtin/stash.c:1718 builtin/worktree.c:504 http-fetch.c:144
 #: http-fetch.c:153
 #, c-format
 msgid "%s requires %s"
@@ -3722,45 +3722,45 @@ msgstr ""
 msgid "your sparse-checkout file may have issues: pattern '%s' is repeated"
 msgstr ""
 
-#: dir.c:827
+#: dir.c:828
 msgid "disabling cone pattern matching"
 msgstr ""
 
-#: dir.c:1211
+#: dir.c:1212
 #, c-format
 msgid "cannot use %s as an exclude file"
 msgstr ""
 
-#: dir.c:2417
+#: dir.c:2418
 #, c-format
 msgid "could not open directory '%s'"
 msgstr ""
 
-#: dir.c:2719
+#: dir.c:2720
 msgid "failed to get kernel name and information"
 msgstr ""
 
-#: dir.c:2843
+#: dir.c:2844
 msgid "untracked cache is disabled on this system or location"
 msgstr ""
 
-#: dir.c:3111
+#: dir.c:3112
 msgid ""
 "No directory name could be guessed.\n"
 "Please specify a directory on the command line"
 msgstr ""
 
-#: dir.c:3799
+#: dir.c:3800
 #, c-format
 msgid "index file corrupt in repo %s"
 msgstr ""
 
-#: dir.c:3846 dir.c:3851
+#: dir.c:3847 dir.c:3852
 #, c-format
 msgid "could not create directories for %s"
 msgstr ""
 
-#: dir.c:3880
+#: dir.c:3881
 #, c-format
 msgid "could not migrate git directory from '%s' to '%s'"
 msgstr ""
@@ -4272,7 +4272,7 @@ msgstr ""
 
 #: help.c:647
 #, c-format
-msgid "Run '%s' instead? (y/N)"
+msgid "Run '%s' instead [y/N]? "
 msgstr ""
 
 #: help.c:655
@@ -9898,7 +9898,7 @@ msgid "--chmod param '%s' must be either -x or +x"
 msgstr ""
 
 #: builtin/add.c:564 builtin/checkout.c:1753 builtin/commit.c:364
-#: builtin/reset.c:429 builtin/rm.c:275 builtin/stash.c:1711
+#: builtin/reset.c:429 builtin/rm.c:275 builtin/stash.c:1712
 msgid "--pathspec-from-file is incompatible with pathspec arguments"
 msgstr ""
 
@@ -13248,8 +13248,8 @@ msgid "terminate entries with NUL"
 msgstr ""
 
 #: builtin/commit.c:1501 builtin/commit.c:1505 builtin/commit.c:1668
-#: builtin/fast-export.c:1199 builtin/fast-export.c:1202
-#: builtin/fast-export.c:1205 builtin/rebase.c:1137 parse-options.h:347
+#: builtin/fast-export.c:1172 builtin/fast-export.c:1175
+#: builtin/fast-export.c:1178 builtin/rebase.c:1137 parse-options.h:347
 msgid "mode"
 msgstr ""
 
@@ -14139,87 +14139,87 @@ msgstr ""
 msgid "git fast-export [rev-list-opts]"
 msgstr ""
 
-#: builtin/fast-export.c:869
+#: builtin/fast-export.c:843
 msgid "Error: Cannot export nested tags unless --mark-tags is specified."
 msgstr ""
 
-#: builtin/fast-export.c:1178
+#: builtin/fast-export.c:1152
 msgid "--anonymize-map token cannot be empty"
 msgstr ""
 
-#: builtin/fast-export.c:1198
+#: builtin/fast-export.c:1171
 msgid "show progress after <n> objects"
 msgstr ""
 
-#: builtin/fast-export.c:1200
+#: builtin/fast-export.c:1173
 msgid "select handling of signed tags"
 msgstr ""
 
-#: builtin/fast-export.c:1203
+#: builtin/fast-export.c:1176
 msgid "select handling of tags that tag filtered objects"
 msgstr ""
 
-#: builtin/fast-export.c:1206
+#: builtin/fast-export.c:1179
 msgid "select handling of commit messages in an alternate encoding"
 msgstr ""
 
-#: builtin/fast-export.c:1209
+#: builtin/fast-export.c:1182
 msgid "dump marks to this file"
 msgstr ""
 
-#: builtin/fast-export.c:1211
+#: builtin/fast-export.c:1184
 msgid "import marks from this file"
 msgstr ""
 
-#: builtin/fast-export.c:1215
+#: builtin/fast-export.c:1188
 msgid "import marks from this file if it exists"
 msgstr ""
 
-#: builtin/fast-export.c:1217
+#: builtin/fast-export.c:1190
 msgid "fake a tagger when tags lack one"
 msgstr ""
 
-#: builtin/fast-export.c:1219
+#: builtin/fast-export.c:1192
 msgid "output full tree for each commit"
 msgstr ""
 
-#: builtin/fast-export.c:1221
+#: builtin/fast-export.c:1194
 msgid "use the done feature to terminate the stream"
 msgstr ""
 
-#: builtin/fast-export.c:1222
+#: builtin/fast-export.c:1195
 msgid "skip output of blob data"
 msgstr ""
 
-#: builtin/fast-export.c:1223 builtin/log.c:1847
+#: builtin/fast-export.c:1196 builtin/log.c:1847
 msgid "refspec"
 msgstr ""
 
-#: builtin/fast-export.c:1224
+#: builtin/fast-export.c:1197
 msgid "apply refspec to exported refs"
 msgstr ""
 
-#: builtin/fast-export.c:1225
+#: builtin/fast-export.c:1198
 msgid "anonymize output"
 msgstr ""
 
-#: builtin/fast-export.c:1226
+#: builtin/fast-export.c:1199
 msgid "from:to"
 msgstr ""
 
-#: builtin/fast-export.c:1227
+#: builtin/fast-export.c:1200
 msgid "convert <from> to <to> in anonymized output"
 msgstr ""
 
-#: builtin/fast-export.c:1230
+#: builtin/fast-export.c:1203
 msgid "reference parents which are not in fast-export stream by object id"
 msgstr ""
 
-#: builtin/fast-export.c:1232
+#: builtin/fast-export.c:1205
 msgid "show original object ids of blobs/commits"
 msgstr ""
 
-#: builtin/fast-export.c:1234
+#: builtin/fast-export.c:1207
 msgid "label tags with mark ids"
 msgstr ""
 
@@ -18033,7 +18033,7 @@ msgstr ""
 msgid "use notes from <notes-ref>"
 msgstr ""
 
-#: builtin/notes.c:1036 builtin/stash.c:1816
+#: builtin/notes.c:1036 builtin/stash.c:1817
 #, c-format
 msgid "unknown subcommand: %s"
 msgstr ""
@@ -21459,7 +21459,7 @@ msgstr ""
 msgid "Cannot update %s with %s"
 msgstr ""
 
-#: builtin/stash.c:963 builtin/stash.c:1677 builtin/stash.c:1748
+#: builtin/stash.c:963 builtin/stash.c:1677 builtin/stash.c:1749
 msgid "stash message"
 msgstr ""
 
@@ -21532,35 +21532,35 @@ msgstr ""
 msgid "Cannot remove worktree changes"
 msgstr ""
 
-#: builtin/stash.c:1666 builtin/stash.c:1737
+#: builtin/stash.c:1666 builtin/stash.c:1738
 msgid "keep index"
 msgstr ""
 
-#: builtin/stash.c:1668 builtin/stash.c:1739
+#: builtin/stash.c:1668 builtin/stash.c:1740
 msgid "stash staged changes only"
 msgstr ""
 
-#: builtin/stash.c:1670 builtin/stash.c:1741
+#: builtin/stash.c:1670 builtin/stash.c:1742
 msgid "stash in patch mode"
 msgstr ""
 
-#: builtin/stash.c:1671 builtin/stash.c:1742
+#: builtin/stash.c:1671 builtin/stash.c:1743
 msgid "quiet mode"
 msgstr ""
 
-#: builtin/stash.c:1673 builtin/stash.c:1744
+#: builtin/stash.c:1673 builtin/stash.c:1745
 msgid "include untracked files in stash"
 msgstr ""
 
-#: builtin/stash.c:1675 builtin/stash.c:1746
+#: builtin/stash.c:1675 builtin/stash.c:1747
 msgid "include ignore files"
 msgstr ""
 
-#: builtin/stash.c:1708
+#: builtin/stash.c:1709
 msgid "--pathspec-from-file is incompatible with --staged"
 msgstr ""
 
-#: builtin/stash.c:1781
+#: builtin/stash.c:1782
 msgid ""
 "the stash.useBuiltin support has been removed!\n"
 "See its entry in 'git help config' for details."
