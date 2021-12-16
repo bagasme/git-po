@@ -1,0 +1,272 @@
+diff --git a/po/git.pot b/po/git.pot
+index 5dd7812..92f7bbc 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -37,11 +37,9 @@ msgid   "\n"
+         "\n"
+ msgstr  ""
+ 
+-#, c-format
+ msgid   "\n"
+         "After fixing the error cause you may try to fix up\n"
+-        "the remote tracking information by invoking\n"
+-        "\"git branch --set-upstream-to=%s%s%s\"."
++        "the remote tracking information by invoking:"
+ msgstr  ""
+ 
+ msgid   "\n"
+@@ -1857,6 +1855,9 @@ msgstr  ""
+ msgid   "--raw only makes sense with --edit"
+ msgstr  ""
+ 
++msgid   "--recurse-submodules can only be used to create branches"
++msgstr  ""
++
+ msgid   "--reflog is incompatible with --all, --remotes, --independent or --merge-base"
+ msgstr  ""
+ 
+@@ -2492,38 +2493,6 @@ msgstr  ""
+ msgid   "Branch '%s' has no upstream information"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "Branch '%s' set up to track local branch '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track local branch '%s'."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track local ref '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track local ref '%s'."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote branch '%s' from '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote branch '%s' from '%s'."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote ref '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote ref '%s'."
+-msgstr  ""
+-
+ msgid   "Branch copy failed"
+ msgstr  ""
+ 
+@@ -6608,6 +6577,10 @@ msgstr  ""
+ msgid   "You have unmerged paths."
+ msgstr  ""
+ 
++#, c-format
++msgid   "You may try updating the submodules using 'git checkout %s && git submodule update --init'"
++msgstr  ""
++
+ msgid   "You must edit all merge conflicts and then\n"
+         "mark them as resolved using git add"
+ msgstr  ""
+@@ -7245,6 +7218,14 @@ msgstr  ""
+ msgid   "argument to --packfile must be a valid hash (got '%s')"
+ msgstr  ""
+ 
++#, c-format
++msgid   "asked to inherit tracking from '%s', but no merge configuration is set"
++msgstr  ""
++
++#, c-format
++msgid   "asked to inherit tracking from '%s', but no remote is set"
++msgstr  ""
++
+ msgid   "attach the patch"
+ msgstr  ""
+ 
+@@ -7600,6 +7581,22 @@ msgstr  ""
+ msgid   "branch '%s' not found."
+ msgstr  ""
+ 
++#, c-format
++msgid   "branch '%s' set up to track '%s' by rebasing."
++msgstr  ""
++
++#, c-format
++msgid   "branch '%s' set up to track '%s'."
++msgstr  ""
++
++#, c-format
++msgid   "branch '%s' set up to track from '%s':"
++msgstr  ""
++
++#, c-format
++msgid   "branch '%s' set up to track:"
++msgstr  ""
++
+ msgid   "branch name required"
+ msgstr  ""
+ 
+@@ -7609,6 +7606,9 @@ msgstr  ""
+ msgid   "branch to checkout after clone"
+ msgstr  ""
+ 
++msgid   "branch with --recurse-submodules can only be used if submodule.propagateBranches is enabled"
++msgstr  ""
++
+ msgid   "branch(es) to track"
+ msgstr  ""
+ 
+@@ -7907,6 +7907,9 @@ msgstr  ""
+ msgid   "cannot have both --quiet and --verbose"
+ msgstr  ""
+ 
++msgid   "cannot inherit upstream tracking configuration when rebasing is requested"
++msgstr  ""
++
+ msgid   "cannot merge without a current revision"
+ msgstr  ""
+ 
+@@ -9443,6 +9446,10 @@ msgstr  ""
+ msgid   "creating '%s' failed"
+ msgstr  ""
+ 
++#, c-format
++msgid   "creating branch '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "credential url cannot be parsed: %s"
+ msgstr  ""
+@@ -10186,6 +10193,9 @@ msgstr  ""
+ msgid   "exhaustive rename detection was skipped due to too many files."
+ msgstr  ""
+ 
++msgid   "existing sparse-checkout patterns do not use cone mode"
++msgstr  ""
++
+ msgid   "exit immediately after advertising capabilities"
+ msgstr  ""
+ 
+@@ -10978,6 +10988,9 @@ msgstr  ""
+ msgid   "force cloning progress"
+ msgstr  ""
+ 
++msgid   "force creation"
++msgstr  ""
++
+ msgid   "force creation, move/rename, deletion"
+ msgstr  ""
+ 
+@@ -11300,7 +11313,10 @@ msgstr  ""
+ msgid   "git branch [<options>] (-m | -M) [<old-branch>] <new-branch>"
+ msgstr  ""
+ 
+-msgid   "git branch [<options>] [-l] [-f] <branch-name> [<start-point>]"
++msgid   "git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]"
++msgstr  ""
++
++msgid   "git branch [<options>] [-l] [<pattern>...]"
+ msgstr  ""
+ 
+ msgid   "git branch [<options>] [-r | -a] [--format]"
+@@ -12020,6 +12036,9 @@ msgstr  ""
+ msgid   "git submodule--helper config <name> [<value>]"
+ msgstr  ""
+ 
++msgid   "git submodule--helper create-branch [-f|--force] [--create-reflog] [-q|--quiet] [-t|--track] [-n|--dry-run] <name> <start_oid> <start_name>"
++msgstr  ""
++
+ msgid   "git submodule--helper foreach [--quiet] [--recursive] [--] <command>"
+ msgstr  ""
+ 
+@@ -13170,7 +13189,7 @@ msgstr  ""
+ msgid   "list only filenames"
+ msgstr  ""
+ 
+-msgid   "list only oids"
++msgid   "list only objects"
+ msgstr  ""
+ 
+ msgid   "list replace refs"
+@@ -13812,9 +13831,6 @@ msgstr  ""
+ msgid   "no URLs configured for remote '%s'"
+ msgstr  ""
+ 
+-msgid   "no active sparse-checkout to disable"
+-msgstr  ""
+-
+ msgid   "no branches given, and HEAD is not valid"
+ msgstr  ""
+ 
+@@ -14142,7 +14158,7 @@ msgid   "not sending a push certificate since the receiving end does not support
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "not setting branch %s as its own upstream"
++msgid   "not setting branch '%s' as its own upstream"
+ msgstr  ""
+ 
+ msgid   "not setting upstream for a remote remote-tracking branch"
+@@ -14473,6 +14489,10 @@ msgstr  ""
+ msgid   "option '%s' must come before non-option arguments"
+ msgstr  ""
+ 
++#, c-format
++msgid   "option `%s' expects \"%s\" or \"%s\""
++msgstr  ""
++
+ #, c-format
+ msgid   "option `%s' expects \"always\", \"auto\", or \"never\""
+ msgstr  ""
+@@ -16107,6 +16127,9 @@ msgstr  ""
+ msgid   "set From address to <ident> (or committer ident if absent)"
+ msgstr  ""
+ 
++msgid   "set branch tracking configuration"
++msgstr  ""
++
+ msgid   "set compression level"
+ msgstr  ""
+ 
+@@ -16143,9 +16166,6 @@ msgstr  ""
+ msgid   "set upstream for git pull/status"
+ msgstr  ""
+ 
+-msgid   "set upstream info for new branch"
+-msgstr  ""
+-
+ msgid   "sets the submodule’s name to the given string instead of defaulting to its path"
+ msgstr  ""
+ 
+@@ -16505,6 +16525,9 @@ msgstr  ""
+ msgid   "show what would be committed"
+ msgstr  ""
+ 
++msgid   "show whether the branch would be created"
++msgstr  ""
++
+ msgid   "show word diff, using <mode> to delimit changed words"
+ msgstr  ""
+ 
+@@ -16779,6 +16802,14 @@ msgstr  ""
+ msgid   "submodule '%s' has dirty index"
+ msgstr  ""
+ 
++#, c-format
++msgid   "submodule '%s': cannot create branch '%s'"
++msgstr  ""
++
++#, c-format
++msgid   "submodule '%s': unable to find submodule"
++msgstr  ""
++
+ #, c-format
+ msgid   "submodule entry '%s' (%s) is a %s, not a commit"
+ msgstr  ""
