@@ -24,3 +24,18 @@ index 87a5b44..4d6cbb9 100644
  msgid   "use <regex> to decide what a word is"
  msgstr  ""
  
+diff --git a/po/git.pot b/po/git.pot
+index 4d6cbb9..8426d3a 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -7589,10 +7589,6 @@ msgstr  ""
+ msgid   "branch '%s' set up to track '%s'."
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "branch '%s' set up to track from '%s':"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "branch '%s' set up to track:"
+ msgstr  ""
