@@ -68,7 +68,7 @@ msgstr[1] ""
 msgid "note: %s is untracked now.\n"
 msgstr ""
 
-#: add-interactive.c:733 apply.c:4149 builtin/checkout.c:307
+#: add-interactive.c:733 apply.c:4151 builtin/checkout.c:307
 #: builtin/reset.c:167
 #, c-format
 msgid "make_cache_entry failed for path '%s'"
@@ -110,12 +110,12 @@ msgstr[1] ""
 msgid "ignoring unmerged: %s"
 msgstr ""
 
-#: add-interactive.c:941 add-patch.c:1752 git-add--interactive.perl:1371
+#: add-interactive.c:941 add-patch.c:1759 git-add--interactive.perl:1371
 #, c-format
 msgid "Only binary files changed.\n"
 msgstr ""
 
-#: add-interactive.c:943 add-patch.c:1750 git-add--interactive.perl:1373
+#: add-interactive.c:943 add-patch.c:1757 git-add--interactive.perl:1373
 #, c-format
 msgid "No changes.\n"
 msgstr ""
@@ -208,9 +208,9 @@ msgstr ""
 msgid "unstaged"
 msgstr ""
 
-#: add-interactive.c:1148 apply.c:5018 apply.c:5021 builtin/am.c:2367
+#: add-interactive.c:1148 apply.c:5020 apply.c:5023 builtin/am.c:2367
 #: builtin/am.c:2370 builtin/bugreport.c:107 builtin/clone.c:129
-#: builtin/fetch.c:153 builtin/merge.c:286 builtin/pull.c:194
+#: builtin/fetch.c:153 builtin/merge.c:287 builtin/pull.c:194
 #: builtin/submodule--helper.c:405 builtin/submodule--helper.c:1870
 #: builtin/submodule--helper.c:1873 builtin/submodule--helper.c:2516
 #: builtin/submodule--helper.c:2519 builtin/submodule--helper.c:2586
@@ -497,24 +497,24 @@ msgstr ""
 msgid "failed to run '%s'"
 msgstr ""
 
-#: add-patch.c:612
+#: add-patch.c:619
 msgid "mismatched output from interactive.diffFilter"
 msgstr ""
 
-#: add-patch.c:613
+#: add-patch.c:620
 msgid ""
 "Your filter must maintain a one-to-one correspondence\n"
 "between its input and output lines."
 msgstr ""
 
-#: add-patch.c:791
+#: add-patch.c:798
 #, c-format
 msgid ""
 "expected context line #%d in\n"
 "%.*s"
 msgstr ""
 
-#: add-patch.c:806
+#: add-patch.c:813
 #, c-format
 msgid ""
 "hunks do not overlap:\n"
@@ -523,11 +523,11 @@ msgid ""
 "%.*s"
 msgstr ""
 
-#: add-patch.c:1082 git-add--interactive.perl:1115
+#: add-patch.c:1089 git-add--interactive.perl:1115
 msgid "Manual hunk edit mode -- see bottom for a quick guide.\n"
 msgstr ""
 
-#: add-patch.c:1086
+#: add-patch.c:1093
 #, c-format
 msgid ""
 "---\n"
@@ -537,18 +537,18 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: 'it' refers to the patch mentioned in the previous messages.
-#: add-patch.c:1100 git-add--interactive.perl:1129
+#: add-patch.c:1107 git-add--interactive.perl:1129
 msgid ""
 "If it does not apply cleanly, you will be given an opportunity to\n"
 "edit again.  If all lines of the hunk are removed, then the edit is\n"
 "aborted and the hunk is left unchanged.\n"
 msgstr ""
 
-#: add-patch.c:1133
+#: add-patch.c:1140
 msgid "could not parse hunk header"
 msgstr ""
 
-#: add-patch.c:1178
+#: add-patch.c:1185
 msgid "'git apply --cached' failed"
 msgstr ""
 
@@ -564,24 +564,24 @@ msgstr ""
 #. Consider translating (saying "no" discards!) as
 #. (saying "n" for "no" discards!) if the translation
 #. of the word "no" does not start with n.
-#: add-patch.c:1247 git-add--interactive.perl:1244
+#: add-patch.c:1254 git-add--interactive.perl:1244
 msgid ""
 "Your edited hunk does not apply. Edit again (saying \"no\" discards!) [y/n]? "
 msgstr ""
 
-#: add-patch.c:1290
+#: add-patch.c:1297
 msgid "The selected hunks do not apply to the index!"
 msgstr ""
 
-#: add-patch.c:1291 git-add--interactive.perl:1348
+#: add-patch.c:1298 git-add--interactive.perl:1348
 msgid "Apply them to the worktree anyway? "
 msgstr ""
 
-#: add-patch.c:1298 git-add--interactive.perl:1351
+#: add-patch.c:1305 git-add--interactive.perl:1351
 msgid "Nothing was applied.\n"
 msgstr ""
 
-#: add-patch.c:1355
+#: add-patch.c:1362
 msgid ""
 "j - leave this hunk undecided, see next undecided hunk\n"
 "J - leave this hunk undecided, see next hunk\n"
@@ -594,69 +594,69 @@ msgid ""
 "? - print help\n"
 msgstr ""
 
-#: add-patch.c:1517 add-patch.c:1527
+#: add-patch.c:1524 add-patch.c:1534
 msgid "No previous hunk"
 msgstr ""
 
-#: add-patch.c:1522 add-patch.c:1532
+#: add-patch.c:1529 add-patch.c:1539
 msgid "No next hunk"
 msgstr ""
 
-#: add-patch.c:1538
+#: add-patch.c:1545
 msgid "No other hunks to goto"
 msgstr ""
 
-#: add-patch.c:1549 git-add--interactive.perl:1608
+#: add-patch.c:1556 git-add--interactive.perl:1608
 msgid "go to which hunk (<ret> to see more)? "
 msgstr ""
 
-#: add-patch.c:1550 git-add--interactive.perl:1610
+#: add-patch.c:1557 git-add--interactive.perl:1610
 msgid "go to which hunk? "
 msgstr ""
 
-#: add-patch.c:1561
+#: add-patch.c:1568
 #, c-format
 msgid "Invalid number: '%s'"
 msgstr ""
 
-#: add-patch.c:1566
+#: add-patch.c:1573
 #, c-format
 msgid "Sorry, only %d hunk available."
 msgid_plural "Sorry, only %d hunks available."
 msgstr[0] ""
 msgstr[1] ""
 
-#: add-patch.c:1575
+#: add-patch.c:1582
 msgid "No other hunks to search"
 msgstr ""
 
-#: add-patch.c:1581 git-add--interactive.perl:1663
+#: add-patch.c:1588 git-add--interactive.perl:1663
 msgid "search for regex? "
 msgstr ""
 
-#: add-patch.c:1596
+#: add-patch.c:1603
 #, c-format
 msgid "Malformed search regexp %s: %s"
 msgstr ""
 
-#: add-patch.c:1613
+#: add-patch.c:1620
 msgid "No hunk matches the given pattern"
 msgstr ""
 
-#: add-patch.c:1620
+#: add-patch.c:1627
 msgid "Sorry, cannot split this hunk"
 msgstr ""
 
-#: add-patch.c:1624
+#: add-patch.c:1631
 #, c-format
 msgid "Split into %d hunks."
 msgstr ""
 
-#: add-patch.c:1628
+#: add-patch.c:1635
 msgid "Sorry, cannot edit this hunk"
 msgstr ""
 
-#: add-patch.c:1680
+#: add-patch.c:1687
 msgid "'git apply' failed"
 msgstr ""
 
@@ -707,7 +707,7 @@ msgstr ""
 msgid "Exiting because of an unresolved conflict."
 msgstr ""
 
-#: advice.c:210 builtin/merge.c:1378
+#: advice.c:210 builtin/merge.c:1382
 msgid "You have not concluded your merge (MERGE_HEAD exists)."
 msgstr ""
 
@@ -1013,375 +1013,375 @@ msgstr ""
 msgid "reading from '%s' beyond a symbolic link"
 msgstr ""
 
-#: apply.c:3442 apply.c:3709
+#: apply.c:3442 apply.c:3711
 #, c-format
 msgid "path %s has been renamed/deleted"
 msgstr ""
 
-#: apply.c:3549 apply.c:3724
+#: apply.c:3549 apply.c:3726
 #, c-format
 msgid "%s: does not exist in index"
 msgstr ""
 
-#: apply.c:3558 apply.c:3732 apply.c:3976
+#: apply.c:3558 apply.c:3734 apply.c:3978
 #, c-format
 msgid "%s: does not match index"
 msgstr ""
 
-#: apply.c:3593
+#: apply.c:3595
 msgid "repository lacks the necessary blob to perform 3-way merge."
 msgstr ""
 
-#: apply.c:3596
+#: apply.c:3598
 #, c-format
 msgid "Performing three-way merge...\n"
 msgstr ""
 
-#: apply.c:3612 apply.c:3616
+#: apply.c:3614 apply.c:3618
 #, c-format
 msgid "cannot read the current contents of '%s'"
 msgstr ""
 
-#: apply.c:3628
+#: apply.c:3630
 #, c-format
 msgid "Failed to perform three-way merge...\n"
 msgstr ""
 
-#: apply.c:3642
+#: apply.c:3644
 #, c-format
 msgid "Applied patch to '%s' with conflicts.\n"
 msgstr ""
 
-#: apply.c:3647
+#: apply.c:3649
 #, c-format
 msgid "Applied patch to '%s' cleanly.\n"
 msgstr ""
 
-#: apply.c:3664
+#: apply.c:3666
 #, c-format
 msgid "Falling back to direct application...\n"
 msgstr ""
 
-#: apply.c:3676
+#: apply.c:3678
 msgid "removal patch leaves file contents"
-msgstr ""
-
-#: apply.c:3749
-#, c-format
-msgid "%s: wrong type"
 msgstr ""
 
 #: apply.c:3751
 #, c-format
+msgid "%s: wrong type"
+msgstr ""
+
+#: apply.c:3753
+#, c-format
 msgid "%s has type %o, expected %o"
 msgstr ""
 
-#: apply.c:3916 apply.c:3918 read-cache.c:890 read-cache.c:919
+#: apply.c:3918 apply.c:3920 read-cache.c:890 read-cache.c:919
 #: read-cache.c:1382
 #, c-format
 msgid "invalid path '%s'"
 msgstr ""
 
-#: apply.c:3974
+#: apply.c:3976
 #, c-format
 msgid "%s: already exists in index"
 msgstr ""
 
-#: apply.c:3978
+#: apply.c:3980
 #, c-format
 msgid "%s: already exists in working directory"
 msgstr ""
 
-#: apply.c:3998
+#: apply.c:4000
 #, c-format
 msgid "new mode (%o) of %s does not match old mode (%o)"
 msgstr ""
 
-#: apply.c:4003
+#: apply.c:4005
 #, c-format
 msgid "new mode (%o) of %s does not match old mode (%o) of %s"
 msgstr ""
 
-#: apply.c:4023
+#: apply.c:4025
 #, c-format
 msgid "affected file '%s' is beyond a symbolic link"
 msgstr ""
 
-#: apply.c:4027
+#: apply.c:4029
 #, c-format
 msgid "%s: patch does not apply"
 msgstr ""
 
-#: apply.c:4042
+#: apply.c:4044
 #, c-format
 msgid "Checking patch %s..."
 msgstr ""
 
-#: apply.c:4134
+#: apply.c:4136
 #, c-format
 msgid "sha1 information is lacking or useless for submodule %s"
 msgstr ""
 
-#: apply.c:4141
+#: apply.c:4143
 #, c-format
 msgid "mode change for %s, which is not in current HEAD"
 msgstr ""
 
-#: apply.c:4144
+#: apply.c:4146
 #, c-format
 msgid "sha1 information is lacking or useless (%s)."
 msgstr ""
 
-#: apply.c:4153
+#: apply.c:4155
 #, c-format
 msgid "could not add %s to temporary index"
 msgstr ""
 
-#: apply.c:4163
+#: apply.c:4165
 #, c-format
 msgid "could not write temporary index to %s"
 msgstr ""
 
-#: apply.c:4301
+#: apply.c:4303
 #, c-format
 msgid "unable to remove %s from index"
 msgstr ""
 
-#: apply.c:4335
+#: apply.c:4337
 #, c-format
 msgid "corrupt patch for submodule %s"
 msgstr ""
 
-#: apply.c:4341
+#: apply.c:4343
 #, c-format
 msgid "unable to stat newly created file '%s'"
 msgstr ""
 
-#: apply.c:4349
+#: apply.c:4351
 #, c-format
 msgid "unable to create backing store for newly created file %s"
 msgstr ""
 
-#: apply.c:4355 apply.c:4500
+#: apply.c:4357 apply.c:4502
 #, c-format
 msgid "unable to add cache entry for %s"
 msgstr ""
 
-#: apply.c:4398 builtin/bisect--helper.c:540 builtin/gc.c:2267
+#: apply.c:4400 builtin/bisect--helper.c:540 builtin/gc.c:2267
 #: builtin/gc.c:2302
 #, c-format
 msgid "failed to write to '%s'"
 msgstr ""
 
-#: apply.c:4402
+#: apply.c:4404
 #, c-format
 msgid "closing file '%s'"
 msgstr ""
 
-#: apply.c:4472
+#: apply.c:4474
 #, c-format
 msgid "unable to write file '%s' mode %o"
 msgstr ""
 
-#: apply.c:4570
+#: apply.c:4572
 #, c-format
 msgid "Applied patch %s cleanly."
 msgstr ""
 
-#: apply.c:4578
+#: apply.c:4580
 msgid "internal error"
 msgstr ""
 
-#: apply.c:4581
+#: apply.c:4583
 #, c-format
 msgid "Applying patch %%s with %d reject..."
 msgid_plural "Applying patch %%s with %d rejects..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:4592
+#: apply.c:4594
 #, c-format
 msgid "truncating .rej filename to %.*s.rej"
 msgstr ""
 
-#: apply.c:4600
+#: apply.c:4602
 #, c-format
 msgid "cannot open %s"
 msgstr ""
 
-#: apply.c:4614
+#: apply.c:4616
 #, c-format
 msgid "Hunk #%d applied cleanly."
 msgstr ""
 
-#: apply.c:4618
+#: apply.c:4620
 #, c-format
 msgid "Rejected hunk #%d."
 msgstr ""
 
-#: apply.c:4747
+#: apply.c:4749
 #, c-format
 msgid "Skipped patch '%s'."
 msgstr ""
 
-#: apply.c:4756
+#: apply.c:4758
 msgid "No valid patches in input (allow with \"--allow-empty\")"
 msgstr ""
 
-#: apply.c:4777
+#: apply.c:4779
 msgid "unable to read index file"
 msgstr ""
 
-#: apply.c:4934
+#: apply.c:4936
 #, c-format
 msgid "can't open patch '%s': %s"
 msgstr ""
 
-#: apply.c:4961
+#: apply.c:4963
 #, c-format
 msgid "squelched %d whitespace error"
 msgid_plural "squelched %d whitespace errors"
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:4967 apply.c:4982
+#: apply.c:4969 apply.c:4984
 #, c-format
 msgid "%d line adds whitespace errors."
 msgid_plural "%d lines add whitespace errors."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:4975
+#: apply.c:4977
 #, c-format
 msgid "%d line applied after fixing whitespace errors."
 msgid_plural "%d lines applied after fixing whitespace errors."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:4991 builtin/add.c:699 builtin/mv.c:338 builtin/rm.c:430
+#: apply.c:4993 builtin/add.c:699 builtin/mv.c:338 builtin/rm.c:430
 msgid "Unable to write new index file"
 msgstr ""
 
-#: apply.c:5019
+#: apply.c:5021
 msgid "don't apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5022
+#: apply.c:5024
 msgid "apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5024 builtin/am.c:2376
+#: apply.c:5026 builtin/am.c:2376
 msgid "num"
 msgstr ""
 
-#: apply.c:5025
+#: apply.c:5027
 msgid "remove <num> leading slashes from traditional diff paths"
 msgstr ""
 
-#: apply.c:5028
+#: apply.c:5030
 msgid "ignore additions made by the patch"
 msgstr ""
 
-#: apply.c:5030
+#: apply.c:5032
 msgid "instead of applying the patch, output diffstat for the input"
 msgstr ""
 
-#: apply.c:5034
+#: apply.c:5036
 msgid "show number of added and deleted lines in decimal notation"
 msgstr ""
 
-#: apply.c:5036
+#: apply.c:5038
 msgid "instead of applying the patch, output a summary for the input"
 msgstr ""
 
-#: apply.c:5038
+#: apply.c:5040
 msgid "instead of applying the patch, see if the patch is applicable"
 msgstr ""
 
-#: apply.c:5040
+#: apply.c:5042
 msgid "make sure the patch is applicable to the current index"
 msgstr ""
 
-#: apply.c:5042
+#: apply.c:5044
 msgid "mark new files with `git add --intent-to-add`"
 msgstr ""
 
-#: apply.c:5044
+#: apply.c:5046
 msgid "apply a patch without touching the working tree"
 msgstr ""
 
-#: apply.c:5046
+#: apply.c:5048
 msgid "accept a patch that touches outside the working area"
 msgstr ""
 
-#: apply.c:5049
+#: apply.c:5051
 msgid "also apply the patch (use with --stat/--summary/--check)"
 msgstr ""
 
-#: apply.c:5051
+#: apply.c:5053
 msgid "attempt three-way merge, fall back on normal patch if that fails"
 msgstr ""
 
-#: apply.c:5053
+#: apply.c:5055
 msgid "build a temporary index based on embedded index information"
 msgstr ""
 
-#: apply.c:5056 builtin/checkout-index.c:196
+#: apply.c:5058 builtin/checkout-index.c:196
 msgid "paths are separated with NUL character"
 msgstr ""
 
-#: apply.c:5058
+#: apply.c:5060
 msgid "ensure at least <n> lines of context match"
 msgstr ""
 
-#: apply.c:5059 builtin/am.c:2352 builtin/am.c:2355
+#: apply.c:5061 builtin/am.c:2352 builtin/am.c:2355
 #: builtin/interpret-trailers.c:98 builtin/interpret-trailers.c:100
 #: builtin/interpret-trailers.c:102 builtin/pack-objects.c:4227
 #: builtin/rebase.c:1077
 msgid "action"
 msgstr ""
 
-#: apply.c:5060
+#: apply.c:5062
 msgid "detect new or modified lines that have whitespace errors"
 msgstr ""
 
-#: apply.c:5063 apply.c:5066
+#: apply.c:5065 apply.c:5068
 msgid "ignore changes in whitespace when finding context"
 msgstr ""
 
-#: apply.c:5069
+#: apply.c:5071
 msgid "apply the patch in reverse"
 msgstr ""
 
-#: apply.c:5071
+#: apply.c:5073
 msgid "don't expect at least one line of context"
 msgstr ""
 
-#: apply.c:5073
+#: apply.c:5075
 msgid "leave the rejected hunks in corresponding *.rej files"
 msgstr ""
 
-#: apply.c:5075
+#: apply.c:5077
 msgid "allow overlapping hunks"
 msgstr ""
 
-#: apply.c:5078
+#: apply.c:5080
 msgid "tolerate incorrectly detected missing new-line at the end of file"
 msgstr ""
 
-#: apply.c:5081
+#: apply.c:5083
 msgid "do not trust the line counts in the hunk headers"
 msgstr ""
 
-#: apply.c:5083 builtin/am.c:2364
+#: apply.c:5085 builtin/am.c:2364
 msgid "root"
 msgstr ""
 
-#: apply.c:5084
+#: apply.c:5086
 msgid "prepend <root> to all filenames"
 msgstr ""
 
-#: apply.c:5087
+#: apply.c:5089
 msgid "don't return error for empty patches"
 msgstr ""
 
@@ -1664,7 +1664,7 @@ msgstr ""
 msgid "could not create file '%s'"
 msgstr ""
 
-#: bisect.c:985 builtin/merge.c:154
+#: bisect.c:985 builtin/merge.c:155
 #, c-format
 msgid "could not read file '%s'"
 msgstr ""
@@ -1717,7 +1717,7 @@ msgstr ""
 #: blame.c:2820 bundle.c:224 midx.c:1046 ref-filter.c:2370 remote.c:2158
 #: sequencer.c:2352 sequencer.c:4878 submodule.c:890 builtin/commit.c:1114
 #: builtin/log.c:429 builtin/log.c:1042 builtin/log.c:1650 builtin/log.c:2080
-#: builtin/log.c:2370 builtin/merge.c:428 builtin/pack-objects.c:3382
+#: builtin/log.c:2371 builtin/merge.c:431 builtin/pack-objects.c:3382
 #: builtin/pack-objects.c:3540 builtin/pack-objects.c:4024
 #: builtin/pack-objects.c:4039 builtin/shortlog.c:255
 msgid "revision walk setup failed"
@@ -1740,86 +1740,87 @@ msgstr ""
 
 #: branch.c:79
 msgid ""
-"cannot inherit upstream tracking configuration when rebasing is requested"
+"cannot inherit upstream tracking configuration of multiple refs when "
+"rebasing is requested"
 msgstr ""
 
-#: branch.c:85
+#: branch.c:86
 #, c-format
 msgid "not setting branch '%s' as its own upstream"
 msgstr ""
 
-#: branch.c:138
+#: branch.c:140
 #, c-format
 msgid "branch '%s' set up to track '%s' by rebasing."
 msgstr ""
 
-#: branch.c:139
+#: branch.c:141
 #, c-format
 msgid "branch '%s' set up to track '%s'."
 msgstr ""
 
-#: branch.c:144
+#: branch.c:146
 #, c-format
 msgid "branch '%s' set up to track from '%s':"
 msgstr ""
 
-#: branch.c:148
+#: branch.c:150
 #, c-format
 msgid "branch '%s' set up to track:"
 msgstr ""
 
-#: branch.c:159
+#: branch.c:161
 msgid "unable to write upstream branch configuration"
 msgstr ""
 
-#: branch.c:161
+#: branch.c:163
 msgid ""
 "\n"
 "After fixing the error cause you may try to fix up\n"
 "the remote tracking information by invoking:"
 msgstr ""
 
-#: branch.c:199
+#: branch.c:204
 #, c-format
 msgid "asked to inherit tracking from '%s', but no remote is set"
 msgstr ""
 
-#: branch.c:205
+#: branch.c:210
 #, c-format
 msgid "asked to inherit tracking from '%s', but no merge configuration is set"
 msgstr ""
 
-#: branch.c:250
+#: branch.c:255
 #, c-format
 msgid "not tracking: ambiguous information for ref %s"
 msgstr ""
 
-#: branch.c:286
+#: branch.c:291
 #, c-format
 msgid "'%s' is not a valid branch name"
 msgstr ""
 
-#: branch.c:306
+#: branch.c:311
 #, c-format
 msgid "a branch named '%s' already exists"
 msgstr ""
 
-#: branch.c:312
+#: branch.c:317
 #, c-format
 msgid "cannot force update the branch '%s'checked out at '%s'"
 msgstr ""
 
-#: branch.c:335
+#: branch.c:340
 #, c-format
 msgid "cannot set up tracking information; starting point '%s' is not a branch"
 msgstr ""
 
-#: branch.c:337
+#: branch.c:342
 #, c-format
 msgid "the requested upstream branch '%s' does not exist"
 msgstr ""
 
-#: branch.c:339
+#: branch.c:344
 msgid ""
 "\n"
 "If you are planning on basing your work on an upstream\n"
@@ -1831,45 +1832,45 @@ msgid ""
 "\"git push -u\" to set the upstream config as you push."
 msgstr ""
 
-#: branch.c:389 builtin/replace.c:321 builtin/replace.c:377
+#: branch.c:394 builtin/replace.c:321 builtin/replace.c:377
 #: builtin/replace.c:423 builtin/replace.c:453
 #, c-format
 msgid "not a valid object name: '%s'"
 msgstr ""
 
-#: branch.c:409
+#: branch.c:414
 #, c-format
 msgid "ambiguous object name: '%s'"
 msgstr ""
 
-#: branch.c:414
+#: branch.c:419
 #, c-format
 msgid "not a valid branch point: '%s'"
 msgstr ""
 
-#: branch.c:567
+#: branch.c:572
 #, c-format
 msgid ""
 "You may try updating the submodules using 'git checkout %s && git submodule "
 "update --init'"
 msgstr ""
 
-#: branch.c:569
+#: branch.c:574
 #, c-format
 msgid "submodule '%s': unable to find submodule"
 msgstr ""
 
-#: branch.c:579 branch.c:604
+#: branch.c:584 branch.c:609
 #, c-format
 msgid "submodule '%s': cannot create branch '%s'"
 msgstr ""
 
-#: branch.c:636
+#: branch.c:641
 #, c-format
 msgid "'%s' is already checked out at '%s'"
 msgstr ""
 
-#: branch.c:661
+#: branch.c:666
 #, c-format
 msgid "HEAD of working tree %s is not updated"
 msgstr ""
@@ -4142,18 +4143,18 @@ msgid ""
 "with -P under PCRE v2"
 msgstr ""
 
-#: grep.c:1846
+#: grep.c:1862
 #, c-format
 msgid "'%s': unable to read %s"
 msgstr ""
 
-#: grep.c:1863 setup.c:177 builtin/clone.c:303 builtin/diff.c:90
+#: grep.c:1879 setup.c:177 builtin/clone.c:303 builtin/diff.c:90
 #: builtin/rm.c:136
 #, c-format
 msgid "failed to stat '%s'"
 msgstr ""
 
-#: grep.c:1874
+#: grep.c:1890
 #, c-format
 msgid "'%s': short read"
 msgstr ""
@@ -4693,7 +4694,7 @@ msgid ""
 "  %s"
 msgstr ""
 
-#: merge-ort-wrappers.c:33 merge-recursive.c:3482 builtin/merge.c:402
+#: merge-ort-wrappers.c:33 merge-recursive.c:3482 builtin/merge.c:405
 msgid "Already up to date."
 msgstr ""
 
@@ -4952,7 +4953,7 @@ msgstr ""
 msgid "Could not parse object '%s'"
 msgstr ""
 
-#: merge-recursive.c:3834 builtin/merge.c:717 builtin/merge.c:903
+#: merge-recursive.c:3834 builtin/merge.c:720 builtin/merge.c:906
 #: builtin/stash.c:489
 msgid "Unable to write index."
 msgstr ""
@@ -6289,7 +6290,7 @@ msgstr ""
 msgid "broken index, expect %s in %s, got %s"
 msgstr ""
 
-#: read-cache.c:3087 strbuf.c:1191 wrapper.c:641 builtin/merge.c:1146
+#: read-cache.c:3087 strbuf.c:1191 wrapper.c:641 builtin/merge.c:1150
 #, c-format
 msgid "could not close '%s'"
 msgstr ""
@@ -7281,7 +7282,7 @@ msgid "failed to finalize '%s'"
 msgstr ""
 
 #: sequencer.c:473 sequencer.c:1934 sequencer.c:3116 sequencer.c:3551
-#: sequencer.c:3679 builtin/am.c:289 builtin/commit.c:834 builtin/merge.c:1144
+#: sequencer.c:3679 builtin/am.c:289 builtin/commit.c:834 builtin/merge.c:1148
 #, c-format
 msgid "could not read '%s'"
 msgstr ""
@@ -7453,7 +7454,7 @@ msgstr ""
 msgid "unable to parse commit author"
 msgstr ""
 
-#: sequencer.c:1440 builtin/am.c:1643 builtin/merge.c:707
+#: sequencer.c:1440 builtin/am.c:1643 builtin/merge.c:710
 msgid "git write-tree failed to write a tree"
 msgstr ""
 
@@ -7471,8 +7472,8 @@ msgstr ""
 msgid "corrupt author: missing date information"
 msgstr ""
 
-#: sequencer.c:1549 builtin/am.c:1670 builtin/commit.c:1821 builtin/merge.c:912
-#: builtin/merge.c:937 t/helper/test-fast-rebase.c:78
+#: sequencer.c:1549 builtin/am.c:1670 builtin/commit.c:1821 builtin/merge.c:915
+#: builtin/merge.c:940 t/helper/test-fast-rebase.c:78
 msgid "failed to write commit object"
 msgstr ""
 
@@ -9789,7 +9790,7 @@ msgid "dry run"
 msgstr ""
 
 #: builtin/add.c:364 builtin/check-ignore.c:22 builtin/commit.c:1483
-#: builtin/count-objects.c:98 builtin/fsck.c:789 builtin/log.c:2321
+#: builtin/count-objects.c:98 builtin/fsck.c:789 builtin/log.c:2322
 #: builtin/mv.c:123 builtin/read-tree.c:120
 msgid "be verbose"
 msgstr ""
@@ -10212,8 +10213,8 @@ msgstr ""
 msgid "pass it through git-apply"
 msgstr ""
 
-#: builtin/am.c:2373 builtin/commit.c:1514 builtin/fmt-merge-msg.c:17
-#: builtin/fmt-merge-msg.c:20 builtin/grep.c:920 builtin/merge.c:262
+#: builtin/am.c:2373 builtin/commit.c:1514 builtin/fmt-merge-msg.c:18
+#: builtin/fmt-merge-msg.c:21 builtin/grep.c:920 builtin/merge.c:263
 #: builtin/pull.c:142 builtin/pull.c:204 builtin/pull.c:221
 #: builtin/rebase.c:1072 builtin/repack.c:752 builtin/repack.c:756
 #: builtin/repack.c:758 builtin/show-branch.c:649 builtin/show-ref.c:172
@@ -10273,7 +10274,7 @@ msgid "use current timestamp for author date"
 msgstr ""
 
 #: builtin/am.c:2416 builtin/commit-tree.c:118 builtin/commit.c:1642
-#: builtin/merge.c:299 builtin/pull.c:179 builtin/rebase.c:1125
+#: builtin/merge.c:302 builtin/pull.c:179 builtin/rebase.c:1125
 #: builtin/revert.c:117 builtin/tag.c:460
 msgid "key-id"
 msgstr ""
@@ -10757,7 +10758,7 @@ msgstr ""
 
 #: builtin/blame.c:867 builtin/checkout.c:1538 builtin/clone.c:95
 #: builtin/commit-graph.c:75 builtin/commit-graph.c:228 builtin/fetch.c:180
-#: builtin/merge.c:298 builtin/multi-pack-index.c:103
+#: builtin/merge.c:301 builtin/multi-pack-index.c:103
 #: builtin/multi-pack-index.c:154 builtin/multi-pack-index.c:180
 #: builtin/multi-pack-index.c:208 builtin/pull.c:120 builtin/push.c:566
 #: builtin/send-pack.c:202
@@ -12070,7 +12071,7 @@ msgstr ""
 msgid "new unparented branch"
 msgstr ""
 
-#: builtin/checkout.c:1562 builtin/merge.c:302
+#: builtin/checkout.c:1562 builtin/merge.c:305
 msgid "update ignored files (default)"
 msgstr ""
 
@@ -12417,8 +12418,9 @@ msgstr ""
 msgid "use --reference only while cloning"
 msgstr ""
 
-#: builtin/clone.c:125 builtin/column.c:27 builtin/init-db.c:550
-#: builtin/merge-file.c:48 builtin/pack-objects.c:4211 builtin/repack.c:764
+#: builtin/clone.c:125 builtin/column.c:27 builtin/fmt-merge-msg.c:27
+#: builtin/init-db.c:550 builtin/merge-file.c:48 builtin/merge.c:290
+#: builtin/pack-objects.c:4211 builtin/repack.c:764
 #: builtin/submodule--helper.c:3310 t/helper/test-simple-ipc.c:595
 #: t/helper/test-simple-ipc.c:597
 msgid "name"
@@ -12871,7 +12873,7 @@ msgstr ""
 msgid "id of a parent commit object"
 msgstr ""
 
-#: builtin/commit-tree.c:112 builtin/commit.c:1626 builtin/merge.c:283
+#: builtin/commit-tree.c:112 builtin/commit.c:1626 builtin/merge.c:284
 #: builtin/notes.c:407 builtin/notes.c:573 builtin/stash.c:1676
 #: builtin/tag.c:454
 msgid "message"
@@ -12885,7 +12887,7 @@ msgstr ""
 msgid "read commit log message from file"
 msgstr ""
 
-#: builtin/commit-tree.c:119 builtin/commit.c:1643 builtin/merge.c:300
+#: builtin/commit-tree.c:119 builtin/commit.c:1643 builtin/merge.c:303
 #: builtin/pull.c:180 builtin/revert.c:118
 msgid "GPG sign commit"
 msgstr ""
@@ -13301,7 +13303,7 @@ msgstr ""
 msgid "Commit message options"
 msgstr ""
 
-#: builtin/commit.c:1623 builtin/merge.c:287 builtin/tag.c:456
+#: builtin/commit.c:1623 builtin/merge.c:288 builtin/tag.c:456
 msgid "read message from file"
 msgstr ""
 
@@ -13362,7 +13364,7 @@ msgstr ""
 msgid "add custom trailer(s)"
 msgstr ""
 
-#: builtin/commit.c:1637 builtin/log.c:1775 builtin/merge.c:303
+#: builtin/commit.c:1637 builtin/log.c:1775 builtin/merge.c:306
 #: builtin/pull.c:146 builtin/revert.c:110
 msgid "add a Signed-off-by trailer"
 msgstr ""
@@ -14661,23 +14663,27 @@ msgid ""
 "git fmt-merge-msg [-m <message>] [--log[=<n>] | --no-log] [--file <file>]"
 msgstr ""
 
-#: builtin/fmt-merge-msg.c:18
+#: builtin/fmt-merge-msg.c:19
 msgid "populate log with at most <n> entries from shortlog"
 msgstr ""
 
-#: builtin/fmt-merge-msg.c:21
+#: builtin/fmt-merge-msg.c:22
 msgid "alias for --log (deprecated)"
 msgstr ""
 
-#: builtin/fmt-merge-msg.c:24
+#: builtin/fmt-merge-msg.c:25
 msgid "text"
 msgstr ""
 
-#: builtin/fmt-merge-msg.c:25
+#: builtin/fmt-merge-msg.c:26
 msgid "use <text> as start of message"
 msgstr ""
 
-#: builtin/fmt-merge-msg.c:26
+#: builtin/fmt-merge-msg.c:28
+msgid "use <name> instead of the real target branch"
+msgstr ""
+
+#: builtin/fmt-merge-msg.c:29
 msgid "file to read from"
 msgstr ""
 
@@ -16401,7 +16407,7 @@ msgstr ""
 msgid "two output directories?"
 msgstr ""
 
-#: builtin/log.c:1523 builtin/log.c:2352 builtin/log.c:2354 builtin/log.c:2366
+#: builtin/log.c:1523 builtin/log.c:2353 builtin/log.c:2355 builtin/log.c:2367
 #, c-format
 msgid "unknown commit %s"
 msgstr ""
@@ -16684,11 +16690,11 @@ msgstr ""
 msgid "failed to create output files"
 msgstr ""
 
-#: builtin/log.c:2287
+#: builtin/log.c:2288
 msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
 msgstr ""
 
-#: builtin/log.c:2341
+#: builtin/log.c:2342
 #, c-format
 msgid ""
 "Could not find a tracked remote branch, please specify <upstream> manually.\n"
@@ -17056,349 +17062,353 @@ msgstr ""
 msgid "git merge [<options>] [<commit>...]"
 msgstr ""
 
-#: builtin/merge.c:124
+#: builtin/merge.c:125
 msgid "switch `m' requires a value"
 msgstr ""
 
-#: builtin/merge.c:147
+#: builtin/merge.c:148
 #, c-format
 msgid "option `%s' requires a value"
 msgstr ""
 
-#: builtin/merge.c:200
+#: builtin/merge.c:201
 #, c-format
 msgid "Could not find merge strategy '%s'.\n"
 msgstr ""
 
-#: builtin/merge.c:201
+#: builtin/merge.c:202
 #, c-format
 msgid "Available strategies are:"
 msgstr ""
 
-#: builtin/merge.c:206
+#: builtin/merge.c:207
 #, c-format
 msgid "Available custom strategies are:"
 msgstr ""
 
-#: builtin/merge.c:257 builtin/pull.c:134
+#: builtin/merge.c:258 builtin/pull.c:134
 msgid "do not show a diffstat at the end of the merge"
 msgstr ""
 
-#: builtin/merge.c:260 builtin/pull.c:137
+#: builtin/merge.c:261 builtin/pull.c:137
 msgid "show a diffstat at the end of the merge"
 msgstr ""
 
-#: builtin/merge.c:261 builtin/pull.c:140
+#: builtin/merge.c:262 builtin/pull.c:140
 msgid "(synonym to --stat)"
 msgstr ""
 
-#: builtin/merge.c:263 builtin/pull.c:143
+#: builtin/merge.c:264 builtin/pull.c:143
 msgid "add (at most <n>) entries from shortlog to merge commit message"
 msgstr ""
 
-#: builtin/merge.c:266 builtin/pull.c:149
+#: builtin/merge.c:267 builtin/pull.c:149
 msgid "create a single commit instead of doing a merge"
 msgstr ""
 
-#: builtin/merge.c:268 builtin/pull.c:152
+#: builtin/merge.c:269 builtin/pull.c:152
 msgid "perform a commit if the merge succeeds (default)"
 msgstr ""
 
-#: builtin/merge.c:270 builtin/pull.c:155
+#: builtin/merge.c:271 builtin/pull.c:155
 msgid "edit message before committing"
 msgstr ""
 
-#: builtin/merge.c:272
+#: builtin/merge.c:273
 msgid "allow fast-forward (default)"
 msgstr ""
 
-#: builtin/merge.c:274 builtin/pull.c:162
+#: builtin/merge.c:275 builtin/pull.c:162
 msgid "abort if fast-forward is not possible"
 msgstr ""
 
-#: builtin/merge.c:278 builtin/pull.c:168
+#: builtin/merge.c:279 builtin/pull.c:168
 msgid "verify that the named commit has a valid GPG signature"
 msgstr ""
 
-#: builtin/merge.c:279 builtin/notes.c:785 builtin/pull.c:172
+#: builtin/merge.c:280 builtin/notes.c:785 builtin/pull.c:172
 #: builtin/rebase.c:1143 builtin/revert.c:114
 msgid "strategy"
 msgstr ""
 
-#: builtin/merge.c:280 builtin/pull.c:173
+#: builtin/merge.c:281 builtin/pull.c:173
 msgid "merge strategy to use"
 msgstr ""
 
-#: builtin/merge.c:281 builtin/pull.c:176
+#: builtin/merge.c:282 builtin/pull.c:176
 msgid "option=value"
 msgstr ""
 
-#: builtin/merge.c:282 builtin/pull.c:177
+#: builtin/merge.c:283 builtin/pull.c:177
 msgid "option for selected merge strategy"
 msgstr ""
 
-#: builtin/merge.c:284
+#: builtin/merge.c:285
 msgid "merge commit message (for a non-fast-forward merge)"
 msgstr ""
 
 #: builtin/merge.c:291
+msgid "use <name> instead of the real target"
+msgstr ""
+
+#: builtin/merge.c:294
 msgid "abort the current in-progress merge"
 msgstr ""
 
-#: builtin/merge.c:293
+#: builtin/merge.c:296
 msgid "--abort but leave index and working tree alone"
 msgstr ""
 
-#: builtin/merge.c:295
+#: builtin/merge.c:298
 msgid "continue the current in-progress merge"
 msgstr ""
 
-#: builtin/merge.c:297 builtin/pull.c:184
+#: builtin/merge.c:300 builtin/pull.c:184
 msgid "allow merging unrelated histories"
 msgstr ""
 
-#: builtin/merge.c:304
+#: builtin/merge.c:307
 msgid "bypass pre-merge-commit and commit-msg hooks"
 msgstr ""
 
-#: builtin/merge.c:320
+#: builtin/merge.c:323
 msgid "could not run stash."
 msgstr ""
 
-#: builtin/merge.c:325
+#: builtin/merge.c:328
 msgid "stash failed"
 msgstr ""
 
-#: builtin/merge.c:330
+#: builtin/merge.c:333
 #, c-format
 msgid "not a valid object: %s"
 msgstr ""
 
-#: builtin/merge.c:352 builtin/merge.c:369
+#: builtin/merge.c:355 builtin/merge.c:372
 msgid "read-tree failed"
 msgstr ""
 
-#: builtin/merge.c:400
+#: builtin/merge.c:403
 msgid "Already up to date. (nothing to squash)"
 msgstr ""
 
-#: builtin/merge.c:414
+#: builtin/merge.c:417
 #, c-format
 msgid "Squash commit -- not updating HEAD\n"
 msgstr ""
 
-#: builtin/merge.c:464
+#: builtin/merge.c:467
 #, c-format
 msgid "No merge message -- not updating HEAD\n"
 msgstr ""
 
-#: builtin/merge.c:514
+#: builtin/merge.c:517
 #, c-format
 msgid "'%s' does not point to a commit"
 msgstr ""
 
-#: builtin/merge.c:602
+#: builtin/merge.c:605
 #, c-format
 msgid "Bad branch.%s.mergeoptions string: %s"
 msgstr ""
 
-#: builtin/merge.c:729
+#: builtin/merge.c:732
 msgid "Not handling anything other than two heads merge."
 msgstr ""
 
-#: builtin/merge.c:742
+#: builtin/merge.c:745
 #, c-format
 msgid "unknown strategy option: -X%s"
 msgstr ""
 
-#: builtin/merge.c:761 t/helper/test-fast-rebase.c:223
+#: builtin/merge.c:764 t/helper/test-fast-rebase.c:223
 #, c-format
 msgid "unable to write %s"
 msgstr ""
 
-#: builtin/merge.c:813
+#: builtin/merge.c:816
 #, c-format
 msgid "Could not read from '%s'"
 msgstr ""
 
-#: builtin/merge.c:822
+#: builtin/merge.c:825
 #, c-format
 msgid "Not committing merge; use 'git commit' to complete the merge.\n"
 msgstr ""
 
-#: builtin/merge.c:828
+#: builtin/merge.c:831
 msgid ""
 "Please enter a commit message to explain why this merge is necessary,\n"
 "especially if it merges an updated upstream into a topic branch.\n"
 "\n"
 msgstr ""
 
-#: builtin/merge.c:833
+#: builtin/merge.c:836
 msgid "An empty message aborts the commit.\n"
 msgstr ""
 
-#: builtin/merge.c:836
+#: builtin/merge.c:839
 #, c-format
 msgid ""
 "Lines starting with '%c' will be ignored, and an empty message aborts\n"
 "the commit.\n"
 msgstr ""
 
-#: builtin/merge.c:891
+#: builtin/merge.c:894
 msgid "Empty commit message."
 msgstr ""
 
-#: builtin/merge.c:906
+#: builtin/merge.c:909
 #, c-format
 msgid "Wonderful.\n"
 msgstr ""
 
-#: builtin/merge.c:967
+#: builtin/merge.c:970
 #, c-format
 msgid "Automatic merge failed; fix conflicts and then commit the result.\n"
 msgstr ""
 
-#: builtin/merge.c:1006
+#: builtin/merge.c:1009
 msgid "No current branch."
 msgstr ""
 
-#: builtin/merge.c:1008
+#: builtin/merge.c:1011
 msgid "No remote for the current branch."
 msgstr ""
 
-#: builtin/merge.c:1010
+#: builtin/merge.c:1013
 msgid "No default upstream defined for the current branch."
 msgstr ""
 
-#: builtin/merge.c:1015
+#: builtin/merge.c:1018
 #, c-format
 msgid "No remote-tracking branch for %s from %s"
 msgstr ""
 
-#: builtin/merge.c:1072
+#: builtin/merge.c:1075
 #, c-format
 msgid "Bad value '%s' in environment '%s'"
 msgstr ""
 
-#: builtin/merge.c:1173
+#: builtin/merge.c:1177
 #, c-format
 msgid "not something we can merge in %s: %s"
 msgstr ""
 
-#: builtin/merge.c:1207
+#: builtin/merge.c:1211
 msgid "not something we can merge"
 msgstr ""
 
-#: builtin/merge.c:1320
+#: builtin/merge.c:1324
 msgid "--abort expects no arguments"
 msgstr ""
 
-#: builtin/merge.c:1324
+#: builtin/merge.c:1328
 msgid "There is no merge to abort (MERGE_HEAD missing)."
 msgstr ""
 
-#: builtin/merge.c:1342
+#: builtin/merge.c:1346
 msgid "--quit expects no arguments"
 msgstr ""
 
-#: builtin/merge.c:1355
+#: builtin/merge.c:1359
 msgid "--continue expects no arguments"
 msgstr ""
 
-#: builtin/merge.c:1359
+#: builtin/merge.c:1363
 msgid "There is no merge in progress (MERGE_HEAD missing)."
 msgstr ""
 
-#: builtin/merge.c:1375
+#: builtin/merge.c:1379
 msgid ""
 "You have not concluded your merge (MERGE_HEAD exists).\n"
 "Please, commit your changes before you merge."
 msgstr ""
 
-#: builtin/merge.c:1382
+#: builtin/merge.c:1386
 msgid ""
 "You have not concluded your cherry-pick (CHERRY_PICK_HEAD exists).\n"
 "Please, commit your changes before you merge."
 msgstr ""
 
-#: builtin/merge.c:1385
+#: builtin/merge.c:1389
 msgid "You have not concluded your cherry-pick (CHERRY_PICK_HEAD exists)."
 msgstr ""
 
-#: builtin/merge.c:1399
+#: builtin/merge.c:1403
 msgid "You cannot combine --squash with --no-ff."
 msgstr ""
 
-#: builtin/merge.c:1401
+#: builtin/merge.c:1405
 msgid "You cannot combine --squash with --commit."
 msgstr ""
 
-#: builtin/merge.c:1417
+#: builtin/merge.c:1421
 msgid "No commit specified and merge.defaultToUpstream not set."
 msgstr ""
 
-#: builtin/merge.c:1434
+#: builtin/merge.c:1438
 msgid "Squash commit into empty head not supported yet"
 msgstr ""
 
-#: builtin/merge.c:1436
+#: builtin/merge.c:1440
 msgid "Non-fast-forward commit does not make sense into an empty head"
 msgstr ""
 
-#: builtin/merge.c:1441
+#: builtin/merge.c:1445
 #, c-format
 msgid "%s - not something we can merge"
 msgstr ""
 
-#: builtin/merge.c:1443
+#: builtin/merge.c:1447
 msgid "Can merge only exactly one commit into empty head"
 msgstr ""
 
-#: builtin/merge.c:1530
+#: builtin/merge.c:1534
 msgid "refusing to merge unrelated histories"
 msgstr ""
 
-#: builtin/merge.c:1549
+#: builtin/merge.c:1553
 #, c-format
 msgid "Updating %s..%s\n"
 msgstr ""
 
-#: builtin/merge.c:1596
+#: builtin/merge.c:1600
 #, c-format
 msgid "Trying really trivial in-index merge...\n"
 msgstr ""
 
-#: builtin/merge.c:1603
+#: builtin/merge.c:1607
 #, c-format
 msgid "Nope.\n"
 msgstr ""
 
-#: builtin/merge.c:1661 builtin/merge.c:1727
+#: builtin/merge.c:1665 builtin/merge.c:1731
 #, c-format
 msgid "Rewinding the tree to pristine...\n"
 msgstr ""
 
-#: builtin/merge.c:1665
+#: builtin/merge.c:1669
 #, c-format
 msgid "Trying merge strategy %s...\n"
 msgstr ""
 
-#: builtin/merge.c:1717
+#: builtin/merge.c:1721
 #, c-format
 msgid "No merge strategy handled the merge.\n"
 msgstr ""
 
-#: builtin/merge.c:1719
+#: builtin/merge.c:1723
 #, c-format
 msgid "Merge with strategy %s failed.\n"
 msgstr ""
 
-#: builtin/merge.c:1729
+#: builtin/merge.c:1733
 #, c-format
 msgid "Using the %s strategy to prepare resolving by hand.\n"
 msgstr ""
 
-#: builtin/merge.c:1743
+#: builtin/merge.c:1747
 #, c-format
 msgid "Automatic merge went well; stopped before committing as requested\n"
 msgstr ""
@@ -17599,7 +17609,7 @@ msgstr ""
 msgid "Renaming %s to %s\n"
 msgstr ""
 
-#: builtin/mv.c:314 builtin/remote.c:790 builtin/repack.c:999
+#: builtin/mv.c:314 builtin/remote.c:790 builtin/repack.c:1001
 #, c-format
 msgid "renaming '%s' failed"
 msgstr ""
@@ -20113,7 +20123,7 @@ msgstr ""
 msgid "could not start pack-objects to repack promisor objects"
 msgstr ""
 
-#: builtin/repack.c:298 builtin/repack.c:685 builtin/repack.c:935
+#: builtin/repack.c:298 builtin/repack.c:685 builtin/repack.c:937
 msgid "repack: Expecting full hex object ID lines only from pack-objects."
 msgstr ""
 
@@ -20249,21 +20259,21 @@ msgstr ""
 msgid "--cruft must be combined with all-into-one"
 msgstr ""
 
-#: builtin/repack.c:944
+#: builtin/repack.c:946
 msgid "Nothing new to pack."
 msgstr ""
 
-#: builtin/repack.c:949
+#: builtin/repack.c:951
 #, c-format
 msgid "pack prefix %s does not begin with objdir %s"
 msgstr ""
 
-#: builtin/repack.c:1001
+#: builtin/repack.c:1003
 #, c-format
 msgid "missing required file: %s"
 msgstr ""
 
-#: builtin/repack.c:1003
+#: builtin/repack.c:1005
 #, c-format
 msgid "could not unlink: %s"
 msgstr ""
@@ -24964,7 +24974,7 @@ msgstr ""
 msgid "CA path \"%s\" does not exist"
 msgstr ""
 
-#: git-send-email.perl:1562
+#: git-send-email.perl:1565
 msgid ""
 "    The Cc list above has been expanded by additional\n"
 "    addresses found in the patch commit message. By default\n"
@@ -24981,135 +24991,135 @@ msgstr ""
 #. TRANSLATORS: Make sure to include [y] [n] [e] [q] [a] in your
 #. translation. The program will only accept English input
 #. at this point.
-#: git-send-email.perl:1577
+#: git-send-email.perl:1580
 msgid "Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): "
 msgstr ""
 
-#: git-send-email.perl:1580
+#: git-send-email.perl:1583
 msgid "Send this email reply required"
 msgstr ""
 
-#: git-send-email.perl:1614
+#: git-send-email.perl:1617
 msgid "The required SMTP server is not properly defined."
 msgstr ""
 
-#: git-send-email.perl:1661
+#: git-send-email.perl:1664
 #, perl-format
 msgid "Server does not support STARTTLS! %s"
 msgstr ""
 
-#: git-send-email.perl:1666 git-send-email.perl:1670
+#: git-send-email.perl:1669 git-send-email.perl:1673
 #, perl-format
 msgid "STARTTLS failed! %s"
 msgstr ""
 
-#: git-send-email.perl:1679
+#: git-send-email.perl:1682
 msgid "Unable to initialize SMTP properly. Check config and use --smtp-debug."
 msgstr ""
 
-#: git-send-email.perl:1697
+#: git-send-email.perl:1700
 #, perl-format
 msgid "Failed to send %s\n"
 msgstr ""
 
-#: git-send-email.perl:1700
+#: git-send-email.perl:1703
 #, perl-format
 msgid "Dry-Sent %s\n"
 msgstr ""
 
-#: git-send-email.perl:1700
+#: git-send-email.perl:1703
 #, perl-format
 msgid "Sent %s\n"
 msgstr ""
 
-#: git-send-email.perl:1702
+#: git-send-email.perl:1705
 msgid "Dry-OK. Log says:\n"
 msgstr ""
 
-#: git-send-email.perl:1702
+#: git-send-email.perl:1705
 msgid "OK. Log says:\n"
 msgstr ""
 
-#: git-send-email.perl:1721
+#: git-send-email.perl:1724
 msgid "Result: "
 msgstr ""
 
-#: git-send-email.perl:1724
+#: git-send-email.perl:1727
 msgid "Result: OK\n"
 msgstr ""
 
-#: git-send-email.perl:1741
+#: git-send-email.perl:1744
 #, perl-format
 msgid "can't open file %s"
 msgstr ""
 
-#: git-send-email.perl:1789 git-send-email.perl:1809
+#: git-send-email.perl:1792 git-send-email.perl:1812
 #, perl-format
 msgid "(mbox) Adding cc: %s from line '%s'\n"
 msgstr ""
 
-#: git-send-email.perl:1795
+#: git-send-email.perl:1798
 #, perl-format
 msgid "(mbox) Adding to: %s from line '%s'\n"
 msgstr ""
 
-#: git-send-email.perl:1852
+#: git-send-email.perl:1855
 #, perl-format
 msgid "(non-mbox) Adding cc: %s from line '%s'\n"
 msgstr ""
 
-#: git-send-email.perl:1887
+#: git-send-email.perl:1890
 #, perl-format
 msgid "(body) Adding cc: %s from line '%s'\n"
 msgstr ""
 
-#: git-send-email.perl:2006
+#: git-send-email.perl:2009
 #, perl-format
 msgid "(%s) Could not execute '%s'"
 msgstr ""
 
-#: git-send-email.perl:2013
+#: git-send-email.perl:2016
 #, perl-format
 msgid "(%s) Adding %s: %s from: '%s'\n"
 msgstr ""
 
-#: git-send-email.perl:2017
+#: git-send-email.perl:2020
 #, perl-format
 msgid "(%s) failed to close pipe to '%s'"
 msgstr ""
 
-#: git-send-email.perl:2047
+#: git-send-email.perl:2050
 msgid "cannot send message as 7bit"
 msgstr ""
 
-#: git-send-email.perl:2055
+#: git-send-email.perl:2058
 msgid "invalid transfer encoding"
 msgstr ""
 
-#: git-send-email.perl:2096
+#: git-send-email.perl:2099
 #, perl-format
 msgid "fatal: %s: rejected by %s hook\n"
 msgstr ""
 
-#: git-send-email.perl:2108 git-send-email.perl:2161 git-send-email.perl:2171
+#: git-send-email.perl:2111 git-send-email.perl:2164 git-send-email.perl:2174
 #, perl-format
 msgid "unable to open %s: %s\n"
 msgstr ""
 
-#: git-send-email.perl:2111
+#: git-send-email.perl:2114
 #, perl-format
 msgid ""
 "fatal: %s:%d is longer than 998 characters\n"
 "warning: no patches were sent\n"
 msgstr ""
 
-#: git-send-email.perl:2129
+#: git-send-email.perl:2132
 #, perl-format
 msgid "Skipping %s with backup suffix '%s'.\n"
 msgstr ""
 
 #. TRANSLATORS: please keep "[y|N]" as is.
-#: git-send-email.perl:2133
+#: git-send-email.perl:2136
 #, perl-format
 msgid "Do you really want to send %s? [y|N]: "
 msgstr ""

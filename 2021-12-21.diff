@@ -1,0 +1,26 @@
+diff --git a/po/git.pot b/po/git.pot
+index 87a5b44..4d6cbb9 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -7907,7 +7907,7 @@ msgstr  ""
+ msgid   "cannot have both --quiet and --verbose"
+ msgstr  ""
+ 
+-msgid   "cannot inherit upstream tracking configuration when rebasing is requested"
++msgid   "cannot inherit upstream tracking configuration of multiple refs when rebasing is requested"
+ msgstr  ""
+ 
+ msgid   "cannot merge without a current revision"
+@@ -18353,6 +18353,12 @@ msgstr  ""
+ msgid   "use <name> instead of 'origin' to track upstream"
+ msgstr  ""
+ 
++msgid   "use <name> instead of the real target"
++msgstr  ""
++
++msgid   "use <name> instead of the real target branch"
++msgstr  ""
++
+ msgid   "use <regex> to decide what a word is"
+ msgstr  ""
+ 
