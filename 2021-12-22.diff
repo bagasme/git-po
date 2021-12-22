@@ -1,0 +1,24 @@
+diff --git a/po/git.pot b/po/git.pot
+index 8426d3a..a8e415f 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1864,6 +1864,9 @@ msgstr  ""
+ msgid   "--reflog option needs one branch name"
+ msgstr  ""
+ 
++msgid   "--remerge_diff does not make sense"
++msgstr  ""
++
+ msgid   "--reschedule-failed-exec requires --exec or --interactive"
+ msgstr  ""
+ 
+@@ -17391,6 +17394,9 @@ msgstr  ""
+ msgid   "unable to create temporary index"
+ msgstr  ""
+ 
++msgid   "unable to create temporary object directory"
++msgstr  ""
++
+ #, c-format
+ msgid   "unable to create thread: %s"
+ msgstr  ""
