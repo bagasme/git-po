@@ -22,3 +22,39 @@ index 8426d3a..a8e415f 100644
  #, c-format
  msgid   "unable to create thread: %s"
  msgstr  ""
+diff --git a/po/git.pot b/po/git.pot
+index a8e415f..288ac9d 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1801,6 +1801,9 @@ msgstr  ""
+ msgid   "--name-status does not make sense"
+ msgstr  ""
+ 
++msgid   "--negotiate-only and --recurse-submodules cannot be used together"
++msgstr  ""
++
+ msgid   "--negotiate-only needs one or more --negotiate-tip=*"
+ msgstr  ""
+ 
+@@ -17718,6 +17721,10 @@ msgstr  ""
+ msgid   "unable to set SO_KEEPALIVE on socket"
+ msgstr  ""
+ 
++#, c-format
++msgid   "unable to set core.bare=true in '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "unable to set permission to '%s'"
+ msgstr  ""
+@@ -17767,6 +17774,10 @@ msgstr  ""
+ msgid   "unable to unquote C-style string '%s'"
+ msgstr  ""
+ 
++#, c-format
++msgid   "unable to unset core.bare=true in '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "unable to update %s"
+ msgstr  ""
