@@ -1,0 +1,62 @@
+diff --git a/po/git.pot b/po/git.pot
+index 288ac9d..bec994c 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -10255,7 +10255,11 @@ msgstr  ""
+ msgid   "expected format: %%(color:<color>)"
+ msgstr  ""
+ 
+-msgid   "expected no other sections to be sent after no 'ready'"
++#. TRANSLATORS: The parameter will be 'ready', a protocol
++#. keyword.
++#.
++#, c-format
++msgid   "expected no other sections to be sent after no '%s'"
+ msgstr  ""
+ 
+ #, c-format
+@@ -10271,7 +10275,11 @@ msgstr  ""
+ msgid   "expected ok/error, helper said '%s'"
+ msgstr  ""
+ 
+-msgid   "expected packfile to be sent after 'ready'"
++#. TRANSLATORS: The parameter will be 'ready', a protocol
++#. keyword.
++#.
++#, c-format
++msgid   "expected packfile to be sent after '%s'"
+ msgstr  ""
+ 
+ msgid   "expected response end packet after ref listing"
+@@ -16458,6 +16466,9 @@ msgstr  ""
+ msgid   "show source"
+ msgstr  ""
+ 
++msgid   "show sparse directories in the presence of a sparse index"
++msgstr  ""
++
+ msgid   "show staged contents' object name in the output"
+ msgstr  ""
+ 
+@@ -17721,10 +17732,6 @@ msgstr  ""
+ msgid   "unable to set SO_KEEPALIVE on socket"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "unable to set core.bare=true in '%s'"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unable to set permission to '%s'"
+ msgstr  ""
+@@ -17774,10 +17781,6 @@ msgstr  ""
+ msgid   "unable to unquote C-style string '%s'"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "unable to unset core.bare=true in '%s'"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unable to update %s"
+ msgstr  ""
