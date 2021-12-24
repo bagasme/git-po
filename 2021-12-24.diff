@@ -1,0 +1,35 @@
+diff --git a/po/git.pot b/po/git.pot
+index bec994c..9ce3bc2 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -11961,7 +11961,7 @@ msgstr  ""
+ msgid   "git sparse-checkout list"
+ msgstr  ""
+ 
+-msgid   "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index] "
++msgid   "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index]"
+ msgstr  ""
+ 
+ msgid   "git sparse-checkout set [--[no-]cone] [--[no-]sparse-index] (--stdin | <patterns>)"
+@@ -17732,6 +17732,10 @@ msgstr  ""
+ msgid   "unable to set SO_KEEPALIVE on socket"
+ msgstr  ""
+ 
++#, c-format
++msgid   "unable to set core.bare=true in '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "unable to set permission to '%s'"
+ msgstr  ""
+@@ -17781,6 +17785,10 @@ msgstr  ""
+ msgid   "unable to unquote C-style string '%s'"
+ msgstr  ""
+ 
++#, c-format
++msgid   "unable to unset core.bare=true in '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "unable to update %s"
+ msgstr  ""
