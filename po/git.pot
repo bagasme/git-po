@@ -21030,7 +21030,7 @@ msgid ""
 msgstr ""
 
 #: builtin/sparse-checkout.c:762
-msgid "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index] "
+msgid "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index]"
 msgstr ""
 
 #: builtin/sparse-checkout.c:782

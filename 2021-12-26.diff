@@ -1,0 +1,13 @@
+diff --git a/po/git.pot b/po/git.pot
+index fe2e3f8..a4ac48f 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -11861,7 +11861,7 @@ msgstr  ""
+ msgid   "git sparse-checkout list"
+ msgstr  ""
+ 
+-msgid   "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index] "
++msgid   "git sparse-checkout reapply [--[no-]cone] [--[no-]sparse-index]"
+ msgstr  ""
+ 
+ msgid   "git sparse-checkout set [--[no-]cone] [--[no-]sparse-index] (--stdin | <patterns>)"
