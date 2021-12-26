@@ -1,0 +1,13 @@
+diff --git a/po/git.pot b/po/git.pot
+index 9ce3bc2..7733ca4 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1867,7 +1867,7 @@ msgstr  ""
+ msgid   "--reflog option needs one branch name"
+ msgstr  ""
+ 
+-msgid   "--remerge_diff does not make sense"
++msgid   "--remerge-diff does not make sense"
+ msgstr  ""
+ 
+ msgid   "--reschedule-failed-exec requires --exec or --interactive"

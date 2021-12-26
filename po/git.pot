@@ -780,15 +780,15 @@ msgid "unrecognized whitespace ignore option '%s'"
 msgstr ""
 
 #: apply.c:136 archive.c:584 range-diff.c:559 revision.c:2303 revision.c:2307
-#: revision.c:2316 revision.c:2321 revision.c:2527 revision.c:2868
-#: revision.c:2872 revision.c:2878 revision.c:2881 revision.c:2883
+#: revision.c:2316 revision.c:2321 revision.c:2527 revision.c:2870
+#: revision.c:2874 revision.c:2880 revision.c:2883 revision.c:2885
 #: builtin/add.c:505 builtin/add.c:507 builtin/add.c:524 builtin/add.c:536
 #: builtin/branch.c:755 builtin/checkout.c:1650 builtin/checkout.c:1760
 #: builtin/checkout.c:1763 builtin/clone.c:907 builtin/commit.c:358
 #: builtin/commit.c:1196 builtin/describe.c:593 builtin/diff-tree.c:155
 #: builtin/difftool.c:733 builtin/fast-export.c:1245 builtin/fetch.c:2054
-#: builtin/index-pack.c:1852 builtin/init-db.c:560 builtin/log.c:1969
-#: builtin/log.c:1971 builtin/pack-objects.c:4340 builtin/push.c:592
+#: builtin/index-pack.c:1852 builtin/init-db.c:560 builtin/log.c:1959
+#: builtin/log.c:1961 builtin/pack-objects.c:4340 builtin/push.c:592
 #: builtin/push.c:630 builtin/push.c:636 builtin/push.c:641
 #: builtin/repack.c:783 builtin/repack.c:786 builtin/repack.c:789
 #: builtin/repack.c:824 builtin/reset.c:426 builtin/reset.c:462
@@ -1494,7 +1494,7 @@ msgstr ""
 msgid "archive format"
 msgstr ""
 
-#: archive.c:552 builtin/log.c:1810
+#: archive.c:552 builtin/log.c:1803
 msgid "prefix"
 msgstr ""
 
@@ -1505,7 +1505,7 @@ msgstr ""
 #: archive.c:554 archive.c:557 builtin/blame.c:880 builtin/blame.c:884
 #: builtin/blame.c:885 builtin/commit-tree.c:115 builtin/config.c:135
 #: builtin/fast-export.c:1181 builtin/fast-export.c:1183
-#: builtin/fast-export.c:1187 builtin/grep.c:936 builtin/hash-object.c:103
+#: builtin/fast-export.c:1187 builtin/grep.c:935 builtin/hash-object.c:103
 #: builtin/ls-files.c:654 builtin/ls-files.c:657 builtin/notes.c:410
 #: builtin/notes.c:576 builtin/read-tree.c:115 parse-options.h:190
 msgid "file"
@@ -1557,9 +1557,9 @@ msgstr ""
 msgid "Unexpected option --remote"
 msgstr ""
 
-#: archive.c:580 fetch-pack.c:300 revision.c:2885 builtin/add.c:539
+#: archive.c:580 fetch-pack.c:300 revision.c:2887 builtin/add.c:539
 #: builtin/add.c:571 builtin/checkout.c:1769 builtin/commit.c:370
-#: builtin/fast-export.c:1230 builtin/index-pack.c:1848 builtin/log.c:2140
+#: builtin/fast-export.c:1230 builtin/index-pack.c:1848 builtin/log.c:2130
 #: builtin/reset.c:435 builtin/reset.c:493 builtin/rm.c:281
 #: builtin/stash.c:1718 builtin/worktree.c:504 http-fetch.c:144
 #: http-fetch.c:153
@@ -1716,8 +1716,8 @@ msgstr ""
 
 #: blame.c:2820 bundle.c:224 midx.c:1046 ref-filter.c:2370 remote.c:2158
 #: sequencer.c:2352 sequencer.c:4878 submodule.c:890 builtin/commit.c:1114
-#: builtin/log.c:438 builtin/log.c:1056 builtin/log.c:1664 builtin/log.c:2096
-#: builtin/log.c:2387 builtin/merge.c:431 builtin/pack-objects.c:3382
+#: builtin/log.c:437 builtin/log.c:1049 builtin/log.c:1657 builtin/log.c:2086
+#: builtin/log.c:2377 builtin/merge.c:431 builtin/pack-objects.c:3382
 #: builtin/pack-objects.c:3540 builtin/pack-objects.c:4024
 #: builtin/pack-objects.c:4039 builtin/shortlog.c:255
 msgid "revision walk setup failed"
@@ -1949,7 +1949,7 @@ msgstr ""
 msgid "cannot write bundle version %d with algorithm %s"
 msgstr ""
 
-#: bundle.c:524 builtin/log.c:212 builtin/log.c:1976 builtin/shortlog.c:399
+#: bundle.c:524 builtin/log.c:211 builtin/log.c:1966 builtin/shortlog.c:399
 #, c-format
 msgid "unrecognized argument: %s"
 msgstr ""
@@ -3129,556 +3129,556 @@ msgid ""
 "%s"
 msgstr ""
 
-#: diff.c:4265
+#: diff.c:4274
 #, c-format
 msgid "external diff died, stopping at %s"
 msgstr ""
 
-#: diff.c:4621
+#: diff.c:4632
 msgid "--name-only, --name-status, --check and -s are mutually exclusive"
 msgstr ""
 
-#: diff.c:4624 builtin/difftool.c:736 builtin/log.c:2007 builtin/worktree.c:502
+#: diff.c:4635 builtin/difftool.c:736 builtin/log.c:1997 builtin/worktree.c:502
 #, c-format
 msgid "%s, %s and %s are mutually exclusive"
 msgstr ""
 
-#: diff.c:4627
+#: diff.c:4638
 msgid ""
 "-G and --pickaxe-regex are mutually exclusive, use --pickaxe-regex with -S"
 msgstr ""
 
-#: diff.c:4630
+#: diff.c:4641
 msgid ""
 "--pickaxe-all and --find-object are mutually exclusive, use --pickaxe-all "
 "with -G and -S"
 msgstr ""
 
-#: diff.c:4709
+#: diff.c:4720
 msgid "--follow requires exactly one pathspec"
 msgstr ""
 
-#: diff.c:4757
+#: diff.c:4768
 #, c-format
 msgid "invalid --stat value: %s"
 msgstr ""
 
-#: diff.c:4762 diff.c:4767 diff.c:4772 diff.c:4777 diff.c:5305
+#: diff.c:4773 diff.c:4778 diff.c:4783 diff.c:4788 diff.c:5316
 #: parse-options.c:217 parse-options.c:221
 #, c-format
 msgid "%s expects a numerical value"
 msgstr ""
 
-#: diff.c:4794
+#: diff.c:4805
 #, c-format
 msgid ""
 "Failed to parse --dirstat/-X option parameter:\n"
 "%s"
 msgstr ""
 
-#: diff.c:4879
+#: diff.c:4890
 #, c-format
 msgid "unknown change class '%c' in --diff-filter=%s"
 msgstr ""
 
-#: diff.c:4903
+#: diff.c:4914
 #, c-format
 msgid "unknown value after ws-error-highlight=%.*s"
 msgstr ""
 
-#: diff.c:4917
+#: diff.c:4928
 #, c-format
 msgid "unable to resolve '%s'"
 msgstr ""
 
-#: diff.c:4967 diff.c:4973
+#: diff.c:4978 diff.c:4984
 #, c-format
 msgid "%s expects <n>/<m> form"
 msgstr ""
 
-#: diff.c:4985
+#: diff.c:4996
 #, c-format
 msgid "%s expects a character, got '%s'"
 msgstr ""
 
-#: diff.c:5006
+#: diff.c:5017
 #, c-format
 msgid "bad --color-moved argument: %s"
 msgstr ""
 
-#: diff.c:5025
+#: diff.c:5036
 #, c-format
 msgid "invalid mode '%s' in --color-moved-ws"
 msgstr ""
 
-#: diff.c:5065
+#: diff.c:5076
 msgid ""
 "option diff-algorithm accepts \"myers\", \"minimal\", \"patience\" and "
 "\"histogram\""
 msgstr ""
 
-#: diff.c:5101 diff.c:5121
+#: diff.c:5112 diff.c:5132
 #, c-format
 msgid "invalid argument to %s"
 msgstr ""
 
-#: diff.c:5225
+#: diff.c:5236
 #, c-format
 msgid "invalid regex given to -I: '%s'"
 msgstr ""
 
-#: diff.c:5274
+#: diff.c:5285
 #, c-format
 msgid "failed to parse --submodule option parameter: '%s'"
 msgstr ""
 
-#: diff.c:5330
+#: diff.c:5341
 #, c-format
 msgid "bad --word-diff argument: %s"
 msgstr ""
 
-#: diff.c:5366
+#: diff.c:5377
 msgid "Diff output format options"
 msgstr ""
 
-#: diff.c:5368 diff.c:5374
+#: diff.c:5379 diff.c:5385
 msgid "generate patch"
 msgstr ""
 
-#: diff.c:5371 builtin/log.c:181
+#: diff.c:5382 builtin/log.c:180
 msgid "suppress diff output"
 msgstr ""
 
-#: diff.c:5376 diff.c:5490 diff.c:5497
+#: diff.c:5387 diff.c:5501 diff.c:5508
 msgid "<n>"
 msgstr ""
 
-#: diff.c:5377 diff.c:5380
+#: diff.c:5388 diff.c:5391
 msgid "generate diffs with <n> lines context"
 msgstr ""
 
-#: diff.c:5382
+#: diff.c:5393
 msgid "generate the diff in raw format"
 msgstr ""
 
-#: diff.c:5385
+#: diff.c:5396
 msgid "synonym for '-p --raw'"
 msgstr ""
 
-#: diff.c:5389
+#: diff.c:5400
 msgid "synonym for '-p --stat'"
 msgstr ""
 
-#: diff.c:5393
+#: diff.c:5404
 msgid "machine friendly --stat"
 msgstr ""
 
-#: diff.c:5396
+#: diff.c:5407
 msgid "output only the last line of --stat"
 msgstr ""
 
-#: diff.c:5398 diff.c:5406
+#: diff.c:5409 diff.c:5417
 msgid "<param1,param2>..."
 msgstr ""
 
-#: diff.c:5399
+#: diff.c:5410
 msgid ""
 "output the distribution of relative amount of changes for each sub-directory"
 msgstr ""
 
-#: diff.c:5403
+#: diff.c:5414
 msgid "synonym for --dirstat=cumulative"
 msgstr ""
 
-#: diff.c:5407
+#: diff.c:5418
 msgid "synonym for --dirstat=files,param1,param2..."
 msgstr ""
 
-#: diff.c:5411
+#: diff.c:5422
 msgid "warn if changes introduce conflict markers or whitespace errors"
 msgstr ""
 
-#: diff.c:5414
+#: diff.c:5425
 msgid "condensed summary such as creations, renames and mode changes"
 msgstr ""
 
-#: diff.c:5417
+#: diff.c:5428
 msgid "show only names of changed files"
 msgstr ""
 
-#: diff.c:5420
+#: diff.c:5431
 msgid "show only names and status of changed files"
 msgstr ""
 
-#: diff.c:5422
+#: diff.c:5433
 msgid "<width>[,<name-width>[,<count>]]"
 msgstr ""
 
-#: diff.c:5423
+#: diff.c:5434
 msgid "generate diffstat"
 msgstr ""
 
-#: diff.c:5425 diff.c:5428 diff.c:5431
+#: diff.c:5436 diff.c:5439 diff.c:5442
 msgid "<width>"
 msgstr ""
 
-#: diff.c:5426
+#: diff.c:5437
 msgid "generate diffstat with a given width"
 msgstr ""
 
-#: diff.c:5429
+#: diff.c:5440
 msgid "generate diffstat with a given name width"
 msgstr ""
 
-#: diff.c:5432
+#: diff.c:5443
 msgid "generate diffstat with a given graph width"
 msgstr ""
 
-#: diff.c:5434
+#: diff.c:5445
 msgid "<count>"
 msgstr ""
 
-#: diff.c:5435
+#: diff.c:5446
 msgid "generate diffstat with limited lines"
 msgstr ""
 
-#: diff.c:5438
+#: diff.c:5449
 msgid "generate compact summary in diffstat"
 msgstr ""
 
-#: diff.c:5441
+#: diff.c:5452
 msgid "output a binary diff that can be applied"
 msgstr ""
 
-#: diff.c:5444
+#: diff.c:5455
 msgid "show full pre- and post-image object names on the \"index\" lines"
 msgstr ""
 
-#: diff.c:5446
+#: diff.c:5457
 msgid "show colored diff"
 msgstr ""
 
-#: diff.c:5447
+#: diff.c:5458
 msgid "<kind>"
 msgstr ""
 
-#: diff.c:5448
+#: diff.c:5459
 msgid ""
 "highlight whitespace errors in the 'context', 'old' or 'new' lines in the "
 "diff"
 msgstr ""
 
-#: diff.c:5451
+#: diff.c:5462
 msgid ""
 "do not munge pathnames and use NULs as output field terminators in --raw or "
 "--numstat"
 msgstr ""
 
-#: diff.c:5454 diff.c:5457 diff.c:5460 diff.c:5569
+#: diff.c:5465 diff.c:5468 diff.c:5471 diff.c:5580
 msgid "<prefix>"
 msgstr ""
 
-#: diff.c:5455
+#: diff.c:5466
 msgid "show the given source prefix instead of \"a/\""
 msgstr ""
 
-#: diff.c:5458
+#: diff.c:5469
 msgid "show the given destination prefix instead of \"b/\""
 msgstr ""
 
-#: diff.c:5461
+#: diff.c:5472
 msgid "prepend an additional prefix to every line of output"
 msgstr ""
 
-#: diff.c:5464
+#: diff.c:5475
 msgid "do not show any source or destination prefix"
 msgstr ""
 
-#: diff.c:5467
+#: diff.c:5478
 msgid "show context between diff hunks up to the specified number of lines"
 msgstr ""
 
-#: diff.c:5471 diff.c:5476 diff.c:5481
+#: diff.c:5482 diff.c:5487 diff.c:5492
 msgid "<char>"
 msgstr ""
 
-#: diff.c:5472
+#: diff.c:5483
 msgid "specify the character to indicate a new line instead of '+'"
 msgstr ""
 
-#: diff.c:5477
+#: diff.c:5488
 msgid "specify the character to indicate an old line instead of '-'"
 msgstr ""
 
-#: diff.c:5482
+#: diff.c:5493
 msgid "specify the character to indicate a context instead of ' '"
 msgstr ""
 
-#: diff.c:5485
+#: diff.c:5496
 msgid "Diff rename options"
 msgstr ""
 
-#: diff.c:5486
+#: diff.c:5497
 msgid "<n>[/<m>]"
 msgstr ""
 
-#: diff.c:5487
+#: diff.c:5498
 msgid "break complete rewrite changes into pairs of delete and create"
 msgstr ""
 
-#: diff.c:5491
+#: diff.c:5502
 msgid "detect renames"
 msgstr ""
 
-#: diff.c:5495
+#: diff.c:5506
 msgid "omit the preimage for deletes"
 msgstr ""
 
-#: diff.c:5498
+#: diff.c:5509
 msgid "detect copies"
 msgstr ""
 
-#: diff.c:5502
+#: diff.c:5513
 msgid "use unmodified files as source to find copies"
 msgstr ""
 
-#: diff.c:5504
+#: diff.c:5515
 msgid "disable rename detection"
 msgstr ""
 
-#: diff.c:5507
+#: diff.c:5518
 msgid "use empty blobs as rename source"
 msgstr ""
 
-#: diff.c:5509
+#: diff.c:5520
 msgid "continue listing the history of a file beyond renames"
 msgstr ""
 
-#: diff.c:5512
+#: diff.c:5523
 msgid ""
 "prevent rename/copy detection if the number of rename/copy targets exceeds "
 "given limit"
 msgstr ""
 
-#: diff.c:5514
+#: diff.c:5525
 msgid "Diff algorithm options"
 msgstr ""
 
-#: diff.c:5516
+#: diff.c:5527
 msgid "produce the smallest possible diff"
 msgstr ""
 
-#: diff.c:5519
+#: diff.c:5530
 msgid "ignore whitespace when comparing lines"
 msgstr ""
 
-#: diff.c:5522
+#: diff.c:5533
 msgid "ignore changes in amount of whitespace"
 msgstr ""
 
-#: diff.c:5525
+#: diff.c:5536
 msgid "ignore changes in whitespace at EOL"
 msgstr ""
 
-#: diff.c:5528
+#: diff.c:5539
 msgid "ignore carrier-return at the end of line"
 msgstr ""
 
-#: diff.c:5531
+#: diff.c:5542
 msgid "ignore changes whose lines are all blank"
 msgstr ""
 
-#: diff.c:5533 diff.c:5555 diff.c:5558 diff.c:5603
+#: diff.c:5544 diff.c:5566 diff.c:5569 diff.c:5614
 msgid "<regex>"
 msgstr ""
 
-#: diff.c:5534
+#: diff.c:5545
 msgid "ignore changes whose all lines match <regex>"
 msgstr ""
 
-#: diff.c:5537
+#: diff.c:5548
 msgid "heuristic to shift diff hunk boundaries for easy reading"
 msgstr ""
 
-#: diff.c:5540
+#: diff.c:5551
 msgid "generate diff using the \"patience diff\" algorithm"
 msgstr ""
 
-#: diff.c:5544
+#: diff.c:5555
 msgid "generate diff using the \"histogram diff\" algorithm"
 msgstr ""
 
-#: diff.c:5546
+#: diff.c:5557
 msgid "<algorithm>"
 msgstr ""
 
-#: diff.c:5547
+#: diff.c:5558
 msgid "choose a diff algorithm"
 msgstr ""
 
-#: diff.c:5549
+#: diff.c:5560
 msgid "<text>"
 msgstr ""
 
-#: diff.c:5550
+#: diff.c:5561
 msgid "generate diff using the \"anchored diff\" algorithm"
 msgstr ""
 
-#: diff.c:5552 diff.c:5561 diff.c:5564
+#: diff.c:5563 diff.c:5572 diff.c:5575
 msgid "<mode>"
 msgstr ""
 
-#: diff.c:5553
+#: diff.c:5564
 msgid "show word diff, using <mode> to delimit changed words"
 msgstr ""
 
-#: diff.c:5556
+#: diff.c:5567
 msgid "use <regex> to decide what a word is"
 msgstr ""
 
-#: diff.c:5559
+#: diff.c:5570
 msgid "equivalent to --word-diff=color --word-diff-regex=<regex>"
 msgstr ""
 
-#: diff.c:5562
+#: diff.c:5573
 msgid "moved lines of code are colored differently"
 msgstr ""
 
-#: diff.c:5565
+#: diff.c:5576
 msgid "how white spaces are ignored in --color-moved"
 msgstr ""
 
-#: diff.c:5568
+#: diff.c:5579
 msgid "Other diff options"
 msgstr ""
 
-#: diff.c:5570
+#: diff.c:5581
 msgid "when run from subdir, exclude changes outside and show relative paths"
 msgstr ""
 
-#: diff.c:5574
+#: diff.c:5585
 msgid "treat all files as text"
 msgstr ""
 
-#: diff.c:5576
+#: diff.c:5587
 msgid "swap two inputs, reverse the diff"
 msgstr ""
 
-#: diff.c:5578
+#: diff.c:5589
 msgid "exit with 1 if there were differences, 0 otherwise"
 msgstr ""
 
-#: diff.c:5580
+#: diff.c:5591
 msgid "disable all output of the program"
 msgstr ""
 
-#: diff.c:5582
+#: diff.c:5593
 msgid "allow an external diff helper to be executed"
 msgstr ""
 
-#: diff.c:5584
+#: diff.c:5595
 msgid "run external text conversion filters when comparing binary files"
 msgstr ""
 
-#: diff.c:5586
+#: diff.c:5597
 msgid "<when>"
 msgstr ""
 
-#: diff.c:5587
+#: diff.c:5598
 msgid "ignore changes to submodules in the diff generation"
 msgstr ""
 
-#: diff.c:5590
+#: diff.c:5601
 msgid "<format>"
 msgstr ""
 
-#: diff.c:5591
+#: diff.c:5602
 msgid "specify how differences in submodules are shown"
 msgstr ""
 
-#: diff.c:5595
+#: diff.c:5606
 msgid "hide 'git add -N' entries from the index"
 msgstr ""
 
-#: diff.c:5598
+#: diff.c:5609
 msgid "treat 'git add -N' entries as real in the index"
 msgstr ""
 
-#: diff.c:5600
+#: diff.c:5611
 msgid "<string>"
 msgstr ""
 
-#: diff.c:5601
+#: diff.c:5612
 msgid ""
 "look for differences that change the number of occurrences of the specified "
 "string"
 msgstr ""
 
-#: diff.c:5604
+#: diff.c:5615
 msgid ""
 "look for differences that change the number of occurrences of the specified "
 "regex"
 msgstr ""
 
-#: diff.c:5607
+#: diff.c:5618
 msgid "show all changes in the changeset with -S or -G"
 msgstr ""
 
-#: diff.c:5610
+#: diff.c:5621
 msgid "treat <string> in -S as extended POSIX regular expression"
 msgstr ""
 
-#: diff.c:5613
+#: diff.c:5624
 msgid "control the order in which files appear in the output"
 msgstr ""
 
-#: diff.c:5614 diff.c:5617
+#: diff.c:5625 diff.c:5628
 msgid "<path>"
 msgstr ""
 
-#: diff.c:5615
+#: diff.c:5626
 msgid "show the change in the specified path first"
 msgstr ""
 
-#: diff.c:5618
+#: diff.c:5629
 msgid "skip the output to the specified path"
 msgstr ""
 
-#: diff.c:5620
+#: diff.c:5631
 msgid "<object-id>"
 msgstr ""
 
-#: diff.c:5621
+#: diff.c:5632
 msgid ""
 "look for differences that change the number of occurrences of the specified "
 "object"
 msgstr ""
 
-#: diff.c:5623
+#: diff.c:5634
 msgid "[(A|C|D|M|R|T|U|X|B)...[*]]"
 msgstr ""
 
-#: diff.c:5624
+#: diff.c:5635
 msgid "select files by diff type"
 msgstr ""
 
-#: diff.c:5626
+#: diff.c:5637
 msgid "<file>"
 msgstr ""
 
-#: diff.c:5627
+#: diff.c:5638
 msgid "Output to a specific file"
 msgstr ""
 
-#: diff.c:6285
+#: diff.c:6310
 msgid "exhaustive rename detection was skipped due to too many files."
 msgstr ""
 
-#: diff.c:6288
+#: diff.c:6313
 msgid "only found copies from modified paths due to too many files."
 msgstr ""
 
-#: diff.c:6291
+#: diff.c:6316
 #, c-format
 msgid ""
 "you may want to set your %s variable to at least %d and retry the command."
@@ -4140,24 +4140,24 @@ msgstr ""
 msgid "ignored invalid color '%.*s' in log.graphColors"
 msgstr ""
 
-#: grep.c:451
+#: grep.c:531
 msgid ""
 "given pattern contains NULL byte (via -f <file>). This is only supported "
 "with -P under PCRE v2"
 msgstr ""
 
-#: grep.c:1862
+#: grep.c:1942
 #, c-format
 msgid "'%s': unable to read %s"
 msgstr ""
 
-#: grep.c:1879 setup.c:177 builtin/clone.c:303 builtin/diff.c:90
+#: grep.c:1959 setup.c:177 builtin/clone.c:303 builtin/diff.c:90
 #: builtin/rm.c:136
 #, c-format
 msgid "failed to stat '%s'"
 msgstr ""
 
-#: grep.c:1890
+#: grep.c:1970
 #, c-format
 msgid "'%s': short read"
 msgstr ""
@@ -6237,7 +6237,7 @@ msgstr ""
 #: read-cache.c:2079 read-cache.c:2385 rerere.c:549 rerere.c:583 rerere.c:1099
 #: submodule.c:1669 builtin/add.c:595 builtin/check-ignore.c:183
 #: builtin/checkout.c:532 builtin/checkout.c:724 builtin/clean.c:1013
-#: builtin/commit.c:378 builtin/diff-tree.c:122 builtin/grep.c:521
+#: builtin/commit.c:378 builtin/diff-tree.c:122 builtin/grep.c:519
 #: builtin/mv.c:148 builtin/reset.c:499 builtin/rm.c:293
 #: builtin/submodule--helper.c:328 builtin/submodule--helper.c:3250
 msgid "index file corrupt"
@@ -7089,7 +7089,7 @@ msgstr ""
 msgid "Recorded preimage for '%s'"
 msgstr ""
 
-#: rerere.c:869 submodule.c:2131 builtin/log.c:2042
+#: rerere.c:869 submodule.c:2131 builtin/log.c:2032
 #: builtin/submodule--helper.c:1778 builtin/submodule--helper.c:1821
 #, c-format
 msgid "could not create directory '%s'"
@@ -7146,7 +7146,7 @@ msgstr ""
 msgid "your current branch '%s' does not have any commits yet"
 msgstr ""
 
-#: revision.c:2889
+#: revision.c:2891
 msgid "-L does not yet support diff formats besides -p and -s"
 msgstr ""
 
@@ -7723,7 +7723,7 @@ msgid "cannot abort from a branch yet to be born"
 msgstr ""
 
 #: sequencer.c:3180 builtin/fetch.c:1000 builtin/fetch.c:1412
-#: builtin/grep.c:774
+#: builtin/grep.c:772
 #, c-format
 msgid "cannot open '%s'"
 msgstr ""
@@ -9812,7 +9812,7 @@ msgid "dry run"
 msgstr ""
 
 #: builtin/add.c:364 builtin/check-ignore.c:22 builtin/commit.c:1483
-#: builtin/count-objects.c:98 builtin/fsck.c:789 builtin/log.c:2338
+#: builtin/count-objects.c:98 builtin/fsck.c:789 builtin/log.c:2328
 #: builtin/mv.c:123 builtin/read-tree.c:120
 msgid "be verbose"
 msgstr ""
@@ -10236,7 +10236,7 @@ msgid "pass it through git-apply"
 msgstr ""
 
 #: builtin/am.c:2373 builtin/commit.c:1514 builtin/fmt-merge-msg.c:18
-#: builtin/fmt-merge-msg.c:21 builtin/grep.c:920 builtin/merge.c:263
+#: builtin/fmt-merge-msg.c:21 builtin/grep.c:919 builtin/merge.c:263
 #: builtin/pull.c:142 builtin/pull.c:204 builtin/pull.c:221
 #: builtin/rebase.c:1072 builtin/repack.c:752 builtin/repack.c:756
 #: builtin/repack.c:758 builtin/show-branch.c:649 builtin/show-ref.c:172
@@ -10831,7 +10831,7 @@ msgstr ""
 msgid "ignore whitespace differences"
 msgstr ""
 
-#: builtin/blame.c:879 builtin/log.c:1858
+#: builtin/blame.c:879 builtin/log.c:1851
 msgid "rev"
 msgstr ""
 
@@ -12065,7 +12065,7 @@ msgstr ""
 msgid "perform a 3-way merge with the new branch"
 msgstr ""
 
-#: builtin/checkout.c:1544 builtin/log.c:1845 parse-options.h:333
+#: builtin/checkout.c:1544 builtin/log.c:1838 parse-options.h:333
 msgid "style"
 msgstr ""
 
@@ -12344,7 +12344,7 @@ msgid "remove whole directories"
 msgstr ""
 
 #: builtin/clean.c:932 builtin/describe.c:565 builtin/describe.c:567
-#: builtin/grep.c:938 builtin/log.c:186 builtin/log.c:188
+#: builtin/grep.c:937 builtin/log.c:185 builtin/log.c:187
 #: builtin/ls-files.c:651 builtin/name-rev.c:535 builtin/name-rev.c:537
 #: builtin/show-ref.c:179
 msgid "pattern"
@@ -12460,7 +12460,7 @@ msgstr ""
 msgid "path to git-upload-pack on the remote"
 msgstr ""
 
-#: builtin/clone.c:131 builtin/fetch.c:182 builtin/grep.c:877
+#: builtin/clone.c:131 builtin/fetch.c:182 builtin/grep.c:876
 #: builtin/pull.c:212
 msgid "depth"
 msgstr ""
@@ -12664,7 +12664,7 @@ msgid "working tree '%s' already exists."
 msgstr ""
 
 #: builtin/clone.c:970 builtin/clone.c:991 builtin/difftool.c:256
-#: builtin/log.c:2037 builtin/worktree.c:281 builtin/worktree.c:313
+#: builtin/log.c:2027 builtin/worktree.c:281 builtin/worktree.c:313
 #, c-format
 msgid "could not create leading directories of '%s'"
 msgstr ""
@@ -12776,7 +12776,7 @@ msgid ""
 "paths] [--[no-]max-new-filters <n>] [--[no-]progress] <split options>"
 msgstr ""
 
-#: builtin/commit-graph.c:51 builtin/fetch.c:193 builtin/log.c:1814
+#: builtin/commit-graph.c:51 builtin/fetch.c:193 builtin/log.c:1807
 msgid "dir"
 msgstr ""
 
@@ -12872,7 +12872,7 @@ msgstr ""
 msgid "duplicate parent %s ignored"
 msgstr ""
 
-#: builtin/commit-tree.c:56 builtin/commit-tree.c:134 builtin/log.c:591
+#: builtin/commit-tree.c:56 builtin/commit-tree.c:134 builtin/log.c:590
 #, c-format
 msgid "not a valid object name %s"
 msgstr ""
@@ -13386,7 +13386,7 @@ msgstr ""
 msgid "add custom trailer(s)"
 msgstr ""
 
-#: builtin/commit.c:1637 builtin/log.c:1789 builtin/merge.c:306
+#: builtin/commit.c:1637 builtin/log.c:1782 builtin/merge.c:306
 #: builtin/pull.c:146 builtin/revert.c:110
 msgid "add a Signed-off-by trailer"
 msgstr ""
@@ -14009,7 +14009,7 @@ msgstr ""
 msgid "Not a git repository"
 msgstr ""
 
-#: builtin/diff.c:537 builtin/grep.c:700
+#: builtin/diff.c:537 builtin/grep.c:698
 #, c-format
 msgid "invalid object '%s' given."
 msgstr ""
@@ -14215,7 +14215,7 @@ msgstr ""
 msgid "skip output of blob data"
 msgstr ""
 
-#: builtin/fast-export.c:1196 builtin/log.c:1861
+#: builtin/fast-export.c:1196 builtin/log.c:1854
 msgid "refspec"
 msgstr ""
 
@@ -15418,16 +15418,16 @@ msgstr ""
 msgid "invalid subcommand: %s"
 msgstr ""
 
-#: builtin/grep.c:32
+#: builtin/grep.c:30
 msgid "git grep [<options>] [-e] <pattern> [<rev>...] [[--] <path>...]"
 msgstr ""
 
-#: builtin/grep.c:241
+#: builtin/grep.c:239
 #, c-format
 msgid "grep: failed to create thread: %s"
 msgstr ""
 
-#: builtin/grep.c:295
+#: builtin/grep.c:293
 #, c-format
 msgid "invalid number of threads specified (%d) for %s"
 msgstr ""
@@ -15436,258 +15436,258 @@ msgstr ""
 #. variable for tweaking threads, currently
 #. grep.threads
 #.
-#: builtin/grep.c:303 builtin/index-pack.c:1582 builtin/index-pack.c:1785
+#: builtin/grep.c:301 builtin/index-pack.c:1582 builtin/index-pack.c:1785
 #: builtin/pack-objects.c:3151
 #, c-format
 msgid "no threads support, ignoring %s"
 msgstr ""
 
-#: builtin/grep.c:490 builtin/grep.c:619 builtin/grep.c:659
+#: builtin/grep.c:488 builtin/grep.c:617 builtin/grep.c:657
 #, c-format
 msgid "unable to read tree (%s)"
 msgstr ""
 
-#: builtin/grep.c:674
+#: builtin/grep.c:672
 #, c-format
 msgid "unable to grep from object of type %s"
 msgstr ""
 
-#: builtin/grep.c:754
+#: builtin/grep.c:752
 #, c-format
 msgid "switch `%c' expects a numerical value"
 msgstr ""
 
-#: builtin/grep.c:852
+#: builtin/grep.c:851
 msgid "search in index instead of in the work tree"
 msgstr ""
 
-#: builtin/grep.c:854
+#: builtin/grep.c:853
 msgid "find in contents not managed by git"
 msgstr ""
 
-#: builtin/grep.c:856
+#: builtin/grep.c:855
 msgid "search in both tracked and untracked files"
 msgstr ""
 
-#: builtin/grep.c:858
+#: builtin/grep.c:857
 msgid "ignore files specified via '.gitignore'"
 msgstr ""
 
-#: builtin/grep.c:860
+#: builtin/grep.c:859
 msgid "recursively search in each submodule"
 msgstr ""
 
-#: builtin/grep.c:863
+#: builtin/grep.c:862
 msgid "show non-matching lines"
 msgstr ""
 
-#: builtin/grep.c:865
+#: builtin/grep.c:864
 msgid "case insensitive matching"
 msgstr ""
 
-#: builtin/grep.c:867
+#: builtin/grep.c:866
 msgid "match patterns only at word boundaries"
 msgstr ""
 
-#: builtin/grep.c:869
+#: builtin/grep.c:868
 msgid "process binary files as text"
 msgstr ""
 
-#: builtin/grep.c:871
+#: builtin/grep.c:870
 msgid "don't match patterns in binary files"
 msgstr ""
 
-#: builtin/grep.c:874
+#: builtin/grep.c:873
 msgid "process binary files with textconv filters"
 msgstr ""
 
-#: builtin/grep.c:876
+#: builtin/grep.c:875
 msgid "search in subdirectories (default)"
 msgstr ""
 
-#: builtin/grep.c:878
+#: builtin/grep.c:877
 msgid "descend at most <depth> levels"
 msgstr ""
 
-#: builtin/grep.c:882
+#: builtin/grep.c:881
 msgid "use extended POSIX regular expressions"
 msgstr ""
 
-#: builtin/grep.c:885
+#: builtin/grep.c:884
 msgid "use basic POSIX regular expressions (default)"
 msgstr ""
 
-#: builtin/grep.c:888
+#: builtin/grep.c:887
 msgid "interpret patterns as fixed strings"
 msgstr ""
 
-#: builtin/grep.c:891
+#: builtin/grep.c:890
 msgid "use Perl-compatible regular expressions"
 msgstr ""
 
-#: builtin/grep.c:894
+#: builtin/grep.c:893
 msgid "show line numbers"
 msgstr ""
 
-#: builtin/grep.c:895
+#: builtin/grep.c:894
 msgid "show column number of first match"
 msgstr ""
 
-#: builtin/grep.c:896
+#: builtin/grep.c:895
 msgid "don't show filenames"
 msgstr ""
 
-#: builtin/grep.c:897
+#: builtin/grep.c:896
 msgid "show filenames"
 msgstr ""
 
-#: builtin/grep.c:899
+#: builtin/grep.c:898
 msgid "show filenames relative to top directory"
 msgstr ""
 
-#: builtin/grep.c:901
+#: builtin/grep.c:900
 msgid "show only filenames instead of matching lines"
 msgstr ""
 
-#: builtin/grep.c:903
+#: builtin/grep.c:902
 msgid "synonym for --files-with-matches"
 msgstr ""
 
-#: builtin/grep.c:906
+#: builtin/grep.c:905
 msgid "show only the names of files without match"
 msgstr ""
 
-#: builtin/grep.c:908
+#: builtin/grep.c:907
 msgid "print NUL after filenames"
 msgstr ""
 
-#: builtin/grep.c:911
+#: builtin/grep.c:910
 msgid "show only matching parts of a line"
 msgstr ""
 
-#: builtin/grep.c:913
+#: builtin/grep.c:912
 msgid "show the number of matches instead of matching lines"
 msgstr ""
 
-#: builtin/grep.c:914
+#: builtin/grep.c:913
 msgid "highlight matches"
 msgstr ""
 
-#: builtin/grep.c:916
+#: builtin/grep.c:915
 msgid "print empty line between matches from different files"
 msgstr ""
 
-#: builtin/grep.c:918
+#: builtin/grep.c:917
 msgid "show filename only once above matches from same file"
 msgstr ""
 
-#: builtin/grep.c:921
+#: builtin/grep.c:920
 msgid "show <n> context lines before and after matches"
 msgstr ""
 
-#: builtin/grep.c:924
+#: builtin/grep.c:923
 msgid "show <n> context lines before matches"
 msgstr ""
 
-#: builtin/grep.c:926
+#: builtin/grep.c:925
 msgid "show <n> context lines after matches"
 msgstr ""
 
-#: builtin/grep.c:928
+#: builtin/grep.c:927
 msgid "use <n> worker threads"
 msgstr ""
 
-#: builtin/grep.c:929
+#: builtin/grep.c:928
 msgid "shortcut for -C NUM"
 msgstr ""
 
-#: builtin/grep.c:932
+#: builtin/grep.c:931
 msgid "show a line with the function name before matches"
 msgstr ""
 
-#: builtin/grep.c:934
+#: builtin/grep.c:933
 msgid "show the surrounding function"
 msgstr ""
 
-#: builtin/grep.c:937
+#: builtin/grep.c:936
 msgid "read patterns from file"
 msgstr ""
 
-#: builtin/grep.c:939
+#: builtin/grep.c:938
 msgid "match <pattern>"
 msgstr ""
 
-#: builtin/grep.c:941
+#: builtin/grep.c:940
 msgid "combine patterns specified with -e"
 msgstr ""
 
-#: builtin/grep.c:953
+#: builtin/grep.c:952
 msgid "indicate hit with exit status without output"
 msgstr ""
 
-#: builtin/grep.c:955
+#: builtin/grep.c:954
 msgid "show only matches from files that match all patterns"
 msgstr ""
 
-#: builtin/grep.c:958
+#: builtin/grep.c:957
 msgid "pager"
 msgstr ""
 
-#: builtin/grep.c:958
+#: builtin/grep.c:957
 msgid "show matching files in the pager"
 msgstr ""
 
-#: builtin/grep.c:962
+#: builtin/grep.c:961
 msgid "allow calling of grep(1) (ignored by this build)"
 msgstr ""
 
-#: builtin/grep.c:1028
+#: builtin/grep.c:1027
 msgid "no pattern given"
 msgstr ""
 
-#: builtin/grep.c:1064
+#: builtin/grep.c:1063
 msgid "--no-index or --untracked cannot be used with revs"
 msgstr ""
 
-#: builtin/grep.c:1072
+#: builtin/grep.c:1071
 #, c-format
 msgid "unable to resolve revision: %s"
 msgstr ""
 
-#: builtin/grep.c:1102
+#: builtin/grep.c:1101
 msgid "--untracked not supported with --recurse-submodules"
 msgstr ""
 
-#: builtin/grep.c:1106
+#: builtin/grep.c:1105
 msgid "invalid option combination, ignoring --threads"
 msgstr ""
 
-#: builtin/grep.c:1109 builtin/pack-objects.c:4326
+#: builtin/grep.c:1108 builtin/pack-objects.c:4326
 msgid "no threads support, ignoring --threads"
 msgstr ""
 
-#: builtin/grep.c:1112 builtin/index-pack.c:1579 builtin/pack-objects.c:3148
+#: builtin/grep.c:1111 builtin/index-pack.c:1579 builtin/pack-objects.c:3148
 #, c-format
 msgid "invalid number of threads specified (%d)"
 msgstr ""
 
-#: builtin/grep.c:1146
+#: builtin/grep.c:1145
 msgid "--open-files-in-pager only works on the worktree"
 msgstr ""
 
-#: builtin/grep.c:1172
+#: builtin/grep.c:1171
 msgid "--cached or --untracked cannot be used with --no-index"
 msgstr ""
 
-#: builtin/grep.c:1175
+#: builtin/grep.c:1174
 msgid "--untracked cannot be used with --cached"
 msgstr ""
 
-#: builtin/grep.c:1181
+#: builtin/grep.c:1180
 msgid "--[no-]exclude-standard cannot be used for tracked contents"
 msgstr ""
 
-#: builtin/grep.c:1189
+#: builtin/grep.c:1188
 msgid "both --cached and trees are given"
 msgstr ""
 
@@ -16327,408 +16327,408 @@ msgstr ""
 msgid "no input file given for in-place editing"
 msgstr ""
 
-#: builtin/log.c:61
+#: builtin/log.c:60
 msgid "git log [<options>] [<revision-range>] [[--] <path>...]"
 msgstr ""
 
-#: builtin/log.c:62
+#: builtin/log.c:61
 msgid "git show [<options>] <object>..."
 msgstr ""
 
-#: builtin/log.c:115
+#: builtin/log.c:114
 #, c-format
 msgid "invalid --decorate option: %s"
 msgstr ""
 
-#: builtin/log.c:182
+#: builtin/log.c:181
 msgid "show source"
 msgstr ""
 
-#: builtin/log.c:183
+#: builtin/log.c:182
 msgid "use mail map file"
 msgstr ""
 
-#: builtin/log.c:186
+#: builtin/log.c:185
 msgid "only decorate refs that match <pattern>"
 msgstr ""
 
-#: builtin/log.c:188
+#: builtin/log.c:187
 msgid "do not decorate refs that match <pattern>"
 msgstr ""
 
-#: builtin/log.c:189
+#: builtin/log.c:188
 msgid "decorate options"
 msgstr ""
 
-#: builtin/log.c:192
+#: builtin/log.c:191
 msgid ""
 "trace the evolution of line range <start>,<end> or function :<funcname> in "
 "<file>"
 msgstr ""
 
-#: builtin/log.c:215
+#: builtin/log.c:214
 msgid "-L<range>:<file> cannot be used with pathspec"
 msgstr ""
 
-#: builtin/log.c:323
+#: builtin/log.c:322
 #, c-format
 msgid "Final output: %d %s\n"
 msgstr ""
 
-#: builtin/log.c:430
+#: builtin/log.c:429
 msgid "unable to create temporary object directory"
 msgstr ""
 
-#: builtin/log.c:600
+#: builtin/log.c:599
 #, c-format
 msgid "git show %s: bad file"
 msgstr ""
 
-#: builtin/log.c:615 builtin/log.c:707
+#: builtin/log.c:614 builtin/log.c:704
 #, c-format
 msgid "could not read object %s"
 msgstr ""
 
-#: builtin/log.c:732
+#: builtin/log.c:729
 #, c-format
 msgid "unknown type: %d"
 msgstr ""
 
-#: builtin/log.c:881
+#: builtin/log.c:874
 #, c-format
 msgid "%s: invalid cover from description mode"
 msgstr ""
 
-#: builtin/log.c:888
+#: builtin/log.c:881
 msgid "format.headers without value"
 msgstr ""
 
-#: builtin/log.c:1017
+#: builtin/log.c:1010
 #, c-format
 msgid "cannot open patch file %s"
 msgstr ""
 
-#: builtin/log.c:1034
+#: builtin/log.c:1027
 msgid "need exactly one range"
 msgstr ""
 
-#: builtin/log.c:1044
+#: builtin/log.c:1037
 msgid "not a range"
 msgstr ""
 
-#: builtin/log.c:1208
+#: builtin/log.c:1201
 msgid "cover letter needs email format"
 msgstr ""
 
-#: builtin/log.c:1214
+#: builtin/log.c:1207
 msgid "failed to create cover-letter file"
 msgstr ""
 
-#: builtin/log.c:1301
+#: builtin/log.c:1294
 #, c-format
 msgid "insane in-reply-to: %s"
 msgstr ""
 
-#: builtin/log.c:1328
+#: builtin/log.c:1321
 msgid "git format-patch [<options>] [<since> | <revision-range>]"
 msgstr ""
 
-#: builtin/log.c:1386
+#: builtin/log.c:1379
 msgid "two output directories?"
 msgstr ""
 
-#: builtin/log.c:1537 builtin/log.c:2369 builtin/log.c:2371 builtin/log.c:2383
+#: builtin/log.c:1530 builtin/log.c:2359 builtin/log.c:2361 builtin/log.c:2373
 #, c-format
 msgid "unknown commit %s"
 msgstr ""
 
-#: builtin/log.c:1548 builtin/replace.c:58 builtin/replace.c:207
+#: builtin/log.c:1541 builtin/replace.c:58 builtin/replace.c:207
 #: builtin/replace.c:210
 #, c-format
 msgid "failed to resolve '%s' as a valid ref"
 msgstr ""
 
-#: builtin/log.c:1557
+#: builtin/log.c:1550
 msgid "could not find exact merge base"
 msgstr ""
 
-#: builtin/log.c:1567
+#: builtin/log.c:1560
 msgid ""
 "failed to get upstream, if you want to record base commit automatically,\n"
 "please use git branch --set-upstream-to to track a remote branch.\n"
 "Or you could specify base commit by --base=<base-commit-id> manually"
 msgstr ""
 
-#: builtin/log.c:1590
+#: builtin/log.c:1583
 msgid "failed to find exact merge base"
 msgstr ""
 
-#: builtin/log.c:1607
+#: builtin/log.c:1600
 msgid "base commit should be the ancestor of revision list"
 msgstr ""
 
-#: builtin/log.c:1617
+#: builtin/log.c:1610
 msgid "base commit shouldn't be in revision list"
 msgstr ""
 
-#: builtin/log.c:1675
+#: builtin/log.c:1668
 msgid "cannot get patch id"
 msgstr ""
 
-#: builtin/log.c:1738
+#: builtin/log.c:1731
 msgid "failed to infer range-diff origin of current series"
 msgstr ""
 
-#: builtin/log.c:1740
+#: builtin/log.c:1733
 #, c-format
 msgid "using '%s' as range-diff origin of current series"
 msgstr ""
 
-#: builtin/log.c:1784
+#: builtin/log.c:1777
 msgid "use [PATCH n/m] even with a single patch"
 msgstr ""
 
-#: builtin/log.c:1787
+#: builtin/log.c:1780
 msgid "use [PATCH] even with multiple patches"
 msgstr ""
 
-#: builtin/log.c:1791
+#: builtin/log.c:1784
 msgid "print patches to standard out"
 msgstr ""
 
-#: builtin/log.c:1793
+#: builtin/log.c:1786
 msgid "generate a cover letter"
 msgstr ""
 
-#: builtin/log.c:1795
+#: builtin/log.c:1788
 msgid "use simple number sequence for output file names"
 msgstr ""
 
-#: builtin/log.c:1796
+#: builtin/log.c:1789
 msgid "sfx"
 msgstr ""
 
-#: builtin/log.c:1797
+#: builtin/log.c:1790
 msgid "use <sfx> instead of '.patch'"
 msgstr ""
 
-#: builtin/log.c:1799
+#: builtin/log.c:1792
 msgid "start numbering patches at <n> instead of 1"
 msgstr ""
 
-#: builtin/log.c:1800
+#: builtin/log.c:1793
 msgid "reroll-count"
 msgstr ""
 
-#: builtin/log.c:1801
+#: builtin/log.c:1794
 msgid "mark the series as Nth re-roll"
 msgstr ""
 
-#: builtin/log.c:1803
+#: builtin/log.c:1796
 msgid "max length of output filename"
 msgstr ""
 
-#: builtin/log.c:1805
+#: builtin/log.c:1798
 msgid "use [RFC PATCH] instead of [PATCH]"
 msgstr ""
 
-#: builtin/log.c:1808
+#: builtin/log.c:1801
 msgid "cover-from-description-mode"
 msgstr ""
 
-#: builtin/log.c:1809
+#: builtin/log.c:1802
 msgid "generate parts of a cover letter based on a branch's description"
 msgstr ""
 
-#: builtin/log.c:1811
+#: builtin/log.c:1804
 msgid "use [<prefix>] instead of [PATCH]"
 msgstr ""
 
-#: builtin/log.c:1814
+#: builtin/log.c:1807
 msgid "store resulting files in <dir>"
 msgstr ""
 
-#: builtin/log.c:1817
+#: builtin/log.c:1810
 msgid "don't strip/add [PATCH]"
 msgstr ""
 
-#: builtin/log.c:1820
+#: builtin/log.c:1813
 msgid "don't output binary diffs"
 msgstr ""
 
-#: builtin/log.c:1822
+#: builtin/log.c:1815
 msgid "output all-zero hash in From header"
 msgstr ""
 
-#: builtin/log.c:1824
+#: builtin/log.c:1817
 msgid "don't include a patch matching a commit upstream"
 msgstr ""
 
-#: builtin/log.c:1826
+#: builtin/log.c:1819
 msgid "show patch format instead of default (patch + stat)"
 msgstr ""
 
-#: builtin/log.c:1828
+#: builtin/log.c:1821
 msgid "Messaging"
 msgstr ""
 
-#: builtin/log.c:1829
+#: builtin/log.c:1822
 msgid "header"
 msgstr ""
 
-#: builtin/log.c:1830
+#: builtin/log.c:1823
 msgid "add email header"
 msgstr ""
 
-#: builtin/log.c:1831 builtin/log.c:1832
+#: builtin/log.c:1824 builtin/log.c:1825
 msgid "email"
 msgstr ""
 
-#: builtin/log.c:1831
+#: builtin/log.c:1824
 msgid "add To: header"
 msgstr ""
 
-#: builtin/log.c:1832
+#: builtin/log.c:1825
 msgid "add Cc: header"
 msgstr ""
 
-#: builtin/log.c:1833
+#: builtin/log.c:1826
 msgid "ident"
 msgstr ""
 
-#: builtin/log.c:1834
+#: builtin/log.c:1827
 msgid "set From address to <ident> (or committer ident if absent)"
 msgstr ""
 
-#: builtin/log.c:1836
+#: builtin/log.c:1829
 msgid "message-id"
 msgstr ""
 
-#: builtin/log.c:1837
+#: builtin/log.c:1830
 msgid "make first mail a reply to <message-id>"
 msgstr ""
 
-#: builtin/log.c:1838 builtin/log.c:1841
+#: builtin/log.c:1831 builtin/log.c:1834
 msgid "boundary"
 msgstr ""
 
-#: builtin/log.c:1839
+#: builtin/log.c:1832
 msgid "attach the patch"
 msgstr ""
 
-#: builtin/log.c:1842
+#: builtin/log.c:1835
 msgid "inline the patch"
 msgstr ""
 
-#: builtin/log.c:1846
+#: builtin/log.c:1839
 msgid "enable message threading, styles: shallow, deep"
 msgstr ""
 
-#: builtin/log.c:1848
+#: builtin/log.c:1841
 msgid "signature"
 msgstr ""
 
-#: builtin/log.c:1849
+#: builtin/log.c:1842
 msgid "add a signature"
 msgstr ""
 
-#: builtin/log.c:1850
+#: builtin/log.c:1843
 msgid "base-commit"
 msgstr ""
 
-#: builtin/log.c:1851
+#: builtin/log.c:1844
 msgid "add prerequisite tree info to the patch series"
 msgstr ""
 
-#: builtin/log.c:1854
+#: builtin/log.c:1847
 msgid "add a signature from a file"
 msgstr ""
 
-#: builtin/log.c:1855
+#: builtin/log.c:1848
 msgid "don't print the patch filenames"
 msgstr ""
 
-#: builtin/log.c:1857
+#: builtin/log.c:1850
 msgid "show progress while generating patches"
 msgstr ""
 
-#: builtin/log.c:1859
+#: builtin/log.c:1852
 msgid "show changes against <rev> in cover letter or single patch"
 msgstr ""
 
-#: builtin/log.c:1862
+#: builtin/log.c:1855
 msgid "show changes against <refspec> in cover letter or single patch"
 msgstr ""
 
-#: builtin/log.c:1864 builtin/range-diff.c:28
+#: builtin/log.c:1857 builtin/range-diff.c:28
 msgid "percentage by which creation is weighted"
 msgstr ""
 
-#: builtin/log.c:1954
+#: builtin/log.c:1944
 #, c-format
 msgid "invalid ident line: %s"
 msgstr ""
 
-#: builtin/log.c:1979
+#: builtin/log.c:1969
 msgid "--name-only does not make sense"
 msgstr ""
 
-#: builtin/log.c:1981
+#: builtin/log.c:1971
 msgid "--name-status does not make sense"
 msgstr ""
 
-#: builtin/log.c:1983
+#: builtin/log.c:1973
 msgid "--check does not make sense"
 msgstr ""
 
-#: builtin/log.c:1985
-msgid "--remerge_diff does not make sense"
+#: builtin/log.c:1975
+msgid "--remerge-diff does not make sense"
 msgstr ""
 
-#: builtin/log.c:2129
+#: builtin/log.c:2119
 msgid "--interdiff requires --cover-letter or single patch"
 msgstr ""
 
-#: builtin/log.c:2133
+#: builtin/log.c:2123
 msgid "Interdiff:"
 msgstr ""
 
-#: builtin/log.c:2134
+#: builtin/log.c:2124
 #, c-format
 msgid "Interdiff against v%d:"
 msgstr ""
 
-#: builtin/log.c:2144
+#: builtin/log.c:2134
 msgid "--range-diff requires --cover-letter or single patch"
 msgstr ""
 
-#: builtin/log.c:2152
+#: builtin/log.c:2142
 msgid "Range-diff:"
 msgstr ""
 
-#: builtin/log.c:2153
+#: builtin/log.c:2143
 #, c-format
 msgid "Range-diff against v%d:"
 msgstr ""
 
-#: builtin/log.c:2164
+#: builtin/log.c:2154
 #, c-format
 msgid "unable to read signature file '%s'"
 msgstr ""
 
-#: builtin/log.c:2200
+#: builtin/log.c:2190
 msgid "Generating patches"
 msgstr ""
 
-#: builtin/log.c:2244
+#: builtin/log.c:2234
 msgid "failed to create output files"
 msgstr ""
 
-#: builtin/log.c:2304
+#: builtin/log.c:2294
 msgid "git cherry [-v] [<upstream> [<head> [<limit>]]]"
 msgstr ""
 
-#: builtin/log.c:2358
+#: builtin/log.c:2348
 #, c-format
 msgid ""
 "Could not find a tracked remote branch, please specify <upstream> manually.\n"
@@ -22312,7 +22312,7 @@ msgstr ""
 msgid "'%s' is not a valid submodule name"
 msgstr ""
 
-#: builtin/submodule--helper.c:3454 git.c:453 git.c:729
+#: builtin/submodule--helper.c:3454 git.c:452 git.c:728
 #, c-format
 msgid "%s doesn't support --super-prefix"
 msgstr ""
@@ -23217,41 +23217,41 @@ msgstr ""
 msgid "recursive alias: %s"
 msgstr ""
 
-#: git.c:480
+#: git.c:479
 msgid "write failure on standard output"
 msgstr ""
 
-#: git.c:482
+#: git.c:481
 msgid "unknown write failure on standard output"
 msgstr ""
 
-#: git.c:484
+#: git.c:483
 msgid "close failed on standard output"
 msgstr ""
 
-#: git.c:838
+#: git.c:837
 #, c-format
 msgid "alias loop detected: expansion of '%s' does not terminate:%s"
 msgstr ""
 
-#: git.c:888
+#: git.c:887
 #, c-format
 msgid "cannot handle %s as a builtin"
 msgstr ""
 
-#: git.c:901
+#: git.c:900
 #, c-format
 msgid ""
 "usage: %s\n"
 "\n"
 msgstr ""
 
-#: git.c:921
+#: git.c:920
 #, c-format
 msgid "expansion of alias '%s' failed; '%s' is not a git command\n"
 msgstr ""
 
-#: git.c:933
+#: git.c:932
 #, c-format
 msgid "failed to run command '%s': %s\n"
 msgstr ""
