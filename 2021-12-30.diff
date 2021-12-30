@@ -1,0 +1,352 @@
+diff --git a/po/git.pot b/po/git.pot
+index 7733ca4..ff3665f 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -673,10 +673,6 @@ msgstr  ""
+ msgid   "%s also locked %s"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "%s and %s are mutually exclusive"
+-msgstr  ""
+-
+ #. TRANSLATORS: This is a line of ambiguous <type>
+ #. object output. E.g. "deadbeef blob".
+ #.
+@@ -781,10 +777,6 @@ msgstr  ""
+ msgid   "%s not allowed: %s:%d"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "%s option is only allowed in list mode"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "%s outside a repository"
+ msgstr  ""
+@@ -805,10 +797,6 @@ msgstr  ""
+ msgid   "%s process failed to wait"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "%s requires %s"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "%s requires a value"
+ msgstr  ""
+@@ -880,10 +868,6 @@ msgid_plural    "%s, %<PRIuMAX> months ago"
+ msgstr[0]       ""
+ msgstr[1]       ""
+ 
+-#, c-format
+-msgid   "%s, %s and %s are mutually exclusive"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "%s, source=%s, destination=%s"
+ msgstr  ""
+@@ -1427,6 +1411,9 @@ msgstr  ""
+ msgid   "'-%c' is incompatible with batch mode"
+ msgstr  ""
+ 
++msgid   "'--pathspec-from-file' and pathspec arguments cannot be used together"
++msgstr  ""
++
+ msgid   "'GIT_AUTHOR_DATE' already given"
+ msgstr  ""
+ 
+@@ -1607,10 +1594,6 @@ msgstr  ""
+ msgid   "*** Commands ***"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "-%c, -%c and --orphan are mutually exclusive"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "---\n"
+         "To remove '%c' lines, make them ' ' lines (context).\n"
+@@ -1656,10 +1639,6 @@ msgstr  ""
+ msgid   "--author '%s' is not 'Name <email>' and matches no existing author"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "--bare and --origin %s options are incompatible."
+-msgstr  ""
+-
+ msgid   "--bisect-log requires 0 arguments"
+ msgstr  ""
+ 
+@@ -1678,9 +1657,6 @@ msgstr  ""
+ msgid   "--branch or --default required"
+ msgstr  ""
+ 
+-msgid   "--broken is incompatible with commit-ishes"
+-msgstr  ""
+-
+ msgid   "--cached or --untracked cannot be used with --no-index"
+ msgstr  ""
+ 
+@@ -1703,6 +1679,12 @@ msgstr  ""
+ msgid   "--convert-graft-file takes no argument"
+ msgstr  ""
+ 
++msgid   "--cruft and -A are incompatible"
++msgstr  ""
++
++msgid   "--cruft and -k are incompatible"
++msgstr  ""
++
+ msgid   "--cruft must be combined with all-into-one"
+ msgstr  ""
+ 
+@@ -1718,15 +1700,9 @@ msgstr  ""
+ msgid   "--delete only accepts plain target ref names"
+ msgstr  ""
+ 
+-msgid   "--depth and --unshallow cannot be used together"
+-msgstr  ""
+-
+ msgid   "--depth is ignored in local clones; use file:// instead."
+ msgstr  ""
+ 
+-msgid   "--dirty is incompatible with commit-ishes"
+-msgstr  ""
+-
+ msgid   "--dump-aliases incompatible with other options\n"
+ msgstr  ""
+ 
+@@ -1795,9 +1771,6 @@ msgstr  ""
+ msgid   "--name-only is only applicable to --list or --get-regexp"
+ msgstr  ""
+ 
+-msgid   "--name-only, --name-status, --check and -s are mutually exclusive"
+-msgstr  ""
+-
+ msgid   "--name-status does not make sense"
+ msgstr  ""
+ 
+@@ -1825,16 +1798,7 @@ msgstr  ""
+ msgid   "--path-format requires an argument"
+ msgstr  ""
+ 
+-msgid   "--pathspec-from-file is incompatible with --staged"
+-msgstr  ""
+-
+-msgid   "--pathspec-from-file is incompatible with pathspec arguments"
+-msgstr  ""
+-
+-msgid   "--pathspec-from-file with -a does not make sense"
+-msgstr  ""
+-
+-msgid   "--pickaxe-all and --find-object are mutually exclusive, use --pickaxe-all with -G and -S"
++msgid   "--pickaxe-all and --find-object cannot be used together, use --pickaxe-all with -G and -S"
+ msgstr  ""
+ 
+ msgid   "--prefix requires an argument"
+@@ -1861,9 +1825,6 @@ msgstr  ""
+ msgid   "--recurse-submodules can only be used to create branches"
+ msgstr  ""
+ 
+-msgid   "--reflog is incompatible with --all, --remotes, --independent or --merge-base"
+-msgstr  ""
+-
+ msgid   "--reflog option needs one branch name"
+ msgstr  ""
+ 
+@@ -1894,10 +1855,6 @@ msgstr  ""
+ msgid   "--shallow-since is ignored in local clones; use file:// instead."
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "--show-current-patch=%s is incompatible with --show-current-patch=%s"
+-msgstr  ""
+-
+ msgid   "--show-origin is only applicable to --get, --get-all, --get-regexp, and --list"
+ msgstr  ""
+ 
+@@ -1942,7 +1899,7 @@ msgid   "--worktree cannot be used with multiple working trees unless the config
+         "section in \"git help worktree\" for details"
+ msgstr  ""
+ 
+-msgid   "-G and --pickaxe-regex are mutually exclusive, use --pickaxe-regex with -S"
++msgid   "-G and --pickaxe-regex cannot be used together, use --pickaxe-regex with -S"
+ msgstr  ""
+ 
+ msgid   "-L does not yet support diff formats besides -p and -s"
+@@ -6513,12 +6470,6 @@ msgid   "You can fix this with 'git rebase --edit-todo' and then run 'git rebase
+         "Or you can abort the rebase with 'git rebase --abort'.\n"
+ msgstr  ""
+ 
+-msgid   "You cannot combine --squash with --commit."
+-msgstr  ""
+-
+-msgid   "You cannot combine --squash with --no-ff."
+-msgstr  ""
+-
+ msgid   "You cannot update a remote ref that points at a non-commit object,\n"
+         "or update a remote ref to make it point at a non-commit object,\n"
+         "without using the '--force' option.\n"
+@@ -7202,6 +7153,9 @@ msgstr  ""
+ msgid   "apply changes matching the given path"
+ msgstr  ""
+ 
++msgid   "apply options and merge options cannot be used together"
++msgstr  ""
++
+ msgid   "apply refspec to exported refs"
+ msgstr  ""
+ 
+@@ -7761,29 +7715,6 @@ msgstr  ""
+ msgid   "cannot close written %s file '%s'"
+ msgstr  ""
+ 
+-msgid   "cannot combine '--keep-base' with '--onto'"
+-msgstr  ""
+-
+-msgid   "cannot combine '--keep-base' with '--root'"
+-msgstr  ""
+-
+-msgid   "cannot combine '--root' with '--fork-point'"
+-msgstr  ""
+-
+-msgid   "cannot combine --exclude-promisor-objects and --missing"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "cannot combine -m with --fixup:%s"
+-msgstr  ""
+-
+-msgid   "cannot combine apply options with merge options"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "cannot combine reword option of --fixup with path '%s'"
+-msgstr  ""
+-
+ msgid   "cannot come back to cwd"
+ msgstr  ""
+ 
+@@ -13410,7 +13341,7 @@ msgstr  ""
+ msgid   "mark the state of ref (or refs)"
+ msgstr  ""
+ 
+-msgid   "marked counting is incompatible with --objects"
++msgid   "marked counting and '--objects' cannot be used together"
+ msgstr  ""
+ 
+ msgid   "master branch"
+@@ -14495,6 +14426,10 @@ msgstr  ""
+ msgid   "option \"%s\" value \"%s\" is not valid for %s"
+ msgstr  ""
+ 
++#, c-format
++msgid   "option '%s' and commit-ishes cannot be used together"
++msgstr  ""
++
+ #, c-format
+ msgid   "option '%s' must come before non-option arguments"
+ msgstr  ""
+@@ -14546,6 +14481,33 @@ msgstr  ""
+ msgid   "option=value"
+ msgstr  ""
+ 
++#, c-format
++msgid   "options '%s' and '%s' cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "options '%s', '%s' and '%s' cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "options '-%c', '-%c' and '--orphan' cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "options '--bare' and '--origin %s' cannot be used together"
++msgstr  ""
++
++msgid   "options '--name-only', '--name-status', '--check' and '-s' cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "options '--show-current-patch=%s' and '--show-current-patch=%s' cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "options '-m' and '--fixup:%s' cannot be used together"
++msgstr  ""
++
+ msgid   "or do not fetch any tag at all (--no-tags)"
+ msgstr  ""
+ 
+@@ -15931,7 +15893,11 @@ msgstr  ""
+ msgid   "revision walk setup failed\n"
+ msgstr  ""
+ 
+-msgid   "reword option of --fixup is mutually exclusive with --patch/--interactive/--all/--include/--only"
++msgid   "reword option of --fixup and --patch/--interactive/--all/--include/--only cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "reword option of --fixup and path '%s' cannot be used together"
+ msgstr  ""
+ 
+ msgid   "root"
+@@ -17032,6 +16998,10 @@ msgstr  ""
+ msgid   "text"
+ msgstr  ""
+ 
++#, c-format
++msgid   "the '%s' option is only allowed in list mode"
++msgstr  ""
++
+ msgid   "the '--set-upstream' option is no longer supported. Please use '--track' or '--set-upstream-to' instead."
+ msgstr  ""
+ 
+@@ -17090,6 +17060,10 @@ msgstr  ""
+ msgid   "the object directory to store the graph"
+ msgstr  ""
+ 
++#, c-format
++msgid   "the option '%s' requires '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "the original commit '%s' has a gpg signature"
+ msgstr  ""
+@@ -17732,10 +17706,6 @@ msgstr  ""
+ msgid   "unable to set SO_KEEPALIVE on socket"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "unable to set core.bare=true in '%s'"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unable to set permission to '%s'"
+ msgstr  ""
+@@ -17785,10 +17755,6 @@ msgstr  ""
+ msgid   "unable to unquote C-style string '%s'"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "unable to unset core.bare=true in '%s'"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unable to update %s"
+ msgstr  ""
+@@ -18151,10 +18117,6 @@ msgstr  ""
+ msgid   "unrecognized --type argument, %s"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "unrecognized argument '%s' in %%(%s)"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "unrecognized argument: %s"
+ msgstr  ""
