@@ -1,0 +1,228 @@
+diff --git a/po/git.pot b/po/git.pot
+index ff3665f..ec62647 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -777,10 +777,6 @@ msgstr  ""
+ msgid   "%s not allowed: %s:%d"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "%s outside a repository"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "%s points nowhere!"
+ msgstr  ""
+@@ -1142,6 +1138,10 @@ msgstr  ""
+ msgid   "'%s' already exists in the index and is not a submodule"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'%s' and pathspec arguments cannot be used together"
++msgstr  ""
++
+ #, c-format
+ msgid   "'%s' appears as both a file and as a directory"
+ msgstr  ""
+@@ -1155,10 +1155,6 @@ msgstr  ""
+ msgid   "'%s' at main working tree is not the repository directory"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "'%s' cannot be used with %s"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "'%s' cannot be used with '%s'"
+ msgstr  ""
+@@ -1350,6 +1346,10 @@ msgstr  ""
+ msgid   "'%s' or '%s' cannot be used with %s"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'%s' outside a repository"
++msgstr  ""
++
+ #, c-format
+ msgid   "'%s' requires a batch mode"
+ msgstr  ""
+@@ -1411,7 +1411,7 @@ msgstr  ""
+ msgid   "'-%c' is incompatible with batch mode"
+ msgstr  ""
+ 
+-msgid   "'--pathspec-from-file' and pathspec arguments cannot be used together"
++msgid   "'--merged' and '--no-merged' options are only allowed in list mode"
+ msgstr  ""
+ 
+ msgid   "'GIT_AUTHOR_DATE' already given"
+@@ -1718,6 +1718,9 @@ msgstr  ""
+ msgid   "--follow requires exactly one pathspec"
+ msgstr  ""
+ 
++msgid   "--format can't be combined with other format-altering options"
++msgstr  ""
++
+ msgid   "--format cannot be used when not listing"
+ msgstr  ""
+ 
+@@ -1752,9 +1755,6 @@ msgstr  ""
+ msgid   "--merge-base only works with two commits"
+ msgstr  ""
+ 
+-msgid   "--merged and --no-merged options are only allowed in list mode"
+-msgstr  ""
+-
+ msgid   "--mirror can't be combined with refspecs"
+ msgstr  ""
+ 
+@@ -1798,9 +1798,6 @@ msgstr  ""
+ msgid   "--path-format requires an argument"
+ msgstr  ""
+ 
+-msgid   "--pickaxe-all and --find-object cannot be used together, use --pickaxe-all with -G and -S"
+-msgstr  ""
+-
+ msgid   "--prefix requires an argument"
+ msgstr  ""
+ 
+@@ -1899,9 +1896,6 @@ msgid   "--worktree cannot be used with multiple working trees unless the config
+         "section in \"git help worktree\" for details"
+ msgstr  ""
+ 
+-msgid   "-G and --pickaxe-regex cannot be used together, use --pickaxe-regex with -S"
+-msgstr  ""
+-
+ msgid   "-L does not yet support diff formats besides -p and -s"
+ msgstr  ""
+ 
+@@ -7107,6 +7101,9 @@ msgid   "and then use:\n"
+         "\n"
+ msgstr  ""
+ 
++msgid   "annotate text from stdin"
++msgstr  ""
++
+ msgid   "annotated"
+ msgstr  ""
+ 
+@@ -7304,6 +7301,18 @@ msgstr  ""
+ msgid   "bad index version '%s'"
+ msgstr  ""
+ 
++#, c-format
++msgid   "bad ls-tree format: %%%.*s"
++msgstr  ""
++
++#, c-format
++msgid   "bad ls-tree format: as '%s'"
++msgstr  ""
++
++#, c-format
++msgid   "bad ls-tree format: element '%s' does not end in ')'"
++msgstr  ""
++
+ #, c-format
+ msgid   "bad mergetag in commit '%s'"
+ msgstr  ""
+@@ -8767,6 +8776,10 @@ msgstr  ""
+ msgid   "could not get commit message of '%s'"
+ msgstr  ""
+ 
++#, c-format
++msgid   "could not get object info about '%s'"
++msgstr  ""
++
+ #, c-format
+ msgid   "could not get submodule directory for '%s'"
+ msgstr  ""
+@@ -13341,7 +13354,8 @@ msgstr  ""
+ msgid   "mark the state of ref (or refs)"
+ msgstr  ""
+ 
+-msgid   "marked counting and '--objects' cannot be used together"
++#, c-format
++msgid   "marked counting and '%s' cannot be used together"
+ msgstr  ""
+ 
+ msgid   "master branch"
+@@ -13806,7 +13820,7 @@ msgid   "no contacts specified"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "no directory given for %s\n"
++msgid   "no directory given for '%s' option\n"
+ msgstr  ""
+ 
+ msgid   "no email was given and auto-detection is disabled"
+@@ -14343,9 +14357,6 @@ msgstr  ""
+ msgid   "only found copies from modified paths due to too many files."
+ msgstr  ""
+ 
+-msgid   "only one -F or -m option is allowed."
+-msgstr  ""
+-
+ msgid   "only one action at a time"
+ msgstr  ""
+ 
+@@ -14481,31 +14492,40 @@ msgstr  ""
+ msgid   "option=value"
+ msgstr  ""
+ 
++#, c-format
++msgid   "options '%s' and '%s %s' cannot be used together"
++msgstr  ""
++
+ #, c-format
+ msgid   "options '%s' and '%s' cannot be used together"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "options '%s', '%s' and '%s' cannot be used together"
++msgid   "options '%s' and '%s' cannot be used together, use '%s' with '%s'"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "options '-%c', '-%c' and '--orphan' cannot be used together"
++msgid   "options '%s' and '%s' cannot be used together, use '%s' with '%s' and '%s'"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "options '--bare' and '--origin %s' cannot be used together"
++msgid   "options '%s' and '%s:%s' cannot be used together"
+ msgstr  ""
+ 
+-msgid   "options '--name-only', '--name-status', '--check' and '-s' cannot be used together"
++#, c-format
++msgid   "options '%s', '%s', '%s', and '%s' cannot be used together"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "options '--show-current-patch=%s' and '--show-current-patch=%s' cannot be used together"
++msgid   "options '%s', '%s', and '%s' cannot be used together"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "options '-m' and '--fixup:%s' cannot be used together"
++msgid   "options '%s=%s' and '%s=%s' cannot be used together"
++msgstr  ""
++
++#, c-format
++msgid   "options '-%c', '-%c', and '%s' cannot be used together"
+ msgstr  ""
+ 
+ msgid   "or do not fetch any tag at all (--no-tags)"
+@@ -15893,11 +15913,12 @@ msgstr  ""
+ msgid   "revision walk setup failed\n"
+ msgstr  ""
+ 
+-msgid   "reword option of --fixup and --patch/--interactive/--all/--include/--only cannot be used together"
++#, c-format
++msgid   "reword option of '%s' and '%s' cannot be used together"
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "reword option of --fixup and path '%s' cannot be used together"
++msgid   "reword option of '%s' and path '%s' cannot be used together"
+ msgstr  ""
+ 
+ msgid   "root"
