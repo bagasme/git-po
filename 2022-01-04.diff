@@ -1,0 +1,150 @@
+diff --git a/po/git.pot b/po/git.pot
+index cab0b89..5447e35 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -37,11 +37,9 @@ msgid   "\n"
+         "\n"
+ msgstr  ""
+ 
+-#, c-format
+ msgid   "\n"
+         "After fixing the error cause you may try to fix up\n"
+-        "the remote tracking information by invoking\n"
+-        "\"git branch --set-upstream-to=%s%s%s\"."
++        "the remote tracking information by invoking:"
+ msgstr  ""
+ 
+ msgid   "\n"
+@@ -2550,38 +2548,6 @@ msgstr  ""
+ msgid   "Branch '%s' has no upstream information"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "Branch '%s' set up to track local branch '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track local branch '%s'."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track local ref '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track local ref '%s'."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote branch '%s' from '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote branch '%s' from '%s'."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote ref '%s' by rebasing."
+-msgstr  ""
+-
+-#, c-format
+-msgid   "Branch '%s' set up to track remote ref '%s'."
+-msgstr  ""
+-
+ msgid   "Branch copy failed"
+ msgstr  ""
+ 
+@@ -7277,6 +7243,14 @@ msgstr  ""
+ msgid   "argument to --packfile must be a valid hash (got '%s')"
+ msgstr  ""
+ 
++#, c-format
++msgid   "asked to inherit tracking from '%s', but no merge configuration is set"
++msgstr  ""
++
++#, c-format
++msgid   "asked to inherit tracking from '%s', but no remote is set"
++msgstr  ""
++
+ msgid   "attach the patch"
+ msgstr  ""
+ 
+@@ -7629,6 +7603,18 @@ msgstr  ""
+ msgid   "branch '%s' not found."
+ msgstr  ""
+ 
++#, c-format
++msgid   "branch '%s' set up to track '%s' by rebasing."
++msgstr  ""
++
++#, c-format
++msgid   "branch '%s' set up to track '%s'."
++msgstr  ""
++
++#, c-format
++msgid   "branch '%s' set up to track:"
++msgstr  ""
++
+ msgid   "branch name required"
+ msgstr  ""
+ 
+@@ -7936,6 +7922,9 @@ msgstr  ""
+ msgid   "cannot have both --quiet and --verbose"
+ msgstr  ""
+ 
++msgid   "cannot inherit upstream tracking configuration of multiple refs when rebasing is requested"
++msgstr  ""
++
+ msgid   "cannot merge without a current revision"
+ msgstr  ""
+ 
+@@ -14079,7 +14068,7 @@ msgid   "not sending a push certificate since the receiving end does not support
+ msgstr  ""
+ 
+ #, c-format
+-msgid   "not setting branch %s as its own upstream"
++msgid   "not setting branch '%s' as its own upstream"
+ msgstr  ""
+ 
+ msgid   "not setting upstream for a remote remote-tracking branch"
+@@ -14406,6 +14395,10 @@ msgstr  ""
+ msgid   "option '%s' must come before non-option arguments"
+ msgstr  ""
+ 
++#, c-format
++msgid   "option `%s' expects \"%s\" or \"%s\""
++msgstr  ""
++
+ #, c-format
+ msgid   "option `%s' expects \"always\", \"auto\", or \"never\""
+ msgstr  ""
+@@ -16014,6 +16007,9 @@ msgstr  ""
+ msgid   "set From address to <ident> (or committer ident if absent)"
+ msgstr  ""
+ 
++msgid   "set branch tracking configuration"
++msgstr  ""
++
+ msgid   "set compression level"
+ msgstr  ""
+ 
+@@ -16050,9 +16046,6 @@ msgstr  ""
+ msgid   "set upstream for git pull/status"
+ msgstr  ""
+ 
+-msgid   "set upstream info for new branch"
+-msgstr  ""
+-
+ msgid   "sets the submodule’s name to the given string instead of defaulting to its path"
+ msgstr  ""
+ 
+@@ -16349,6 +16342,9 @@ msgstr  ""
+ msgid   "show source"
+ msgstr  ""
+ 
++msgid   "show sparse directories in the presence of a sparse index"
++msgstr  ""
++
+ msgid   "show staged contents' object name in the output"
+ msgstr  ""
+ 
