@@ -1,0 +1,323 @@
+diff --git a/po/git.pot b/po/git.pot
+index ec62647..1cbf4ee 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1314,10 +1314,6 @@ msgstr  ""
+ msgid   "'%s' is not a valid term"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "'%s' is not a valid timestamp"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "'%s' is not a working tree"
+ msgstr  ""
+@@ -1679,15 +1675,6 @@ msgstr  ""
+ msgid   "--convert-graft-file takes no argument"
+ msgstr  ""
+ 
+-msgid   "--cruft and -A are incompatible"
+-msgstr  ""
+-
+-msgid   "--cruft and -k are incompatible"
+-msgstr  ""
+-
+-msgid   "--cruft must be combined with all-into-one"
+-msgstr  ""
+-
+ msgid   "--default is only applicable to --get"
+ msgstr  ""
+ 
+@@ -1718,9 +1705,6 @@ msgstr  ""
+ msgid   "--follow requires exactly one pathspec"
+ msgstr  ""
+ 
+-msgid   "--format can't be combined with other format-altering options"
+-msgstr  ""
+-
+ msgid   "--format cannot be used when not listing"
+ msgstr  ""
+ 
+@@ -3371,9 +3355,6 @@ msgstr  ""
+ msgid   "Entry '%s' overlaps with '%s'.  Cannot bind."
+ msgstr  ""
+ 
+-msgid   "Enumerating cruft objects"
+-msgstr  ""
+-
+ msgid   "Enumerating objects"
+ msgstr  ""
+ 
+@@ -5889,9 +5870,6 @@ msgstr  ""
+ msgid   "Total %<PRIu32> (delta %<PRIu32>), reused %<PRIu32> (delta %<PRIu32>), pack-reused %<PRIu32>"
+ msgstr  ""
+ 
+-msgid   "Traversing cruft objects"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "Trying merge strategy %s...\n"
+ msgstr  ""
+@@ -7301,18 +7279,6 @@ msgstr  ""
+ msgid   "bad index version '%s'"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "bad ls-tree format: %%%.*s"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "bad ls-tree format: as '%s'"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "bad ls-tree format: element '%s' does not end in ')'"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "bad mergetag in commit '%s'"
+ msgstr  ""
+@@ -8113,18 +8079,9 @@ msgstr  ""
+ msgid   "cannot use --filter without --stdout"
+ msgstr  ""
+ 
+-msgid   "cannot use --max-pack-size with --cruft"
+-msgstr  ""
+-
+-msgid   "cannot use --stdin-packs with --cruft"
+-msgstr  ""
+-
+ msgid   "cannot use -a with -d"
+ msgstr  ""
+ 
+-msgid   "cannot use internal rev list with --cruft"
+-msgstr  ""
+-
+ msgid   "cannot use internal rev list with --stdin-packs"
+ msgstr  ""
+ 
+@@ -8776,10 +8733,6 @@ msgstr  ""
+ msgid   "could not get commit message of '%s'"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "could not get object info about '%s'"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "could not get submodule directory for '%s'"
+ msgstr  ""
+@@ -8791,9 +8744,6 @@ msgstr  ""
+ msgid   "could not initialize listener thread"
+ msgstr  ""
+ 
+-msgid   "could not load cruft pack .mtimes"
+-msgstr  ""
+-
+ msgid   "could not load pack"
+ msgstr  ""
+ 
+@@ -9337,9 +9287,6 @@ msgstr  ""
+ msgid   "create a bare repository"
+ msgstr  ""
+ 
+-msgid   "create a cruft pack"
+-msgstr  ""
+-
+ msgid   "create a mirror repository (implies bare)"
+ msgstr  ""
+ 
+@@ -9657,6 +9604,9 @@ msgstr  ""
+ msgid   "display a diffstat of what changed upstream"
+ msgstr  ""
+ 
++msgid   "do not actually prune any entries"
++msgstr  ""
++
+ msgid   "do not apply config rules"
+ msgstr  ""
+ 
+@@ -9760,6 +9710,9 @@ msgstr  ""
+ msgid   "do not show progress meter"
+ msgstr  ""
+ 
++msgid   "do not skip files with skip-worktree set"
++msgstr  ""
++
+ msgid   "do not touch index-only entries"
+ msgstr  ""
+ 
+@@ -10244,9 +10197,6 @@ msgstr  ""
+ msgid   "expecting a color: %s"
+ msgstr  ""
+ 
+-msgid   "expire cruft objects older than <time>"
+-msgstr  ""
+-
+ msgid   "expire objects older than <time>"
+ msgstr  ""
+ 
+@@ -13109,6 +13059,9 @@ msgstr  ""
+ msgid   "limit traversal to objects outside promisor packfiles"
+ msgstr  ""
+ 
++msgid   "limits processing to reflogs from the current worktree only."
++msgstr  ""
++
+ msgid   "limits the maximum delta depth"
+ msgstr  ""
+ 
+@@ -13143,9 +13096,6 @@ msgstr  ""
+ msgid   "list only filenames"
+ msgstr  ""
+ 
+-msgid   "list only objects"
+-msgstr  ""
+-
+ msgid   "list replace refs"
+ msgstr  ""
+ 
+@@ -13578,26 +13528,6 @@ msgstr  ""
+ msgid   "moved lines of code are colored differently"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "mtimes file %s has unknown signature"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "mtimes file %s has unsupported hash id %<PRIu32>"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "mtimes file %s has unsupported version %<PRIu32>"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "mtimes file %s is corrupt"
+-msgstr  ""
+-
+-#, c-format
+-msgid   "mtimes file %s is too small"
+-msgstr  ""
+-
+ msgid   "multi-pack bitmap is missing required reverse index"
+ msgstr  ""
+ 
+@@ -14636,19 +14566,12 @@ msgstr  ""
+ msgid   "pack loose unreachable objects"
+ msgstr  ""
+ 
+-#, c-format
+-msgid   "pack prefix %s does not begin with objdir %s"
+-msgstr  ""
+-
+ msgid   "pack signature mismatch"
+ msgstr  ""
+ 
+ msgid   "pack too large for current definition of off_t"
+ msgstr  ""
+ 
+-msgid   "pack unreferenced objects separately"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "pack version %<PRIu32> unsupported"
+ msgstr  ""
+@@ -15024,6 +14947,9 @@ msgstr  ""
+ msgid   "print empty line between matches from different files"
+ msgstr  ""
+ 
++msgid   "print extra information on screen."
++msgstr  ""
++
+ msgid   "print list of useful guides"
+ msgstr  ""
+ 
+@@ -15117,6 +15043,9 @@ msgstr  ""
+ msgid   "process only line range <start>,<end> or function :<funcname>"
+ msgstr  ""
+ 
++msgid   "process the reflogs of all references"
++msgstr  ""
++
+ msgid   "produce the smallest possible diff"
+ msgstr  ""
+ 
+@@ -15172,6 +15101,15 @@ msgstr  ""
+ msgid   "protocol error: unexpected capabilities^{}"
+ msgstr  ""
+ 
++msgid   "prune any reflog entries that point to broken commits"
++msgstr  ""
++
++msgid   "prune entries older than <time> that are not reachable from the current tip of the branch"
++msgstr  ""
++
++msgid   "prune entries older than the specified time"
++msgstr  ""
++
+ msgid   "prune local tags no longer on remote and clobber changed tags"
+ msgstr  ""
+ 
+@@ -15921,6 +15859,9 @@ msgstr  ""
+ msgid   "reword option of '%s' and path '%s' cannot be used together"
+ msgstr  ""
+ 
++msgid   "rewrite the old SHA1 with the new SHA1 of the entry that now precedes it"
++msgstr  ""
++
+ msgid   "root"
+ msgstr  ""
+ 
+@@ -15981,9 +15922,6 @@ msgstr  ""
+ msgid   "same as -a, and turn unreachable objects loose"
+ msgstr  ""
+ 
+-msgid   "same as -a, pack unreachable cruft objects separately"
+-msgstr  ""
+-
+ msgid   "same as -m, but discard unmerged entries"
+ msgstr  ""
+ 
+@@ -17165,6 +17103,9 @@ msgstr  ""
+ msgid   "time"
+ msgstr  ""
+ 
++msgid   "timestamp"
++msgstr  ""
++
+ #, c-format
+ msgid   "timestamp too large for this system: %<PRIuMAX>"
+ msgstr  ""
+@@ -17332,9 +17273,6 @@ msgstr  ""
+ msgid   "unable to add cache entry for %s"
+ msgstr  ""
+ 
+-msgid   "unable to add cruft objects"
+-msgstr  ""
+-
+ msgid   "unable to add recent objects"
+ msgstr  ""
+ 
+@@ -18276,6 +18214,9 @@ msgstr  ""
+ msgid   "update the info files from scratch"
+ msgstr  ""
+ 
++msgid   "update the reference to the value of the top reflog entry"
++msgstr  ""
++
+ msgid   "update tracked files"
+ msgstr  ""
+ 
+@@ -18723,9 +18664,6 @@ msgstr  ""
+ msgid   "with -A, do not loosen objects older than this"
+ msgstr  ""
+ 
+-msgid   "with -C, expire objects older than this"
+-msgstr  ""
+-
+ msgid   "with -a, repack unreachable objects"
+ msgstr  ""
+ 
