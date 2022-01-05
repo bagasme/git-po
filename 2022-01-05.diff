@@ -1,0 +1,340 @@
+diff --git a/po/git.pot b/po/git.pot
+index 5447e35..bbd4f6e 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1295,6 +1295,10 @@ msgstr  ""
+ msgid   "'%s' or '%s' cannot be used with %s"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'%s' requires a batch mode"
++msgstr  ""
++
+ #, c-format
+ msgid   "'%s' was deleted by the applypatch-msg hook"
+ msgstr  ""
+@@ -1341,9 +1345,17 @@ msgstr  ""
+ msgid   "'%s.final' contains the composed email.\n"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'%s=<%s>' needs '%s' or '%s'"
++msgstr  ""
++
+ msgid   "'' is not a valid term"
+ msgstr  ""
+ 
++#, c-format
++msgid   "'-%c' is incompatible with batch mode"
++msgstr  ""
++
+ msgid   "'GIT_AUTHOR_DATE' already given"
+ msgstr  ""
+ 
+@@ -2114,6 +2126,14 @@ msgstr  ""
+ msgid   "<object-id>"
+ msgstr  ""
+ 
++#, c-format
++msgid   "<object> required with '-%c'"
++msgstr  ""
++
++#, c-format
++msgid   "<object>:<path> required, only <object> '%s' given"
++msgstr  ""
++
+ msgid   "<param1,param2>..."
+ msgstr  ""
+ 
+@@ -2138,6 +2158,10 @@ msgstr  ""
+ msgid   "<rev-opts> are documented in git-rev-list(1)"
+ msgstr  ""
+ 
++#, c-format
++msgid   "<rev> required with '%s'"
++msgstr  ""
++
+ msgid   "<string>"
+ msgstr  ""
+ 
+@@ -2147,9 +2171,6 @@ msgstr  ""
+ msgid   "<text>"
+ msgstr  ""
+ 
+-msgid   "<type> can be one of: blob, tree, commit, tag"
+-msgstr  ""
+-
+ msgid   "<version>[,<offset>]"
+ msgstr  ""
+ 
+@@ -2517,6 +2538,9 @@ msgstr  ""
+ msgid   "Badly quoted content in file '%s': %s"
+ msgstr  ""
+ 
++msgid   "Batch objects requested on stdin (or --batch-all-objects)"
++msgstr  ""
++
+ msgid   "Bidirectional operation between a Subversion repository and Git"
+ msgstr  ""
+ 
+@@ -2871,6 +2895,9 @@ msgid   "Cannot update submodule:\n"
+         "%s"
+ msgstr  ""
+ 
++msgid   "Change or optimize batch output"
++msgstr  ""
++
+ #, c-format
+ msgid   "Changes from %s to %s:\n"
+ msgstr  ""
+@@ -2885,6 +2912,9 @@ msgstr  ""
+ msgid   "Changes to be committed:"
+ msgstr  ""
+ 
++msgid   "Check object existence or emit object contents"
++msgstr  ""
++
+ msgid   "Check the GPG signature of commits"
+ msgstr  ""
+ 
+@@ -3436,6 +3466,12 @@ msgstr  ""
+ msgid   "Dry-Sent %s\n"
+ msgstr  ""
+ 
++msgid   "Emit [broken] object attributes"
++msgstr  ""
++
++msgid   "Emit object (blob or tree) with conversion or filter (stand-alone, or with batch)"
++msgstr  ""
++
+ msgid   "Empty commit message."
+ msgstr  ""
+ 
+@@ -7473,6 +7509,9 @@ msgstr  ""
+ msgid   "base-commit"
+ msgstr  ""
+ 
++msgid   "batch modes take no arguments"
++msgstr  ""
++
+ msgid   "be more quiet"
+ msgstr  ""
+ 
+@@ -7544,9 +7583,6 @@ msgstr  ""
+ msgid   "bisecting only with a %s commit"
+ msgstr  ""
+ 
+-msgid   "blob"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "blob expected for %s '%s'"
+ msgstr  ""
+@@ -7554,6 +7590,9 @@ msgstr  ""
+ msgid   "blob-id"
+ msgstr  ""
+ 
++msgid   "blob|tree"
++msgstr  ""
++
+ #, c-format
+ msgid   "bogus config parameter: %s"
+ msgstr  ""
+@@ -8232,6 +8271,9 @@ msgstr  ""
+ msgid   "check if - even missing - files are ignored in dry run"
+ msgstr  ""
+ 
++msgid   "check if <object> exists"
++msgstr  ""
++
+ msgid   "check if it is safe to write to the .gitmodules file"
+ msgstr  ""
+ 
+@@ -9728,7 +9770,7 @@ msgstr  ""
+ msgid   "do not munge pathnames and use NULs as output field terminators in --raw or --numstat"
+ msgstr  ""
+ 
+-msgid   "do not order --batch-all-objects output"
++msgid   "do not order objects before emitting them"
+ msgstr  ""
+ 
+ msgid   "do not pack objects in promisor packfiles"
+@@ -10182,9 +10224,6 @@ msgstr  ""
+ msgid   "exit with exit code 2 if no matching refs are found"
+ msgstr  ""
+ 
+-msgid   "exit with zero when there's no error"
+-msgstr  ""
+-
+ #, c-format
+ msgid   "expansion of alias '%s' failed; '%s' is not a git command\n"
+ msgstr  ""
+@@ -10937,13 +10976,7 @@ msgstr  ""
+ msgid   "fmt"
+ msgstr  ""
+ 
+-msgid   "follow in-tree symlinks (used with --batch or --batch-check)"
+-msgstr  ""
+-
+-msgid   "for blob objects, run filters on object's content"
+-msgstr  ""
+-
+-msgid   "for blob objects, run textconv on object's content"
++msgid   "follow in-tree symlinks"
+ msgstr  ""
+ 
+ msgid   "for conflicts, use a union version"
+@@ -11308,10 +11341,22 @@ msgstr  ""
+ msgid   "git bundle verify [<options>] <file>"
+ msgstr  ""
+ 
+-msgid   "git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-symlinks] [--textconv | --filters]"
++msgid   "git cat-file ( -t | -s ) [--allow-unknown-type] <object>"
++msgstr  ""
++
++msgid   "git cat-file (--batch | --batch-check) [--batch-all-objects]\n"
++        "             [--buffer] [--follow-symlinks] [--unordered]\n"
++        "             [--textconv | --filters]"
++msgstr  ""
++
++msgid   "git cat-file (--textconv | --filters )\n"
++        "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
+ msgstr  ""
+ 
+-msgid   "git cat-file (-t [--allow-unknown-type] | -s [--allow-unknown-type] | -e | -p | <type> | --textconv | --filters) [--path=<path>] <object>"
++msgid   "git cat-file (-e | -p) <object>"
++msgstr  ""
++
++msgid   "git cat-file <type> <object>"
+ msgstr  ""
+ 
+ msgid   "git check-attr --stdin [-z] [-a | --all | <attr>...]"
+@@ -13056,6 +13101,9 @@ msgstr  ""
+ msgid   "lightweight"
+ msgstr  ""
+ 
++msgid   "like --batch, but don't emit <contents>"
++msgstr  ""
++
+ msgid   "like --refresh, but ignore assume-unchanged setting"
+ msgstr  ""
+ 
+@@ -14358,6 +14406,10 @@ msgstr  ""
+ msgid   "only show untracked files in the stash"
+ msgstr  ""
+ 
++#, c-format
++msgid   "only two arguments allowed in <type> <object> mode, not %d"
++msgstr  ""
++
+ msgid   "only update entries that differ from HEAD"
+ msgstr  ""
+ 
+@@ -14791,6 +14843,9 @@ msgstr  ""
+ msgid   "pathspec '%s' is beyond a symbolic link"
+ msgstr  ""
+ 
++msgid   "path|tree-ish"
++msgstr  ""
++
+ msgid   "pattern"
+ msgstr  ""
+ 
+@@ -14891,7 +14946,7 @@ msgstr  ""
+ msgid   "pretend that paths removed since <tree-ish> are still present"
+ msgstr  ""
+ 
+-msgid   "pretty-print object's content"
++msgid   "pretty-print <object> content"
+ msgstr  ""
+ 
+ msgid   "prevent rename/copy detection if the number of rename/copy targets exceeds given limit"
+@@ -15837,6 +15892,9 @@ msgstr  ""
+ msgid   "run external text conversion filters when comparing binary files"
+ msgstr  ""
+ 
++msgid   "run filters on object's content"
++msgstr  ""
++
+ msgid   "run interactively"
+ msgstr  ""
+ 
+@@ -15846,6 +15904,9 @@ msgstr  ""
+ msgid   "run tasks based on the state of the repository"
+ msgstr  ""
+ 
++msgid   "run textconv on object's content"
++msgstr  ""
++
+ #, c-format
+ msgid   "run_command returned non-zero status for %s\n"
+         "."
+@@ -16123,9 +16184,6 @@ msgstr  ""
+ msgid   "show all changes in the changeset with -S or -G"
+ msgstr  ""
+ 
+-msgid   "show all objects with --batch or --batch-check"
+-msgstr  ""
+-
+ msgid   "show author email instead of name (Default: off)"
+ msgstr  ""
+ 
+@@ -16186,6 +16244,9 @@ msgstr  ""
+ msgid   "show files on the filesystem that need to be removed"
+ msgstr  ""
+ 
++msgid   "show full <object> or <rev> contents"
++msgstr  ""
++
+ msgid   "show full pre- and post-image object names on the \"index\" lines"
+ msgstr  ""
+ 
+@@ -16201,12 +16262,6 @@ msgstr  ""
+ msgid   "show in a format designed for machine consumption"
+ msgstr  ""
+ 
+-msgid   "show info about objects fed from the standard input"
+-msgstr  ""
+-
+-msgid   "show info and content of objects fed from the standard input"
+-msgstr  ""
+-
+ msgid   "show info page"
+ msgstr  ""
+ 
+@@ -16246,7 +16301,7 @@ msgstr  ""
+ msgid   "show object size"
+ msgstr  ""
+ 
+-msgid   "show object type"
++msgid   "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)"
+ msgstr  ""
+ 
+ msgid   "show only <n> matched refs"
+@@ -18278,13 +18333,13 @@ msgstr  ""
+ msgid   "use `diff.guitool` instead of `diff.tool`"
+ msgstr  ""
+ 
+-msgid   "use a bitmap index if available to speed up counting objects"
++msgid   "use a <path> for (--textconv | --filters ); Not with 'batch'"
+ msgstr  ""
+ 
+-msgid   "use a diff3 based merge"
++msgid   "use a bitmap index if available to speed up counting objects"
+ msgstr  ""
+ 
+-msgid   "use a specific path for --textconv/--filters"
++msgid   "use a diff3 based merge"
+ msgstr  ""
+ 
+ msgid   "use a zealous diff3 based merge"
+@@ -18580,6 +18635,9 @@ msgstr  ""
+ msgid   "will not add file alias '%s' ('%s' already exists in index)"
+ msgstr  ""
+ 
++msgid   "with --batch[-check]: ignores stdin, batches all known objects"
++msgstr  ""
++
+ msgid   "with --get, use default value when missing entry"
+ msgstr  ""
+ 

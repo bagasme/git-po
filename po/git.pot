@@ -4621,14 +4621,14 @@ msgstr ""
 msgid "CONFLICT (%s): Merge conflict in %s"
 msgstr ""
 
-#: merge-ort.c:3856
+#: merge-ort.c:3869
 #, c-format
 msgid ""
 "CONFLICT (modify/delete): %s deleted in %s and modified in %s.  Version %s "
 "of %s left in tree."
 msgstr ""
 
-#: merge-ort.c:4152
+#: merge-ort.c:4165
 #, c-format
 msgid ""
 "Note: %s not up to date and in way of checking out conflicted version; old "
@@ -4638,7 +4638,7 @@ msgstr ""
 #. TRANSLATORS: The %s arguments are: 1) tree hash of a merge
 #. base, and 2-3) the trees for the two trees we're merging.
 #.
-#: merge-ort.c:4521
+#: merge-ort.c:4534
 #, c-format
 msgid "collecting merge info failed for trees %s, %s, %s"
 msgstr ""
@@ -5517,6 +5517,11 @@ msgstr ""
 
 #: object-name.c:1778
 msgid "relative path syntax can't be used outside working tree"
+msgstr ""
+
+#: object-name.c:1803
+#, c-format
+msgid "<object>:<path> required, only <object> '%s' given"
 msgstr ""
 
 #: object-name.c:1916
@@ -10144,13 +10149,13 @@ msgstr ""
 #: builtin/rebase.c:1046 builtin/repack.c:653 builtin/repack.c:657
 #: builtin/repack.c:659 builtin/show-branch.c:649 builtin/show-ref.c:172
 #: builtin/tag.c:445 parse-options.h:154 parse-options.h:175
-#: parse-options.h:317
+#: parse-options.h:327
 msgid "n"
 msgstr ""
 
 #: builtin/am.c:2379 builtin/branch.c:680 builtin/bugreport.c:109
-#: builtin/for-each-ref.c:41 builtin/replace.c:555 builtin/tag.c:479
-#: builtin/verify-tag.c:38
+#: builtin/cat-file.c:678 builtin/cat-file.c:682 builtin/for-each-ref.c:41
+#: builtin/replace.c:555 builtin/tag.c:479 builtin/verify-tag.c:38
 msgid "format"
 msgstr ""
 
@@ -11330,84 +11335,161 @@ msgstr ""
 msgid "Unknown subcommand: %s"
 msgstr ""
 
-#: builtin/cat-file.c:622
-msgid ""
-"git cat-file (-t [--allow-unknown-type] | -s [--allow-unknown-type] | -e | -"
-"p | <type> | --textconv | --filters) [--path=<path>] <object>"
-msgstr ""
-
-#: builtin/cat-file.c:623
-msgid ""
-"git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-"
-"symlinks] [--textconv | --filters]"
-msgstr ""
-
-#: builtin/cat-file.c:644
+#: builtin/cat-file.c:634
 msgid "only one batch option may be specified"
 msgstr ""
 
-#: builtin/cat-file.c:662
-msgid "<type> can be one of: blob, tree, commit, tag"
+#: builtin/cat-file.c:654
+msgid "git cat-file <type> <object>"
 msgstr ""
 
-#: builtin/cat-file.c:663
-msgid "show object type"
+#: builtin/cat-file.c:655
+msgid "git cat-file (-e | -p) <object>"
 msgstr ""
 
-#: builtin/cat-file.c:664
-msgid "show object size"
+#: builtin/cat-file.c:656
+msgid "git cat-file ( -t | -s ) [--allow-unknown-type] <object>"
+msgstr ""
+
+#: builtin/cat-file.c:657
+msgid ""
+"git cat-file (--batch | --batch-check) [--batch-all-objects]\n"
+"             [--buffer] [--follow-symlinks] [--unordered]\n"
+"             [--textconv | --filters]"
+msgstr ""
+
+#: builtin/cat-file.c:660
+msgid ""
+"git cat-file (--textconv | --filters )\n"
+"             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
 msgstr ""
 
 #: builtin/cat-file.c:666
-msgid "exit with zero when there's no error"
+msgid "Check object existence or emit object contents"
 msgstr ""
 
-#: builtin/cat-file.c:667
-msgid "pretty-print object's content"
+#: builtin/cat-file.c:668
+msgid "check if <object> exists"
 msgstr ""
 
 #: builtin/cat-file.c:669
-msgid "for blob objects, run textconv on object's content"
+msgid "pretty-print <object> content"
 msgstr ""
 
 #: builtin/cat-file.c:671
-msgid "for blob objects, run filters on object's content"
+msgid "Emit [broken] object attributes"
 msgstr ""
 
 #: builtin/cat-file.c:672
-msgid "blob"
+msgid "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)"
 msgstr ""
 
 #: builtin/cat-file.c:673
-msgid "use a specific path for --textconv/--filters"
+msgid "show object size"
 msgstr ""
 
 #: builtin/cat-file.c:675
 msgid "allow -s and -t to work with broken/corrupt objects"
 msgstr ""
 
-#: builtin/cat-file.c:676
-msgid "buffer --batch output"
+#: builtin/cat-file.c:677
+msgid "Batch objects requested on stdin (or --batch-all-objects)"
 msgstr ""
 
-#: builtin/cat-file.c:678
-msgid "show info and content of objects fed from the standard input"
+#: builtin/cat-file.c:679
+msgid "show full <object> or <rev> contents"
 msgstr ""
 
-#: builtin/cat-file.c:682
-msgid "show info about objects fed from the standard input"
+#: builtin/cat-file.c:683
+msgid "like --batch, but don't emit <contents>"
 msgstr ""
 
-#: builtin/cat-file.c:686
-msgid "follow in-tree symlinks (used with --batch or --batch-check)"
+#: builtin/cat-file.c:687
+msgid "with --batch[-check]: ignores stdin, batches all known objects"
 msgstr ""
 
-#: builtin/cat-file.c:688
-msgid "show all objects with --batch or --batch-check"
+#: builtin/cat-file.c:689
+msgid "Change or optimize batch output"
 msgstr ""
 
 #: builtin/cat-file.c:690
-msgid "do not order --batch-all-objects output"
+msgid "buffer --batch output"
+msgstr ""
+
+#: builtin/cat-file.c:692
+msgid "follow in-tree symlinks"
+msgstr ""
+
+#: builtin/cat-file.c:694
+msgid "do not order objects before emitting them"
+msgstr ""
+
+#: builtin/cat-file.c:696
+msgid ""
+"Emit object (blob or tree) with conversion or filter (stand-alone, or with "
+"batch)"
+msgstr ""
+
+#: builtin/cat-file.c:698
+msgid "run textconv on object's content"
+msgstr ""
+
+#: builtin/cat-file.c:700
+msgid "run filters on object's content"
+msgstr ""
+
+#: builtin/cat-file.c:701
+msgid "blob|tree"
+msgstr ""
+
+#: builtin/cat-file.c:702
+msgid "use a <path> for (--textconv | --filters ); Not with 'batch'"
+msgstr ""
+
+#: builtin/cat-file.c:720
+#, c-format
+msgid "'%s=<%s>' needs '%s' or '%s'"
+msgstr ""
+
+#: builtin/cat-file.c:722
+msgid "path|tree-ish"
+msgstr ""
+
+#: builtin/cat-file.c:729 builtin/cat-file.c:732 builtin/cat-file.c:735
+#, c-format
+msgid "'%s' requires a batch mode"
+msgstr ""
+
+#: builtin/cat-file.c:747
+#, c-format
+msgid "'-%c' is incompatible with batch mode"
+msgstr ""
+
+#: builtin/cat-file.c:750
+msgid "batch modes take no arguments"
+msgstr ""
+
+#: builtin/cat-file.c:758 builtin/cat-file.c:761
+#, c-format
+msgid "<rev> required with '%s'"
+msgstr ""
+
+#: builtin/cat-file.c:764
+#, c-format
+msgid "<object> required with '-%c'"
+msgstr ""
+
+#: builtin/cat-file.c:769 builtin/notes.c:374 builtin/notes.c:429
+#: builtin/notes.c:507 builtin/notes.c:519 builtin/notes.c:596
+#: builtin/notes.c:663 builtin/notes.c:813 builtin/notes.c:965
+#: builtin/notes.c:987 builtin/prune-packed.c:25 builtin/receive-pack.c:2487
+#: builtin/tag.c:586
+msgid "too many arguments"
+msgstr ""
+
+#: builtin/cat-file.c:773
+#, c-format
+msgid "only two arguments allowed in <type> <object> mode, not %d"
 msgstr ""
 
 #: builtin/check-attr.c:13
@@ -11875,7 +11957,7 @@ msgstr ""
 msgid "perform a 3-way merge with the new branch"
 msgstr ""
 
-#: builtin/checkout.c:1538 builtin/log.c:1825 parse-options.h:323
+#: builtin/checkout.c:1538 builtin/log.c:1825 parse-options.h:333
 msgid "style"
 msgstr ""
 
@@ -13103,7 +13185,7 @@ msgstr ""
 
 #: builtin/commit.c:1501 builtin/commit.c:1505 builtin/commit.c:1668
 #: builtin/fast-export.c:1172 builtin/fast-export.c:1175
-#: builtin/fast-export.c:1178 builtin/rebase.c:1111 parse-options.h:337
+#: builtin/fast-export.c:1178 builtin/rebase.c:1111 parse-options.h:347
 msgid "mode"
 msgstr ""
 
@@ -13176,7 +13258,7 @@ msgid "override date for commit"
 msgstr ""
 
 #: builtin/commit.c:1627 builtin/commit.c:1628 builtin/commit.c:1634
-#: parse-options.h:329 ref-filter.h:89
+#: parse-options.h:339 ref-filter.h:89
 msgid "commit"
 msgstr ""
 
@@ -17649,13 +17731,6 @@ msgstr ""
 msgid "refusing to %s notes in %s (outside of refs/notes/)"
 msgstr ""
 
-#: builtin/notes.c:374 builtin/notes.c:429 builtin/notes.c:507
-#: builtin/notes.c:519 builtin/notes.c:596 builtin/notes.c:663
-#: builtin/notes.c:813 builtin/notes.c:965 builtin/notes.c:987
-#: builtin/prune-packed.c:25 builtin/receive-pack.c:2487 builtin/tag.c:586
-msgid "too many arguments"
-msgstr ""
-
 #: builtin/notes.c:387 builtin/notes.c:676
 #, c-format
 msgid "no note found for object %s."
@@ -18348,7 +18423,7 @@ msgstr ""
 msgid "control use of pre-merge-commit and commit-msg hooks"
 msgstr ""
 
-#: builtin/pull.c:171 parse-options.h:340
+#: builtin/pull.c:171 parse-options.h:350
 msgid "automatically stash/stash pop before and after"
 msgstr ""
 
@@ -23524,27 +23599,27 @@ msgstr ""
 msgid "no-op (backward compatibility)"
 msgstr ""
 
-#: parse-options.h:310
+#: parse-options.h:320
 msgid "be more verbose"
 msgstr ""
 
-#: parse-options.h:312
+#: parse-options.h:322
 msgid "be more quiet"
 msgstr ""
 
-#: parse-options.h:318
+#: parse-options.h:328
 msgid "use <n> digits to display object names"
 msgstr ""
 
-#: parse-options.h:337
+#: parse-options.h:347
 msgid "how to strip spaces and #comments from message"
 msgstr ""
 
-#: parse-options.h:338
+#: parse-options.h:348
 msgid "read pathspec from file"
 msgstr ""
 
-#: parse-options.h:339
+#: parse-options.h:349
 msgid ""
 "with --pathspec-from-file, pathspec elements are separated with NUL character"
 msgstr ""
