@@ -796,7 +796,7 @@ msgstr ""
 #: builtin/repack.c:684 builtin/repack.c:715 builtin/reset.c:432
 #: builtin/reset.c:468 builtin/rev-list.c:541 builtin/show-branch.c:710
 #: builtin/stash.c:1707 builtin/stash.c:1710 builtin/submodule--helper.c:1317
-#: builtin/submodule--helper.c:2987 builtin/tag.c:526 builtin/tag.c:570
+#: builtin/submodule--helper.c:2987 builtin/tag.c:526 builtin/tag.c:572
 #: builtin/worktree.c:698
 #, c-format
 msgid "options '%s' and '%s' cannot be used together"
@@ -1451,7 +1451,7 @@ msgid "git archive --remote <repo> [--exec <cmd>] --list"
 msgstr ""
 
 #: archive.c:188 archive.c:341 builtin/gc.c:498 builtin/notes.c:238
-#: builtin/tag.c:576
+#: builtin/tag.c:578
 #, c-format
 msgid "cannot read '%s'"
 msgstr ""
@@ -7270,7 +7270,7 @@ msgstr ""
 msgid "%s: fast-forward"
 msgstr ""
 
-#: sequencer.c:574 builtin/tag.c:612
+#: sequencer.c:574 builtin/tag.c:614
 #, c-format
 msgid "Invalid cleanup mode %s"
 msgstr ""
@@ -9822,7 +9822,7 @@ msgstr ""
 msgid "allow updating entries outside of the sparse-checkout cone"
 msgstr ""
 
-#: builtin/add.c:383 builtin/update-index.c:1012
+#: builtin/add.c:383 builtin/update-index.c:1023
 msgid "override the executable bit of the listed files"
 msgstr ""
 
@@ -11545,7 +11545,7 @@ msgstr ""
 #: builtin/notes.c:507 builtin/notes.c:519 builtin/notes.c:596
 #: builtin/notes.c:663 builtin/notes.c:813 builtin/notes.c:965
 #: builtin/notes.c:987 builtin/prune-packed.c:25 builtin/receive-pack.c:2477
-#: builtin/tag.c:589
+#: builtin/tag.c:591
 msgid "too many arguments"
 msgstr ""
 
@@ -17761,7 +17761,7 @@ msgstr ""
 msgid "the note contents have been left in %s"
 msgstr ""
 
-#: builtin/notes.c:240 builtin/tag.c:579
+#: builtin/notes.c:240 builtin/tag.c:581
 #, c-format
 msgid "could not open or read '%s'"
 msgstr ""
@@ -17976,7 +17976,7 @@ msgid ""
 "abort'.\n"
 msgstr ""
 
-#: builtin/notes.c:899 builtin/tag.c:592
+#: builtin/notes.c:899 builtin/tag.c:594
 #, c-format
 msgid "Failed to resolve '%s' as a valid ref."
 msgstr ""
@@ -22405,26 +22405,22 @@ msgstr ""
 msgid "print only tags of the object"
 msgstr ""
 
-#: builtin/tag.c:554
+#: builtin/tag.c:558
 #, c-format
 msgid "the '%s' option is only allowed in list mode"
 msgstr ""
 
-#: builtin/tag.c:556
-msgid "'--merged' and '--no-merged' options are only allowed in list mode"
-msgstr ""
-
-#: builtin/tag.c:595
+#: builtin/tag.c:597
 #, c-format
 msgid "'%s' is not a valid tag name."
 msgstr ""
 
-#: builtin/tag.c:600
+#: builtin/tag.c:602
 #, c-format
 msgid "tag '%s' already exists"
 msgstr ""
 
-#: builtin/tag.c:631
+#: builtin/tag.c:633
 #, c-format
 msgid "Updated tag '%s' (was %s)\n"
 msgstr ""
@@ -22485,203 +22481,203 @@ msgstr ""
 msgid "git update-index [<options>] [--] [<file>...]"
 msgstr ""
 
-#: builtin/update-index.c:982
+#: builtin/update-index.c:993
 msgid "continue refresh even when index needs update"
 msgstr ""
 
-#: builtin/update-index.c:985
+#: builtin/update-index.c:996
 msgid "refresh: ignore submodules"
 msgstr ""
 
-#: builtin/update-index.c:988
+#: builtin/update-index.c:999
 msgid "do not ignore new files"
 msgstr ""
 
-#: builtin/update-index.c:990
+#: builtin/update-index.c:1001
 msgid "let files replace directories and vice-versa"
 msgstr ""
 
-#: builtin/update-index.c:992
+#: builtin/update-index.c:1003
 msgid "notice files missing from worktree"
 msgstr ""
 
-#: builtin/update-index.c:994
+#: builtin/update-index.c:1005
 msgid "refresh even if index contains unmerged entries"
 msgstr ""
 
-#: builtin/update-index.c:997
+#: builtin/update-index.c:1008
 msgid "refresh stat information"
 msgstr ""
 
-#: builtin/update-index.c:1001
+#: builtin/update-index.c:1012
 msgid "like --refresh, but ignore assume-unchanged setting"
 msgstr ""
 
-#: builtin/update-index.c:1005
+#: builtin/update-index.c:1016
 msgid "<mode>,<object>,<path>"
 msgstr ""
 
-#: builtin/update-index.c:1006
+#: builtin/update-index.c:1017
 msgid "add the specified entry to the index"
 msgstr ""
 
-#: builtin/update-index.c:1016
+#: builtin/update-index.c:1027
 msgid "mark files as \"not changing\""
 msgstr ""
 
-#: builtin/update-index.c:1019
+#: builtin/update-index.c:1030
 msgid "clear assumed-unchanged bit"
 msgstr ""
 
-#: builtin/update-index.c:1022
+#: builtin/update-index.c:1033
 msgid "mark files as \"index-only\""
 msgstr ""
 
-#: builtin/update-index.c:1025
+#: builtin/update-index.c:1036
 msgid "clear skip-worktree bit"
 msgstr ""
 
-#: builtin/update-index.c:1028
+#: builtin/update-index.c:1039
 msgid "do not touch index-only entries"
 msgstr ""
 
-#: builtin/update-index.c:1030
+#: builtin/update-index.c:1041
 msgid "add to index only; do not add content to object database"
 msgstr ""
 
-#: builtin/update-index.c:1032
+#: builtin/update-index.c:1043
 msgid "remove named paths even if present in worktree"
 msgstr ""
 
-#: builtin/update-index.c:1034
+#: builtin/update-index.c:1045
 msgid "with --stdin: input lines are terminated by null bytes"
 msgstr ""
 
-#: builtin/update-index.c:1036
+#: builtin/update-index.c:1047
 msgid "read list of paths to be updated from standard input"
 msgstr ""
 
-#: builtin/update-index.c:1040
+#: builtin/update-index.c:1051
 msgid "add entries from standard input to the index"
 msgstr ""
 
-#: builtin/update-index.c:1044
+#: builtin/update-index.c:1055
 msgid "repopulate stages #2 and #3 for the listed paths"
 msgstr ""
 
-#: builtin/update-index.c:1048
+#: builtin/update-index.c:1059
 msgid "only update entries that differ from HEAD"
 msgstr ""
 
-#: builtin/update-index.c:1052
+#: builtin/update-index.c:1063
 msgid "ignore files missing from worktree"
 msgstr ""
 
-#: builtin/update-index.c:1055
+#: builtin/update-index.c:1066
 msgid "report actions to standard output"
 msgstr ""
 
-#: builtin/update-index.c:1057
+#: builtin/update-index.c:1068
 msgid "(for porcelains) forget saved unresolved conflicts"
 msgstr ""
 
-#: builtin/update-index.c:1061
+#: builtin/update-index.c:1072
 msgid "write index in this format"
 msgstr ""
 
-#: builtin/update-index.c:1063
+#: builtin/update-index.c:1074
 msgid "enable or disable split index"
 msgstr ""
 
-#: builtin/update-index.c:1065
+#: builtin/update-index.c:1076
 msgid "enable/disable untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1067
+#: builtin/update-index.c:1078
 msgid "test if the filesystem supports untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1069
+#: builtin/update-index.c:1080
 msgid "enable untracked cache without testing the filesystem"
 msgstr ""
 
-#: builtin/update-index.c:1071
+#: builtin/update-index.c:1082
 msgid "write out the index even if is not flagged as changed"
 msgstr ""
 
-#: builtin/update-index.c:1073
+#: builtin/update-index.c:1084
 msgid "enable or disable file system monitor"
 msgstr ""
 
-#: builtin/update-index.c:1075
+#: builtin/update-index.c:1086
 msgid "mark files as fsmonitor valid"
 msgstr ""
 
-#: builtin/update-index.c:1078
+#: builtin/update-index.c:1089
 msgid "clear fsmonitor valid bit"
 msgstr ""
 
-#: builtin/update-index.c:1184
+#: builtin/update-index.c:1195
 msgid ""
 "core.splitIndex is set to false; remove or change it, if you really want to "
 "enable split index"
 msgstr ""
 
-#: builtin/update-index.c:1193
+#: builtin/update-index.c:1204
 msgid ""
 "core.splitIndex is set to true; remove or change it, if you really want to "
 "disable split index"
 msgstr ""
 
-#: builtin/update-index.c:1205
+#: builtin/update-index.c:1216
 msgid ""
 "core.untrackedCache is set to true; remove or change it, if you really want "
 "to disable the untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1209
+#: builtin/update-index.c:1220
 msgid "Untracked cache disabled"
 msgstr ""
 
-#: builtin/update-index.c:1217
+#: builtin/update-index.c:1228
 msgid ""
 "core.untrackedCache is set to false; remove or change it, if you really want "
 "to enable the untracked cache"
 msgstr ""
 
-#: builtin/update-index.c:1221
+#: builtin/update-index.c:1232
 #, c-format
 msgid "Untracked cache enabled for '%s'"
 msgstr ""
 
-#: builtin/update-index.c:1231
+#: builtin/update-index.c:1242
 msgid ""
 "core.useBuiltinFSMonitor is unset; set it if you really want to enable the "
 "builtin fsmonitor"
 msgstr ""
 
-#: builtin/update-index.c:1234
+#: builtin/update-index.c:1245
 msgid ""
 "core.fsmonitor is unset; set it if you really want to enable the hook-based "
 "fsmonitor"
 msgstr ""
 
-#: builtin/update-index.c:1239
+#: builtin/update-index.c:1250
 msgid "fsmonitor enabled"
 msgstr ""
 
-#: builtin/update-index.c:1243
+#: builtin/update-index.c:1254
 msgid ""
 "core.useBuiltinFSMonitor is set; remove it if you really want to disable "
 "fsmonitor"
 msgstr ""
 
-#: builtin/update-index.c:1247
+#: builtin/update-index.c:1258
 msgid ""
 "core.fsmonitor is set; remove it if you really want to disable fsmonitor"
 msgstr ""
 
-#: builtin/update-index.c:1251
+#: builtin/update-index.c:1262
 msgid "fsmonitor disabled"
 msgstr ""
 

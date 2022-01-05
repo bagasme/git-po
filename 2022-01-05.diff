@@ -321,3 +321,17 @@ index ec62647..1cbf4ee 100644
  msgid   "with -a, repack unreachable objects"
  msgstr  ""
  
+diff --git a/po/git.pot b/po/git.pot
+index 1cbf4ee..da7cb2a 100644
+--- a/po/git.pot
++++ b/po/git.pot
+@@ -1407,9 +1407,6 @@ msgstr  ""
+ msgid   "'-%c' is incompatible with batch mode"
+ msgstr  ""
+ 
+-msgid   "'--merged' and '--no-merged' options are only allowed in list mode"
+-msgstr  ""
+-
+ msgid   "'GIT_AUTHOR_DATE' already given"
+ msgstr  ""
+ 
