@@ -4151,18 +4151,18 @@ msgid ""
 "with -P under PCRE v2"
 msgstr ""
 
-#: grep.c:1942
+#: grep.c:1944
 #, c-format
 msgid "'%s': unable to read %s"
 msgstr ""
 
-#: grep.c:1959 setup.c:177 builtin/clone.c:303 builtin/diff.c:90
+#: grep.c:1961 setup.c:177 builtin/clone.c:303 builtin/diff.c:90
 #: builtin/rm.c:136
 #, c-format
 msgid "failed to stat '%s'"
 msgstr ""
 
-#: grep.c:1970
+#: grep.c:1972
 #, c-format
 msgid "'%s': short read"
 msgstr ""
@@ -5761,7 +5761,7 @@ msgstr ""
 msgid "option `%s' expects a numerical value"
 msgstr ""
 
-#: parse-options-cb.c:42 builtin/reflog.c:565 builtin/reflog.c:578
+#: parse-options-cb.c:42
 #, c-format
 msgid "malformed expiration date '%s'"
 msgstr ""
@@ -10201,7 +10201,8 @@ msgstr ""
 
 #: builtin/am.c:2379 builtin/branch.c:695 builtin/bugreport.c:109
 #: builtin/cat-file.c:678 builtin/cat-file.c:682 builtin/for-each-ref.c:41
-#: builtin/replace.c:555 builtin/tag.c:479 builtin/verify-tag.c:38
+#: builtin/ls-tree.c:329 builtin/replace.c:555 builtin/tag.c:479
+#: builtin/verify-tag.c:38
 msgid "format"
 msgstr ""
 
@@ -11166,8 +11167,8 @@ msgstr ""
 msgid "recurse through submodules"
 msgstr ""
 
-#: builtin/branch.c:695 builtin/for-each-ref.c:41 builtin/tag.c:480
-#: builtin/verify-tag.c:38
+#: builtin/branch.c:695 builtin/for-each-ref.c:41 builtin/ls-tree.c:330
+#: builtin/tag.c:480 builtin/verify-tag.c:38
 msgid "format to use for the output"
 msgstr ""
 
@@ -16826,40 +16827,68 @@ msgstr ""
 msgid "show underlying ref in addition to the object pointed by it"
 msgstr ""
 
-#: builtin/ls-tree.c:30
+#: builtin/ls-tree.c:47
 msgid "git ls-tree [<options>] <tree-ish> [<path>...]"
 msgstr ""
 
-#: builtin/ls-tree.c:128
+#: builtin/ls-tree.c:91
+#, c-format
+msgid "could not get object info about '%s'"
+msgstr ""
+
+#: builtin/ls-tree.c:116
+#, c-format
+msgid "bad ls-tree format: as '%s'"
+msgstr ""
+
+#: builtin/ls-tree.c:120
+#, c-format
+msgid "bad ls-tree format: element '%s' does not end in ')'"
+msgstr ""
+
+#: builtin/ls-tree.c:146
+#, c-format
+msgid "bad ls-tree format: %%%.*s"
+msgstr ""
+
+#: builtin/ls-tree.c:308
 msgid "only show trees"
 msgstr ""
 
-#: builtin/ls-tree.c:130
+#: builtin/ls-tree.c:310
 msgid "recurse into subtrees"
 msgstr ""
 
-#: builtin/ls-tree.c:132
+#: builtin/ls-tree.c:312
 msgid "show trees when recursing"
 msgstr ""
 
-#: builtin/ls-tree.c:135
+#: builtin/ls-tree.c:315
 msgid "terminate entries with NUL byte"
 msgstr ""
 
-#: builtin/ls-tree.c:136
+#: builtin/ls-tree.c:316
 msgid "include object size"
 msgstr ""
 
-#: builtin/ls-tree.c:138 builtin/ls-tree.c:140
+#: builtin/ls-tree.c:318 builtin/ls-tree.c:320
 msgid "list only filenames"
 msgstr ""
 
-#: builtin/ls-tree.c:143
+#: builtin/ls-tree.c:322
+msgid "list only objects"
+msgstr ""
+
+#: builtin/ls-tree.c:325
 msgid "use full path names"
 msgstr ""
 
-#: builtin/ls-tree.c:145
+#: builtin/ls-tree.c:327
 msgid "list entire tree; not just current directory (implies --full-name)"
+msgstr ""
+
+#: builtin/ls-tree.c:354
+msgid "--format can't be combined with other format-altering options"
 msgstr ""
 
 #. TRANSLATORS: keep <> in "<" mail ">" info.
@@ -17610,7 +17639,7 @@ msgid "list all commits reachable from all refs"
 msgstr ""
 
 #: builtin/name-rev.c:541
-msgid "read from stdin"
+msgid "deprecated: use annotate-stdin instead"
 msgstr ""
 
 #: builtin/name-rev.c:542
@@ -18603,19 +18632,19 @@ msgid ""
 "invocation.\n"
 msgstr ""
 
-#: builtin/pull.c:1046
+#: builtin/pull.c:1045
 msgid "Updating an unborn branch with changes added to the index."
 msgstr ""
 
-#: builtin/pull.c:1050
+#: builtin/pull.c:1049
 msgid "pull with rebase"
 msgstr ""
 
-#: builtin/pull.c:1051
+#: builtin/pull.c:1050
 msgid "please commit or stash them."
 msgstr ""
 
-#: builtin/pull.c:1076
+#: builtin/pull.c:1075
 #, c-format
 msgid ""
 "fetch updated the current branch head.\n"
@@ -18623,7 +18652,7 @@ msgid ""
 "commit %s."
 msgstr ""
 
-#: builtin/pull.c:1082
+#: builtin/pull.c:1081
 #, c-format
 msgid ""
 "Cannot fast-forward your working tree.\n"
@@ -18634,23 +18663,23 @@ msgid ""
 "to recover."
 msgstr ""
 
-#: builtin/pull.c:1097
+#: builtin/pull.c:1096
 msgid "Cannot merge multiple branches into empty head."
 msgstr ""
 
-#: builtin/pull.c:1102
+#: builtin/pull.c:1101
 msgid "Cannot rebase onto multiple branches."
 msgstr ""
 
-#: builtin/pull.c:1104
+#: builtin/pull.c:1103
 msgid "Cannot fast-forward to multiple branches."
 msgstr ""
 
-#: builtin/pull.c:1119
+#: builtin/pull.c:1118
 msgid "Need to specify how to reconcile divergent branches."
 msgstr ""
 
-#: builtin/pull.c:1133
+#: builtin/pull.c:1132
 msgid "cannot rebase with locally recorded submodule modifications"
 msgstr ""
 
@@ -19481,85 +19510,90 @@ msgid ""
 "<refs>..."
 msgstr ""
 
-#: builtin/reflog.c:593 builtin/reflog.c:729
+#: builtin/reflog.c:565 builtin/reflog.c:579
+#, c-format
+msgid "invalid timestamp '%s' given to '--%s'"
+msgstr ""
+
+#: builtin/reflog.c:595 builtin/reflog.c:731
 msgid "do not actually prune any entries"
 msgstr ""
 
-#: builtin/reflog.c:596 builtin/reflog.c:732
+#: builtin/reflog.c:598 builtin/reflog.c:734
 msgid ""
 "rewrite the old SHA1 with the new SHA1 of the entry that now precedes it"
 msgstr ""
 
-#: builtin/reflog.c:599 builtin/reflog.c:735
+#: builtin/reflog.c:601 builtin/reflog.c:737
 msgid "update the reference to the value of the top reflog entry"
 msgstr ""
 
-#: builtin/reflog.c:601 builtin/reflog.c:737
+#: builtin/reflog.c:603 builtin/reflog.c:739
 msgid "print extra information on screen."
 msgstr ""
 
-#: builtin/reflog.c:602 builtin/reflog.c:606
+#: builtin/reflog.c:604 builtin/reflog.c:608
 msgid "timestamp"
 msgstr ""
 
-#: builtin/reflog.c:603
+#: builtin/reflog.c:605
 msgid "prune entries older than the specified time"
 msgstr ""
 
-#: builtin/reflog.c:607
+#: builtin/reflog.c:609
 msgid ""
 "prune entries older than <time> that are not reachable from the current tip "
 "of the branch"
 msgstr ""
 
-#: builtin/reflog.c:611
+#: builtin/reflog.c:613
 msgid "prune any reflog entries that point to broken commits"
 msgstr ""
 
-#: builtin/reflog.c:612
+#: builtin/reflog.c:614
 msgid "process the reflogs of all references"
 msgstr ""
 
-#: builtin/reflog.c:614
+#: builtin/reflog.c:616
 msgid "limits processing to reflogs from the current worktree only."
 msgstr ""
 
-#: builtin/reflog.c:647
+#: builtin/reflog.c:649
 #, c-format
 msgid "Marking reachable objects..."
 msgstr ""
 
-#: builtin/reflog.c:691
+#: builtin/reflog.c:693
 #, c-format
 msgid "%s points nowhere!"
 msgstr ""
 
-#: builtin/reflog.c:716
+#: builtin/reflog.c:718
 msgid ""
 "git reflog delete [--rewrite] [--updateref] [--dry-run | -n] [--verbose] "
 "<refs>..."
 msgstr ""
 
-#: builtin/reflog.c:747
+#: builtin/reflog.c:749
 msgid "no reflog specified to delete"
 msgstr ""
 
-#: builtin/reflog.c:758
+#: builtin/reflog.c:760
 #, c-format
 msgid "not a reflog: %s"
 msgstr ""
 
-#: builtin/reflog.c:763
+#: builtin/reflog.c:765
 #, c-format
 msgid "no reflog for '%s'"
 msgstr ""
 
-#: builtin/reflog.c:810
+#: builtin/reflog.c:812
 #, c-format
 msgid "invalid ref format: %s"
 msgstr ""
 
-#: builtin/reflog.c:819
+#: builtin/reflog.c:821
 msgid "git reflog [ show | expire | delete | exists ]"
 msgstr ""
 
